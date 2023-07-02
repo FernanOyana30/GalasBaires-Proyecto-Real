@@ -3,6 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import { Link } from 'react-router-dom';
+
 
 function NavBar() {
   return (
@@ -12,38 +14,37 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link to="/" href="#home">Inicio</Nav.Link>
-            
+            <Nav.Link><Link to="/">Inicio</Link>  </Nav.Link>            
             <NavDropdown title="Nosotros" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Nuestra historia</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Testimonios</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Sobre las fragancias</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Nuestros materiales</NavDropdown.Item>              
+              <NavDropdown.Item><Link to="/Nosotros">Nuestra historia</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/Nosotros">Testimonios</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/Nosotros">Sobre las fragancias</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/Nosotros">Nuestros materiales</Link></NavDropdown.Item>              
             </NavDropdown>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/4.1">Velas aromáticas</NavDropdown.Item>
-              <NavDropdown.Item href="#action/4.2">Difusores</NavDropdown.Item>
-              <NavDropdown.Item href="#action/4.3">Perfuminas</NavDropdown.Item>
-              <NavDropdown.Item href="#action/4.4">Souvenirs</NavDropdown.Item>
-              <NavDropdown.Item href="#action/4.5">Hornitos</NavDropdown.Item>
-              <NavDropdown.Item href="#action/4.6">Refill</NavDropdown.Item>
-              <NavDropdown.Item href="#action/4.7">Fragancias</NavDropdown.Item>              
+              <NavDropdown.Item><Link to="/ItemListContainer">Velas aromáticas</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/ItemListContainer">Difusores</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/ItemListContainer">Perfuminas</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/ItemListContainer">Souvenirs</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/ItemListContainer">Hornitos</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/ItemListContainer">Refill</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/ItemListContainer">Fragancias</Link></NavDropdown.Item>              
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/4.8">Descubrí tu fragancia</NavDropdown.Item>
+              <NavDropdown.Item><Link to="">Descubrí tu fragancia</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="FAQ" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/5.1">Políticas de envío</NavDropdown.Item>
-              <NavDropdown.Item href="#action/5.2">Políticas de entrega</NavDropdown.Item>
-              <NavDropdown.Item href="#action/5.3">Recomendaciones</NavDropdown.Item>
-              <NavDropdown.Item href="#action/5.3">Nuestros materiales</NavDropdown.Item>
+              <NavDropdown.Item><Link to="/faq">Políticas de envío</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/faq">Políticas de entrega</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/faq">Recomendaciones</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/faq">Nuestros materiales</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Contacto" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/6.1">Formulario de contacto</NavDropdown.Item>
+              <NavDropdown.Item><Link to="/formMinorista">Formulario de contacto</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/6.2">Redes sociales</NavDropdown.Item>
               <NavDropdown.Item href="#action/6.3">WhatsApp</NavDropdown.Item>              
             </NavDropdown>                        
             <NavDropdown title="Mayoristas" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/7.1">Formulario para mayoristas</NavDropdown.Item>              
+              <NavDropdown.Item><Link to="/formMayorista">Formulario para mayoristas</Link>  </NavDropdown.Item>              
             </NavDropdown> 
           </Nav>
         </Navbar.Collapse>
