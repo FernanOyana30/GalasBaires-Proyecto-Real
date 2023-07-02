@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './components/NavBar/NavBar';
 import Inicio from './components/Inicio/Inicio';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import FormMayorista from './components/Forms/formMayorista'
 import FormMinorista from './components/Forms/formMinorista'
 import Nosotros from './components/Nosotros/Nosotros'
@@ -23,6 +24,9 @@ function App() {
               />  
             <Route
               path='/ItemListContainer' element={<ItemListContainer/>}              
+              />  
+            <Route
+              path='/ItemDetailContainer' element={<ItemDetailContainer/>}              
               />  
             <Route
               path='/formMayorista' element={<FormMayorista/>}
