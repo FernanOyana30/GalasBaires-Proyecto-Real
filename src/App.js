@@ -9,6 +9,7 @@ import FormMayorista from './components/Forms/formMayorista'
 import FormMinorista from './components/Forms/formMinorista'
 import Nosotros from './components/Nosotros/Nosotros'
 import Faq from './components/FAQ/faq'
+import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
             <Route 
               path='/faq' element={<Faq/>}
               />
-          </Routes>              
+          </Routes>      
+        <Footer/>
       </BrowserRouter>
     </div>
   );
