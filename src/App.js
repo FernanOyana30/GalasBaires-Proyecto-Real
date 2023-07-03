@@ -8,8 +8,13 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import FormMayorista from './components/Forms/formMayorista'
 import FormMinorista from './components/Forms/formMinorista'
-import Nosotros from './components/Nosotros/Nosotros'
-import Faq from './components/FAQ/faq'
+import NuestraHistoria from './components/Nosotros/NuestraHistoria'
+import Testimonios from './components/Nosotros/Testimonios'
+import Fragancias from './components/Nosotros/Fragancias'
+import Materiales from './components/Nosotros/Materiales'
+import PoliticasEntrega from './components/FAQ/PoliticasEntrega';
+import Recomendaciones from './components/FAQ/Recomendaciones'
+import PoliticasEnvio from './components/FAQ/PoliticasEnvio'
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -18,29 +23,44 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar/>   
-          <Routes>
-            <Route
-              path='/' element={<Inicio/>}              
-              />  
-            <Route
-              path='/ItemListContainer' element={<ItemListContainer/>}              
-              />  
-            <Route
-              path='/ItemDetailContainer' element={<ItemDetailContainer/>}              
-              />  
-            <Route
-              path='/formMayorista' element={<FormMayorista/>}
-              />
-            <Route 
-              path='/formMinorista' element={<FormMinorista/>}
-              />
-            <Route 
-              path='/Nosotros' element={<Nosotros/>}
-              />
-            <Route 
-              path='/faq' element={<Faq/>}
-              />
-          </Routes>      
+        <Routes>
+          <Route
+            path='/' element={<Inicio/>}              
+            />  
+          <Route 
+            path='/NuestraHistoria' element={<NuestraHistoria/>}
+            />
+          <Route 
+            path='/Testimonios' element={<Testimonios/>}
+            />
+          <Route 
+            path='/Fragancias' element={<Fragancias/>}
+            />
+          <Route 
+            path='/Materiales' element={<Materiales/>}
+            />          
+          <Route
+            path='/ItemListContainer' element={<ItemListContainer/>}              
+            />  
+          <Route
+            path='/ItemDetailContainer' element={<ItemDetailContainer/>}              
+            />  
+          <Route 
+            path='/PoliticasEnvio' element={<PoliticasEnvio/>}
+            />
+          <Route 
+            path='/PoliticasEntrega' element={<PoliticasEntrega/>}
+            />
+          <Route 
+            path='/Recomendaciones' element={<Recomendaciones/>}
+            />
+          <Route
+            path='/formMayorista' element={<FormMayorista/>}
+            />
+          <Route 
+            path='/formMinorista' element={<FormMinorista/>}
+            />  
+        </Routes>      
         <Footer/>
       </BrowserRouter>
     </div>

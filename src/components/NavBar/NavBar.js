@@ -2,9 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
 import { Link } from 'react-router-dom';
-
 
 function NavBar() {
   return (
@@ -16,10 +14,10 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link><Link to="/">Inicio</Link>  </Nav.Link>            
             <NavDropdown title="Nosotros" id="basic-nav-dropdown">
-              <NavDropdown.Item><Link to="/Nosotros">Nuestra historia</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/Nosotros">Testimonios</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/Nosotros">Sobre las fragancias</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/Nosotros">Nuestros materiales</Link></NavDropdown.Item>              
+              <NavDropdown.Item><Link to="/NuestraHistoria">Nuestra historia</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/Testimonios">Testimonios</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/Fragancias">Sobre las fragancias</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/Materiales">Nuestros materiales</Link></NavDropdown.Item>              
             </NavDropdown>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
               <NavDropdown.Item><Link to="/ItemListContainer">Velas aromáticas</Link></NavDropdown.Item>
@@ -33,10 +31,10 @@ function NavBar() {
               <NavDropdown.Item><Link to="">Descubrí tu fragancia</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="FAQ" id="basic-nav-dropdown">
-              <NavDropdown.Item><Link to="/faq">Políticas de envío</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/faq">Políticas de entrega</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/faq">Recomendaciones</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/faq">Nuestros materiales</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/PoliticasEnvio">Políticas de envío</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/politicasEntrega">Políticas de entrega</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/Recomendaciones">Recomendaciones</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/Materiales">Nuestros materiales</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Contacto" id="basic-nav-dropdown">
               <NavDropdown.Item><Link to="/formMinorista">Formulario de contacto</Link></NavDropdown.Item>
