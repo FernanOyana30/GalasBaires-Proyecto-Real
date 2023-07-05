@@ -12,9 +12,7 @@ import NuestraHistoria from './components/Nosotros/NuestraHistoria'
 import Testimonios from './components/Nosotros/Testimonios'
 import Fragancias from './components/Nosotros/Fragancias'
 import Materiales from './components/Nosotros/Materiales'
-import PoliticasEntrega from './components/FAQ/PoliticasEntrega';
-import Recomendaciones from './components/FAQ/Recomendaciones'
-import PoliticasEnvio from './components/FAQ/PoliticasEnvio'
+import FAQ from './components/FAQ/FAQ'
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -46,14 +44,8 @@ function App() {
             path='/ItemDetailContainer' element={<ItemDetailContainer/>}              
             />  
           <Route 
-            path='/PoliticasEnvio' element={<PoliticasEnvio/>}
-            />
-          <Route 
-            path='/PoliticasEntrega' element={<PoliticasEntrega/>}
-            />
-          <Route 
-            path='/Recomendaciones' element={<Recomendaciones/>}
-            />
+            path='/FAQ' element={<FAQ/>}
+            />          
           <Route
             path='/formMayorista' element={<FormMayorista/>}
             />

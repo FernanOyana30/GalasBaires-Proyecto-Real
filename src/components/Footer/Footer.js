@@ -1,14 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
         <div>
-            <h5>Footer</h5>
+            <h5>Galas Baires</h5>
             <ul>
-                <li>Enlace 1</li>
-                <li>Enlace 2</li>
-                <li>Enlace 3</li>
-                <li>Enlace 4</li>
+                <li><Link to="/">Home</Link> </li>
+                <li><Link to="/ItemListContainer">Productos</Link></li>
+                <li><Link to="/FAQ">Preguntas frecuentes</Link></li>
+                <li><Link to="/">Nosotros</Link></li>
+                <li><Link to="/formMinorista">Contacto</Link></li>
+                <li><Link to="/formMayorista">Mayoristas</Link></li>
             </ul>
         </div>
     )

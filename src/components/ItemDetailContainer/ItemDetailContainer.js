@@ -5,18 +5,30 @@ import Card from 'react-bootstrap/Card';
 function ItemDetailContainer({ greeting }) {
     return (
       <>
-        <h1>Detalle del producto</h1>
-        <Card style={{ width: '18rem' }}>
+        <Card>
           <Card.Img variant="top" src="holder.js/100px180" />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <h1>Título del producto</h1>
+            <p>$0</p>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>            
-            <Button variant="primary">Go somewhere</Button>            
+              Descripción
+            </Card.Text>
+            <Button variant="primary">Más información</Button>
           </Card.Body>
-        </Card>
+        </Card>     
+        <div>
+          <h2>Productos destacados</h2>
+          <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Body>
+              <Card.Title>Nombre producto</Card.Title>
+              <Card.Text>
+                Precio producto
+              </Card.Text>
+              <Button variant="primary">Más información</Button>
+            </Card.Body>
+          </Card>
+        </div>   
       </>
     );
   }
