@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 function Inicio (){    
     return (
@@ -16,7 +17,7 @@ function Inicio (){
                 <h1>Creá ambientes llenos de aroma y calidez.</h1>
                 <p>Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>
                 <p>Descubrí nuestra amplia variedad de fragancias y productos para transformar tus espacios.</p>
-                <button>Ver catálogo</button> 
+                <Link to="/ItemListContainer"><button>Ver catálogo</button></Link>
               </div>
             </Col>
             <Col sm={6}>
@@ -69,7 +70,7 @@ function Inicio (){
                     <Card.Text>
                       Precio producto
                     </Card.Text>
-                    <Button variant="primary">Más información</Button>
+                    <Link to="/ItemDetailContainer"><Button variant="primary">Más información</Button></Link>
                   </Card.Body>
                 </Card>
               </div>
@@ -100,7 +101,7 @@ function Inicio (){
               <div>
                 <h2>Sobre nosotros</h2>
                 <p>Acá va un párrafo</p>
-                <button>Conocenos</button>                                  
+                <Link to="/Nosotros"><button>Conocenos</button></Link>                                    
               </div>              
             </Col>
           </Row>
@@ -122,7 +123,6 @@ function Inicio (){
                   </Row>
                 </Container>
               </div>
-
             </Col>
           </Row>
         </Container>  

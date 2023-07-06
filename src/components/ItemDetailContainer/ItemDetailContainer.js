@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from "react-router-dom";
 
 function ItemDetailContainer({ greeting }) {
     return (
@@ -37,7 +38,9 @@ function ItemDetailContainer({ greeting }) {
                     <Card.Text>
                       Descripción producto
                     </Card.Text>
-                    <Button variant="primary">Más información</Button>
+                    <Link to="/ItemDetailContainer">
+                      <Button variant="primary">Más información</Button>
+                    </Link>
                   </Card.Body>
                 </Card>
               </div>

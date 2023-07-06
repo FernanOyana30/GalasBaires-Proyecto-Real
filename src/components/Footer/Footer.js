@@ -16,7 +16,7 @@ function Footer() {
                                 <p><Link to="/">Home</Link> </p>
                                 <p><Link to="/ItemListContainer">Productos</Link></p>
                                 <p><Link to="/FAQ">Preguntas frecuentes</Link></p>
-                                <p><Link to="/Fragancias">Nosotros</Link></p>
+                                <p><Link to="/Nosotros">Nosotros</Link></p>
                                 <p><Link to="/formMinorista">Contacto</Link></p>
                                 <p><Link to="/formMayorista">Mayoristas</Link></p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
