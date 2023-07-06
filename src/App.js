@@ -8,10 +8,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import FormMayorista from './components/Forms/formMayorista'
 import FormMinorista from './components/Forms/formMinorista'
-import NuestraHistoria from './components/Nosotros/NuestraHistoria'
-import Testimonios from './components/Nosotros/Testimonios'
-import Fragancias from './components/Nosotros/Fragancias'
-import Materiales from './components/Nosotros/Materiales'
+import Nosotros from './components/Nosotros/Nosotros'
 import FAQ from './components/FAQ/FAQ'
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -25,18 +22,10 @@ function App() {
           <Route
             path='/' element={<Inicio/>}              
             />  
+          
           <Route 
-            path='/NuestraHistoria' element={<NuestraHistoria/>}
-            />
-          <Route 
-            path='/Testimonios' element={<Testimonios/>}
-            />
-          <Route 
-            path='/Fragancias' element={<Fragancias/>}
-            />
-          <Route 
-            path='/Materiales' element={<Materiales/>}
-            />          
+            path='/Nosotros' element={<Nosotros/>}
+            />                    
           <Route
             path='/ItemListContainer' element={<ItemListContainer/>}              
             />  

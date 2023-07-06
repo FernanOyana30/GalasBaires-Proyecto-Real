@@ -16,14 +16,11 @@ function ItemDetailContainer({ greeting }) {
             <Col sm={6}>
               <Card>
                 <Card.Body>
-                  <Card.Text>
-                    Categoría
-                  </Card.Text>
-                  <h1>Título del producto</h1>
-                  <p>$0</p>
-                  <Card.Text>
-                    Descripción
-                  </Card.Text>
+                  <p>Categoría</p>
+                  <h1>Título del producto</h1>                                    
+                  <p>Descripción</p>
+                  <p>Duración de 00hs</p>
+                  <p>000 gramos</p>
                   <Button variant="primary">Más información</Button>
                 </Card.Body>
               </Card>
@@ -38,7 +35,7 @@ function ItemDetailContainer({ greeting }) {
                   <Card.Body>
                     <Card.Title>Nombre producto</Card.Title>
                     <Card.Text>
-                      Precio producto
+                      Descripción producto
                     </Card.Text>
                     <Button variant="primary">Más información</Button>
                   </Card.Body>

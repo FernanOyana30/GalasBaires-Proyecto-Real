@@ -10,7 +10,7 @@ function ItemList() {
       <Card.Body>
         <Card.Title>Nombre producto</Card.Title>
         <Card.Text>
-          Precio producto
+          Descripción producto
         </Card.Text>
         <Link to="/ItemDetailContainer">
           <Button variant="primary">Más información</Button>
