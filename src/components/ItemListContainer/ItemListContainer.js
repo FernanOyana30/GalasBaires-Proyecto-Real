@@ -1,5 +1,6 @@
 import ItemList from "../ItemList/ItemList";
 import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -10,22 +11,26 @@ export default function ItemListContainer (){
       <>
         <Container>
           <Row>
-            <Col sm={12}>
-              <div> 
-                <h1>Nuestro catálogo</h1>                    
-                <h3>Descubrí tu fragancia</h3>
+            <Col sm={3}></Col>
+            <Col sm={6}>
+              <div className="text-center pb-5 pt-5"> 
+                <h1 className="fw-bold">Nuestro catálogo</h1>
+              </div>
+              <div className="text-center pb-5">                    
+                <h3 className="fw-bold">Descubrí tu fragancia</h3>
                 <p>¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
-                <button>Hacer cuestionario</button>                
+                <Button>Hacer cuestionario</Button>                
               </div>  
-            </Col>            
+            </Col>    
+            <Col sm={3}></Col>        
           </Row>
           <Row>
             <Col sm={2}>
               <div>
-                <h3>Filtrar por</h3>
+                <h5 class="fw-bold mb-4">Filtrar por</h5>
                 <Form>
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-3">
+                    <div key={`default-${type}`} className="mb-1">
                       <Form.Check // prettier-ignore
                         type={type}
                         id={`default-${type}`}
@@ -34,7 +39,7 @@ export default function ItemListContainer (){
                     </div>
                   ))}
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-3">
+                    <div key={`default-${type}`} className="mb-1">
                       <Form.Check // prettier-ignore
                         type={type}
                         id={`default-${type}`}
@@ -43,7 +48,7 @@ export default function ItemListContainer (){
                     </div>
                   ))}
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-3">
+                    <div key={`default-${type}`} className="mb-1">
                       <Form.Check // prettier-ignore
                         type={type}
                         id={`default-${type}`}
@@ -52,7 +57,7 @@ export default function ItemListContainer (){
                     </div>
                   ))}
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-3">
+                    <div key={`default-${type}`} className="mb-1">
                       <Form.Check // prettier-ignore
                         type={type}
                         id={`default-${type}`}
@@ -61,7 +66,7 @@ export default function ItemListContainer (){
                     </div>
                   ))}
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-3">
+                    <div key={`default-${type}`} className="mb-1">
                       <Form.Check // prettier-ignore
                         type={type}
                         id={`default-${type}`}
@@ -73,7 +78,7 @@ export default function ItemListContainer (){
               </div>
             </Col>            
             <Col sm={10}>
-              <div>
+              <div className="pb-4">
                 {
                   <ItemList/>
                 }
