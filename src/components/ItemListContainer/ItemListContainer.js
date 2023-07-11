@@ -82,7 +82,7 @@ export default function ItemListContainer (){
                 <Form>
                   {['checkbox'].map((type) => (
                     <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
-                      <Link to='/ItemListContainer'> 
+                      <Link to='/productos'> 
                         <Form.Check 
                           type={type}
                           id={`default-${type}`}   
