@@ -33,7 +33,31 @@ const productos = [
         descripcion: "Hornito",
         duracion:12,
         gramos: 100,
-        imagen: "",}
+        imagen: "",},
+        {id: 6,
+            nombre: "Vela Asia",
+            categoria: "Velas",
+            descripcion: "Vela de soja",
+            destacado: true,
+            duracion: 12,
+            gramos: 100,
+            imagen: "",},
+        {id: 7,
+            nombre: "Vela Cactus",
+            categoria: "Velas",
+            descripcion: "Vela de molde cactus",
+            destacado: true,
+            duracion: 12,
+            gramos: 100,
+            imagen: "",},
+        {id: 8,
+            nombre: "Difusor Dubai Black",
+            categoria: "Difusores",
+            descripcion: "Difusor de vidrio",
+            destacado: true,
+            duracion: 12,
+            gramos: 100,
+            imagen: "",}
 ];
 
 export default productos;

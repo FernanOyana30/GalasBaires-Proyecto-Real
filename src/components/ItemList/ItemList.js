@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 
 function ItemList({productos}) {
   return (
-    <div class="d-flex flex-row bd-highlight mb-3">
+    <div class="d-flex  bd-highlight mb-3 flex-wrap">
       {productos.map((producto) => (
         <Card style={{ width: '18rem' }} key={producto.id}>
           <Card.Img variant="top" src="holder.js/100px180" />

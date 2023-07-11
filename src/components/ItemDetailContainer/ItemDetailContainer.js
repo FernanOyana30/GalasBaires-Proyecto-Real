@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Loader from "../Loader/Loader"
-import { Link } from "react-router-dom";
+import Destacados from '../ItemListContainer/destacados'
 import productos from '../../productos'
 import {useParams} from "react-router-dom"
 import { useState, useEffect } from 'react';
@@ -69,19 +69,7 @@ function ItemDetailContainer() {
           </Row>
           <Row>
             <Col sm={12} className='mt-5'>
-              <div className="pb-5">
-                <h3 className="fw-bold pb-4">Productos destacados</h3>
-                <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Nombre producto</Card.Title>
-                    <Card.Text>
-                      Precio producto
-                    </Card.Text>
-                    <Link to="/ItemDetailContainer"><Button variant="primary">Más información</Button></Link>
-                  </Card.Body>
-                </Card>
-              </div>
+              {<Destacados/>}
             </Col>
           </Row>
         </Container>  

@@ -150,7 +150,7 @@ export default function ItemListContainer (){
               </div>
             </Col>            
             <Col sm={10}>
-              <div className="pb-4">
+              <div className="pb-4 ">
                 {
                   isLoading?
                   <Loader/>

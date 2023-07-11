@@ -1,3 +1,4 @@
+import Destacados from '../../components/ItemListContainer/destacados'
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -47,19 +48,7 @@ function Inicio (){
           </Row>
           <Row>
             <Col sm={12}>
-              <div className="pb-5">
-                <h3 className="fw-bold pb-4">Productos destacados</h3>
-                <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Nombre producto</Card.Title>
-                    <Card.Text>
-                      Precio producto
-                    </Card.Text>
-                    <Link to="/ItemDetailContainer"><Button variant="primary">Más información</Button></Link>
-                  </Card.Body>
-                </Card>
-              </div>
+              {<Destacados/>}
             </Col>
           </Row>
           <Row>
