@@ -3,15 +3,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './components/NavBar/NavBar';
-import Inicio from './components/Inicio/Inicio';
+import Inicio from './pages/Inicio/Inicio';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-import FormMayorista from './components/Forms/formMayorista'
-import FormMinorista from './components/Forms/formMinorista'
-import Nosotros from './components/Nosotros/Nosotros'
-import FAQ from './components/FAQ/FAQ'
+import FormMayorista from './pages/Forms/formMayorista'
+import FormMinorista from './pages/Forms/formMinorista'
+import Nosotros from './pages/Nosotros/Nosotros'
+import FAQ from './pages/FAQ/FAQ'
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -25,13 +26,17 @@ function App() {
           
           <Route 
             path='/Nosotros' element={<Nosotros/>}
-            />                    
+            />       
           <Route
-            path='/ItemListContainer' element={<ItemListContainer/>}              
-            />  
+            path='/productos' element={<ItemListContainer/>}              
+            />    
           <Route
-            path='/ItemDetailContainer' element={<ItemDetailContainer/>}              
-            />  
+            path='/detalle/:idProducto' element={<ItemDetailContainer/>}              
+            />            
+          <Route
+            path="/category/:idCategory"
+            element={<ItemListContainer />}
+          />
           <Route 
             path='/FAQ' element={<FAQ/>}
             />          
@@ -40,7 +45,7 @@ function App() {
             />
           <Route 
             path='/formMinorista' element={<FormMinorista/>}
-            />  
+            />            
         </Routes>      
         <Footer/>
       </BrowserRouter>

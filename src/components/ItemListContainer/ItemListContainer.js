@@ -1,15 +1,66 @@
 import ItemList from "../ItemList/ItemList";
-import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Pagination from 'react-bootstrap/Pagination';
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom"
+import productos from '../../productos';
+import Loader from "../Loader/Loader"
+
+//--------------------------------------------
+
+function getItemsFromDatabase(){
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(productos);
+    }, 1000);
+  }); 
+}
+
+function getItemsByCategoryFromDatabase(categoryURL){
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      let productsFiltered = productos.filter(
+        producto => producto.categoria === categoryURL
+      )
+      resolve(productsFiltered);
+    }, 1000);
+  }); 
+}
+
+//-----------------------------------
+
 
 export default function ItemListContainer (){
+  const [productos, setProductos ] = useState([]);
+  const [isLoading, setIsLoading] = useState(true)
+
+  const params = useParams();
+  const idCategory = params.idCategory
+
+  async function leerDatos( ) {
+    if (idCategory === undefined) {
+     let respuesta = await getItemsFromDatabase();
+      setProductos(respuesta);
+      setIsLoading(false)  
+    } else {
+      let respuesta = await getItemsByCategoryFromDatabase(idCategory)
+      setProductos(respuesta)
+      setIsLoading(false)
+    }    
+  }
+
+  useEffect( () => {
+    leerDatos()
+  }, [idCategory]) 
+
     return (
       <>
-        <Container>
+        <Container>     
           <Row>
             <Col sm={3}></Col>
             <Col sm={6}>
@@ -23,55 +74,76 @@ export default function ItemListContainer (){
               </div>  
             </Col>    
             <Col sm={3}></Col>        
-          </Row>
+          </Row>        
           <Row>
             <Col sm={2}>
               <div>
                 <h5 class="fw-bold mb-4">Filtrar por</h5>
                 <Form>
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-1">
-                      <Form.Check // prettier-ignore
-                        type={type}
-                        id={`default-${type}`}
-                        label={`Velas aromáticas`}
-                      />                      
+                    <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
+                      <Link to='/ItemListContainer'> 
+                        <Form.Check 
+                          type={type}
+                          id={`default-${type}`}   
+                          label={`Todos`}                     
+                        />                        
+                      </Link>            
                     </div>
                   ))}
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-1">
-                      <Form.Check // prettier-ignore
-                        type={type}
-                        id={`default-${type}`}
-                        label={`Difusores`}
-                      />                      
+                    <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
+                      <Link to='/category/Velas'> 
+                        <Form.Check 
+                          type={type}
+                          id={`default-${type}`}   
+                          label={`Velas`}                     
+                        />                        
+                      </Link>            
                     </div>
                   ))}
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-1">
-                      <Form.Check // prettier-ignore
-                        type={type}
-                        id={`default-${type}`}
-                        label={`Perfuminas`}
-                      />                      
+                    <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
+                      <Link to='/category/Difusores'> 
+                        <Form.Check 
+                          type={type}
+                          id={`default-${type}`}  
+                          label={`Difusores `}                      
+                        />
+                      </Link>  
                     </div>
                   ))}
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-1">
-                      <Form.Check // prettier-ignore
-                        type={type}
-                        id={`default-${type}`}
-                        label={`Refill`}
-                      />                      
+                    <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
+                      <Link to='/category/Perfuminas'> 
+                        <Form.Check 
+                          type={type}
+                          id={`default-${type}`}   
+                          label={`Perfuminas `}                      
+                        />
+                      </Link>       
                     </div>
                   ))}
                   {['checkbox'].map((type) => (
-                    <div key={`default-${type}`} className="mb-1">
-                      <Form.Check // prettier-ignore
-                        type={type}
-                        id={`default-${type}`}
-                        label={`Hornitos`}
-                      />                      
+                    <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight">
+                      <Link to='/category/Refill'> 
+                        <Form.Check 
+                          type={type}
+                          id={`default-${type}`}  
+                          label={`Refill`}                       
+                        />
+                      </Link>        
+                    </div>
+                  ))}
+                  {['checkbox'].map((type) => (
+                    <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
+                      <Link to='/category/Hornitos'> 
+                        <Form.Check 
+                          type={type}
+                          id={`default-${type}`} 
+                          label={`Hornitos`}                        
+                        />
+                      </Link>      
                     </div>
                   ))}
                 </Form>
@@ -80,7 +152,10 @@ export default function ItemListContainer (){
             <Col sm={10}>
               <div className="pb-4">
                 {
-                  <ItemList/>
+                  isLoading?
+                  <Loader/>
+                  :
+                  <ItemList productos={productos}/>
                 }
               </div>
               <Pagination> 

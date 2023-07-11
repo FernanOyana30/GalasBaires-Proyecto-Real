@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
+import Carousel from 'react-bootstrap/Carousel';
 
 function Inicio (){    
     return (
@@ -16,7 +17,7 @@ function Inicio (){
                 <h1 className="w-75 fw-bold pt-5 pb-3">Creá ambientes llenos de aroma y calidez.</h1>                
                 <p className="mb-0">Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>
                 <p>Descubrí nuestra amplia variedad de fragancias y productos para transformar tus espacios.</p>
-                <Link to="/ItemListContainer"><Button>Ver catálogo</Button></Link>
+                <Link to="/productos"><Button>Ver catálogo</Button></Link>
               </div>
             </Col>
             <Col sm={6}>
@@ -111,7 +112,36 @@ function Inicio (){
                 </Container>
               </div>
             </Col>
-          </Row>          
+          </Row>     
+          <Row>
+            <Col sm={3}></Col>
+            <Col sm={6}>
+              <Carousel>
+                <Carousel.Item interval={1000}>
+                  <img
+                    className="d-block w-100"
+                    src="./img/img-carrusel-1.jpg"
+                    alt="First slide"
+                  />                  
+                </Carousel.Item>
+                <Carousel.Item interval={500}>
+                  <img
+                    className="d-block w-100"
+                    src="./img/img-carrusel-2.jpg"
+                    alt="Second slide"
+                  />                  
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src="./img/img-carrusel-3.jpg"
+                    alt="Third slide"
+                  />                  
+                </Carousel.Item>
+              </Carousel>
+            </Col> 
+            <Col sm={3}></Col>
+          </Row>               
         </Container>  
       </>
     );
