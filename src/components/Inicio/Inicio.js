@@ -8,20 +8,19 @@ import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 
 function Inicio (){    
-    return (
-      <>        
+    return (      
         <Container>
           <Row>
-            <Col sm={6}>
-              <div>
+            <Col sm={6} className='mt-5'>
+              <div className='mt-4'>
                 <h1>Creá ambientes llenos de aroma y calidez.</h1>
                 <p>Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>
                 <p>Descubrí nuestra amplia variedad de fragancias y productos para transformar tus espacios.</p>
-                <Link to="/ItemListContainer"><button>Ver catálogo</button></Link>
+                <Link to="/ItemListContainer"><Button>Ver catálogo</Button></Link>
               </div>
             </Col>
-            <Col sm={6}>
-              <Image src="holder.js/171x180" rounded />
+            <Col sm={6} className='mt-5'>
+              <Image alt='Galas Baires' src="holder.js/171x180" rounded className='mt-5'/>
             </Col>
           </Row>
           <Row>
@@ -81,7 +80,7 @@ function Inicio (){
               <div>
                 <h3>Descubrí tu fragancia</h3>
                 <p>¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
-                <button>Hacer cuestionario</button>
+                <Button>Hacer cuestionario</Button>
               </div>              
             </Col>
           </Row>
@@ -101,7 +100,7 @@ function Inicio (){
               <div>
                 <h2>Sobre nosotros</h2>
                 <p>Acá va un párrafo</p>
-                <Link to="/Nosotros"><button>Conocenos</button></Link>                                    
+                <Link to="/Nosotros"><Button>Conocenos</Button></Link>                                    
               </div>              
             </Col>
           </Row>
@@ -110,7 +109,7 @@ function Inicio (){
               <div>
                 <h2>¿Sos mayorista?</h2>
                 <p>Acá va un párrafo</p>
-                <button>¡Quiero saber más!</button>                                   
+                <Button>¡Quiero saber más!</Button>                                   
               </div>              
             </Col >
             <Col sm={6}>
@@ -125,8 +124,7 @@ function Inicio (){
               </div>
             </Col>
           </Row>
-        </Container>  
-      </>
+        </Container>
     );
   }  
 
