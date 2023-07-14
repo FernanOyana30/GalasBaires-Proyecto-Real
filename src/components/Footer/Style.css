@@ -1,0 +1,11 @@
+.bg-footer {
+    margin-top: 5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #9aa0a6;
+}
+
+.bg-form-contact {
+    background-color: #9aa0a6;
+}
