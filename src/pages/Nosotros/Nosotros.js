@@ -51,10 +51,10 @@ function Nosotros() {
           </Col> 
         </Row>   
         <Row>
-          <Col sm={6}>
+          <Col lg={6}>
             <Image src="holder.js/171x180" rounded />
           </Col> 
-          <Col sm={6}>
+          <Col lg={6}>
             <div>
               <h3>Sobre nuestros materiales</h3>
               <p>Acá va un párrafo</p>              

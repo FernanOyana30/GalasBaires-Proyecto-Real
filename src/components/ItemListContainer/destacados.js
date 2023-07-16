@@ -3,6 +3,7 @@ import Loader from "../Loader/Loader"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
 import productos from '../../productos';
+
 /*
 function getItemsFromDatabase(){
     return new Promise((resolve) => {
@@ -12,13 +13,13 @@ function getItemsFromDatabase(){
     }); 
   }*/
 
-  function getItemsDestacadosFromDatabase(destacado){
+  function getItemsDestacadosFromDatabase(){
     return new Promise((resolve) => {
       setTimeout(() => {
-        let productsFiltered = productos.filter(
+        let productsDestacadosFiltered = productos.filter(
           producto => producto.destacado === true
         )
-        resolve(productsFiltered);
+        resolve(productsDestacadosFiltered);
       }, 1000);
     }); 
   }

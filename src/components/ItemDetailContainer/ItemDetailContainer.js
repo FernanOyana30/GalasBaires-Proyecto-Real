@@ -41,10 +41,10 @@ function ItemDetailContainer() {
       <>
         <Container>
           <Row>
-            <Col sm={6} className='mt-5'>
+            <Col lg={6} className='mt-5'>
               <Image src="holder.js/100px250" fluid/>                
             </Col>
-            <Col sm={6} className='mt-5'>
+            <Col lg={6} className='mt-5'>
               <div>
               <Card>
                 <Card.Body key={producto.id}>
@@ -68,7 +68,7 @@ function ItemDetailContainer() {
             </Col>
           </Row>
           <Row>
-            <Col sm={12} className='mt-5'>
+            <Col lg={12} className='mt-5'>
               {<Destacados/>}
             </Col>
           </Row>

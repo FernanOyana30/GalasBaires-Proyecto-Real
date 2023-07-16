@@ -9,14 +9,14 @@ function NavBar() {
   return (
     <Container>
       <Row>          
-        <Col sm={12}>
+        <Col lg={12}>
           <div class="d-flex justify-content-center">
             <Navbar expand="lg" className="bg-body-tertiary">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link><Link to="/">Home</Link>  </Nav.Link>                                    
-                <Nav.Link><Link to="/productos">Productos</Link>  </Nav.Link>             
+                <Nav.Link><Link to="/productos">Productos</Link></Nav.Link>             
                 <Nav.Link><Link to="/FAQ">Preguntas frecuentes</Link></Nav.Link>             
                 <Navbar.Brand>Galas Baires</Navbar.Brand>                
                 <Nav.Link><Link to="/Nosotros">Nosotros</Link></Nav.Link>             

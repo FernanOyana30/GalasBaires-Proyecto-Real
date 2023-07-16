@@ -1,0 +1,54 @@
+/*HOJA DE ESTILOS*/
+
+/*Media Queries Mobile*/
+/*Home*/
+@media (max-width: 425px ) {    
+        
+    .text-container{        
+        width: 100%;
+        text-align: center;
+        margin-left: 55px;                    
+        justify-content: center;   
+    }            
+
+    h1{            
+        width: 100%;
+        margin-left: 45px;
+    }
+
+    .img-container{
+        display: none;        
+    }          
+
+    .contenedor-caracteristicas{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-destacados{
+        padding-left: 70px;
+    }
+
+    .contenedorMayorista{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+       .style-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+
+    } 
+
+    .footerIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+}
+
+

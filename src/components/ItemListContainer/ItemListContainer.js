@@ -62,8 +62,8 @@ export default function ItemListContainer (){
       <>
         <Container>     
           <Row>
-            <Col sm={3}></Col>
-            <Col sm={6}>
+            <Col lg={3}></Col>
+            <Col lg={6}>
               <div className="text-center pb-5 pt-5"> 
                 <h1 className="fw-bold">Nuestro catálogo</h1>
               </div>
@@ -73,10 +73,10 @@ export default function ItemListContainer (){
                 <Button>Hacer cuestionario</Button>                
               </div>  
             </Col>    
-            <Col sm={3}></Col>        
+            <Col lg={3}></Col>        
           </Row>        
           <Row>
-            <Col sm={2}>
+            <Col lg={2}>
               <div>
                 <h5 class="fw-bold mb-4">Filtrar por</h5>
                 <Form>
@@ -149,7 +149,7 @@ export default function ItemListContainer (){
                 </Form>
               </div>
             </Col>            
-            <Col sm={10}>
+            <Col lg={10}>
               <div className="pb-4 ">
                 {
                   isLoading?
