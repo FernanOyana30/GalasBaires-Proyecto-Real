@@ -62,21 +62,23 @@ export default function ItemListContainer (){
       <>
         <Container>     
           <Row>
-            <Col lg={3}></Col>
-            <Col lg={6}>
-              <div className="text-center pb-5 pt-5"> 
-                <h1 className="fw-bold">Nuestro catálogo</h1>
-              </div>
-              <div className="text-center pb-5">                    
-                <h3 className="fw-bold">Descubrí tu fragancia</h3>
-                <p>¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
-                <Button>Hacer cuestionario</Button>                
-              </div>  
+            <Col sm={1} lg={3}></Col>
+            <Col sm={1} lg={6}>
+              <div className="">
+                <div className="text-center pb-5 pt-5"> 
+                  <h1 className="encabezadoCatalogo fw-bold">Nuestro catálogo</h1>
+                </div>
+                <div className="text-center pb-5">                    
+                  <h3 className="fw-bold">Descubrí tu fragancia</h3>
+                  <p>¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
+                  <Button>Hacer cuestionario</Button>                
+                </div>
+              </div>                
             </Col>    
-            <Col lg={3}></Col>        
+            <Col sm={1} lg={3}></Col>        
           </Row>        
           <Row>
-            <Col lg={2}>
+            <Col sm={1} lg={2}>
               <div>
                 <h5 class="fw-bold mb-4">Filtrar por</h5>
                 <Form>
@@ -149,8 +151,8 @@ export default function ItemListContainer (){
                 </Form>
               </div>
             </Col>            
-            <Col lg={10}>
-              <div className="pb-4 ">
+            <Col sm={1} lg={10}>
+              <div className="filaProductos">
                 {
                   isLoading?
                   <Loader/>

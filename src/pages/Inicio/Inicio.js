@@ -14,7 +14,7 @@ function Inicio (){
       <>        
         <Container>
           <Row>
-            <Col sm={1} lg={6}>
+            <Col sm={1} lg={6} className="text-container" >
               <div className="text-container w-75">
                 <h1 className="w-75 fw-bold pt-5 pb-3">Creá ambientes llenos de aroma y calidez.</h1>                
                 <p className="mb-0">Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>

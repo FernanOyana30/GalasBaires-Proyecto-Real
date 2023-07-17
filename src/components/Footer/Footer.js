@@ -18,7 +18,7 @@ function Footer() {
                         </div>                           
                         <div className="style-footer d-flex justify-content-evenly">
                             <p><Link to="/" className="text-decoration-none">Home</Link> </p>
-                            <p><Link to="/ItemListContainer" className="text-decoration-none">Productos</Link></p>
+                            <p><Link to="/productos" className="text-decoration-none">Productos</Link></p>
                             <p><Link to="/FAQ" className="text-decoration-none">Preguntas frecuentes</Link></p>
                             <p><Link to="/Nosotros" className="text-decoration-none">Nosotros</Link></p>
                             <p><Link to="/formMinorista" className="text-decoration-none">Contacto</Link></p>

@@ -49,7 +49,7 @@ function ItemDetailContainer() {
               <Card>
                 <Card.Body key={producto.id}>
                   <p className='mb-0'>{producto.categoria}</p>
-                  <h1 className='fw-bold mb-3'>{producto.nombre}</h1>                                    
+                  <h1 className='nombreProducto fw-bold mb-3'>{producto.nombre}</h1>                                    
                    <p>{producto.descripcion}</p>  
                   <span class="d-flex flex-row">                
                     <svg className='me-3' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
