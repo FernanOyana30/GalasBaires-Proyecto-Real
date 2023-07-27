@@ -70,7 +70,7 @@ export default function ItemListContainer (){
                 <div className="text-center p-4 mb-5 container-fluid" style={{backgroundColor: "#E6E6E6"}}>                    
                   <h3 className="fw-bold" style={{color:"#2D2D2D"}}>Descubrí tu fragancia</h3>
                   <p className="pb-3" style={{marginLeft: "250px", marginRight: "250px"}} >¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
-                  <Button>Hacer cuestionario</Button>                
+                  <Button variant="light" className="button-style">Hacer cuestionario</Button>                
                 </div>
               </div>                
             </Col>                     
