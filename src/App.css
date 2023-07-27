@@ -1,12 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --backg-body: #FFFFFF;
+  --color-primario: #804B37;
+  --color-texto: #2D2D2D;
+  --color-acento: #C78750;
+  --color-hover: #C78750;
+  --color-texto-hover: #FFFFFF;
+  --size-texto-titulo-pc: 60px;
+  --size-texto-titulo-mobile: 32px;
+  --size-texto-texto: 17px;
+}
 
 *{
   margin: 0;
   padding: 0;
 }
+
 body {
   height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

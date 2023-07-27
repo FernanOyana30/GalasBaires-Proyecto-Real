@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import "./Style.css"
 
 function FormMinorista() {
   return (
@@ -77,7 +78,7 @@ function FormMinorista() {
               <Form.Label>Consulta*</Form.Label>
               <Form.Control as="textarea" rows={3} placeholder="Hacé tu consulta" className="bg-form-contact" />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button className="btn-contact-submit" type="submit">
               ¡Enviar!
             </Button>
           </Form>
