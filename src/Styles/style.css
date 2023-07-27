@@ -1,5 +1,24 @@
 /*HOJA DE ESTILOS*/
 
+.button-style{
+    background-color: #FFFFFF;
+    color: #986F54;
+    padding: "4px 10px";
+    border-radius: 15px;   
+    border-color: #986F54;
+}
+
+.button-style:hover{
+    background-color: #986F54;
+    color: #FFFFFF;
+    padding: "4px 10px";
+    border-radius: 15px;   
+    border-color: #986F54;
+}
+
+
+
+
 /*Media Queries Mobile*/
 @media (max-width: 425px)  {    
     /*Home*/    

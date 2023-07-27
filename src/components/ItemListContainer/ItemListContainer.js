@@ -61,26 +61,24 @@ export default function ItemListContainer (){
     return (
       <>
         <Container>     
-          <Row>
-            <Col sm={1} lg={3}></Col>
-            <Col sm={1} lg={6}>
+          <Row>            
+            <Col sm={1} lg={12}>
               <div className="">
                 <div className="text-center pb-5 pt-5"> 
-                  <h1 className="encabezadoCatalogo fw-bold">Nuestro catálogo</h1>
+                  <h1 className="encabezadoCatalogo fw-bold" style={{color:"#2D2D2D"}}>Nuestro catálogo</h1>
                 </div>
-                <div className="text-center pb-5">                    
-                  <h3 className="fw-bold">Descubrí tu fragancia</h3>
-                  <p>¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
+                <div className="text-center p-4 mb-5 container-fluid" style={{backgroundColor: "#E6E6E6"}}>                    
+                  <h3 className="fw-bold" style={{color:"#2D2D2D"}}>Descubrí tu fragancia</h3>
+                  <p className="pb-3" style={{marginLeft: "250px", marginRight: "250px"}} >¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
                   <Button>Hacer cuestionario</Button>                
                 </div>
               </div>                
-            </Col>    
-            <Col sm={1} lg={3}></Col>        
+            </Col>                     
           </Row>        
           <Row>
             <Col sm={1} lg={2}>
               <div>
-                <h5 class="fw-bold mb-4">Filtrar por</h5>
+                <h5 class="fw-bold mb-4" style={{color:"#2D2D2D"}}>Filtrar por</h5>
                 <Form>
                   {['checkbox'].map((type) => (
                     <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
@@ -160,7 +158,7 @@ export default function ItemListContainer (){
                   <ItemList productos={productos}/>
                 }
               </div>
-              <Pagination> 
+              <Pagination > 
                 <Pagination.Item active>{1}</Pagination.Item>
                 <Pagination.Item>{2}</Pagination.Item>
                 <Pagination.Item>{3}</Pagination.Item>
