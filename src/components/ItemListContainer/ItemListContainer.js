@@ -1,19 +1,22 @@
-import ItemList from "../ItemList/ItemList";
+//import ItemList from "../ItemList/ItemList";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Checkbox from '../Checkbox/Checkbox';
 import Pagination from 'react-bootstrap/Pagination';
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"
+import { useState} from "react";
+//import { useParams } from "react-router-dom"
 import productos from '../../productos';
-import Loader from "../Loader/Loader"
+//import Loader from "../Loader/Loader"
 import './style.css'
+
+import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
 
 
 //--------------------------------------------
-
+/*
 function getItemsFromDatabase(){
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -22,6 +25,7 @@ function getItemsFromDatabase(){
   }); 
 }
 
+/*
 function getItemsByCategoryFromDatabase(categoryURL){
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -32,11 +36,12 @@ function getItemsByCategoryFromDatabase(categoryURL){
     }, 1000);
   }); 
 }
-
+*/
 //-----------------------------------
 
 
 export default function ItemListContainer (){
+  /*
   const [productos, setProductos ] = useState([]);
   const [isLoading, setIsLoading] = useState(true)
 
@@ -58,7 +63,40 @@ export default function ItemListContainer (){
   useEffect( () => {
     leerDatos()
   }, [idCategory]) 
+*/
 
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(
+    {
+      Velas: false,
+      Perfuminas: false,
+      Difusores: false, 
+      Refill: false,
+      Hornitos: false,
+
+    }
+  )
+
+  const [datosFiltrados, setDatosFiltrados] = useState([])
+
+  const handleOnCheckbox = (e) => {
+    setCategoriaSeleccionada({
+      ...categoriaSeleccionada,
+      [e.target.value]: e.target.checked,
+    })
+
+    if (e.target.checked){
+      const resultadoProducto = productos.filter(producto => producto.categoria === e.target.value)
+      setDatosFiltrados([
+        ...datosFiltrados,
+        resultadoProducto
+      ])      
+    } else {
+      const resultadoProducto = datosFiltrados.filter(producto => producto.categoria !== e.target.value)
+      setDatosFiltrados([
+        ...resultadoProducto
+      ])  
+    }
+  }
     return (
       <>
         <Container className="container-style">     
@@ -82,17 +120,32 @@ export default function ItemListContainer (){
             <Col sm={1} lg={2}>
               <div className="pt-5">
                 <h5>Filtrar por</h5>
+                <div>
+                  <input onChange={handleOnCheckbox} type="checkbox" name="categoría" value='Velas' id="Velas"/>
+                  <label htmlFor="Velas">Velas</label>
+                </div>
                 {<Checkbox/>}              
               </div>
             </Col>            
             <Col sm={1} lg={10}>
               <div className="filaProductos pt-5">
-                {
-                  isLoading?
-                  <Loader/>
-                  :
-                  <ItemList productos={productos}/>
-                }
+                {datosFiltrados.map(producto =>(
+                  <Card style={{ width: '13rem' }} key={producto.id} className="mb-3 pb-0 ms-3">
+                    <Card.Img variant="top" src={producto.imagen} />
+                    <Card.Body>
+                      <Card.Title >{producto.nombre}</Card.Title>
+                      <Card.Text className="fs-6 overflow-style" >
+                      {producto.descripcion}
+                      </Card.Text>            
+                      <Link to={`/detalle/${producto.id}`}>
+                        <Button variant="light" className="button-style">Más información</Button>
+                      </Link>
+                    </Card.Body>
+                  </Card>
+
+                ))}
+
+                
               </div>
               <Pagination > 
                 <Pagination.Item active>{1}</Pagination.Item>
