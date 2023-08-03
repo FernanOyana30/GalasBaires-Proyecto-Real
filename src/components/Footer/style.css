@@ -1,0 +1,21 @@
+/*HOJA DE ESTILOS*/
+/*FOOTER*/
+
+/*Media Queries Mobile*/
+@media (max-width: 425px)  {        
+    .style-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    } 
+
+    .footerIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+}
+
+

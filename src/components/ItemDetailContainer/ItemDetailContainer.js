@@ -51,14 +51,12 @@ function ItemDetailContainer() {
                   <h1 className='nombreProducto fw-bold mb-3' style={{color:"#2D2D2D"}}>{producto.nombre}</h1>                                    
                    <p>{producto.descripcion}</p>  
                   <span class="d-flex flex-row">                
-                    <svg style={{color:"#986F54"}} className='me-3' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
-                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                    </svg> 
-                    <p className='mb-1 ps-3'>Duración de {producto.duracion}hs</p>
+                    <img className='me-3' alt="" src="../img/icon _clock outline.svg" style={{width: "18px", height: "18px"}}/>
+                    <p className='mb-1 ps-0'>Duración de {producto.duracion}hs apróx.</p>
                   </span>
                   <span class="d-flex flex-row">
-                    <img className='me-3' alt="" src="../img/herramienta-de-peso-con-mango.png" style={{width: "18px", height: "18px"}}/>
-                    <p>{producto.gramos} gramos</p>
+                    <img className='me-3' alt="" src="../img/icon _Hanging Weight.svg" style={{width: "18px", height: "18px"}}/>
+                    <p>{producto.peso}</p>
                   </span>              
                   <Button variant="light" className="button-style">Más información</Button>
                 </Card.Body>

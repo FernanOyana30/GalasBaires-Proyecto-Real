@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card';
+import './style.css'
 
 function ItemList({productos}) {
   return (
@@ -11,8 +12,8 @@ function ItemList({productos}) {
           <Card.Img variant="top" src={producto.imagen} />
           <Card.Body>
             <Card.Title >{producto.nombre}</Card.Title>
-            <Card.Text className="fs-6">
-              {producto.descripcion}
+            <Card.Text className="fs-6 overflow-style" >
+            {producto.descripcion}
             </Card.Text>            
             <Link to={`/detalle/${producto.id}`}>
               <Button variant="light" className="button-style">Más información</Button>

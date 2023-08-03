@@ -2,18 +2,18 @@ import Form from 'react-bootstrap/Form';
 import { Link } from "react-router-dom";
 
 function Checkbox() {
-    return (
-    <div>
-      <h5 class="fw-bold mb-4" style={{color:"#2D2D2D"}}>Filtrar por</h5>
-      <Form>
+  return (
+    <div>               
+      <Form>  
         {['checkbox'].map((type) => (
           <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
-            <Link to='/productos'> 
+            
+            <Link to='/productos' className='text-decoration-none'> 
               <Form.Check 
                 type={type}
                 id={`default-${type}`}   
                 label={`Todos`}                     
-              />                        
+                />                        
             </Link>            
           </div>
         ))}
@@ -73,9 +73,8 @@ function Checkbox() {
           </div>
         ))}
       </Form>
-    </div>
-    
-    )
+    </div>    
+  )
 }
 
 export default Checkbox

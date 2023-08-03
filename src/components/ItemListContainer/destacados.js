@@ -3,6 +3,7 @@ import Loader from "../Loader/Loader"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
 import productos from '../../productos';
+import './style.css'
 
 function getItemsDestacadosFromDatabase(){
   return new Promise((resolve) => {
@@ -35,8 +36,8 @@ function Destacados(){
     }, [prodDestacado])   
     
     return (
-        <div className="pb-5">
-          <h3 className="fw-bold pb-4" style={{color:"#986F54"}}>Productos destacados</h3>
+        <div className="pt-1 contenedorDestacados">
+          <h3 className="fw-bold ps-3 pb-3" style={{color:"#986F54"}}>Productos destacados</h3>
           {
               isLoading?
               <Loader/>

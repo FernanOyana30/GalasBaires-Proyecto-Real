@@ -1,0 +1,188 @@
+/*HOJA DE ESTILOS*/
+
+/*HOME*/
+.containerStyle{
+    min-width: 100%;
+    position: relative;
+    left: 0;       
+}
+
+.textContainer{
+    color: #2D2D2D;
+    padding-right: 60px;    
+    font-size: 17px;        
+}
+
+.containerMayorista{
+    color: #2D2D2D;
+    padding-right: 60px;    
+    font-size: 17px;
+    margin-left: 130px;
+}
+
+.containerNosotros{
+    margin-right: 80px;
+}
+
+/*Estilos botones*/
+.button-style{
+    background-color: #FFFFFF;
+    color: #804B37;
+    padding: "4px 10px";
+    border-radius: 15px;   
+    border-color: #804B37;
+    font-weight: bold;    
+}
+
+.button-style:hover{
+    background-color: #804B37;
+    color: #FFFFFF;
+    padding: "4px 10px";
+    border-radius: 15px;   
+    border-color: #804B37;
+    font-weight: bold; 
+}
+
+/*Estilo textos*/
+.titleStyle{
+    color: #804B37;
+    font-size: 60px;    
+}
+
+.text-caracteristicas{
+    color: #2D2D2D;
+    padding-right: 60px;    
+    font-size: 17px;          
+}
+
+.parrafoCaracteristicas{
+    margin-left: 120px;  
+    margin-right: 120px;
+}
+
+.textFragancias{    
+    margin-left: 360px;    
+    margin-right: 360px;       
+}
+
+.parrafoMayorista{
+    margin-right: 50px;
+}
+
+/*Estilos imágenes*/
+.iconoCaracteristicas{
+    width: 40px;
+    height: 40px;
+}
+
+.img-style{
+    width: 101%;
+}
+
+.img-nosotros{
+    margin-left: 30px;
+    width: 90%;
+    padding-bottom: 60px;
+}
+
+.img-mayorista{
+    width: 90%;
+    padding-bottom: 60px;
+}
+
+
+/*------------------------------------*/
+
+/*Media Queries Mobile*/
+@media (max-width: 425px)  {   
+    .textContainer{        
+        font-size: 17px;                         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;                
+    }            
+
+    .titleStyle{                    
+        font-size: 32px;
+        width: 300px;        
+    }
+
+    /*Características*/
+    .img-container{
+        display: none;        
+    }          
+
+    .contenedorCaracteristicas{ 
+        width: 100%;       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;         
+        margin-top: -80px;
+    }
+
+    .textCaracteristicas{
+        margin-bottom: 12px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    .iconoCaracteristicas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+    }
+
+    /*Productos destacados*/
+    .contenedorDestacados{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    /*Descubrí tu fragancia*/
+    .textFragancias{        
+       margin-left: 0px;
+       width: 100%;
+    }
+
+    /*Mayoristas*/
+    .contenedorMayorista{
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+
+    .containerMayorista{
+        color: #2D2D2D;            
+        font-size: 17px;
+        margin-left: 0px;
+        margin-top: -50px;                       
+    }
+
+    .parrafoMayorista{
+        margin-right: 0px;               
+    }
+
+    .img-mayorista{
+        width: 106%;   
+        margin-left: -12px;     
+    }
+
+    /*Nosotros*/
+    .containerNosotros{       
+        width: 400px;           
+        margin-left: -50px; 
+        margin-top: -50px;           
+    }
+
+    .img-nosotros{        
+        width: 139%;
+        margin-left: -60px;
+    }    
+}
+
+

@@ -1,0 +1,35 @@
+/*HOJA DE ESTILOS*/
+/*ItemDetailContainer*/
+.button-style{
+    background-color: #FFFFFF;
+    color: #804B37;
+    padding: "4px 10px";
+    border-radius: 15px;   
+    border-color: #804B37;
+}
+
+.button-style:hover{
+    background-color: #804B37;
+    color: #FFFFFF;
+    padding: "4px 10px";
+    border-radius: 15px;   
+    border-color: #804B37;
+}
+
+/*Media Queries Mobile*/
+@media (max-width: 425px)  {  
+    /*Productos*/
+    .encabezadoCatalogo{
+        margin-left: 6px;
+    }
+
+    .filaProductos{        
+        padding-left: 80px;
+    }
+
+    .nombreProducto{
+        margin-left: 0px;
+    }
+}
+
+

@@ -9,6 +9,8 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
 import productos from '../../productos';
 import Loader from "../Loader/Loader"
+import './style.css'
+
 
 //--------------------------------------------
 
@@ -59,27 +61,32 @@ export default function ItemListContainer (){
 
     return (
       <>
-        <Container>     
-          <Row>            
-            <Col sm={1} lg={12}>
-              <div className="">
-                <div className="text-center pb-5 pt-5"> 
-                  <h1 className="encabezadoCatalogo fw-bold" style={{color:"#2D2D2D"}}>Nuestro catálogo</h1>
-                </div>
-                <div className="text-center p-4 mb-5 container-fluid" style={{backgroundColor: "#E6E6E6"}}>                    
-                  <h3 className="fw-bold" style={{color:"#2D2D2D"}}>Descubrí tu fragancia</h3>
-                  <p className="pb-3" style={{marginLeft: "250px", marginRight: "250px"}} >¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
-                  <Button variant="light" className="button-style">Hacer cuestionario</Button>                
-                </div>
-              </div>                
+        <Container className="container-style">     
+          <Row >            
+            <Col sm={1} lg={12}>              
+              <div className="text-center pb-5 pt-5"> 
+                <h1 className="encabezadoCatalogo fw-bold" style={{color:"#2D2D2D"}}>Nuestro catálogo</h1>
+              </div>              
+            </Col>
+          </Row>
+          <Row> 
+            <Col sm={1} lg={12} style={{backgroundColor: "#DED5C2"}}>
+              <div className="text-center p-4 container-fluid" >                    
+                <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
+                <p className="textFragancias pb-3 ps-5 pe-5">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
+                <Button variant="light" className="button-style">Hacer cuestionario</Button>                
+              </div>                             
             </Col>                     
           </Row>        
-          <Row>
+          <Row className="ps-5">
             <Col sm={1} lg={2}>
-              {<Checkbox/>}              
+              <div className="pt-5">
+                <h5>Filtrar por</h5>
+                {<Checkbox/>}              
+              </div>
             </Col>            
             <Col sm={1} lg={10}>
-              <div className="filaProductos">
+              <div className="filaProductos pt-5">
                 {
                   isLoading?
                   <Loader/>
