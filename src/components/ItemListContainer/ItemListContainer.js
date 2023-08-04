@@ -5,12 +5,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Checkbox from '../Checkbox/Checkbox';
 import Pagination from 'react-bootstrap/Pagination';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
 import productos from '../../productos';
 import Loader from "../Loader/Loader"
 import './style.css'
-
 
 //--------------------------------------------
 
@@ -74,7 +74,9 @@ export default function ItemListContainer (){
               <div className="text-center p-4 container-fluid" >                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
                 <p className="textFragancias pb-3 ps-5 pe-5">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
-                <Button variant="light" className="button-style">Hacer cuestionario</Button>                
+                <Link to='/Test'>
+                  <Button variant="light" className="button-style">Hacer cuestionario</Button>                
+                </Link>
               </div>                             
             </Col>                     
           </Row>        

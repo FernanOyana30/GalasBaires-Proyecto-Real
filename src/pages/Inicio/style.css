@@ -90,7 +90,6 @@
     padding-bottom: 60px;
 }
 
-
 /*------------------------------------*/
 
 /*Media Queries Mobile*/
@@ -106,7 +105,7 @@
     .titleStyle{                    
         font-size: 32px;
         width: 300px;        
-    }
+    }    
 
     /*Características*/
     .img-container{
@@ -134,6 +133,11 @@
         justify-content: center;
         align-items: center;
         margin-left: 150px;
+    }
+
+    .parrafoCaracteristicas{
+        margin-left: 50px;  
+        margin-right: 50px;
     }
 
     /*Productos destacados*/

@@ -6,9 +6,8 @@ function Checkbox() {
     <div>               
       <Form>  
         {['checkbox'].map((type) => (
-          <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
-            
-            <Link to='/productos' className='text-decoration-none'> 
+          <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">            
+            <Link to='/productos' className='text-decoration-none text-dark'> 
               <Form.Check 
                 type={type}
                 id={`default-${type}`}   
@@ -19,7 +18,7 @@ function Checkbox() {
         ))}
         {['checkbox'].map((type) => (
           <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
-            <Link to='/category/Velas'> 
+            <Link to='/category/Velas' className='text-decoration-none text-dark'> 
               <Form.Check 
                 type={type}
                 id={`default-${type}`}   
@@ -30,7 +29,7 @@ function Checkbox() {
         ))}
         {['checkbox'].map((type) => (
           <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
-            <Link to='/category/Difusores'> 
+            <Link to='/category/Difusores' className='text-decoration-none text-dark'> 
               <Form.Check 
                 type={type}
                 id={`default-${type}`}  
@@ -41,7 +40,7 @@ function Checkbox() {
         ))}
         {['checkbox'].map((type) => (
           <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
-            <Link to='/category/Perfuminas'> 
+            <Link to='/category/Perfuminas' className='text-decoration-none text-dark'> 
               <Form.Check 
                 type={type}
                 id={`default-${type}`}   
@@ -52,7 +51,7 @@ function Checkbox() {
         ))}
         {['checkbox'].map((type) => (
           <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight">
-            <Link to='/category/Refill'> 
+            <Link to='/category/Refill' className='text-decoration-none text-dark'> 
               <Form.Check 
                 type={type}
                 id={`default-${type}`}  
@@ -63,7 +62,7 @@ function Checkbox() {
         ))}
         {['checkbox'].map((type) => (
           <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
-            <Link to='/category/Hornitos'> 
+            <Link to='/category/Hornitos' className='text-decoration-none text-dark'> 
               <Form.Check 
                 type={type}
                 id={`default-${type}`} 

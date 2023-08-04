@@ -1,6 +1,5 @@
 import './style.css'
 import Destacados from '../../components/ItemListContainer/destacados'
-import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -25,7 +24,7 @@ function Inicio (){
             </Col>
             <Col sm={1} lg={6} >
               <div className='img-container'>
-                <img className='img-style' src="./img/img-inicio-1.jpg" />
+                <img alt='' className='img-style' src="./img/img-inicio-1.jpg" />
               </div>
             </Col>
           </Row>
@@ -51,8 +50,8 @@ function Inicio (){
             </Col>            
           </Row>
           <Row className='p-4 pt-1'>
-            <Col sm={1} lg={12} >              
-              {<Destacados />}              
+            <Col sm={1} lg={12} >                
+              {<Destacados />} 
             </Col>
           </Row>
           <Row >            
@@ -60,7 +59,9 @@ function Inicio (){
               <div className="text-center p-4 container-fluid">                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
                 <p className="textFragancias pb-3 ps-5 pe-5">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
-                <Button variant="light" className="button-style">Hacer cuestionario</Button>                
+                <Link to='/Test'>
+                  <Button variant="light" className="button-style">Hacer cuestionario</Button>                
+                </Link>
               </div>                             
             </Col>            
           </Row>
@@ -97,7 +98,7 @@ function Inicio (){
             </Col >
             <Col sm={1} lg={6}>
               <div> 
-                  <img className='img-mayorista' src="./img/img-inicio-3.jpg" rounded />
+                  <img alt='' className='img-mayorista' src="./img/img-inicio-3.jpg" rounded />
               </div>
             </Col>
           </Row>     
