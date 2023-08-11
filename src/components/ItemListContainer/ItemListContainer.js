@@ -4,13 +4,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Checkbox from '../Checkbox/Checkbox';
-import Pagination from 'react-bootstrap/Pagination';
+//import Pagination from './Pagination';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
 import productos from '../../productos';
 import Loader from "../Loader/Loader"
 import './style.css'
+
 
 //--------------------------------------------
 
@@ -95,14 +96,9 @@ export default function ItemListContainer (){
                   :
                   <ItemList productos={productos}/>
                 }
-              </div>
-              <Pagination > 
-                <Pagination.Item active>{1}</Pagination.Item>
-                <Pagination.Item>{2}</Pagination.Item>
-                <Pagination.Item>{3}</Pagination.Item>
-                <Pagination.Item>{4}</Pagination.Item>
-                <Pagination.Item>{5}</Pagination.Item>
-              </Pagination>              
+              </div> 
+              <div>         
+              </div>    
             </Col>           
           </Row>          
         </Container>   

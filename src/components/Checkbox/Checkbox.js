@@ -3,7 +3,18 @@ import { Link } from "react-router-dom";
 
 function Checkbox() {
   return (
-    <div>               
+    <div>    
+      <div>
+        <input type='checkbox'/>
+        <label>Todos</label>
+      </div>
+      <div>
+        <input type='checkbox'/>
+        <label>Velas</label>
+      </div>      
+
+
+
       <Form>  
         {['checkbox'].map((type) => (
           <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">            
@@ -48,18 +59,7 @@ function Checkbox() {
               />
             </Link>       
           </div>
-        ))}
-        {['checkbox'].map((type) => (
-          <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight">
-            <Link to='/category/Refill' className='text-decoration-none text-dark'> 
-              <Form.Check 
-                type={type}
-                id={`default-${type}`}  
-                label={`Refill`}                       
-              />
-            </Link>        
-          </div>
-        ))}
+        ))}        
         {['checkbox'].map((type) => (
           <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">
             <Link to='/category/Hornitos' className='text-decoration-none text-dark'> 

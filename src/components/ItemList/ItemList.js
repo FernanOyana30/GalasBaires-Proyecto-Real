@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import './style.css'
+import './style.css';
 
 function ItemList({productos}) {
+  //Pagination
+  
+
   return (
     <div className="pb-4 d-flex justify-content-start bd-highlight mb-3 flex-wrap">
       {productos.map((producto) => (

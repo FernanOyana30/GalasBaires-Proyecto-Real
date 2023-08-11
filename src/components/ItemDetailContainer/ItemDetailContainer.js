@@ -50,6 +50,7 @@ function ItemDetailContainer() {
                   <p className='mb-0'>{producto.categoria}</p>
                   <h1 className='nombreProducto fw-bold mb-3' style={{color:"#2D2D2D"}}>{producto.nombre}</h1>                                    
                    <p>{producto.descripcion}</p>  
+                   <p>Medidas: {producto.medida}</p>  
                   <span class="d-flex flex-row">                
                     <img className='me-3' alt="" src="../img/icon _clock outline.svg" style={{width: "18px", height: "18px"}}/>
                     <p className='mb-1 ps-0'>Duración de {producto.duracion}hs apróx.</p>
