@@ -4,17 +4,6 @@ import { Link } from "react-router-dom";
 function Checkbox() {
   return (
     <div>    
-      <div>
-        <input type='checkbox'/>
-        <label>Todos</label>
-      </div>
-      <div>
-        <input type='checkbox'/>
-        <label>Velas</label>
-      </div>      
-
-
-
       <Form>  
         {['checkbox'].map((type) => (
           <div key={`default-${type}`} className="mb-1 d-flex flex-row bd-highlight ">            
