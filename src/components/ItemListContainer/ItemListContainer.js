@@ -1,10 +1,10 @@
-import ItemList from "../ItemList/ItemList";
+//import ItemList from "../ItemList/ItemList";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Checkbox from '../Checkbox/Checkbox';
-//import Pagination from './Pagination';
+import Pagination from './Pagination';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
@@ -12,6 +12,8 @@ import productos from '../../productos';
 import Loader from "../Loader/Loader"
 import './style.css'
 
+
+import Card from 'react-bootstrap/Card';
 
 //--------------------------------------------
 
@@ -60,6 +62,16 @@ export default function ItemListContainer (){
     leerDatos()
   }, [idCategory]) 
 
+
+  //pagination
+
+  const totalProducts = productos.length
+  const [productsPerPage, setProductsPerPage] = useState(8)
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const lastIndex =  currentPage * productsPerPage 
+  const firstIndex = lastIndex - productsPerPage
+
     return (
       <>
         <Container className="container-style">     
@@ -94,10 +106,34 @@ export default function ItemListContainer (){
                   isLoading?
                   <Loader/>
                   :
-                  <ItemList productos={productos}/>
+                  <div className="pb-4 d-flex justify-content-start bd-highlight mb-3 flex-wrap">
+                    {productos.map((producto) => (
+                      <Card style={{ width: '13rem' }} key={producto.id} className="mb-3 pb-0 ms-3">
+                        <Card.Img variant="top" src={producto.imagen} />
+                        <Card.Body>
+                          <Card.Title >{producto.nombre}</Card.Title>
+                          <Card.Text className="fs-6 overflow-style" >
+                          {producto.descripcion}
+                          </Card.Text>            
+                          <Link to={`/detalle/${producto.id}`}>
+                            <Button variant="light" className="button-style">Más información</Button>
+                          </Link>
+                        </Card.Body>
+                      </Card>
+                    )).slice(firstIndex, lastIndex)}
+                         
+                  </div> 
+                  
                 }
-              </div> 
-              <div>         
+                <div>
+                    <Pagination 
+                    productsPerPage={productsPerPage} 
+                    currentPage={currentPage} 
+                    setCurrentPage={setCurrentPage} 
+                    totalProducts={totalProducts} 
+                  />  
+                </div>
+              
               </div>    
             </Col>           
           </Row>          
