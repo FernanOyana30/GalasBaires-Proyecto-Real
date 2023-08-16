@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
+
 
 function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage}) {
     const PageNumbers = []
