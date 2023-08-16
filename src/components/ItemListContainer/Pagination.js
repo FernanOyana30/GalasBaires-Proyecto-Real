@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './style.css'
 
 function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage}) {
     const PageNumbers = []
@@ -24,12 +24,12 @@ function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage
         <div>            
             <nav aria-label="Page navigation example">
               <ul className="pagination">
-                <li className="page-item"><a className={`page-link text-decoration-none ${currentPage === 1 ? 'disabled' : ''}` } onClick={onPreviousPage} >Previous</a></li>
+                <li className="page-item"><a className={`page-link text-decoration-none paginationStyle ${currentPage === 1 ? 'disabled' : ''}` } onClick={onPreviousPage} >Anterior</a></li>
                 {
                     PageNumbers.map(noPage => (
                         <li key={noPage}>
-                            <a className={`page-link text-decoration-none 
-                            ${noPage === currentPage ? 'active' : ''
+                            <a className={`page-link text-decoration-none paginationStyle
+                            ${noPage === currentPage ? 'paginationStyle' : ''
                             }`}
                             onClick={() => onSpecificPage(noPage)}
                             >
@@ -38,7 +38,7 @@ function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage
                         </li>                        
                     ) )
                 }        
-                <li className="page-item"><a className={`page-link text-decoration-none ${currentPage >= PageNumbers.length ? 'disabled' : ''}`} onClick={onNextPage}>Next</a></li>
+                <li className="page-item"><a className={`page-link text-decoration-none paginationStyle ${currentPage >= PageNumbers.length ? 'disabled' : ''}`} onClick={onNextPage}>Siguiente</a></li>
               </ul>
             </nav>
         </div>

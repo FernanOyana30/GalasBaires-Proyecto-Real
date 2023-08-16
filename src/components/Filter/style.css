@@ -1,0 +1,10 @@
+.subrayado{
+    color: #2D2D2D;
+    text-decoration: none;
+}
+
+.subrayado:hover{    
+    text-decoration: underline;
+    color: #804B37;
+    font-weight: bold;
+}

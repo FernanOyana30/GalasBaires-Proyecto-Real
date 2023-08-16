@@ -1,9 +1,8 @@
-//import ItemList from "../ItemList/ItemList";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Checkbox from '../Checkbox/Checkbox';
+import Filter from '../Filter/Filter';
 import Pagination from './Pagination';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
@@ -97,7 +96,7 @@ export default function ItemListContainer (){
             <Col sm={1} lg={2}>
               <div className="pt-5">
                 <h5>Filtrar por</h5>
-                {<Checkbox/>}              
+                {<Filter/>}              
               </div>
             </Col>            
             <Col sm={1} lg={10}>
@@ -105,34 +104,35 @@ export default function ItemListContainer (){
                 {
                   isLoading?
                   <Loader/>
-                  :
+                  : 
+                  <>
                   <div className="pb-4 d-flex justify-content-start bd-highlight mb-3 flex-wrap">
                     {productos.map((producto) => (
-                      <Card style={{ width: '13rem' }} key={producto.id} className="mb-3 pb-0 ms-3">
+                      <Card style={{ width: '15rem', borderColor:"white" }} key={producto.id} className="mb-3 pb-0 ms-3">
                         <Card.Img variant="top" src={producto.imagen} />
                         <Card.Body>
                           <Card.Title >{producto.nombre}</Card.Title>
-                          <Card.Text className="fs-6 overflow-style" >
-                          {producto.descripcion}
+                          <Card.Text >
+                          {producto.descripcionCard}
                           </Card.Text>            
                           <Link to={`/detalle/${producto.id}`}>
                             <Button variant="light" className="button-style">Más información</Button>
                           </Link>
                         </Card.Body>
                       </Card>
-                    )).slice(firstIndex, lastIndex)}
-                         
+                    )).slice(firstIndex, lastIndex)}                         
                   </div> 
-                  
+                  <div>
+                  <Pagination 
+                  productsPerPage={productsPerPage} 
+                  currentPage={currentPage} 
+                  setCurrentPage={setCurrentPage} 
+                  totalProducts={totalProducts} 
+                />  
+              </div>
+              </>
                 }
-                <div>
-                    <Pagination 
-                    productsPerPage={productsPerPage} 
-                    currentPage={currentPage} 
-                    setCurrentPage={setCurrentPage} 
-                    totalProducts={totalProducts} 
-                  />  
-                </div>
+                
               
               </div>    
             </Col>           

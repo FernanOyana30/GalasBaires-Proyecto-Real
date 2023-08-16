@@ -22,9 +22,23 @@
     left: 0;
 }
 
-.overflow-style{
-    height: 100px;
-    overflow: hidden;
+/*pagination*/
+.paginationStyle{
+    background-color: #FFFFFF;
+    border-color: #804B37;
+    color: #2D2D2D;
+}
+
+.paginationStyle:hover{
+    background-color: #804B37;
+    color: #FFFFFF;
+    border-color: #804B37;
+}
+
+.paginationStyle:focus{
+    background-color: #804B37;
+    color: #FFFFFF;
+    border-color: #804B37;
 }
 
 /*Media Queries Mobile*/
