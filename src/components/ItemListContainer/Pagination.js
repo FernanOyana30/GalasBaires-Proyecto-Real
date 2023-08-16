@@ -41,10 +41,6 @@ function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage
                 <li className="page-item"><a className={`page-link text-decoration-none ${currentPage >= PageNumbers.length ? 'disabled' : ''}`} onClick={onNextPage}>Next</a></li>
               </ul>
             </nav>
-
-
-            
-
         </div>
     )
 }
