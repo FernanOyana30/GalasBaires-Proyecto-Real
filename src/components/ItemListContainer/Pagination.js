@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
 
 function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage}) {
     const PageNumbers = []
@@ -21,26 +22,28 @@ function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage
 
     return (
         <div>            
-            <nav className="pagination is-centered" role="navigation" aria-label="pagination">
-                <button><a className={`pagination-previous ${currentPage === 1 ? 'is-disabled' : ''}` } onClick={onPreviousPage} >Previous</a></button>
-              <ul className="pagination-list">
+            <nav aria-label="Page navigation example">
+              <ul className="pagination">
+                <li className="page-item"><a className={`page-link text-decoration-none ${currentPage === 1 ? 'disabled' : ''}` } onClick={onPreviousPage} >Previous</a></li>
                 {
                     PageNumbers.map(noPage => (
-                        <button key={noPage}>
-                            <a className={`pagination-link 
-                            ${noPage === currentPage ? 'is-current' : ''
+                        <li key={noPage}>
+                            <a className={`page-link text-decoration-none 
+                            ${noPage === currentPage ? 'active' : ''
                             }`}
                             onClick={() => onSpecificPage(noPage)}
                             >
                                 {noPage}
                             </a>
-                        </button>                        
+                        </li>                        
                     ) )
-                }                
+                }        
+                <li className="page-item"><a className={`page-link text-decoration-none ${currentPage >= PageNumbers.length ? 'disabled' : ''}`} onClick={onNextPage}>Next</a></li>
               </ul>
-              <button> <a className={`pagination-next ${currentPage >= PageNumbers.length ? 'is-disabled' : ''}`} 
-              onClick={onNextPage} >Next page</a></button>
             </nav>
+
+
+            
 
         </div>
     )
