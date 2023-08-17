@@ -35,23 +35,22 @@ function FormMinorista() {
                 <Row>
                   <Col>
                     <Form.Label>Nombre*</Form.Label>
-                    <Form.Control placeholder="Ingresá tu nombre" />
+                    <Form.Control placeholder="Ingresá tu nombre" className='w-100'/>
                   </Col>
                   <Col>
                     <Form.Label>Apellido*</Form.Label>
-                    <Form.Control placeholder="Ingresá tu apellido" />
+                    <Form.Control placeholder="Ingresá tu apellido" className='w-100'/>
                   </Col>
                 </Row>
                 <br></br>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3 w-100" controlId="formBasicEmail">
                   <Form.Label>Correo electrónico*</Form.Label>
                   <Form.Control type="email" placeholder="Ingresá tu email" />            
                 </Form.Group>  
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                  <Form.Label>¿Te interesa alguna fragancia?</Form.Label>
+                <Form.Group className="mb-3 w-100" controlId="exampleForm.ControlTextarea1">                  
                   <Form.Control as="textarea" placeholder="Ingresá el nombre de la fragancia" /> 
                   <Form.Label>Consulta*</Form.Label>
-                  <Form.Control as="textarea" rows={3} />
+                  <Form.Control className='w-100' as="textarea" rows={4}>¡Hola! Me gustaría obtener más información sobre el producto *nombre producto*. ¡Muchas gracias!</Form.Control>
                 </Form.Group>            
                 <Button variant="primary" type="submit">
                   ¡Enviar!
