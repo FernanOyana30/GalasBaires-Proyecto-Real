@@ -50,7 +50,7 @@ function Test(){
                             <p style={{marginBottom:"35px"}}>¿Qué aromas te gustan?</p>               
                             <div className='contenedor-opciones'>
                               <button className="botonOpcion">A. Floral</button>
-                              <button className="botonOpcion">B. Dulce</button>
+                              <button className="botonOpcion">B. Frutal</button>
                               <button className="botonOpcion">C. Cítrico</button>
                               <button className="botonOpcion">D. Relajante</button>
                               <button className="botonOpcion">E. Amaderado</button>                            

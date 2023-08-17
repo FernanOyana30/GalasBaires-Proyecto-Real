@@ -65,7 +65,7 @@ export default function ItemListContainer (){
   //pagination
 
   const totalProducts = productos.length
-  const [productsPerPage, setProductsPerPage] = useState(8)
+  const [productsPerPage] = useState(8)
   const [currentPage, setCurrentPage] = useState(1)
 
   const lastIndex =  currentPage * productsPerPage 
@@ -106,34 +106,32 @@ export default function ItemListContainer (){
                   <Loader/>
                   : 
                   <>
-                  <div className="pb-4 d-flex justify-content-start bd-highlight mb-3 flex-wrap">
-                    {productos.map((producto) => (
-                      <Card style={{ width: '15rem', borderColor:"white" }} key={producto.id} className="mb-3 pb-0 ms-3">
-                        <Card.Img variant="top" src={producto.imagen} />
-                        <Card.Body>
-                          <Card.Title >{producto.nombre}</Card.Title>
-                          <Card.Text >
-                          {producto.descripcionCard}
-                          </Card.Text>            
-                          <Link to={`/detalle/${producto.id}`}>
-                            <Button variant="light" className="button-style">Más información</Button>
-                          </Link>
-                        </Card.Body>
-                      </Card>
-                    )).slice(firstIndex, lastIndex)}                         
-                  </div> 
-                  <div>
-                  <Pagination 
-                  productsPerPage={productsPerPage} 
-                  currentPage={currentPage} 
-                  setCurrentPage={setCurrentPage} 
-                  totalProducts={totalProducts} 
-                />  
-              </div>
-              </>
+                    <div className="pb-4 d-flex justify-content-start bd-highlight mb-3 flex-wrap">
+                      {productos.map((producto) => (
+                        <Card style={{ width: '15rem', borderColor:"white" }} key={producto.id} className="mb-3 pb-0 ms-3">
+                          <Card.Img variant="top" src={producto.imagen} />
+                          <Card.Body>
+                            <Card.Title >{producto.nombre}</Card.Title>
+                            <Card.Text >
+                            {producto.descripcionCard}
+                            </Card.Text>            
+                            <Link to={`/detalle/${producto.id}`}>
+                              <Button variant="light" className="button-style">Más información</Button>
+                            </Link>
+                          </Card.Body>
+                        </Card>
+                      )).slice(firstIndex, lastIndex)}                         
+                    </div> 
+                    <div>
+                      <Pagination 
+                      productsPerPage={productsPerPage} 
+                      currentPage={currentPage} 
+                      setCurrentPage={setCurrentPage} 
+                      totalProducts={totalProducts} 
+                      />  
+                    </div>
+                  </>
                 }
-                
-              
               </div>    
             </Col>           
           </Row>          
