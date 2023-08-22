@@ -9,6 +9,8 @@ import Destacados from '../ItemListContainer/destacados'
 import productos from '../../productos'
 import {useParams} from "react-router-dom"
 import { useState, useEffect } from 'react';
+import {useContext} from 'react'
+import formContext from '../../context/formContext';
 
 //--------------------------------------------------------------
 function getSingleItemFromDatabase(idProducto){
@@ -33,6 +35,14 @@ function ItemDetailContainer() {
     })
   }, []);
 
+  //------------------------------------------------------
+  const {addItem} = useContext(formContext)
+
+  function onAddToForm(){
+    addItem(producto);
+  } 
+
+  //------------------------------------------------------
   if (producto.nombre === undefined) 
   return <Loader/>  
 
@@ -62,7 +72,7 @@ function ItemDetailContainer() {
                     <img className='me-3' alt="" src="../img/icon _Hanging Weight.svg" style={{width: "18px", height: "18px"}}/>
                     <p>{producto.cantidad}</p>
                   </span>              
-                  <Button variant="light" className="button-style">Más información</Button>
+                  <Button onTouchButton={() => onAddToForm()} variant="light" className="button-style">Más información</Button>
                 </Card.Body>
               </Card>
               </div>
