@@ -6,6 +6,11 @@ import './fragancias';
 import './style.css'
 
 function Test(){
+  function seleccionarOpcion(){
+    alert('hola')
+  }
+
+
     return (
         <>
             <Container>
@@ -17,11 +22,11 @@ function Test(){
                             <p style={{color:"#804B37", fontSize:"14px", marginBottom:"3px"}}>PRIMERA PREGUNTA</p>                                                        
                             <p style={{marginBottom:"35px"}}>¿En qué momento encenderías una vela aromática?</p>
                             <div className='contenedor-opciones'>
-                              <button className="botonOpcion">A. En la mañana</button>
-                              <button className="botonOpcion">B. En la tarde</button>
-                              <button className="botonOpcion">C. En la noche</button>
-                              <button className="botonOpcion">D. En la cena</button>
-                              <button className="botonOpcion">E. Para relajarme</button>
+                              <button className="botonOpcion" onClick={seleccionarOpcion} value={"mañana"}>A. En la mañana</button>
+                              <button className="botonOpcion" onClick={seleccionarOpcion} value={"tarde"}>B. En la tarde</button>
+                              <button className="botonOpcion" onClick={seleccionarOpcion} value={"noche"}>C. En la noche</button>
+                              <button className="botonOpcion" onClick={seleccionarOpcion} value={"cena"}>D. En la cena</button>
+                              <button className="botonOpcion" onClick={seleccionarOpcion} value={"para relajarme"}>E. Para relajarme</button>
                             </div>
                           </div>
                           <div className='contenedorPregunta'>
