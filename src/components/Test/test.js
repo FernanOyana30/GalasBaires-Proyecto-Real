@@ -5,8 +5,8 @@ import Button from 'react-bootstrap/Button';
 import Fragancias from './fragancias.js';
 import './style.css'
 import {useState } from 'react'
-import Swal from 'sweetalert2'
 
+//Array de opciones
 const momentos = [
   {
     id: 1,
@@ -99,6 +99,7 @@ const aroma = [
   },
 ]
 
+//Funciones del test
 function Test() { 
   const [descubrir, setDescubrir] = useState({
     momento: "",
@@ -122,78 +123,53 @@ function Test() {
     && fragancia.aroma === descubrir.aroma 
     && fragancia.habitación === descubrir.habitacion 
     && fragancia.nivel === descubrir.nivel));
-    console.log(resultado)
-    //debugger
-    /*if (resultado.length > 0){
-      resultado.forEach((fragancia) => {
-          Swal.fire({
-            title: fragancia.nombre,
-            text: '',
-            imageUrl: 'https://unsplash.it/400/200',
-            imageWidth: 400,
-            imageHeight: 200,
-            imageAlt: 'Custom image',
-          })
-          //alert(fragancia.nombre)
-        }
-      )
-    } */
-    //alert(resultado[0].nombre)
+    console.log(resultado)    
   }
-
   //console.log(descubrir)
-
   //console.log(Fragancias)
-
+  
   return (
     <>
       <Container>
         <Row>
           <Col sm={1} lg={6}>
             <div className='contenedorTest'>
-              <h1 style={{ marginBottom: "60px", textAlign: "center", color: "#804B37", fontWeight: "bold" }}>Descubrí tu fragancia ideal</h1>
-              <div className='contenedorPregunta'>
-                <p style={{ color: "#804B37", fontSize: "14px", marginBottom: "3px" }}>PRIMERA PREGUNTA</p>
-                <p style={{ marginBottom: "35px" }}>¿En qué momento encenderías una vela aromática?</p>
+              <h1 style={{ marginBottom: "20px", fontWeight: "bold" }}>Descubrí tu fragancia</h1>
+              <p style={{ marginBottom: "60px", marginLeft: "100px", marginRight: "100px"}}>Respondiendo sólo 4 preguntas simples pero muy personales, podrás descubrir el aroma perfecto para tus ambientes</p>
+              <div className='contenedorPregunta'>                
+                <h5 style={{ marginBottom: "10px" }}>¿En qué momento encenderías una vela aromática?</h5>
+                <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
                 <div className='contenedor-opciones'>
                   {momentos.map((momento) => (
-                    <button name="momento" className="text-capitalize botonOpcion" onClick={handleInput} value={momento.descripcion}>{momento.id}.{momento.descripcion}</button>
-
+                    <button name="momento" className="text-capitalize botonOpcion" onClick={handleInput} value={momento.descripcion}>{momento.descripcion}</button>
                   ))}
-
                 </div>
               </div>
-              <div className='contenedorPregunta'>
-                <p style={{ color: "#804B37", fontSize: "14px", marginBottom: "3px" }}>SEGUNDA PREGUNTA</p>
-                <p style={{ marginBottom: "35px" }}>¿En qué habitaciones usarías velas y/o difusores aromáticos?</p>
+              <div className='contenedorPregunta'>                
+                <h5 style={{ marginBottom: "10px" }}>¿En qué habitaciones usarías velas y/o difusores aromáticos?</h5>
+                <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
                 <div className='contenedor-opciones'>
                   {habitacion.map((habitacion) => (
-                    <button name="habitacion" className="text-capitalize botonOpcion" onClick={handleInput} value={habitacion.descripcion}>{habitacion.id}.{habitacion.descripcion}</button>
-
+                    <button name="habitacion" className="text-capitalize botonOpcion" onClick={handleInput} value={habitacion.descripcion}>{habitacion.descripcion}</button>
                   ))}
-
                 </div>
               </div>
-              <div className='contenedorPregunta'>
-                <p style={{ color: "#804B37", fontSize: "14px", marginBottom: "3px" }}>TERCERA PREGUNTA</p>
-                <p style={{ marginBottom: "35px" }}>¿Qué nivel de aroma te gustaría?</p>
+              <div className='contenedorPregunta'>                
+                <h5 style={{ marginBottom: "10px" }}>¿Qué nivel de aroma te gustaría?</h5>
+                <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
                 <div className='contenedor-opciones'>
                   {nivel.map((nivel) => (
-                    <button name="nivel" className="text-capitalize botonOpcion" onClick={handleInput} value={nivel.descripcion}>{nivel.id}.{nivel.descripcion}</button>
-
+                    <button name="nivel" className="text-capitalize botonOpcion" onClick={handleInput} value={nivel.descripcion}>{nivel.descripcion}</button>
                   ))}
-
                 </div>
               </div>
-              <div className='contenedorPregunta'>
-                <p style={{ color: "#804B37", fontSize: "14px", marginBottom: "3px" }}>CUARTA PREGUNTA</p>
-                <p style={{ marginBottom: "35px" }}>¿Qué aromas te gustan?</p>
+              <div className='contenedorPregunta'>                
+                <h5 style={{ marginBottom: "10px" }}>¿Qué aromas te gustan?</h5>
+                <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
                 <div className='contenedor-opciones'>
                   {aroma.map((aroma) => (
-                    <button name="aroma" className="text-capitalize botonOpcion" onClick={handleInput} value={aroma.descripcion}>{aroma.id}.{aroma.descripcion}</button>
-
+                    <button name="aroma" className="text-capitalize botonOpcion" onClick={handleInput} value={aroma.descripcion}>{aroma.descripcion}</button>
                   ))}
-
                 </div>
               </div>
               <Button className='button-style mb-5' onClick={descubrirSubmit}>Enviar</Button>

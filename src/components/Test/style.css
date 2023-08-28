@@ -1,17 +1,16 @@
 /*HOJA DE ESTILOS*/
 /*Test*/
 .contenedorTest{
-    font-family: 'montserrat'; 
-    
+    font-family: 'montserrat';     
     width: 700px;     
     margin-left: 200px;  
+    text-align: center;
+    color: #804B37
 }
 
 .contenedorPregunta{
     background-color: #FFFFFF;   
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    text-align: center;
     border: 1px solid;
     border-radius: 30px;   
     border-color: #804B37;
@@ -22,11 +21,8 @@
 
 .contenedor-opciones{
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    flex-wrap: wrap;
-    width: 650px;
-    
+    flex-direction: column;    
+    align-items: center;
 }
 
 .botonOpcion{
@@ -35,10 +31,7 @@
     width: 200px;
     height: 41px;
     border-radius: 19px;   
-    border-color: #804B37;
-    margin-right: 15px;
-    margin-bottom: 20px;
-    text-align: left;
-    padding-left: 15px;
+    border-color: #804B37;    
+    margin-bottom: 20px;     
     font-size: 14px;    
 }
