@@ -13,12 +13,14 @@ import FAQ from './pages/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 import Test from './components/Test/test';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {FormContextProvider} from './context/formContext'
+
+import {CartContextProvider} from './context/cartContext';
+
 
 function App() {
   return (
-    <div>
-      <FormContextProvider>
+    <div>      
+      <CartContextProvider >
         <BrowserRouter>
           <NavBar/>   
           <Routes>
@@ -52,8 +54,8 @@ function App() {
               />         
           </Routes>      
           <Footer/>
-        </BrowserRouter>
-      </FormContextProvider>
+        </BrowserRouter>      
+      </CartContextProvider>
     </div>
   );
 }

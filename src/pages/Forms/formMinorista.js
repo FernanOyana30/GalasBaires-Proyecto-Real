@@ -4,16 +4,16 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import {useContext} from 'react'
-import formContext from '../../context/formContext';
 
+import {useContext} from "react";
+import cartContext from "../../context/cartContext";
 
 function FormMinorista() {
-  const {form} = useContext(formContext)
 
-  const formCount = form.length
+  const {cart, removeItemFromCart, getPriceInCart, clearCart} = useContext(cartContext)
 
-  if (formCount === 0)
+  if(cart.length === 0)
+  
   return (
     <>
       <Container>
@@ -68,8 +68,8 @@ function FormMinorista() {
         </Row>        
       </Container>
     </>  
-  ); 
-  
+  );   
+
   return (
     <>
       <Container>
@@ -111,13 +111,16 @@ function FormMinorista() {
                   <Form.Label>Correo electrónico*</Form.Label>
                   <Form.Control type="email" placeholder="Ingresá tu email" />            
                 </Form.Group>  
-                <Form.Group className="mb-3 w-100" controlId="exampleForm.ControlTextarea1">                                    
-                  <Form.Label>Consulta*</Form.Label>  
-                  {form.map((item) => {
+                <Form.Group className="mb-3 w-100" controlId="exampleForm.ControlTextarea1">  
+                  <Form.Label>Consulta*</Form.Label>
+                                             
+                  {cart.map((item) => {
                     return (
-                      <Form.Control className='w-100' as="textarea" rows={4}>Hola quisiera más información sobre el producto {item.nombre} por favor</Form.Control>                      
-                    )
-                  })}     
+                      <div style={{backgroundColor: "lightGray", padding: "15px"}}>
+                        <p key={item.id} style={{marginRight:'60px'}}>¡Hola! Me gustaría recibir más información sobre el producto {item.nombre}, por favor. ¡Muchas gracias!</p>
+                      </div>
+                        );
+                    })} 
                 </Form.Group>            
                 <Button variant="primary" type="submit">
                   ¡Enviar!
@@ -127,10 +130,9 @@ function FormMinorista() {
           </Col>
         </Row>        
       </Container>
-      
-      
     </>  
-  );
+  );   
+ 
 }
 
 export default FormMinorista;
