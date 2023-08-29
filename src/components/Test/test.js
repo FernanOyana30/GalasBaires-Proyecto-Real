@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Fragancias from './fragancias.js';
 import './style.css'
 import {useState } from 'react'
+import Card from 'react-bootstrap/Card';
 
 //Array de opciones
 const momentos = [
@@ -127,7 +128,6 @@ function Test() {
   }
   //console.log(descubrir)
   //console.log(Fragancias)
-  
   return (
     <>
       <Container>
@@ -176,9 +176,14 @@ function Test() {
               <div >
                 {resultado.length > 0 && (                
                   <div className='contenedorPregunta'>
-                    <h3>Tu fragancia es:</h3>
+                    <h3>¡Felicitaciones!</h3>
+                    <p>Tu fragancia perfecta es:</p>
                     {resultado.map((fragancia) => (
-                      <p key={fragancia.id}>{fragancia.nombre}</p>
+                      <Card style={{borderColor:"white"}}>
+                        <Card.Body key={fragancia.id}>
+                          <p>{fragancia.nombre}</p>
+                        </Card.Body>
+                      </Card>
                     ) )}
                   </div>
                 )}
