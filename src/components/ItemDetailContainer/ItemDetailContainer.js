@@ -41,8 +41,7 @@ function ItemDetailContainer(initial, onAddToForm) {
   const {addItem, isInCart } = useContext(cartContext)
 
   /**Funcion Agregar al carrito*/
-  function onAddToForm(count){    
-    alert('hola')
+  function onAddToForm(count){        
     addItem(producto, count);
   } 
 
