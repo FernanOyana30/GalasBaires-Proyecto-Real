@@ -21,13 +21,26 @@
 
 .contenedor-opciones{
     display: flex;
-    flex-direction: column;    
+    flex-direction: row;    
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .botonOpcion{
     background-color: #FFFFFF;
     color: #2D2D2D;
+    width: 200px;
+    height: 41px;
+    border-radius: 19px;   
+    border-color: #804B37;    
+    margin-bottom: 20px;  
+    margin-right: 10px;   
+    font-size: 14px;    
+}
+
+.botonOpcion:hover{
+    background-color: #804B37;  
+    color: #FFFFFF;
     width: 200px;
     height: 41px;
     border-radius: 19px;   

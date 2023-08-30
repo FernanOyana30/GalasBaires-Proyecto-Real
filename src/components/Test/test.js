@@ -88,7 +88,7 @@ const aroma = [
   },
   {
     id: 3,
-    descripcion: "citrico",
+    descripcion: "cítrico",
   },
   {
     id: 4,
@@ -100,7 +100,7 @@ const aroma = [
   },
 ]
 
-//Funciones del test
+//Componente Test
 function Test() { 
   const [descubrir, setDescubrir] = useState({
     momento: "",
