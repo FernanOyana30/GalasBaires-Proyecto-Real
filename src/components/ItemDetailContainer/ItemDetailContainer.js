@@ -43,10 +43,7 @@ function ItemDetailContainer(initial, onAddToForm) {
   /**Funcion Agregar al carrito*/
   function onAddToForm(count){        
     addItem(producto, count);
-  } 
-
-
-  
+  }  
 
   //------------------------------------------------------
   if (producto.nombre === undefined) 
