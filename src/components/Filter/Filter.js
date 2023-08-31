@@ -16,6 +16,9 @@ function Filter() {
       <Link to='/category/Perfuminas' className='text-decoration-none text-dark'> 
         <p className="mb-2 subrayado">Perfuminas</p>        
       </Link>
+      <Link to='/category/Refill' className='text-decoration-none text-dark'> 
+        <p className="mb-2 subrayado">Refill</p>        
+      </Link>
       <Link to='/category/Hornitos' className='text-decoration-none text-dark'> 
         <p className="mb-2 subrayado">Hornitos</p>        
       </Link> 
