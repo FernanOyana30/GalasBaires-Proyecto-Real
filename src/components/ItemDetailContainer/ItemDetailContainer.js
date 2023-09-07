@@ -9,6 +9,10 @@ import Destacados from '../ItemListContainer/destacados'
 import productos from '../../productos'
 import {useParams} from "react-router-dom"
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
+import { useContext } from "react";
+import cartContext from "../../context/cartContext";
 
 //--------------------------------------------------------------
 function getSingleItemFromDatabase(idProducto){
@@ -21,7 +25,7 @@ function getSingleItemFromDatabase(idProducto){
 }
 //---------------------------------------------------------------
 
-function ItemDetailContainer() {
+function ItemDetailContainer(initial, onAddToForm) {
   const [producto, setProducto] = useState({});
 
   const params = useParams()
@@ -33,6 +37,15 @@ function ItemDetailContainer() {
     })
   }, []);
 
+  //------------------------------------------------------
+  const {addItem, isInCart } = useContext(cartContext)
+
+  /**Funcion Agregar al carrito*/
+  function onAddToForm(count){        
+    addItem(producto, count);
+  }  
+
+  //------------------------------------------------------
   if (producto.nombre === undefined) 
   return <Loader/>  
 
@@ -61,8 +74,10 @@ function ItemDetailContainer() {
                   <span class="d-flex flex-row">
                     <img className='me-3' alt="" src="../img/icon _Hanging Weight.svg" style={{width: "18px", height: "18px"}}/>
                     <p>{producto.cantidad}</p>
-                  </span>              
-                  <Button variant="light" className="button-style">Más información</Button>
+                  </span>    
+                  <Link to='/formMinorista'>
+                    <Button onClick={onAddToForm} variant="light" className="button-style">Más información</Button>                    
+                  </Link>          
                 </Card.Body>
               </Card>
               </div>

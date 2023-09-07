@@ -14,45 +14,48 @@ import Footer from './components/Footer/Footer';
 import Test from './components/Test/test';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import {CartContextProvider} from './context/cartContext';
 
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <NavBar/>   
-        <Routes>
-          <Route
-            path='/' element={<Inicio/>}              
-            />            
-          <Route 
-            path='/Nosotros' element={<Nosotros/>}
-            />       
-          <Route
-            path='/productos' element={<ItemListContainer/>}              
-            />    
-          <Route
-            path='/detalle/:idProducto' element={<ItemDetailContainer/>}              
-            />            
-          <Route
-            path="/category/:idCategory"
-            element={<ItemListContainer />}
-          />
-          <Route 
-            path='/FAQ' element={<FAQ/>}
-            />          
-          <Route
-            path='/formMayorista' element={<FormMayorista/>}
+    <div>      
+      <CartContextProvider >
+        <BrowserRouter>
+          <NavBar/>   
+          <Routes>
+            <Route
+              path='/' element={<Inicio/>}              
+              />            
+            <Route 
+              path='/Nosotros' element={<Nosotros/>}
+              />       
+            <Route
+              path='/productos' element={<ItemListContainer/>}              
+              />    
+            <Route
+              path='/detalle/:idProducto' element={<ItemDetailContainer/>}              
+              />            
+            <Route
+              path="/category/:idCategory"
+              element={<ItemListContainer />}
             />
-          <Route 
-            path='/formMinorista' element={<FormMinorista/>}
-            />   
-          <Route 
-            path='/Test' element={<Test/>}
-            />         
-        </Routes>      
-        <Footer/>
-      </BrowserRouter>
+            <Route 
+              path='/FAQ' element={<FAQ/>}
+              />          
+            <Route
+              path='/formMayorista' element={<FormMayorista/>}
+              />
+            <Route 
+              path='/formMinorista' element={<FormMinorista/>}
+              />   
+            <Route 
+              path='/Test' element={<Test/>}
+              />         
+          </Routes>      
+          <Footer/>
+        </BrowserRouter>      
+      </CartContextProvider>
     </div>
   );
 }
