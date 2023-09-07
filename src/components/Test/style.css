@@ -48,3 +48,14 @@
     margin-bottom: 20px;     
     font-size: 14px;    
 }
+
+.botonOpcion:focus{
+    background-color: #804B37;  
+    color: #FFFFFF;
+    width: 200px;
+    height: 41px;
+    border-radius: 19px;   
+    border-color: #804B37;    
+    margin-bottom: 20px;     
+    font-size: 14px;    
+}

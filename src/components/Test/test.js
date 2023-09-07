@@ -22,11 +22,7 @@ const momentos = [
     descripcion: "noche",
   },
   {
-    id: 4,
-    descripcion: "cena",
-  },
-  {
-    id: 5,
+    id: 4,    
     descripcion: "relax",
   },
 ]
@@ -84,7 +80,7 @@ const aroma = [
   },
   {
     id: 2,
-    descripcion: "frutal",
+    descripcion: "dulce",
   },
   {
     id: 3,
@@ -120,10 +116,25 @@ function Test() {
   const [resultado, setResultado] = useState([])  
 
   const descubrirSubmit = () =>{
-    setResultado ( Fragancias.filter((fragancia) => fragancia.momento === descubrir.momento 
-    && fragancia.aroma === descubrir.aroma 
+    setResultado ( Fragancias.filter((fragancia) => (
+    fragancia.momento === descubrir.momento 
     && fragancia.habitación === descubrir.habitacion 
-    && fragancia.nivel === descubrir.nivel));
+    && fragancia.nivel === descubrir.nivel
+    && fragancia.aroma === descubrir.aroma)
+    || (fragancia.momento !== descubrir.momento
+      && fragancia.habitación !== descubrir.habitacion
+      && fragancia.nivel === descubrir.nivel
+      && fragancia.aroma === descubrir.aroma)
+      || (fragancia.momento !== descubrir.momento
+        && fragancia.habitación === descubrir.habitacion
+        && fragancia.nivel === descubrir.nivel
+        && fragancia.aroma === descubrir.aroma)
+        || (
+           fragancia.momento === descubrir.momento
+          && fragancia.habitación !== descubrir.habitacion          
+          && fragancia.nivel === descubrir.nivel
+          && fragancia.aroma === descubrir.aroma)
+           ));
     console.log(resultado)    
   }
   //console.log(descubrir)
