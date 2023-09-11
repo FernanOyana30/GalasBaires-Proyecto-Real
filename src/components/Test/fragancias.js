@@ -141,7 +141,7 @@ const Fragancias = [
     },    
 
     {id: 21,
-        nombre: "Aquameel",
+        nombre: "Aqua Meel",
         momento: "tarde",
         habitación: "living",
         nivel: "sutil",
@@ -155,7 +155,7 @@ const Fragancias = [
         aroma: "cítrico",        
     },
     {id: 23,
-        nombre: "Aquameel",
+        nombre: "Aqua Meel",
         momento: "noche",
         habitación: "living",
         nivel: "intermedio",
