@@ -2,67 +2,209 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import './fragancias';
+import Fragancias from './fragancias.js';
 import './style.css'
+import {useState } from 'react'
+import Card from 'react-bootstrap/Card';
 
-function Test(){
-    return (
-        <>
-            <Container>
-                <Row>
-                    <Col sm={1} lg={6}>
-                        <div className='contenedorTest'>
-                          <h1 style={{marginBottom:"60px", textAlign:"center", color:"#804B37", fontWeight:"bold"}}>Descubrí tu fragancia ideal</h1>
-                          <div className='contenedorPregunta'>
-                            <p style={{color:"#804B37", fontSize:"14px", marginBottom:"3px"}}>PRIMERA PREGUNTA</p>                                                        
-                            <p style={{marginBottom:"35px"}}>¿En qué momento encenderías una vela aromática?</p>
-                            <div className='contenedor-opciones'>
-                              <button className="botonOpcion">A. En la mañana</button>
-                              <button className="botonOpcion">B. En la tarde</button>
-                              <button className="botonOpcion">C. En la noche</button>
-                              <button className="botonOpcion">D. En la cena</button>
-                              <button className="botonOpcion">E. Para relajarme</button>
-                            </div>
-                          </div>
-                          <div className='contenedorPregunta'>
-                            <p style={{color:"#804B37", fontSize:"14px", marginBottom:"3px"}}>SEGUNDA PREGUNTA</p>
-                            <p style={{marginBottom:"35px"}}>¿En qué habitaciones usarías velas y/o difusores aromáticos?</p>  
-                            <div className='contenedor-opciones'>
-                              <button className="botonOpcion">A. Living</button>
-                              <button className="botonOpcion">B. Cocina</button>
-                              <button className="botonOpcion">C. Baño</button>
-                              <button className="botonOpcion">D. Dormitorio</button>
-                              <button className="botonOpcion">E. Otros espacios</button>                            
-                            </div>
-                          </div>
-                          <div className='contenedorPregunta'>
-                            <p style={{color:"#804B37", fontSize:"14px", marginBottom:"3px"}}>TERCERA PREGUNTA</p>
-                            <p style={{marginBottom:"35px"}}>¿Qué nivel de aroma te gustaría?</p>   
-                            <div className='contenedor-opciones'>
-                              <button className="botonOpcion">A. Sutil</button>
-                              <button className="botonOpcion">B. Normal</button>
-                              <button className="botonOpcion">C. Alto</button>
-                              <button className="botonOpcion">D. Intenso</button>                            
-                            </div>     
-                          </div>
-                          <div className='contenedorPregunta'>
-                            <p style={{color:"#804B37", fontSize:"14px", marginBottom:"3px"}}>CUARTA PREGUNTA</p>
-                            <p style={{marginBottom:"35px"}}>¿Qué aromas te gustan?</p>               
-                            <div className='contenedor-opciones'>
-                              <button className="botonOpcion">A. Floral</button>
-                              <button className="botonOpcion">B. Frutal</button>
-                              <button className="botonOpcion">C. Cítrico</button>
-                              <button className="botonOpcion">D. Relajante</button>
-                              <button className="botonOpcion">E. Amaderado</button>                            
-                            </div>    
-                          </div>
-                            <Button className='button-style mb-5'>Enviar</Button>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>        
-        </>
-    )
+//Array de opciones
+const momentos = [
+  {
+    id: 1,
+    descripcion: "mañana",
+  },
+  {
+    id: 2,
+    descripcion: "tarde",
+  },
+  {
+    id: 3,
+    descripcion: "noche",
+  },
+  {
+    id: 4,    
+    descripcion: "relax",
+  },
+]
+
+const habitacion = [
+  {
+    id: 1,
+    descripcion: "living",
+  },
+  {
+    id: 2,
+    descripcion: "cocina",
+  },
+  {
+    id: 3,
+    descripcion: "baño",
+  },
+  {
+    id: 4,
+    descripcion: "dormitorio",
+  },
+  {
+    id: 5,
+    descripcion: "otros",
+  },
+]
+
+const nivel = [
+  {
+    id: 1,
+    descripcion: "sutil",
+  },
+  {
+    id: 2,
+    descripcion: "intermedio",
+  },
+  {
+    id: 3,
+    descripcion: "normal",
+  },
+  {
+    id: 4,
+    descripcion: "alto",
+  },
+  {
+    id: 5,
+    descripcion: "intenso",
+  },
+]
+
+const aroma = [
+  {
+    id: 1,
+    descripcion: "floral",
+  },
+  {
+    id: 2,
+    descripcion: "dulce",
+  },
+  {
+    id: 3,
+    descripcion: "cítrico",
+  },
+  {
+    id: 4,
+    descripcion: "relajante",
+  },
+  {
+    id: 5,
+    descripcion: "amaderado",
+  },
+]
+
+//Componente Test
+function Test() { 
+  const [descubrir, setDescubrir] = useState({
+    momento: "",
+    habitacion: "",
+    nivel: "",
+    aroma: "",
+  })
+
+  const handleInput = (event) => {
+    setDescubrir({
+      ...descubrir,
+      [event.target.name]: event.target.value,
+
+    });
+  };
+
+  const [resultado, setResultado] = useState([])  
+
+  const descubrirSubmit = () =>{
+    setResultado ( Fragancias.filter((fragancia) => (
+    fragancia.momento === descubrir.momento 
+    && fragancia.habitación === descubrir.habitacion 
+    && fragancia.nivel === descubrir.nivel
+    && fragancia.aroma === descubrir.aroma)
+    || (fragancia.momento !== descubrir.momento
+      && fragancia.habitación !== descubrir.habitacion
+      && fragancia.nivel === descubrir.nivel
+      && fragancia.aroma === descubrir.aroma)
+      || (fragancia.momento !== descubrir.momento
+        && fragancia.habitación === descubrir.habitacion
+        && fragancia.nivel === descubrir.nivel
+        && fragancia.aroma === descubrir.aroma)
+        || (
+           fragancia.momento === descubrir.momento
+          && fragancia.habitación !== descubrir.habitacion          
+          && fragancia.nivel === descubrir.nivel
+          && fragancia.aroma === descubrir.aroma)
+           ));
+    console.log(resultado)    
+  }
+  //console.log(descubrir)
+  //console.log(Fragancias)
+  return (
+    <>
+      <Container>
+        <Row>
+          <Col sm={1} lg={6}>
+            <div className='contenedorTest'>
+              <h1 style={{ marginBottom: "20px", fontWeight: "bold" }}>Descubrí tu fragancia</h1>
+              <p style={{ marginBottom: "60px", marginLeft: "100px", marginRight: "100px"}}>Respondiendo sólo 4 preguntas simples pero muy personales, podrás descubrir el aroma perfecto para tus ambientes</p>
+              <div className='contenedorPregunta'>                
+                <h5 style={{ marginBottom: "10px" }}>¿En qué momento encenderías una vela aromática?</h5>
+                <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
+                <div className='contenedor-opciones'>
+                  {momentos.map((momento) => (
+                    <button name="momento" className="text-capitalize botonOpcion" onClick={handleInput} value={momento.descripcion}>{momento.descripcion}</button>
+                  ))}
+                </div>
+              </div>
+              <div className='contenedorPregunta'>                
+                <h5 style={{ marginBottom: "10px" }}>¿En qué habitaciones usarías velas y/o difusores aromáticos?</h5>
+                <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
+                <div className='contenedor-opciones'>
+                  {habitacion.map((habitacion) => (
+                    <button name="habitacion" className="text-capitalize botonOpcion" onClick={handleInput} value={habitacion.descripcion}>{habitacion.descripcion}</button>
+                  ))}
+                </div>
+              </div>
+              <div className='contenedorPregunta'>                
+                <h5 style={{ marginBottom: "10px" }}>¿Qué nivel de aroma te gustaría?</h5>
+                <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
+                <div className='contenedor-opciones'>
+                  {nivel.map((nivel) => (
+                    <button name="nivel" className="text-capitalize botonOpcion" onClick={handleInput} value={nivel.descripcion}>{nivel.descripcion}</button>
+                  ))}
+                </div>
+              </div>
+              <div className='contenedorPregunta'>                
+                <h5 style={{ marginBottom: "10px" }}>¿Qué aromas te gustan?</h5>
+                <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
+                <div className='contenedor-opciones'>
+                  {aroma.map((aroma) => (
+                    <button name="aroma" className="text-capitalize botonOpcion" onClick={handleInput} value={aroma.descripcion}>{aroma.descripcion}</button>
+                  ))}
+                </div>
+              </div>
+              <Button className='button-style mb-5' onClick={descubrirSubmit}>Enviar</Button>
+              <div >
+                {resultado.length > 0 && (                
+                  <div className='contenedorPregunta'>
+                    <h3>¡Felicitaciones!</h3>
+                    <p>Tu fragancia perfecta es:</p>
+                    {resultado.map((fragancia) => (
+                      <Card style={{borderColor:"white"}}>
+                        <Card.Body key={fragancia.id}>
+                          <p>{fragancia.nombre}</p>
+                        </Card.Body>
+                      </Card>
+                    ) )}
+                  </div>
+                )}
+              </div> 
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </>
+  )
 }
 
 export default Test
