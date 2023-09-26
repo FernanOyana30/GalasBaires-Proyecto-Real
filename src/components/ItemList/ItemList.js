@@ -15,10 +15,10 @@ function ItemList({productos}) {
             <Card.Title >{producto.nombre}</Card.Title>
             <Card.Text>
             {producto.descripcionCard}
-            </Card.Text>            
+            </Card.Text>     
             <Link to={`/detalle/${producto.id}`}>
               <Button variant="light" className="button-style">Más información</Button>
-            </Link>
+            </Link> 
           </Card.Body>
         </Card>
       ))}

@@ -10,7 +10,6 @@ import productos from '../../productos'
 import {useParams} from "react-router-dom"
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 import { useContext } from "react";
 import cartContext from "../../context/cartContext";
 
@@ -26,16 +25,24 @@ function getSingleItemFromDatabase(idProducto){
 //---------------------------------------------------------------
 
 function ItemDetailContainer(initial, onAddToForm) {
+
+
+  const [loading, setLoading ] = useState(false)
   const [producto, setProducto] = useState({});
 
   const params = useParams()
   const idProducto = params.idProducto
 
   useEffect(() =>{
+    setLoading(true)
     getSingleItemFromDatabase(idProducto).then(respuesta => {
       setProducto(respuesta)
+      setLoading(false)
     })
-  }, []);
+  }, [idProducto]);
+
+
+
 
   //------------------------------------------------------
   const {addItem, isInCart } = useContext(cartContext)
@@ -46,7 +53,7 @@ function ItemDetailContainer(initial, onAddToForm) {
   }  
 
   //------------------------------------------------------
-  if (producto.nombre === undefined) 
+  if (loading) 
   return <Loader/>  
 
     return (
