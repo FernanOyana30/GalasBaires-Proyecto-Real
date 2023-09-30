@@ -24,8 +24,11 @@
 
 /*pagination*/
 .paginationStyle{
+    margin-left: 2px;
+    margin-right: 5px;
     background-color: #FFFFFF;
     border-color: #804B37;
+    border-radius: 11px;
     color: #2D2D2D;
 }
 

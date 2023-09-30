@@ -7,98 +7,21 @@ import './style.css'
 import {useState, useEffect } from 'react'
 import Card from 'react-bootstrap/Card';
 import Preguntas from './dataPreguntas.js'
+import Modal from 'react-bootstrap/Modal';
 
-//Array de opciones
-const momentos = [
-  {
-    id: 1,
-    descripcion: "mañana",
-  },
-  {
-    id: 2,
-    descripcion: "tarde",
-  },
-  {
-    id: 3,
-    descripcion: "noche",
-  },
-  {
-    id: 4,    
-    descripcion: "relax",
-  },
-]
-
-const habitacion = [
-  {
-    id: 1,
-    descripcion: "living",
-  },
-  {
-    id: 2,
-    descripcion: "cocina",
-  },
-  {
-    id: 3,
-    descripcion: "baño",
-  },
-  {
-    id: 4,
-    descripcion: "dormitorio",
-  },
-  {
-    id: 5,
-    descripcion: "otros",
-  },
-]
-
-const nivel = [
-  {
-    id: 1,
-    descripcion: "sutil",
-  },
-  {
-    id: 2,
-    descripcion: "intermedio",
-  },
-  {
-    id: 3,
-    descripcion: "normal",
-  },
-  {
-    id: 4,
-    descripcion: "alto",
-  },
-  {
-    id: 5,
-    descripcion: "intenso",
-  },
-]
-
-const aroma = [
-  {
-    id: 1,
-    descripcion: "floral",
-  },
-  {
-    id: 2,
-    descripcion: "dulce",
-  },
-  {
-    id: 3,
-    descripcion: "cítrico",
-  },
-  {
-    id: 4,
-    descripcion: "relajante",
-  },
-  {
-    id: 5,
-    descripcion: "amaderado",
-  },
-]
-
-//Componente test
 function Test() { 
+  //modal
+  function recargarPag(){
+    window.location.reload()
+  }
+
+  const [show, setShow] = useState(false);
+  //const handleClose = () => setShow(false); 
+  function handleClose(){
+    setShow(false)
+    recargarPag()
+  }  
+
   const [preguntaActual, setPreguntaActual] = useState(0)
   const [isFinished, setIsFinished] = useState(false)
 
@@ -111,31 +34,22 @@ function Test() {
 
   //funciones de paginado del test
   function handleNextQuestion(){
-    if (preguntaActual === Preguntas.length - 1){
-      setIsFinished(true)
-    } else {
-      setPreguntaActual(preguntaActual + 1);
-    };
-  }
-
-  function handlePreviousQuestion(event){
-    if (preguntaActual === Preguntas.length + 1){
-      setIsFinished(true)
-    } else if (preguntaActual === 0){
-      event.target.classList.add("disabled")
-    }    
-    else {
-      setPreguntaActual(preguntaActual - 1);
-    };
-  }
-
-  //Código original 
+      if (preguntaActual === Preguntas.length - 1){
+        setIsFinished(true)
+      } 
+      else {
+        setPreguntaActual(preguntaActual + 1);
+      };      
+    }
+    
+  // 
   const handleInput = (event) => {
     event.preventDefault()
     setDescubrir({
       ...descubrir,
       [event.target.name]: event.target.value      
     })
+    handleNextQuestion()
   };  
   
   const [resultado, setResultado] = useState([])  
@@ -160,7 +74,9 @@ function Test() {
           && fragancia.nivel === descubrir.nivel
           && fragancia.aroma === descubrir.aroma)
            ));
+           
     //console.log(resultado)    
+    setShow(true)    
   }
   console.log(descubrir)
   //console.log(Fragancias)
@@ -181,27 +97,38 @@ function Test() {
                     <button name={respuesta.nombrePregunta} key={respuesta.id} className="text-capitalize botonOpcion" value={respuesta.descripcion} onClick={handleInput}>{respuesta.descripcion}</button>
                   ))}
                 </div>
-                <button onClick={handlePreviousQuestion}>Anterior</button>
-                <button onClick={handleNextQuestion}>Siguiente</button>
-              </div>             
-
+                {
+                  preguntaActual === 3 && descubrir.aroma !== '' ?  <>                  
+                <button className='botonPaginado' onClick={descubrirSubmit}>Enviar</button></>                
+                :
+                ""
+                 }
+              </div>                          
               
-              <Button className='button-style mb-5' onClick={descubrirSubmit}>Enviar</Button>
-              <div >
-                {resultado.length > 0 && (                
-                  <div className='contenedorPregunta'>
-                    <h3>¡Felicitaciones!</h3>
-                    <p>Tu fragancia perfecta es:</p>
-                    {resultado.map((fragancia) => (
-                      <Card style={{borderColor:"white"}}>
-                        <Card.Body key={fragancia.id}>
-                          <p>{fragancia.nombre}</p>
-                        </Card.Body>
-                      </Card>
-                    ) )}
-                  </div>
-                )}
-              </div> 
+              <Modal show={show} onHide={handleClose}>                
+                <Modal.Body>
+                    <div >
+                      {resultado.length > 0 && (                
+                        <div style={{textAlign: "center"}}>
+                          <h3>¡Felicitaciones!</h3>
+                          <p>Tu fragancia perfecta es:</p>
+                          {resultado.map((fragancia) => (
+                            <Card style={{borderColor:"white"}}>
+                              <Card.Body key={fragancia.id}>
+                                <p>{fragancia.nombre}</p>
+                              </Card.Body>
+                            </Card>
+                          ) )}
+                        </div>
+                      )}
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" className='botonOpcion' onClick={handleClose}>
+                    Cerrar
+                  </Button>                  
+                </Modal.Footer>
+              </Modal>              
             </div>
           </Col>
         </Row>

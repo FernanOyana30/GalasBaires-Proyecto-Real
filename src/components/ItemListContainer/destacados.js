@@ -18,17 +18,15 @@ function getItemsDestacadosFromDatabase(){
 
 function Destacados(){
     const [productos, setProductos ] = useState([]);
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(true)    
   
     const params = useParams();
     const prodDestacado = params.prodDestacado
   
-    async function leerDatos( ) {
-      
+    async function leerDatos( ) {      
         let respuesta = await getItemsDestacadosFromDatabase(prodDestacado)
         setProductos(respuesta)
-        setIsLoading(false)
-        
+        setIsLoading(false)            
     }
   
     useEffect( () => {

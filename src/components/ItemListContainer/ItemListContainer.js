@@ -6,10 +6,10 @@ import Filter from '../Filter/Filter';
 import Pagination from './Pagination';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
 import productos from '../../productos';
-import Loader from "../Loader/Loader"
-import './style.css'
+import Loader from "../Loader/Loader";
+import './style.css';
 
 
 import Card from 'react-bootstrap/Card';
@@ -46,6 +46,8 @@ export default function ItemListContainer (){
   const idCategory = params.idCategory
 
   async function leerDatos( ) {
+    setIsLoading(true)
+    setCurrentPage(1)
     if (idCategory === undefined) {
      let respuesta = await getItemsFromDatabase();
       setProductos(respuesta);
