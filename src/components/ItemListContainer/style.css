@@ -22,6 +22,12 @@
     left: 0;
 }
 
+.contenedorDestacados{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
 /*pagination*/
 .paginationStyle{
     margin-left: 2px;
@@ -38,7 +44,7 @@
     border-color: #804B37;
 }
 
-.paginationStyle:focus{
+.paginationStyleActive{
     background-color: #804B37;
     color: #FFFFFF;
     border-color: #804B37;

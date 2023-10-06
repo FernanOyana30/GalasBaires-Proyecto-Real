@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom"
 import productos from '../../productos';
 import './style.css'
 
+//---------------------------------------------------------------------------
+
 function getItemsDestacadosFromDatabase(){
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -15,6 +17,8 @@ function getItemsDestacadosFromDatabase(){
     }, 1000);
   }); 
 }
+
+//---------------------------------------------------------------------------
 
 function Destacados(){
     const [productos, setProductos ] = useState([]);

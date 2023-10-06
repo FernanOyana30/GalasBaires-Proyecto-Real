@@ -8,8 +8,15 @@ import {useState, useEffect } from 'react'
 import Card from 'react-bootstrap/Card';
 import Preguntas from './dataPreguntas.js'
 import Modal from 'react-bootstrap/Modal';
+import Loader from "../Loader/Loader.js"
 
 function Test() { 
+  const [isLoading, setIsLoading ] = useState(true)
+
+  useEffect(()=>{
+    setIsLoading(false)
+  })
+
   //modal
   function recargarPag(){
     window.location.reload()
@@ -81,8 +88,16 @@ function Test() {
   console.log(descubrir)
   //console.log(Fragancias)
 
+  //----------------------------------------------------------------
+  
+
   return (
-    <>
+<div>
+    {
+      isLoading?
+      <Loader/>
+      : 
+      <>
       <Container>
         <Row>
           <Col sm={1} lg={6}>
@@ -134,7 +149,10 @@ function Test() {
         </Row>
       </Container>
     </>
-  )
+    }
+</div>
+    
+  );
 }
 
 export default Test

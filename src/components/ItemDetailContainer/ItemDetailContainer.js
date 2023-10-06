@@ -22,10 +22,9 @@ function getSingleItemFromDatabase(idProducto){
     }, 1000);
   }); 
 }
+
 //---------------------------------------------------------------
-
 function ItemDetailContainer(initial, onAddToForm) {
-
 
   const [loading, setLoading ] = useState(false)
   const [producto, setProducto] = useState({});
@@ -40,9 +39,6 @@ function ItemDetailContainer(initial, onAddToForm) {
       setLoading(false)
     })
   }, [idProducto]);
-
-
-
 
   //------------------------------------------------------
   const {addItem, isInCart } = useContext(cartContext)

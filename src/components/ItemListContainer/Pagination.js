@@ -29,7 +29,7 @@ function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage
                     PageNumbers.map(noPage => (
                         <li key={noPage}>
                             <a className={`page-link text-decoration-none paginationStyle
-                            ${noPage === currentPage ? 'paginationStyle' : ''
+                            ${noPage === currentPage ? 'paginationStyleActive' : ''
                             }`}
                             onClick={() => onSpecificPage(noPage)}
                             >

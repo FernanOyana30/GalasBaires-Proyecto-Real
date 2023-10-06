@@ -10,8 +10,6 @@ import { useParams } from "react-router-dom";
 import productos from '../../productos';
 import Loader from "../Loader/Loader";
 import './style.css';
-
-
 import Card from 'react-bootstrap/Card';
 
 //--------------------------------------------
