@@ -3,7 +3,7 @@ import './style.css'
 
 function Filter() {
   return (
-    <div>    
+    <div className="filter-style">    
       <Link to='/productos' className='text-decoration-none text-dark'> 
         <p className="mb-2 subrayado">Todos</p>                      
       </Link> 

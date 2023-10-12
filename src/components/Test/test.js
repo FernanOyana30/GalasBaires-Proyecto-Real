@@ -103,7 +103,7 @@ function Test() {
           <Col sm={1} lg={6}>
             <div className='contenedorTest'>
               <h1 style={{ marginBottom: "20px", fontWeight: "bold" }}>Descubrí tu fragancia</h1>
-              <p style={{ marginBottom: "60px", marginLeft: "100px", marginRight: "100px"}}>Respondiendo sólo 4 preguntas simples pero muy personales, podrás descubrir el aroma perfecto para tus ambientes</p>
+              <p className='estiloParrafo'>Respondiendo sólo 4 preguntas simples pero muy personales, podrás descubrir el aroma perfecto para tus ambientes</p>
               <div className='contenedorPregunta'>                
                 <h5 style={{ marginBottom: "10px" }}>{Preguntas[preguntaActual].titulo}</h5>
                 <p style={{ marginBottom: "35px" }}>Elegí una opción</p>

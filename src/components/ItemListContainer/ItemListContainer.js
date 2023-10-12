@@ -94,8 +94,8 @@ export default function ItemListContainer (){
           </Row>        
           <Row className="ps-5">
             <Col sm={1} lg={2}>
-              <div className="pt-5">
-                <h5>Filtrar por</h5>
+              <div className="filterStyle2 pt-5">
+                <h5 className='titleFilter'>Filtrar por</h5>
                 {<Filter/>}              
               </div>
             </Col>            

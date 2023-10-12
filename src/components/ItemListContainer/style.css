@@ -51,13 +51,22 @@
 }
 
 /*Media Queries Mobile*/
-@media (max-width: 425px)  {       
+@media (max-width: 425px)  {  
+    .estiloPaginacion{
+        transform: translateX(-70px);
+    }     
     .encabezadoCatalogo{
         margin-left: 6px;
     }
 
-    .filaProductos{        
-        padding-left: 80px;
+    .filaProductos{            
+        display: flex;    
+        flex-direction: column;
+        align-content: center;
+        padding-left: 55px;
+        padding-top: 0px;
+        margin-left: -20px;
+        
     }
 
     .nombreProducto{
@@ -68,6 +77,10 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
+    }
+
+    .estiloPaginacion{
+        margin-left: 85px;
     }
 }
 

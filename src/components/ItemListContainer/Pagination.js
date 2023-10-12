@@ -21,7 +21,7 @@ function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage
     }
 
     return (
-        <div>            
+        <div className='estiloPaginacion'>            
             <nav aria-label="Page navigation example">
               <ul className="pagination">
                 <li className="page-item"><a className={`page-link text-decoration-none paginationStyle ${currentPage === 1 ? 'disabled' : ''}` } onClick={onPreviousPage} >Anterior</a></li>
