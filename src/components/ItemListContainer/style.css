@@ -64,7 +64,6 @@
         flex-direction: column;
         align-content: center;
         padding-left: 55px;
-        padding-top: 0px;
         margin-left: -20px;
         
     }
@@ -80,7 +79,7 @@
     }
 
     .estiloPaginacion{
-        margin-left: 85px;
+        margin-left: 40px;
     }
 }
 

@@ -187,6 +187,11 @@
         width: 139%;
         margin-left: -60px;
     }    
+
+    .carruselStyle{
+        margin-left: 45px;
+        margin-top: -60px;
+    }
 }
 
 

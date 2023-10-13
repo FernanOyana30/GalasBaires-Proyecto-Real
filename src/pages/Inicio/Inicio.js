@@ -105,7 +105,7 @@ function Inicio (){
           <Row className='p-5'>
             <Col sm={1} lg={3}></Col>
             <Col sm={1} lg={6}>
-              <Carousel style={{width: "75%"}}>
+              <Carousel className='carruselStyle' style={{width: "75%"}}>
                 <Carousel.Item interval={1000}>
                   <img
                     className="d-block w-100"
