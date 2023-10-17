@@ -12,10 +12,8 @@ import Loader from "../Loader/Loader";
 import './style.css';
 import Card from 'react-bootstrap/Card';
 
-import {collection, getDocs, query, where} from "firebase/firestore";
-
 //--------------------------------------------
-
+import {collection, getDocs, query, where} from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 
@@ -27,7 +25,6 @@ const firebaseConfig = {
   messagingSenderId: "930077035982",
   appId: "1:930077035982:web:86e727538f7ab43c87ef9f"
 };
-
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);

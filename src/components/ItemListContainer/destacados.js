@@ -2,14 +2,12 @@ import ItemList from "../ItemList/ItemList";
 import Loader from "../Loader/Loader"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
-import productos from '../../productos';
+//import productos from '../../productos';
 import './style.css'
 
 //---------------------------------------------------------------------------
-import {collection, getDocs, query, where} from "firebase/firestore";
-
+import {getFirestore, collection, getDocs, query, where} from "firebase/firestore";
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBCpHD-qtUpmMRAD-ki_GFQ8tbECyY4XeE",
