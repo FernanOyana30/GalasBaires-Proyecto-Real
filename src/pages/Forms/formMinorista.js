@@ -111,8 +111,7 @@ function FormMinorista() {
                   <Form.Control type="email" placeholder="Ingresá tu email" />            
                 </Form.Group>  
                 <Form.Group className="mb-3 w-100" controlId="exampleForm.ControlTextarea1">  
-                  <Form.Label>Consulta*</Form.Label>
-                                             
+                  <Form.Label>Consulta*</Form.Label>                                             
                   {cart.map((item) => {
                     return (
                       <div style={{backgroundColor: "lightGray", padding: "15px"}}>

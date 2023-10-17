@@ -6,22 +6,49 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Loader from "../Loader/Loader"
 import Destacados from '../ItemListContainer/destacados'
-import productos from '../../productos'
+//import productos from '../../productos'
 import {useParams} from "react-router-dom"
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useContext } from "react";
 import cartContext from "../../context/cartContext";
 
-//--------------------------------------------------------------
-function getSingleItemFromDatabase(idProducto){
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      let encontrado = productos.find((producto) => producto.id === Number(idProducto))
-      resolve(encontrado);
-    }, 1000);
-  }); 
+//--------------------------------------------
+
+import { initializeApp } from "firebase/app";
+import {getFirestore, collection, doc, getDoc} from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBCpHD-qtUpmMRAD-ki_GFQ8tbECyY4XeE",
+  authDomain: "galas-baires.firebaseapp.com",
+  projectId: "galas-baires",
+  storageBucket: "galas-baires.appspot.com",
+  messagingSenderId: "930077035982",
+  appId: "1:930077035982:web:86e727538f7ab43c87ef9f"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function getSingleItemFromDatabase(idProducto){
+  const productsColectionRef = collection(db, "productos");
+  const docRef = doc(productsColectionRef, idProducto);
+
+  const docSnapshot = await getDoc(docRef);
+  if (docSnapshot.exists() === false) throw new Error("No existe el documento");
+
+  return  {...docSnapshot.data(), id: docSnapshot.id};
 }
+
+//--------------------------------------------------------------
+// function getSingleItemFromDatabase(idProducto){
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       let encontrado = productos.find((producto) => producto.id === Number(idProducto))
+//       resolve(encontrado);
+//     }, 1000);
+//   }); 
+// }
 
 //---------------------------------------------------------------
 function ItemDetailContainer(initial, onAddToForm) {

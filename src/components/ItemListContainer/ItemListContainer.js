@@ -7,31 +7,71 @@ import Pagination from './Pagination';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import productos from '../../productos';
+//import productos from '../../productos';
 import Loader from "../Loader/Loader";
 import './style.css';
 import Card from 'react-bootstrap/Card';
 
+import {collection, getDocs, query, where} from "firebase/firestore";
+
 //--------------------------------------------
 
-function getItemsFromDatabase(){
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(productos);
-    }, 1000);
-  }); 
+import { initializeApp } from "firebase/app";
+import {getFirestore} from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBCpHD-qtUpmMRAD-ki_GFQ8tbECyY4XeE",
+  authDomain: "galas-baires.firebaseapp.com",
+  projectId: "galas-baires",
+  storageBucket: "galas-baires.appspot.com",
+  messagingSenderId: "930077035982",
+  appId: "1:930077035982:web:86e727538f7ab43c87ef9f"
+};
+
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function getItemsFromDatabase(){
+  const productsColectionRef = collection(db, "productos")
+  let snapshotProductos = await getDocs(productsColectionRef)
+  const documents = snapshotProductos.docs
+
+  const dataProducts = documents.map((doc) => ({ ...doc.data(), id: doc.id }));
+  return dataProducts;
 }
 
-function getItemsByCategoryFromDatabase(categoryURL){
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      let productsFiltered = productos.filter(
-        producto => producto.categoria === categoryURL
-      )
-      resolve(productsFiltered);
-    }, 1000);
-  }); 
+async function getItemsByCategoryFromDatabase(categoryURL){
+  const productsColectionRef = collection(db, "productos")
+
+  const q = query(productsColectionRef, where("categoria", "==", categoryURL));
+  let snapshotProductos = await getDocs(q)
+  const documents = snapshotProductos.docs
+
+  const dataProducts = documents.map((doc) => ({ ...doc.data(), id: doc.id }));
+  return dataProducts;
 }
+
+//--------------------------------------------
+
+// function getItemsFromDatabase(){
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve(productos);
+//     }, 1000);
+//   }); 
+// }
+
+// function getItemsByCategoryFromDatabase(categoryURL){
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       let productsFiltered = productos.filter(
+//         producto => producto.categoria === categoryURL
+//       )
+//       resolve(productsFiltered);
+//     }, 1000);
+//   }); 
+// }
 
 //-----------------------------------
 
