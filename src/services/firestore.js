@@ -14,3 +14,14 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //--------------------------------
+
+export async function createOrder(orderData){
+  //console.log("todo ok", orderData)
+  const collectionRef = collection(db, "orders")
+
+  console.log(orderData)
+
+  const response = addDoc(collectionRef, orderData)
+  console.log(response)
+  
+}
