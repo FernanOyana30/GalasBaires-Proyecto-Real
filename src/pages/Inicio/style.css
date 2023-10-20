@@ -257,7 +257,7 @@
     }        
 }
 
-/*Desktop*/
+/*Media Queries Desktop*/
 @media (min-width: 1024px) and (max-width: 1365px){
     .titleStyle{
         font-size: 60px;
