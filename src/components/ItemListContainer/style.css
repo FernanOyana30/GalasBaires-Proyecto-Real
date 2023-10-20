@@ -114,7 +114,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1365px) {
     .contenedorDestacados{
         display: flex;
         flex-direction: column;

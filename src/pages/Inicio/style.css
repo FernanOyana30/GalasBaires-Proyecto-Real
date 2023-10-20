@@ -106,7 +106,7 @@
         font-size: 32px;
         width: 300px;        
     }    
-        
+
     .img-container{
         display: none;        
     }          
@@ -258,9 +258,9 @@
 }
 
 /*Desktop*/
-@media (min-width: 1024px) and (max-width: 1439px){
+@media (min-width: 1024px) and (max-width: 1365px){
     .titleStyle{
-        font-size: 40px;
+        font-size: 60px;
     }  
     
     /*Características*/
@@ -290,5 +290,7 @@
     .containerMayorista{        
        margin-left: 0px;
     }     
+
+    
 }
 
