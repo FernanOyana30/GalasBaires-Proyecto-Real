@@ -12,7 +12,7 @@ function Inicio (){
       <>        
         <Container className='containerStyle'>
           <Row>
-            <Col sm={1} lg={6}>
+            <Col sm={1} md={6} lg={6}>
               <div className="textContainer w-100 ps-5 pt-4 pb-4">
                 <div>                
                   <h1 className="titleStyle fw-bold pt-3 pb-3">Creá ambientes llenos de aroma y calidez.</h1>                
@@ -22,14 +22,14 @@ function Inicio (){
                 </div>
               </div>
             </Col>
-            <Col sm={1} lg={6} >
+            <Col sm={1} md={6} lg={6} >
               <div className='img-container'>
                 <img alt='' className='img-style' src="./img/img-inicio-1.jpg" />
               </div>
             </Col>
           </Row>
           <Row>
-            <Col sm={1} lg={12} className='p-5'>
+            <Col sm={1} md={6} lg={12} className='p-5'>
               <div className="contenedorCaracteristicas d-flex justify-content-evenly pt-5 pb-3">
                 <div className="textCaracteristicas text-center">    
                   <img alt="" src='./img/corona.svg'  className="iconoCaracteristicas mb-4"/>
@@ -50,13 +50,13 @@ function Inicio (){
             </Col>            
           </Row>
           <Row className='p-4 pt-1'>
-            <Col sm={1} lg={12} >                
+            <Col sm={1} md={6} lg={12} >                
               {<Destacados />} 
             </Col>
           </Row>
           <Row >            
-            <Col sm={1} lg={12} style={{backgroundColor: "#DED5C2"}}>
-              <div className="text-center p-4 container-fluid">                    
+            <Col sm={1} md={12} lg={12} style={{backgroundColor: "#DED5C2"}}>
+              <div className="testContainer text-center p-4 container-fluid">                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
                 <p className="textFragancias pb-3 ps-5 pe-5">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
                 <Link to='/Test'>
@@ -66,12 +66,12 @@ function Inicio (){
             </Col>            
           </Row>
           <Row className='p-5'>
-            <Col sm={1} lg={6}>                  
+            <Col sm={1} md={6} lg={6}>                  
               <div>                                 
                 <img className='img-nosotros' src="./img/img-inicio-2.jpg" alt=""/>                               
               </div>                                
             </Col>
-            <Col sm={1} lg={6}>
+            <Col sm={1} md={6} lg={6}>
               <div className="containerNosotros p-3 mb-5">                               
                   <h2 className="titleStyle fw-bold mb-3">Sobre nosotros</h2>
                   <p className='mb-0'>Galas nace a mediados de 2019 como terapia para afrontar la pérdida de mi hija ese mismo año.</p>
@@ -85,7 +85,7 @@ function Inicio (){
             </Col>
           </Row>
           <Row className='contenedorMayorista'>
-            <Col sm={1} lg={6}>
+            <Col sm={1} md={6} lg={6}>
               <div className="containerMayorista p-3 mb-5 text-start">
                 <h2 className="titleStyle fw-bold mb-3">¿Sos mayorista?</h2>
                 <p className='parrafoMayorista mb-0'  >Desde Galas Baires queremos motivar a quienes tienen pasión por los aromas y el arte deco. Aquellas personas con alma emprendedora. </p>
@@ -96,15 +96,15 @@ function Inicio (){
                 <Button variant="light" className="button-style">¡Quiero saber más!</Button>                                   
               </div>              
             </Col >
-            <Col sm={1} lg={6}>
+            <Col sm={1} md={6} lg={6}>
               <div> 
                   <img alt='' className='img-mayorista' src="./img/img-inicio-3.jpg" rounded />
               </div>
             </Col>
           </Row>     
           <Row className='p-5'>
-            <Col sm={1} lg={3}></Col>
-            <Col sm={1} lg={6}>
+            <Col sm={1} md={3} lg={3}></Col>
+            <Col sm={1} md={6} lg={6}>
               <Carousel className='carruselStyle' style={{width: "75%"}}>
                 <Carousel.Item interval={1000}>
                   <img
@@ -129,7 +129,7 @@ function Inicio (){
                 </Carousel.Item>
               </Carousel>
             </Col> 
-            <Col sm={1} lg={3}></Col>
+            <Col sm={1} md={6} lg={3}></Col>
           </Row>               
         </Container>  
       </>

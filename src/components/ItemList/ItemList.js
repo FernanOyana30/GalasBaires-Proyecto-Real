@@ -7,7 +7,7 @@ import './style.css';
 function ItemList({productos}) {
   
   return (
-    <div className="pb-4 d-flex justify-content-start bd-highlight mb-3 flex-wrap">
+    <div className="listaProductos  pb-4 d-flex justify-content-start bd-highlight mb-3 flex-wrap">
       {productos.map((producto) => (
         <Card style={{ width: '15rem', borderColor:"white" }} key={producto.id} className="mb-3 pb-0 ms-3">
           <Card.Img variant="top" src={producto.imagen} />

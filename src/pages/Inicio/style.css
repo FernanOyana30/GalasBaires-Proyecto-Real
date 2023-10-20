@@ -93,7 +93,7 @@
 /*------------------------------------*/
 
 /*Media Queries Mobile*/
-@media (max-width: 425px)  {   
+@media (max-width: 767px) and (min-width: 425px){   
     .textContainer{        
         font-size: 17px;                         
         display: flex;
@@ -106,12 +106,12 @@
         font-size: 32px;
         width: 300px;        
     }    
-
-    /*Características*/
+        
     .img-container{
         display: none;        
     }          
 
+    /*Características*/
     .contenedorCaracteristicas{ 
         width: 100%;       
         display: flex;
@@ -194,4 +194,101 @@
     }
 }
 
+/*Media Queries Tablet*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .textContainer{        
+        font-size: 17px;                         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;                
+    }            
+
+    .titleStyle{                    
+        font-size: 32px;
+        width: 300px;        
+    }    
+
+    /*Características*/      
+    .contenedorCaracteristicas{        
+        width: 740px;
+        margin-left: -30px;
+    }     
+    
+    .textCaracteristicas{        
+        width: 240px;
+    }
+
+    .parrafoCaracteristicas{
+        width: 240px;
+        margin-left: 0px;
+    }      
+
+    /*Descubrí tu fragancia*/
+    .textFragancias{        
+       margin-left: 0px;
+       width: 100%;
+    }    
+
+    /*Mayoristas*/
+    .containerMayorista{
+        color: #2D2D2D;            
+        font-size: 17px;
+        margin-left: 0px;                               
+    }
+
+    .parrafoMayorista{
+        margin-right: 0px;               
+    }
+
+    .img-mayorista{         
+        margin-left: 0px;  
+        width: 340px;   
+    }
+
+    /*Nosotros*/
+    .containerNosotros{               
+        width: 350px;  
+    }
+
+    .img-nosotros{  
+        margin-left: -30px;
+        width: 330px;
+    }        
+}
+
+/*Desktop*/
+@media (min-width: 1024px) and (max-width: 1439px){
+    .titleStyle{
+        font-size: 40px;
+    }  
+    
+    /*Características*/
+    .contenedorCaracteristicas{               
+        display: flex;
+        flex-direction: row;
+        justify-content: center;         
+        margin-top: -80px;
+    }
+
+    .parrafoCaracteristicas{
+        margin-left: 50px;  
+        margin-right: 50px;
+    }
+
+    /*Descubrí tu fragancia*/
+    .testContainer{
+       width: 1000px;
+    }
+
+    .textFragancias{  
+        text-align: center;        
+        width: 500px;
+        margin-left: 220px;
+    }
+    /*Mayoristas*/
+    .containerMayorista{        
+       margin-left: 0px;
+    }     
+}
 

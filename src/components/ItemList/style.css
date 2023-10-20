@@ -21,3 +21,21 @@
     height: 100px;
     overflow: hidden;
 }
+
+/*Media Queries Tablet*/
+@media (max-width: 767px) and (min-width: 425px) {
+    .listaProductos{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;                
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .listaProductos{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;        
+        width: 720px;
+    }
+} 
