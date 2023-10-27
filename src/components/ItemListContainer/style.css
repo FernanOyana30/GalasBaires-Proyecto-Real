@@ -91,24 +91,18 @@
     }
 
     .container-encabezado{
-        width: 680px;
+        width: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .encabezadoCatalogo{
-        background-color: red;
-        margin-left: 6px;
-    }
-
-    .testContainer{
+    .encabezadoCatalogo{        
         width: 700px;
-        background-color:#DED5C2;
+        margin-left: 22px;
     }
 
-    .filaProductos{
-        background-color: yellow;
+    .filaProductos{        
         width: 540px;
         margin-left: 40px;
     }

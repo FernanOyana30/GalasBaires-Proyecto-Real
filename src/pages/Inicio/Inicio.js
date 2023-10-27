@@ -29,7 +29,7 @@ function Inicio (){
             </Col>
           </Row>
           <Row>
-            <Col sm={1} md={6} lg={12} className='p-5'>
+            <Col sm={1} md={12} lg={12} className='p-5'>
               <div className="contenedorCaracteristicas d-flex justify-content-evenly pt-5 pb-3">
                 <div className="textCaracteristicas text-center">    
                   <img alt="" src='./img/corona.svg'  className="iconoCaracteristicas mb-4"/>
@@ -129,7 +129,7 @@ function Inicio (){
                 </Carousel.Item>
               </Carousel>
             </Col> 
-            <Col sm={1} md={6} lg={3}></Col>
+            <Col sm={1} md={3} lg={3}></Col>
           </Row>               
         </Container>  
       </>

@@ -195,14 +195,19 @@
 }
 
 /*Media Queries Tablet*/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {    
     .textContainer{        
         font-size: 17px;                         
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;                
-    }            
+        text-align: center;   
+        width: 200px;                     
+    }         
+    
+    .img-container{
+        width: 350px;        
+    }
 
     .titleStyle{                    
         font-size: 32px;
@@ -211,8 +216,8 @@
 
     /*Características*/      
     .contenedorCaracteristicas{        
-        width: 740px;
-        margin-left: -30px;
+        width: 720px;
+        margin-left: -20px;
     }     
     
     .textCaracteristicas{        
@@ -220,8 +225,8 @@
     }
 
     .parrafoCaracteristicas{
-        width: 240px;
-        margin-left: 0px;
+        width: 220px;
+        margin-left: 5px;
     }      
 
     /*Descubrí tu fragancia*/
@@ -238,22 +243,22 @@
     }
 
     .parrafoMayorista{
-        margin-right: 0px;               
+        margin-right: 0px;                
     }
 
     .img-mayorista{         
         margin-left: 0px;  
-        width: 340px;   
+        width: 350px;   
     }
 
     /*Nosotros*/
-    .containerNosotros{               
-        width: 350px;  
+    .containerNosotros{ 
+        width: 350px;
     }
 
     .img-nosotros{  
         margin-left: -30px;
-        width: 330px;
+        width: 350px;
     }        
 }
 
