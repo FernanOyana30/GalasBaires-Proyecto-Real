@@ -90,10 +90,246 @@
     padding-bottom: 60px;
 }
 
+.carruselStyle{
+    width: 75%;
+}
+
 /*------------------------------------*/
 
 /*Media Queries Mobile*/
-@media (max-width: 767px) and (min-width: 425px){   
+@media (min-width: 320px) and (max-width: 374px) {
+    .textContainer{        
+        font-size: 17px;                         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;  
+    }        
+    
+    .textContainer2{        
+        width: 300px;
+    }
+
+    .titleStyle{                    
+        font-size: 32px;
+        width: 300px;        
+    }    
+
+    .img-container{
+        display: none;        
+    }          
+
+    /*Características*/
+    .contenedorCaracteristicas{ 
+        width: 100%;       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;         
+        margin-top: -80px;        
+        width: 300px;
+    }
+
+    .textCaracteristicas{
+        margin-bottom: 12px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center;     
+    }
+
+    .iconoCaracteristicas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .parrafoCaracteristicas{
+        margin-left: 50px;  
+        margin-right: 50px;
+    }
+
+    /*Productos destacados*/
+    .contenedorDestacados{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    /*Descubrí tu fragancia*/
+    .textFragancias{  
+        text-align: center;       
+        margin-left: 20px;
+        width: 300px;        
+     }
+
+     .testContainer{
+        width: 395px;
+        background-color: #DED5C2;
+        margin-left: 0px;
+     }
+     
+
+    /*Mayoristas*/
+    .contenedorMayorista{
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+
+    .containerMayorista{
+        color: #2D2D2D;            
+        font-size: 17px;
+        margin-left: 0px;
+        margin-top: -50px;                       
+    }
+
+    .parrafoMayorista{
+        margin-right: 0px;               
+        width: 360px;       
+    }
+
+    .img-mayorista{
+        width: 135%;   
+        margin-left: -8px;     
+    }
+
+    /*Nosotros*/
+    .containerNosotros{       
+        width: 400px;           
+        margin-left: -50px; 
+        margin-top: -50px;           
+    }
+
+    .img-nosotros{        
+        width: 198%;
+        margin-left: -54px;
+    }    
+
+    .carruselStyle{
+        margin-left: 0px;
+        margin-top: -60px;
+        width: 150%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+    .textContainer{        
+        font-size: 17px;                         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;  
+    }        
+    
+    .textContainer2{        
+        width: 400px;        
+    }
+
+    .titleStyle{                    
+        font-size: 32px;
+        width: 400px;        
+    }    
+
+    .img-container{
+        display: none;        
+    }          
+
+    /*Características*/
+    .contenedorCaracteristicas{ 
+        width: 100%;       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;         
+        margin-top: -80px;        
+        width: 420px;
+    }
+
+    .textCaracteristicas{
+        margin-bottom: 12px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center;     
+    }
+
+    .iconoCaracteristicas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .parrafoCaracteristicas{
+        margin-left: 50px;  
+        margin-right: 50px;
+    }
+
+    /*Productos destacados*/
+    .contenedorDestacados{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    /*Descubrí tu fragancia*/
+    .textFragancias{  
+        text-align: center;       
+        margin-left: 20px;
+        width: 400px;        
+     }
+
+     .testContainer{
+        width: 495px;
+        background-color: #DED5C2;
+        margin-left: 0px;
+     }
+     
+
+    /*Mayoristas*/
+    .contenedorMayorista{
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+
+    .containerMayorista{
+        color: #2D2D2D;            
+        font-size: 17px;
+        margin-left: 0px;
+        margin-top: -50px;                       
+    }
+
+    .parrafoMayorista{
+        margin-right: 0px;               
+        width: 360px;       
+    }
+
+    .img-mayorista{
+        width: 142%;   
+        margin-left: -8px;     
+    }
+
+    /*Nosotros*/
+    .containerNosotros{       
+        width: 400px;           
+        margin-left: -50px; 
+        margin-top: -50px;           
+    }
+
+    .img-nosotros{        
+        width: 194%;
+        margin-left: -54px;
+    }    
+
+    .carruselStyle{
+        margin-left: 5px;
+        margin-top: -60px;
+        width: 150%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px)  {   
     .textContainer{        
         font-size: 17px;                         
         display: flex;
@@ -263,7 +499,7 @@
 }
 
 /*Media Queries Desktop*/
-@media (min-width: 1024px) and (max-width: 1365px){
+@media (min-width: 1024px) and (max-width: 1439px){
     .titleStyle{
         font-size: 60px;
     }  
@@ -272,8 +508,7 @@
     .contenedorCaracteristicas{               
         display: flex;
         flex-direction: row;
-        justify-content: center;         
-        margin-top: -80px;
+        justify-content: center;   
     }
 
     .parrafoCaracteristicas{
@@ -294,8 +529,6 @@
     /*Mayoristas*/
     .containerMayorista{        
        margin-left: 0px;
-    }     
-
-    
+    }   
 }
 

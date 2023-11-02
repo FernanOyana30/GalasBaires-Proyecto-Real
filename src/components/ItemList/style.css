@@ -17,10 +17,7 @@
     border-color: #804B37;
 }
 
-.overflow-style{
-    height: 100px;
-    overflow: hidden;
-}
+
 
 /*Media Queries Tablet*/
 @media (max-width: 767px) and (min-width: 425px) {

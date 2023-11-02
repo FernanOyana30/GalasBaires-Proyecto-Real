@@ -100,7 +100,7 @@ function Test() {
       <>
       <Container>
         <Row>
-          <Col sm={1} lg={6}>
+          <Col xsm={1} sm={1} lg={6}>
             <div className='contenedorTest'>
               <h1 style={{ marginBottom: "20px", fontWeight: "bold" }}>Descubrí tu fragancia</h1>
               <p className='estiloParrafo'>Respondiendo sólo 4 preguntas simples pero muy personales, podrás descubrir el aroma perfecto para tus ambientes</p>

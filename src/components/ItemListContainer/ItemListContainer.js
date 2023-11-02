@@ -75,15 +75,15 @@ export default function ItemListContainer (){
       <>
         <Container className="container-style">     
           <Row >            
-            <Col sm={1} md={12} lg={12}>              
+            <Col xsm={1} sm={1} md={12} lg={12}>              
               <div className="container-encabezado text-center pb-5 pt-5"> 
                 <h1 className="encabezadoCatalogo fw-bold" style={{color:"#2D2D2D"}}>Nuestro catálogo</h1>
               </div>              
             </Col>
           </Row>
           <Row> 
-            <Col sm={1} md={12} lg={12} style={{backgroundColor: "#DED5C2"}}>
-              <div className="text-center p-4 container-fluid" >                    
+            <Col xsm={1} sm={1} md={12} lg={12} style={{backgroundColor: "#DED5C2"}}>
+              <div className="testContainer text-center p-4 container-fluid" >                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
                 <p className="textFragancias pb-3 ps-5 pe-5">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
                 <Link to='/Test'>
@@ -93,13 +93,13 @@ export default function ItemListContainer (){
             </Col>                     
           </Row>        
           <Row className="ps-5">
-            <Col sm={1} md={2} lg={2}>
+            <Col xsm={1} sm={1} md={2} lg={2}>
               <div className="filterStyle2 pt-5">
                 <h5 className='titleFilter'>Filtrar por</h5>
                 {<Filter/>}              
               </div>
             </Col>            
-            <Col sm={1} md={6} lg={10}>
+            <Col xsm={1} sm={1} md={6} lg={10}>
               <div className="filaProductos pt-5">
                 {
                   isLoading?
