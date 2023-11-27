@@ -3,14 +3,14 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
+import CartContainer from './CartContainer';
 
-export default function CheckoutForm(props) {
+export default function CheckoutForm2(props) {
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
-    email: "",
-    comment: ""    
-  });
+    email: ""        
+  });  
 
   console.log(userData);
 
@@ -27,8 +27,7 @@ export default function CheckoutForm(props) {
     setUserData({
       firstName: "",
       lastName: "",
-      email: "",
-      comment: "",            
+      email: ""                  
     });
   }
 
@@ -67,20 +66,13 @@ export default function CheckoutForm(props) {
            required
            onChange={handleChange} />            
         </Form.Group>  
-        <Form.Group className="mb-3 w-100" controlId="exampleForm.ControlTextarea1">  
-          <Form.Label>Consulta*</Form.Label>
-          <Form.Control className='w-100' as="textarea" rows={4} value={userData.comment}
-               name="comment"
-               type="text"
-               required
-               onChange={handleChange} />
-        </Form.Group>            
+        <CartContainer/>       
+          
         <Button variant="primary" disabled={
           !(
             userData.firstName !== "" &&
             userData.lastName !== "" &&            
-            userData.email !== "" &&
-            userData.comment !== ""
+            userData.email !== ""            
           )
         }
         onClick={submitData}>

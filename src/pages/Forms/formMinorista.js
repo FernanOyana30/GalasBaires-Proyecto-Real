@@ -7,7 +7,10 @@ import Row from 'react-bootstrap/Row';
 import {useContext} from "react";
 import cartContext from "../../context/cartContext";
 import CheckoutForm from '../../components/Cart/CheckoutForm';
+import CheckoutCart from '../../components/Cart/checkoutCart';
 import {createOrder} from '../../services/firestore'
+import CartContainer from '../../components/Cart/CartContainer';
+import CheckoutForm2 from '../../components/Cart/CheckoutForm2';
 
 function FormMinorista() {
 
@@ -23,6 +26,18 @@ function FormMinorista() {
     const id = await createOrder(orderData) 
     
     //navigateTo(`/checkout/${id}`)
+}
+
+async function handleCheckout2(userData){
+  const orderData = {
+  buyer: userData,
+  item: cart,
+  timestamp: new Date() 
+  }
+
+  const id = await createOrder(orderData) 
+  
+  //navigateTo(`/checkout/${id}`)
 }
 
 /**/
@@ -53,33 +68,7 @@ function FormMinorista() {
             </div>
           </Col>
           <Col sm={6}>
-            <CheckoutForm onSubmit={handleCheckout}/>
-            {/* <div>
-              <Form>
-                <Row>
-                  <Col>
-                    <Form.Label>Nombre*</Form.Label>
-                    <Form.Control placeholder="Ingresá tu nombre" className='w-100'/>
-                  </Col>
-                  <Col>
-                    <Form.Label>Apellido*</Form.Label>
-                    <Form.Control placeholder="Ingresá tu apellido" className='w-100'/>
-                  </Col>
-                </Row>
-                <br></br>
-                <Form.Group className="mb-3 w-100" controlId="formBasicEmail">
-                  <Form.Label>Correo electrónico*</Form.Label>
-                  <Form.Control type="email" placeholder="Ingresá tu email" />            
-                </Form.Group>  
-                <Form.Group className="mb-3 w-100" controlId="exampleForm.ControlTextarea1">  
-                  <Form.Label>Consulta*</Form.Label>
-                  <Form.Control className='w-100' as="textarea" rows={4}></Form.Control>
-                </Form.Group>            
-                <Button variant="primary" type="submit">
-                  ¡Enviar!
-                </Button>
-              </Form>
-            </div> */}
+            <CheckoutForm onSubmit={handleCheckout}/>            
           </Col>
         </Row>        
       </Container>
@@ -111,7 +100,8 @@ function FormMinorista() {
           </Col>
           <Col sm={6}>
             <div>
-              <Form>
+              <CheckoutForm2/>
+              {/* <Form>
                 <Row>
                   <Col>
                     <Form.Label>Nombre*</Form.Label>
@@ -128,8 +118,7 @@ function FormMinorista() {
                   <Form.Control type="email" placeholder="Ingresá tu email" />            
                 </Form.Group>  
                 <Form.Group className="mb-3 w-100" controlId="exampleForm.ControlTextarea1">  
-                  <Form.Label>Consulta*</Form.Label>
-                                             
+                  <Form.Label>Consulta*</Form.Label>                                             
                   {cart.map((item) => {
                     return (
                       <div style={{backgroundColor: "lightGray", padding: "15px"}}>
@@ -141,7 +130,7 @@ function FormMinorista() {
                 <Button variant="primary" type="submit">
                   ¡Enviar!
                 </Button>
-              </Form>
+              </Form> */}
             </div>
           </Col>
         </Row>        
