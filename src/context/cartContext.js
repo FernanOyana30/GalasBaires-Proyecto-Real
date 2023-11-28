@@ -1,4 +1,4 @@
-import {createContext, useEffect, useState} from "react";
+import {createContext, useState} from "react";
 
 const cartContext = createContext({ 
     cart: [],
@@ -19,14 +19,15 @@ function CartContextProvider({children}){
             newCart.push({...producto, count});
         }
         
-        setCart(newCart);   
+        setCart(newCart);  
+        console.log("Carrito", newCart) 
     }    
 
     /**FUNCIONES DEL CARRITO*/
     //Remover producto del carrito (FUNCIONA)
-    function removeItemFromCart(id){
-        setCart(cart.filter((prod) => prod.id !== id) );
-    }
+    // function removeItemFromCart(id){
+    //     setCart(cart.filter((prod) => prod.id !== id) );
+    // }
 
     //Vaciar carrito (FUNCIONA)
     function clearCart(id){
@@ -34,16 +35,16 @@ function CartContextProvider({children}){
     }    
     
     //Obtener total de productos en el carrito
-    const getCountInCart = cart.reduce ((acc, item) => {
-        return acc = acc + item.count
-    }, 0)
-    console.log(getCountInCart)
+    // const getCountInCart = cart.reduce ((acc, item) => {
+    //     return acc = acc + item.count
+    // }, 0)
+    // console.log(getCountInCart)
   
     //Obtener precio total de compra
-    const getPriceInCart = cart.reduce ((acc, prod) => {
-        return acc = acc + prod.count * prod.precio
-    }, 0)
-    console.log(getPriceInCart)    
+    // const getPriceInCart = cart.reduce ((acc, prod) => {
+    //     return acc = acc + prod.count * prod.precio
+    // }, 0)
+    // console.log(getPriceInCart)    
 
     //--------------------------------------------------
 
@@ -53,7 +54,7 @@ function CartContextProvider({children}){
     }
 
     return (
-        <cartContext.Provider value={{ cart, addItem, isInCart, clearCart, removeItemFromCart, getCountInCart, getPriceInCart }}>
+        <cartContext.Provider value={{ cart, addItem, clearCart}}>
             {children}
         </cartContext.Provider>
         );

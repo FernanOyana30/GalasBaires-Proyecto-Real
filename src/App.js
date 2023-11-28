@@ -50,7 +50,10 @@ function App() {
               />   
             <Route 
               path='/Test' element={<Test/>}
-              />         
+              /> 
+            {/* <Route 
+              path='/checkout/:id' element={<h3>Gracias por tu compra</h3>}
+              />          */}
           </Routes>      
           <Footer/>
         </BrowserRouter>      
