@@ -19,8 +19,6 @@ function FormMinorista() {
     //navigateTo(`/checkout/${id}`)
 }
 
-
-
 /**/
 
   return (
@@ -52,10 +50,7 @@ function FormMinorista() {
         </Row>        
       </Container>
     </>  
-  );  
-
-     
- 
+  );      
 }
 
 export default FormMinorista;

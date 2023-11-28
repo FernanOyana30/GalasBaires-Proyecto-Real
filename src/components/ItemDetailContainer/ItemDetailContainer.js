@@ -65,15 +65,7 @@ function ItemDetailContainer(initial, onAddToForm) {
       setProducto(respuesta)
       setLoading(false)
     })
-  }, [idProducto]);
-
-  //------------------------------------------------------
-  const {addItem, isInCart } = useContext(cartContext)
-
-  /**Funcion Agregar al carrito*/
-  function onAddToForm(count){        
-    addItem(producto, count);
-  }  
+  }, [idProducto]); 
 
   //------------------------------------------------------
   if (loading) 
