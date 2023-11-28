@@ -61,15 +61,21 @@ export default function ItemListContainer (){
     leerDatos()
   }, [idCategory]) 
 
-
   //pagination
 
-  const totalProducts = productos.length
+  const totalProducts = productos.length 
   const [productsPerPage] = useState(8)
   const [currentPage, setCurrentPage] = useState(1)
 
   const lastIndex =  currentPage * productsPerPage 
   const firstIndex = lastIndex - productsPerPage
+
+  
+
+  // useEffect( () => {
+  //   let paginaActual = currentPage
+  //   if 
+  // }, [idCategory]) 
 
     return (
       <>

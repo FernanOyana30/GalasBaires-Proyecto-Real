@@ -7,6 +7,7 @@ function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage
     for (let i = 1; i <= Math.ceil(totalProducts / productsPerPage); i++){
         PageNumbers.push(i)
     }
+    
 
     const onPreviousPage = () => {
         setCurrentPage(currentPage - 1)
