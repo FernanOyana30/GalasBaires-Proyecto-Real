@@ -106,7 +106,7 @@ function ItemDetailContainer(initial, onAddToForm) {
                     <p>{producto.cantidad}</p>
                   </span>    
                   <Link to='/formMinorista'>
-                    <Button onClick={onAddToForm} variant="light" className="button-style">Más información</Button>                    
+                    <Button variant="light" className="button-style">Más información</Button>                    
                   </Link>          
                 </Card.Body>
               </Card>
