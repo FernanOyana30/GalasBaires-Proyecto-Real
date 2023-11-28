@@ -1,20 +1,11 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import {useContext} from "react";
-import cartContext from "../../context/cartContext";
 import CheckoutForm from '../../components/Cart/CheckoutForm';
-import CheckoutCart from '../../components/Cart/checkoutCart';
 import {createOrder} from '../../services/firestore'
-import CartContainer from '../../components/Cart/CartContainer';
-import CheckoutForm2 from '../../components/Cart/CheckoutForm2';
 
-function FormMinorista() {
-
-  const {cart, removeItemFromCart, getPriceInCart, clearCart} = useContext(cartContext)
+function FormMinorista() { 
 
   /**/
   async function handleCheckout(userData){
