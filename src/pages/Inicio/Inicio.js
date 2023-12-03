@@ -12,7 +12,7 @@ function Inicio (){
   function scrollTo(){
     window.scrollTo(0, 0)
   }
-  
+
     return (
       <>        
         <Container className='containerStyle'>
@@ -84,7 +84,7 @@ function Inicio (){
                   </p>
                   <p className='mb-4'>Comenzamos investigando mucho, a prueba y error claro, a leer muchísimo sobre composiciones químicas y origen de aquellos productos naturales que nos permitan producir el menor daño posible a nuestro planeta y seres vivos. Fue así que creamos la marca, el stock y muchas ideas.
                   </p>
-                  <Link to="/Nosotros"><Button variant="light" className="button-style">Conocenos</Button></Link>                                    
+                  <Link to="/Nosotros"><Button variant="light" className="button-style" onClick={scrollTo}>Conocenos</Button></Link>                                    
                 
               </div>              
             </Col>
@@ -98,7 +98,7 @@ function Inicio (){
                 </p>
                 <p className='parrafoMayorista mb-4'>Sabemos que todo cambia, por eso nosotros buscamos que los cambios sean positivos <span>siempre</span>. Porque si enciendes una luz en el camino de alguien, también iluminarás tu camino.
                 </p>
-                <Button variant="light" className="button-style">¡Quiero saber más!</Button>                                   
+                <Button variant="light" className="button-style" onClick={scrollTo}>¡Quiero saber más!</Button>                                   
               </div>              
             </Col >
             <Col xsm={1} sm={1} md={6} lg={6}>
