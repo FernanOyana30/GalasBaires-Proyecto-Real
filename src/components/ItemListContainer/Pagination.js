@@ -11,14 +11,17 @@ function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage
 
     const onPreviousPage = () => {
         setCurrentPage(currentPage - 1)
+        window.scrollTo(0, 0) 
     }
 
     const onNextPage = () => {
         setCurrentPage(currentPage + 1)
+        window.scrollTo(0, 0) 
     }
 
     const onSpecificPage = (n) => {
         setCurrentPage(n)
+        window.scrollTo(0, 0) 
     }
 
     return (

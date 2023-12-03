@@ -8,6 +8,11 @@ import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 
 function Inicio (){    
+
+  function scrollTo(){
+    window.scrollTo(0, 0)
+  }
+  
     return (
       <>        
         <Container className='containerStyle'>
@@ -18,7 +23,7 @@ function Inicio (){
                   <h1 className="titleStyle fw-bold pt-3 pb-3">Creá ambientes llenos de aroma y calidez.</h1>                
                   <p className="mb-0">Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>
                   <p>Descubrí nuestra amplia variedad de fragancias y productos para transformar tus espacios.</p>
-                  <Link to="/productos"><Button variant="light" className="button-style">Ver catálogo</Button></Link>
+                  <Link to="/productos"><Button variant="light" onClick={scrollTo} className="button-style">Ver catálogo</Button></Link>
                 </div>
               </div>
             </Col>
