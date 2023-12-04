@@ -9,6 +9,7 @@ import Card from 'react-bootstrap/Card';
 import Preguntas from './dataPreguntas.js'
 import Modal from 'react-bootstrap/Modal';
 import Loader from "../Loader/Loader.js"
+import { Link } from 'react-router-dom';
 
 function Test() { 
   const [isLoading, setIsLoading ] = useState(true)
@@ -141,7 +142,10 @@ function Test() {
                 <Modal.Footer>
                   <Button variant="secondary" className='botonOpcion' onClick={handleClose}>
                     Cerrar
-                  </Button>                  
+                  </Button>         
+                  <Link to="/productos">
+                    <Button variant="primary" className='botonOpcion'>Ver productos</Button> 
+                  </Link>        
                 </Modal.Footer>
               </Modal>              
             </div>
