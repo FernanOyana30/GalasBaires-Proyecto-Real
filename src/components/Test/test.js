@@ -89,72 +89,71 @@ function Test() {
   console.log(descubrir)
   //console.log(Fragancias)
 
-  //----------------------------------------------------------------
-  
+  //----------------------------------------------------------------  
 
   return (
-<div>
-    {
-      isLoading?
-      <Loader/>
-      : 
-      <>
-      <Container>
-        <Row>
-          <Col xsm={1} sm={1} lg={6}>
-            <div className='contenedorTest'>
-              <h1 style={{ marginBottom: "20px", fontWeight: "bold" }}>Descubrí tu fragancia</h1>
-              <p className='estiloParrafo'>Respondiendo sólo 4 preguntas simples pero muy personales, podrás descubrir el aroma perfecto para tus ambientes</p>
-              <div className='contenedorPregunta'>                
-                <h5 style={{ marginBottom: "10px" }}>{Preguntas[preguntaActual].titulo}</h5>
-                <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
-                <div className='contenedor-opciones'>
-                  {Preguntas[preguntaActual].opciones.map((respuesta) => (
-                    <button name={respuesta.nombrePregunta} key={respuesta.id} className="text-capitalize botonOpcion" value={respuesta.descripcion} onClick={handleInput}>{respuesta.descripcion}</button>
-                  ))}
-                </div>
-                {
-                  preguntaActual === 3 && descubrir.aroma !== '' ?  <>                  
-                <button className='botonPaginado' onClick={descubrirSubmit}>Enviar</button></>                
-                :
-                ""
-                 }
-              </div>                          
-              
-              <Modal show={show} onHide={handleClose}>                
-                <Modal.Body>
-                    <div >
-                      {resultado.length > 0 && (                
-                        <div style={{textAlign: "center"}}>
-                          <h3>¡Felicitaciones!</h3>
-                          <p>Tu fragancia perfecta es:</p>
-                          {resultado.map((fragancia) => (
-                            <Card style={{borderColor:"white"}}>
-                              <Card.Body key={fragancia.id}>
-                                <p>{fragancia.nombre}</p>
-                              </Card.Body>
-                            </Card>
-                          ) )}
-                        </div>
-                      )}
+    <div>
+        {
+          isLoading?
+          <Loader/>
+          : 
+          <>
+          <Container>
+            <Row>
+              <Col xsm={1} sm={1} lg={6}>
+                <div className='contenedorTest'>
+                  <h1 style={{ marginBottom: "20px", fontWeight: "bold" }}>Descubrí tu fragancia</h1>
+                  <p className='estiloParrafo'>Respondiendo sólo 4 preguntas simples pero muy personales, podrás descubrir el aroma perfecto para tus ambientes</p>
+                  <div className='contenedorPregunta'>                
+                    <h5 style={{ marginBottom: "10px" }}>{Preguntas[preguntaActual].titulo}</h5>
+                    <p style={{ marginBottom: "35px" }}>Elegí una opción</p>
+                    <div className='contenedor-opciones'>
+                      {Preguntas[preguntaActual].opciones.map((respuesta) => (
+                        <button name={respuesta.nombrePregunta} key={respuesta.id} className="text-capitalize botonOpcion" value={respuesta.descripcion} onClick={handleInput}>{respuesta.descripcion}</button>
+                      ))}
                     </div>
-                </Modal.Body>
-                <Modal.Footer>
-                  <Button variant="secondary" className='botonOpcion' onClick={handleClose}>
-                    Cerrar
-                  </Button>         
-                  <Link to="/productos">
-                    <Button variant="primary" className='botonOpcion'>Ver productos</Button> 
-                  </Link>        
-                </Modal.Footer>
-              </Modal>              
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </>
-    }
-</div>
+                    {
+                      preguntaActual === 3 && descubrir.aroma !== '' ?  <>                  
+                    <button className='botonPaginado' onClick={descubrirSubmit}>Enviar</button></>                
+                    :
+                    ""
+                     }
+                  </div>                          
+                   
+                  <Modal show={show} onHide={handleClose}>                
+                    <Modal.Body>
+                        <div >
+                          {resultado.length > 0 && (                
+                            <div style={{textAlign: "center"}}>
+                              <h3>¡Felicitaciones!</h3>
+                              <p>Tu fragancia perfecta es:</p>
+                              {resultado.map((fragancia) => (
+                                <Card style={{borderColor:"white"}}>
+                                  <Card.Body key={fragancia.id}>
+                                    <p>{fragancia.nombre}</p>
+                                  </Card.Body>
+                                </Card>
+                              ) )}
+                            </div>
+                          )}
+                        </div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                      <Button variant="secondary" className='botonOpcion' onClick={handleClose}>
+                        Cerrar
+                      </Button>         
+                      <Link to="/productos">
+                        <Button variant="primary" className='botonOpcion'>Ver productos</Button> 
+                      </Link>        
+                    </Modal.Footer>
+                  </Modal>              
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </>
+        }
+    </div>
     
   );
 }

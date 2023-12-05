@@ -7,7 +7,6 @@ import Pagination from './Pagination';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-//import productos from '../../productos';
 import Loader from "../Loader/Loader";
 import './style.css';
 import Card from 'react-bootstrap/Card';
@@ -50,29 +49,6 @@ async function getItemsByCategoryFromDatabase(categoryURL){
 }
 
 //--------------------------------------------
-
-// function getItemsFromDatabase(){
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve(productos);
-//     }, 1000);
-//   }); 
-// }
-
-// function getItemsByCategoryFromDatabase(categoryURL){
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       let productsFiltered = productos.filter(
-//         producto => producto.categoria === categoryURL
-//       )
-//       resolve(productsFiltered);
-//     }, 1000);
-//   }); 
-// }
-
-//-----------------------------------
-
-
 export default function ItemListContainer (){
   const [productos, setProductos ] = useState([]);
   const [isLoading, setIsLoading] = useState(true)
@@ -99,20 +75,12 @@ export default function ItemListContainer (){
   }, [idCategory]) 
 
   //pagination
-
   const totalProducts = productos.length 
   const [productsPerPage] = useState(8)
   const [currentPage, setCurrentPage] = useState(1)
 
   const lastIndex =  currentPage * productsPerPage 
   const firstIndex = lastIndex - productsPerPage
-
-  
-
-  // useEffect( () => {
-  //   let paginaActual = currentPage
-  //   if 
-  // }, [idCategory]) 
 
     return (
       <>

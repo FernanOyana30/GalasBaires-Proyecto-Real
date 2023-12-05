@@ -6,7 +6,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Loader from "../Loader/Loader"
 import Destacados from '../ItemListContainer/destacados'
-//import productos from '../../productos'
 import {useParams} from "react-router-dom"
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -37,16 +36,6 @@ async function getSingleItemFromDatabase(idProducto){
 
   return  {...docSnapshot.data(), id: docSnapshot.id};
 }
-
-//--------------------------------------------------------------
-// function getSingleItemFromDatabase(idProducto){
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       let encontrado = productos.find((producto) => producto.id === Number(idProducto))
-//       resolve(encontrado);
-//     }, 1000);
-//   }); 
-// }
 
 //---------------------------------------------------------------
 function ItemDetailContainer(initial, onAddToForm) {
