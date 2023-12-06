@@ -1,0 +1,321 @@
+.contenedorEncabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;            
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tituloEncabezado{
+    margin-bottom: 30px;
+    color: #804B37;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.parrafoEncabezado{
+    width: 50%;
+}
+
+.iconoFAQ{
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.contenedorContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 40px;
+    margin-bottom: 60px;    
+}
+
+.contenedorIcono{    
+    width: 400px;    
+    height: 100px;
+    border-left-style: solid;
+    border-left-color: #DED5C2;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;    
+    font-size: 15px;
+
+}
+
+.contenedorIconoFacebook{    
+    width: 400px;    
+    height: 100px;
+    border-left-style: solid;
+    border-left-color: #DED5C2;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;    
+    font-size: 15px;
+
+}
+
+.contenedorIconoMail{
+    width: 400px;    
+    height: 100px;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+
+.acordeonStyle{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.acordeonItem{
+    width: 800px;    
+    margin-top: 10px;
+    border-color: #804B37;    
+}
+
+/*------------------------------------*/
+
+/*Media Queries Mobile*/
+@media (min-width: 320px) and (max-width: 374px){
+    .contenedorEncabezado{  
+        width: 500px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .contenedorContacto{
+        display: flex;
+        flex-direction: row;       
+        justify-content: start;        
+        align-content: start;
+        align-items: start;
+        text-align: center;        
+        width: 500px;                    
+        flex-wrap: wrap;   
+    }
+
+    .contenedorIconoMail{        
+        width: 200px;    
+        height: 100px;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 20px; 
+    }
+
+    .contenedorIconoFacebook{
+        display: none;        
+    }  
+
+    .contenedorIcono{  
+        border-left-style: none; 
+        width: 200px;       
+        height: 100px;                   
+    }
+
+    .acordeonStyle{    
+        margin-left: 200px;
+    }
+
+    .acordeonItem{
+        width: 400px;    
+        margin-top: 10px;
+        border-color: #804B37;    
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+    .contenedorEncabezado{  
+        width: 500px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .contenedorContacto{
+        display: flex;
+        flex-direction: row;       
+        justify-content: start;        
+        align-content: start;
+        align-items: start;
+        text-align: center;        
+        width: 500px;                    
+        flex-wrap: wrap;   
+    }
+
+    .contenedorIconoMail{        
+        width: 200px;    
+        height: 100px;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 20px; 
+    }
+
+    .contenedorIconoFacebook{
+        display: none;        
+    }  
+
+    .contenedorIcono{  
+        border-left-style: none; 
+        width: 200px;       
+        height: 100px;                   
+    }
+
+    .acordeonStyle{    
+        margin-left: 140px;
+    }
+
+    .acordeonItem{
+        width: 400px;    
+        margin-top: 10px;
+        border-color: #804B37;    
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+    .contenedorEncabezado{  
+        width: 500px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .contenedorContacto{
+        display: flex;
+        flex-direction: row;       
+        justify-content: start;        
+        align-content: start;
+        align-items: start;
+        text-align: center;        
+        width: 500px;                    
+        flex-wrap: wrap;   
+    }
+
+    .contenedorIconoMail{        
+        width: 200px;    
+        height: 100px;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 20px; 
+    }
+
+    .contenedorIconoFacebook{
+        display: none;        
+    }  
+
+    .contenedorIcono{  
+        border-left-style: none; 
+        width: 200px;       
+        height: 100px;                   
+    }
+
+    .acordeonStyle{    
+        margin-left: 90px;
+    }
+
+    .acordeonItem{
+        width: 400px;    
+        margin-top: 10px;
+        border-color: #804B37;    
+    }
+}
+
+/*Media Queries Tablet*/
+@media (min-width: 768px) and (max-width: 1023px){
+    .contenedorContacto{        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 60px;    
+        width: 73vb;
+    }
+
+    .contenedorIcono{  
+        width: 490px;    
+        height: 100px;
+        border-left-style: solid;
+        border-left-color: #DED5C2;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;    
+        font-size: 14px;
+    
+    }
+    
+    .contenedorIconoFacebook{ 
+        display: none;  
+    }
+    
+    .contenedorIconoMail{
+        width: 400px;    
+        height: 100px;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 28px;
+        padding-left: 10px;
+        padding-right: 10px;    
+    }
+
+    .acordeonStyle{    
+        margin-left: 5px;
+    }
+
+    .acordeonItem{
+        width: 600px;    
+        margin-top: 10px;
+        border-color: #804B37;    
+    }
+}
+
+/*Media Queries Desktop*/
+@media (min-width: 1024px) and (max-width: 1439px){
+    .contenedorIcono{  
+        width: 540px;    
+        height: 100px;
+        border-left-style: solid;
+        border-left-color: #DED5C2;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;    
+        font-size: 14px;    
+    }
+
+    .contenedorIconoFacebook{    
+        width: 540px;    
+        height: 100px;
+        border-left-style: solid;
+        border-left-color: #DED5C2;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;    
+        font-size: 15px;    
+    }
+
+    .contenedorIconoMail{
+        width: 400px;    
+        height: 100px;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 28px;
+        padding-left: 10px;
+        padding-right: 10px;    
+    }
+}
