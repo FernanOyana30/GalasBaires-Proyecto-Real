@@ -130,7 +130,8 @@ function Test() {
                               {resultado.map((fragancia) => (
                                 <Card style={{borderColor:"white"}}>
                                   <Card.Body key={fragancia.id}>
-                                    <p>{fragancia.nombre}</p>
+                                    <p className='mb-0 fw-bold'>{fragancia.nombre}</p>
+                                    <p className='mb-0'>{fragancia.descripcion}</p>
                                   </Card.Body>
                                 </Card>
                               ) )}
