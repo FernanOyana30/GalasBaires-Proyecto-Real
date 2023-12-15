@@ -129,7 +129,8 @@ function Test() {
                               <p>Tu fragancia perfecta es:</p>
                               {resultado.map((fragancia) => (
                                 <Card style={{borderColor:"white"}}>
-                                  <Card.Body key={fragancia.id}>
+                                  <Card.Img className='w-25 imagen-modal' variant="top" src={fragancia.imagen} />
+                                  <Card.Body key={fragancia.id}>                                    
                                     <p className='mb-0 fw-bold'>{fragancia.nombre}</p>
                                     <p className='mb-0'>{fragancia.descripcion}</p>
                                   </Card.Body>

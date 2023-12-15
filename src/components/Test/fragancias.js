@@ -5,7 +5,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "sutil",
         aroma: "floral",       
-        descripcion: "Fragancia floral, con notas de bergamota, limón, mandarina y té verde. Una mezcla de son de rosas, iris, lirio, jazmín, musgo, roble, cedro, sándalo y ámbar. El perfume tiene un olor fresco e intenso." 
+        descripcion: "Fragancia floral, con notas de bergamota, limón, mandarina y té verde. Una mezcla de son de rosas, iris, lirio, jazmín, musgo, roble, cedro, sándalo y ámbar. El perfume tiene un olor fresco e intenso.",
+        imagen: "/img/fragancias/lirios-del-valle.jpg" 
     },
     {id: 2,
         nombre: "Vainilla Gala",
@@ -13,7 +14,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "normal",
         aroma: "dulce",      
-        descripcion: "Dulce especiada. Combina notas de vainilla negra, azúcar tostada y canela."  
+        descripcion: "Dulce especiada. Combina notas de vainilla negra, azúcar tostada y canela.",
+        imagen: "/img/fragancias/vainilla-gala.jpg"  
     },
     {id: 3,
         nombre: "Jazz Black",
@@ -21,7 +23,8 @@ const Fragancias = [
         habitación: "otros",
         nivel: "sutil",
         aroma: "relajante",      
-        descripcion: "Una fragancia floral suave con clavos de olor, bergamota y neroli. Con corazón de jazmín, rosa y flor de azahar. Y unos toques de orquídea de vainilla, sándalo y vetiver."  
+        descripcion: "Una fragancia floral suave con clavos de olor, bergamota y neroli. Con corazón de jazmín, rosa y flor de azahar. Y unos toques de orquídea de vainilla, sándalo y vetiver.",
+        imagen: "/img/fragancias/jazz-black.jpg"  
     },
     {id: 4,
         nombre: "Instant Karma",
@@ -29,7 +32,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "intenso",
         aroma: "amaderado",     
-        descripcion: "Aroma amaderado, floral frutal. Sentirás notas de nardo, musk, maderas y un toque frutal dulce."   
+        descripcion: "Aroma amaderado, floral frutal. Sentirás notas de nardo, musk, maderas y un toque frutal dulce.",
+        imagen: "/img/fragancias/instant-karma.jpg"   
     },
     {id: 5,
         nombre: "Green Garden",
@@ -37,7 +41,8 @@ const Fragancias = [
         habitación: "baño",
         nivel: "alto",
         aroma: "dulce",        
-        descripcion: "Una fragancia frutal, fresca y deliciosa. Con una combinación de peras, manzanas, pepinos y más."
+        descripcion: "Una fragancia frutal, fresca y deliciosa. Con una combinación de peras, manzanas, pepinos y más.",
+        imagen: "/img/fragancias/green-garden.jpg"
     },
     {id: 6,
         nombre: "Orange Bloom",
@@ -45,7 +50,8 @@ const Fragancias = [
         habitación: "cocina",
         nivel: "normal",
         aroma: "cítrico",      
-        descripcion: "Fragancia oriental cítrica. Con notas de naranjas dulces, sándalo dulce y pimienta especiada."  
+        descripcion: "Fragancia oriental cítrica. Con notas de naranjas dulces, sándalo dulce y pimienta especiada.",
+        imagen: "/img/fragancias/orange-bloom.jpg"  
     },
     {id: 7,
         nombre: "Irish Coffee",
@@ -53,7 +59,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "intenso",
         aroma: "relajante",     
-        descripcion: "Fragancia muy gourmet, exquisita, con notas de chocolate, cacao, vanille dolce y café."   
+        descripcion: "Fragancia muy gourmet, exquisita, con notas de chocolate, cacao, vanille dolce y café.",
+        imagen: "/img/fragancias/irish-coffee.jpg"   
     },
     {id: 8,
         nombre: "Vanity F",
@@ -61,7 +68,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "alto",
         aroma: "amaderado",    
-        descripcion: "Esta fragancia amaderada tiene notas de pomelo, menta, mandarina roja, rosa, canela, notas especiadas. Aroma a cuero, pachuli e hindú."    
+        descripcion: "Esta fragancia amaderada tiene notas de pomelo, menta, mandarina roja, rosa, canela, notas especiadas. Aroma a cuero, pachuli e hindú.",
+        imagen: "/img/fragancias/vanity.jpg"    
     },
     {id: 9,
         nombre: "Tila Mint",
@@ -69,7 +77,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "sutil",
         aroma: "relajante",   
-        descripcion: "Un aroma floral herbal fresco, relajante, que mezcla las notas de tilo y lavanda, con unas pequeñas notas de menta."     
+        descripcion: "Un aroma floral herbal fresco, relajante, que mezcla las notas de tilo y lavanda, con unas pequeñas notas de menta.",
+        imagen: "/img/fragancias/tila-mint.jpg"     
     },
     {id: 10,
         nombre: "Floral Tea",
@@ -77,7 +86,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "intermedio",
         aroma: "relajante",        
-        descripcion: "Aroma floral cítrico, con una mezcla de tilo y un delicado aroma a té verde."
+        descripcion: "Aroma floral cítrico, con una mezcla de tilo y un delicado aroma a té verde.",
+        imagen: "/img/fragancias/floral-tea.jpg"
     },
     {id: 11,
         nombre: "Bouquet de Fresias",
@@ -85,7 +95,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "alto",
         aroma: "floral",        
-        descripcion: "Aroma floral, con toques de fresias frescas con la suavidad del algodón. Fragancia muy delicada."
+        descripcion: "Aroma floral, con toques de fresias frescas con la suavidad del algodón. Fragancia muy delicada.",
+        imagen: "/img/fragancias/bouquet-fresias.jpg"
     },
     {id: 12,
         nombre: "Vainana",
@@ -93,7 +104,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "sutil",
         aroma: "dulce",        
-        descripcion: "Una nueva combinación perfecta de vainillas tostadas con notas frutales de ananá."
+        descripcion: "Una nueva combinación perfecta de vainillas tostadas con notas frutales de ananá.",
+        imagen: "/img/fragancias/vainana.jpg"
     },
     {id: 13,
         nombre: "Pink Touch",
@@ -101,7 +113,8 @@ const Fragancias = [
         habitación: "cocina",
         nivel: "normal",
         aroma: "cítrico",        
-        descripcion: "Fragancia cítrica con el pomelo rosado como nota principal. También sentirás aromas a mandarina y limón."
+        descripcion: "Fragancia cítrica con el pomelo rosado como nota principal. También sentirás aromas a mandarina y limón.",
+        imagen: "/img/fragancias/pink-touch.jpg"
     },
     {id: 14,
         nombre: "Bergamota Glow",
@@ -109,7 +122,8 @@ const Fragancias = [
         habitación: "cocina",
         nivel: "sutil",
         aroma: "cítrico",    
-        descripcion: "Aroma floral verde frutada que combina notas de bergamota, limón, artemisa y melón. Perfecto acorde con ámbar, cedro, sándalo y un toque exótico de semillas de Tonka."    
+        descripcion: "Aroma floral verde frutada que combina notas de bergamota, limón, artemisa y melón. Perfecto acorde con ámbar, cedro, sándalo y un toque exótico de semillas de Tonka.",
+        imagen: "/img/fragancias/bergamota-glow.jpg"    
     },
     {id: 15,
         nombre: "Tropic",
@@ -117,7 +131,8 @@ const Fragancias = [
         habitación: "baño",
         nivel: "sutil",
         aroma: "dulce",       
-        descripcion: "Fragancia floral frutal. Con notas de frutas tropicales como el mango, la papaya y el maracuyá." 
+        descripcion: "Fragancia floral frutal. Con notas de frutas tropicales como el mango, la papaya y el maracuyá.",
+        imagen: "/img/fragancias/tropic.jpg" 
     },
     {id: 16,
         nombre: "Aqua Meel",
@@ -125,7 +140,8 @@ const Fragancias = [
         habitación: "dormitorio",
         nivel: "normal",
         aroma: "floral",      
-        descripcion: "Amaderada floral frutal. Con notas de nardo, musk y maderas con un toque frutal dulce."  
+        descripcion: "Amaderada floral frutal. Con notas de nardo, musk y maderas con un toque frutal dulce.",
+        imagen: "/img/fragancias/aqua-meel.jpg"  
     },
     {id: 17,
         nombre: "Amalfi Glam",
@@ -133,7 +149,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "intermedio",
         aroma: "floral",      
-        descripcion: "Esta fragancia floral frutal tiene notas de limón de amalfi y lima. También sentirás aromas como manzana, peonía, almendras, flor de manzano, almizcle y cedro de Virginia."  
+        descripcion: "Esta fragancia floral frutal tiene notas de limón de amalfi y lima. También sentirás aromas como manzana, peonía, almendras, flor de manzano, almizcle y cedro de Virginia.",
+        imagen: "/img/fragancias/amalfi-glam.jpg"  
     },
     {id: 18,
         nombre: "Cupcake",
@@ -141,7 +158,8 @@ const Fragancias = [
         habitación: "baño",
         nivel: "alto",
         aroma: "dulce",        
-        descripcion: "Aroma gourmet dulce con notas de vainilla, caramel y vainilla tostada."
+        descripcion: "Aroma gourmet dulce con notas de vainilla, caramel y vainilla tostada.",
+        imagen: "/img/fragancias/cupcake.jpg"
     },
     {id: 19,
         nombre: "Delicious Chic",
@@ -149,7 +167,8 @@ const Fragancias = [
         habitación: "cocina",
         nivel: "sutil",
         aroma: "dulce",        
-        descripcion: "Frutal dulce, con notas de cerezas, moras, frutillas y toques de vainilla tostada."
+        descripcion: "Frutal dulce, con notas de cerezas, moras, frutillas y toques de vainilla tostada.",
+        imagen: "/img/fragancias/delicious-chic.jpg"
     },
     {id: 20,
         nombre: "La vida es Galas",
@@ -157,7 +176,8 @@ const Fragancias = [
         habitación: "cocina",
         nivel: "normal",
         aroma: "cítrico",      
-        descripcion: "Una nueva fragancia similar a “La vida es bella” con notas afrutadas, donde se puede distinguir la grosella negra y la pera. Dulce."  
+        descripcion: "Una nueva fragancia similar a “La vida es bella” con notas afrutadas, donde se puede distinguir la grosella negra y la pera. Dulce.",
+        imagen: "/img/fragancias/la-vida-es-galas.jpg"  
     },    
 
     {id: 21,
@@ -166,15 +186,17 @@ const Fragancias = [
         habitación: "living",
         nivel: "sutil",
         aroma: "amaderado",      
-        descripcion: "Amaderada floral frutal. Con notas de nardo, musk y maderas con un toque frutal dulce."  
+        descripcion: "Amaderada floral frutal. Con notas de nardo, musk y maderas con un toque frutal dulce.",
+        imagen: "/img/fragancias/aqua-meel.jpg"  
     },
     {id: 22,
-        nombre: "Vervena Glow",
+        nombre: "Verbena Glow",
         momento: "mañana",
         habitación: "baño",
         nivel: "intermedio",
         aroma: "cítrico",       
-        descripcion: "" 
+        descripcion: "",
+        imagen: "/img/fragancias/verbena-glow.jpg" 
     },
     {id: 23,
         nombre: "Aqua Meel",
@@ -182,7 +204,8 @@ const Fragancias = [
         habitación: "living",
         nivel: "intermedio",
         aroma: "amaderado",    
-        descripcion: "Amaderada floral frutal. Con notas de nardo, musk y maderas con un toque frutal dulce."    
+        descripcion: "Amaderada floral frutal. Con notas de nardo, musk y maderas con un toque frutal dulce.",
+        imagen: "/img/fragancias/aqua-meel.jpg"    
     },
     {id: 24,
         nombre: "Vainilla Gala",
@@ -190,7 +213,8 @@ const Fragancias = [
         habitación: "dormitorio",
         nivel: "normal",
         aroma: "relajante",    
-        descripcion: "Dulce especiada. Combina notas de vainilla negra, azúcar tostada y canela."    
+        descripcion: "Dulce especiada. Combina notas de vainilla negra, azúcar tostada y canela.",
+        imagen: "/img/fragancias/vainilla-gala.jpg"    
     },
     {id: 25,
         nombre: "Pink Touch",
@@ -198,7 +222,8 @@ const Fragancias = [
         habitación: "baño",
         nivel: "alto",
         aroma: "cítrico",    
-        descripcion: "Fragancia cítrica con el pomelo rosado como nota principal. También sentirás aromas a mandarina y limón."    
+        descripcion: "Fragancia cítrica con el pomelo rosado como nota principal. También sentirás aromas a mandarina y limón.",
+        imagen: "/img/fragancias/pink-touch.jpg"    
     },
     {id: 26,
         nombre: "Tila Mint",
@@ -206,7 +231,8 @@ const Fragancias = [
         habitación: "dormitorio",
         nivel: "alto",
         aroma: "relajante",       
-        descripcion: "Un aroma floral herbal fresco, relajante, que mezcla las notas de tilo y lavanda, con unas pequeñas notas de menta." 
+        descripcion: "Un aroma floral herbal fresco, relajante, que mezcla las notas de tilo y lavanda, con unas pequeñas notas de menta.",
+        imagen: "/img/fragancias/tila-mint.jpg" 
     },
     {id: 27,
         nombre: "Bouquet de fresias",
@@ -214,7 +240,8 @@ const Fragancias = [
         habitación: "dormitorio",
         nivel: "intenso",
         aroma: "floral",     
-        descripcion: "Aroma floral, con toques de fresias frescas con la suavidad del algodón. Fragancia muy delicada."   
+        descripcion: "Aroma floral, con toques de fresias frescas con la suavidad del algodón. Fragancia muy delicada.",
+        imagen: "/img/fragancias/bouquet-fresias.jpg"   
     },
     {id: 28,
         nombre: "Vanity F",
@@ -222,7 +249,8 @@ const Fragancias = [
         habitación: "dormitorio",
         nivel: "intenso",
         aroma: "dulce",       
-        descripcion: "Esta fragancia amaderada tiene notas de pomelo, menta, mandarina roja, rosa, canela, notas especiadas. Aroma a cuero, pachuli e hindú." 
+        descripcion: "Esta fragancia amaderada tiene notas de pomelo, menta, mandarina roja, rosa, canela, notas especiadas. Aroma a cuero, pachuli e hindú.",
+        imagen: "/img/fragancias/vanity.jpg" 
     },
     {id: 29,
         nombre: "Pink Touch",
@@ -230,7 +258,8 @@ const Fragancias = [
         habitación: "baño",
         nivel: "intenso",
         aroma: "cítrico",      
-        descripcion: "Fragancia cítrica con el pomelo rosado como nota principal. También sentirás aromas a mandarina y limón."  
+        descripcion: "Fragancia cítrica con el pomelo rosado como nota principal. También sentirás aromas a mandarina y limón.",
+        imagen: "/img/fragancias/pink-touch.jpg"  
     }    
 ]
 

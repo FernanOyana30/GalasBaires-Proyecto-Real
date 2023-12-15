@@ -81,6 +81,10 @@
     font-size: 14px;  
 }
 
+.imagen-modal{    
+    margin-left: 172px;
+}
+
 /*Media Queries Mobile*/
 @media (min-width: 320px) and (max-width: 374px){
     .contenedorTest{
