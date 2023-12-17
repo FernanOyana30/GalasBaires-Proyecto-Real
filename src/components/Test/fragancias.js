@@ -195,7 +195,7 @@ const Fragancias = [
         habitación: "baño",
         nivel: "intermedio",
         aroma: "cítrico",       
-        descripcion: "",
+        descripcion: "Combina notas de bergamota, limón, artemisa y melón, en audaz contrapunto con ámbar, cedro, sándalo y un toque exótico de semillas de Tonka. Aroma: cítrico - floral.",
         imagen: "/img/fragancias/verbena-glow.jpg" 
     },
     {id: 23,
@@ -260,7 +260,17 @@ const Fragancias = [
         aroma: "cítrico",      
         descripcion: "Fragancia cítrica con el pomelo rosado como nota principal. También sentirás aromas a mandarina y limón.",
         imagen: "/img/fragancias/pink-touch.jpg"  
-    }    
+    },
+    {id: 30,
+        nombre: "Aqua Meel",
+        momento: "noche",
+        habitación: "living",
+        nivel: "normal",
+        aroma: "amaderado",    
+        descripcion: "Amaderada floral frutal. Con notas de nardo, musk y maderas con un toque frutal dulce.",
+        imagen: "/img/fragancias/aqua-meel.jpg"    
+    }
+
 ]
 
 export default Fragancias;
