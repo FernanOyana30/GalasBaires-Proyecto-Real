@@ -2,12 +2,13 @@ import Accordion from 'react-bootstrap/Accordion';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './style.css'
 
 
 function FAQ() {
   return (
     <>
-      <Container>
+      <Container className='containerStyle'>
         <Row>
           <Col sm={12}>
             <div>

@@ -1,5 +1,7 @@
-/*HOJA DE ESTILOS*/
-/*FOOTER*/
+.footer-container {
+    background-color: #ded5c2;
+    max-width: 100%;
+}
 
 /*Media Queries Mobile*/
 @media (max-width: 425px)  {        

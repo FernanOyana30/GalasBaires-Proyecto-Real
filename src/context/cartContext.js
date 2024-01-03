@@ -1,4 +1,4 @@
-import {createContext, useEffect, useState} from "react";
+import {createContext, useState} from "react";
 
 const cartContext = createContext({ 
     cart: [],
@@ -37,13 +37,13 @@ function CartContextProvider({children}){
     const getCountInCart = cart.reduce ((acc, item) => {
         return acc = acc + item.count
     }, 0)
-    console.log(getCountInCart)
+    //console.log(getCountInCart)
   
     //Obtener precio total de compra
     const getPriceInCart = cart.reduce ((acc, prod) => {
         return acc = acc + prod.count * prod.precio
     }, 0)
-    console.log(getPriceInCart)    
+    //console.log(getPriceInCart)    
 
     //--------------------------------------------------
 

@@ -1,48 +1,94 @@
-import React from 'react'
-import './style.css'
+import React from "react";
+import "./style.css";
 
-function Pagination({productsPerPage, totalProducts, currentPage, setCurrentPage}) {
-    const PageNumbers = []
+function Pagination({
+  productsPerPage,
+  totalProducts,
+  currentPage,
+  setCurrentPage,
+}) {
+  const PageNumbers = [];
 
-    for (let i = 1; i <= Math.ceil(totalProducts / productsPerPage); i++){
-        PageNumbers.push(i)
-    }
+  for (let i = 1; i <= Math.ceil(totalProducts / productsPerPage); i++) {
+    PageNumbers.push(i);
+  }
 
-    const onPreviousPage = () => {
-        setCurrentPage(currentPage - 1)
-    }
+  const onPreviousPage = () => {
+    setCurrentPage(currentPage - 1);
+  };
 
-    const onNextPage = () => {
-        setCurrentPage(currentPage + 1)
-    }
+  const onNextPage = () => {
+    setCurrentPage(currentPage + 1);
+  };
 
-    const onSpecificPage = (n) => {
-        setCurrentPage(n)
-    }
+  const onSpecificPage = (n) => {
+    setCurrentPage(n);
+  };
 
-    return (
-        <div className='estiloPaginacion'>            
-            <nav aria-label="Page navigation example">
-              <ul className="pagination">
-                <li className="page-item"><a className={`page-link text-decoration-none paginationStyle ${currentPage === 1 ? 'disabled' : ''}` } onClick={onPreviousPage} >Anterior</a></li>
-                {
-                    PageNumbers.map(noPage => (
-                        <li key={noPage}>
-                            <a className={`page-link text-decoration-none paginationStyle
-                            ${noPage === currentPage ? 'paginationStyleActive' : ''
-                            }`}
-                            onClick={() => onSpecificPage(noPage)}
-                            >
-                                {noPage}
-                            </a>
-                        </li>                        
-                    ) )
-                }        
-                <li className="page-item"><a className={`page-link text-decoration-none paginationStyle ${currentPage >= PageNumbers.length ? 'disabled' : ''}`} onClick={onNextPage}>Siguiente</a></li>
-              </ul>
-            </nav>
-        </div>
-    )
+  return (
+    // <div className='estiloPaginacion'>
+    //     <nav aria-label="Page navigation example">
+    //       <ul className="pagination">
+    //         <li className="page-item">
+    //             <a className={`page-link text-decoration-none paginationStyle ${currentPage === 1 ? 'disabled' : ''}` } onClick={onPreviousPage} >Anterior</a></li>
+    //         {
+    //             PageNumbers.map(noPage => (
+    //                 <li key={noPage}>
+    //                     <a className={`page-link text-decoration-none paginationStyle
+    //                     ${noPage === currentPage ? 'paginationStyleActive' : ''
+    //                     }`}
+    //                     onClick={() => onSpecificPage(noPage)}
+    //                     >
+    //                         {noPage}
+    //                     </a>
+    //                 </li>
+    //             ) )
+    //         }
+    //         <li className="page-item"><a className={`page-link text-decoration-none paginationStyle ${currentPage >= PageNumbers.length ? 'disabled' : ''}`} onClick={onNextPage}>Siguiente</a></li>
+    //       </ul>
+    //     </nav>
+    // </div>
+
+    <div className="estiloPaginacion">
+      <nav aria-label="Page navigation example">
+        <ul className="pagination">
+          <li className="page-item">
+            <button
+              className={`page-link text-decoration-none paginationStyle ${
+                currentPage === 1 ? "disabled" : ""
+              }`}
+              onClick={onPreviousPage}
+            >
+              Anterior
+            </button>
+          </li>
+          {PageNumbers.map((noPage) => (
+            <li key={noPage}>
+              <button
+                className={`page-link text-decoration-none paginationStyle
+                        ${
+                          noPage === currentPage ? "paginationStyleActive" : ""
+                        }`}
+                onClick={() => onSpecificPage(noPage)}
+              >
+                {noPage}
+              </button>
+            </li>
+          ))}
+          <li className="page-item">
+            <button
+              className={`page-link text-decoration-none paginationStyle ${
+                currentPage >= PageNumbers.length ? "disabled" : ""
+              }`}
+              onClick={onNextPage}
+            >
+              Siguiente
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
 }
 
-export default Pagination
+export default Pagination;

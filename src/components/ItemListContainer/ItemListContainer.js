@@ -71,6 +71,8 @@ export default function ItemListContainer (){
   const lastIndex =  currentPage * productsPerPage 
   const firstIndex = lastIndex - productsPerPage
 
+ 
+
     return (
       <>
         <Container className="container-style">     
