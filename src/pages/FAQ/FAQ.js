@@ -10,7 +10,7 @@ function FAQ() {
       <Container>
         <Row>
           <Col xsm={1} sm={1} md={12} lg={12}>
-            <div className='contenedorEncabezado'>
+            <div className='contenedorEncabezado mt-5'>
               <h1 className='tituloEncabezado'>¿En qué podemos ayudarte?</h1>
               <p className='parrafoEncabezado'>Acá encontrarás las preguntas más frecuentes. Si tu duda no está resuelta, contactanos. Estaremos encantados de ayudarte.</p>
             </div>

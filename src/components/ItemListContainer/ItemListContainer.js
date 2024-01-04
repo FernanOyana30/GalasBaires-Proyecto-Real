@@ -87,7 +87,7 @@ export default function ItemListContainer (){
         <Container className="container-style">     
           <Row >            
             <Col xsm={1} sm={1} md={12} lg={12}>              
-              <div className="container-encabezado text-center pb-5 pt-5"> 
+              <div className="container-encabezado text-center pb-5 pt-5 mt-5"> 
                 <h1 className="encabezadoCatalogo fw-bold" style={{color:"#2D2D2D"}}>Nuestro catálogo</h1>
               </div>              
             </Col>
