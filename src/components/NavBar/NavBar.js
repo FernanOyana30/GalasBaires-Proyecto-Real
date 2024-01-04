@@ -36,7 +36,8 @@ function NavBar() {
                   </Link>
                 </Nav.Link>
                 <Navbar.Brand className="h1 align-items-center">
-                  GALAS BAIRES
+                  <img alt='' src='./img/isologo.png' className='d-inline-block align-center' width="170"
+              />
                 </Navbar.Brand>
                 <Nav.Link>
                   <Link className="text-decoration-none text-black" to="/Nosotros">

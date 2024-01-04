@@ -38,10 +38,10 @@ export default function CheckoutForm(props) {
   }
 
   return (
-    <div>
-      <Form>
-        <Row>
-          <Col>
+    <div className='mt-5'>
+      <Form >
+        <Row >
+          <Col >
             <Form.Label>Nombre*</Form.Label>
             <Form.Control placeholder="Ingresá tu nombre" className='w-100' value={userData.firstName}
                name="firstName"
