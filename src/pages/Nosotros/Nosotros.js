@@ -14,8 +14,8 @@ function Nosotros() {
         <Row>
           <Col sm={12}>
             <div className='encabezadoNosotros'>
-              <h1>Sobre Galas Baires</h1>
-              <p>"No hay nadie tan fuerte como una persona, cuyo corazón está siempre lleno de gratitud" - Daisaku Ikeda."</p>              
+              <h3 className='titleStyle' style={{fontWeight:"bold", margin:"40px", fontSize:"50px"}}>Sobre Galas Baires</h3>
+              <p style={{marginLeft:"450px", marginRight:"450px", marginBottom:"50px" }}>"No hay nadie tan fuerte como una persona, cuyo corazón está siempre lleno de gratitud" - Daisaku Ikeda."</p>              
             </div>
           </Col>          
         </Row>
@@ -27,13 +27,13 @@ function Nosotros() {
           </Col> 
           <Col xsm={1} sm={1} md={6} lg={6}>
             <div className="containerNosotros p-3 mb-5">                               
-                <h2 className="titleStyle fw-bold mb-3">Nuestra historia</h2>
-                <p className='mb-2'>Galas nace en un momento muy complicado, en 2019, tras la pérdida de mi hija. Comencé investigando mucho, a prueba y error, claro, a leer muchísimo sobre composiciones químicas y origen de aquellos productos naturales que nos permitan producir el menor daño posible a nuestro planeta y seres vivos.
+                <h2 className="titleStyle fw-bold mb-3" style={{fontSize:"17px"}}>Nuestra historia</h2>
+                <p className='mb-2' style={{marginRight:"45px"}}>Galas nace en un momento muy complicado, en 2019, tras la pérdida de mi hija. Comencé investigando mucho, a prueba y error, claro, a leer muchísimo sobre composiciones químicas y origen de aquellos <span className='fw-bold'>productos naturales</span>  que nos permitan producir el menor daño posible a nuestro planeta y seres vivos.
                   
                 </p>
-                <p className='mb-2'>Estudié Diseño Gráfico, y aproveché toda mi creatividad para volcarlas en el diseño de nuestro packaging. Todo parecía encaminarse, hasta que en 2020 comenzó la pandemia. Esto nos llevó a querer ayudar a muchas personas que no estaban en un buen momento, llevando nuestros productos a la venta mayorista donde nuestros clientes puedan personalizar las velas con su propia marca y empezar a vender.
+                <p className='mb-2' style={{marginRight:"45px"}}>Estudié Diseño Gráfico, y aproveché toda mi <span className='fw-bold'>creatividad</span> para volcarlas en el diseño de nuestro packaging. Todo parecía encaminarse, hasta que en 2020 comenzó la pandemia. Esto nos llevó a querer ayudar a muchas personas que no estaban en un buen momento, llevando nuestros productos a la venta mayorista donde nuestros clientes puedan <span className='fw-bold'>personalizar las velas</span>  con su propia marca y empezar a vender.
                 </p>
-                <p className='mb-4'>Hoy, Galas sigue creciendo gracias a los minoristas y mayoristas que me acompañan y me permiten seguir llevando luz de Gala a sus hogares.
+                <p className='mb-4' style={{marginRight:"45px"}}>Hoy, Galas sigue creciendo gracias a los minoristas y mayoristas que me acompañan y me permiten seguir llevando luz de Gala a sus hogares.
                 </p>
             </div>              
           </Col>
@@ -41,23 +41,23 @@ function Nosotros() {
         <Row>
           <Col sm={12}>
               <div className="contenedorCaracteristicas d-flex justify-content-evenly pt-5 pb-3">
-                <div className="textCaracteristicas text-center">    
-                  <img alt="" src='./img/target-icon.png'  className="iconoCaracteristicas mb-4"/>
+                <div className="textNosotros text-center" >    
+                  <img alt="" src='./img/target-icon.png' className="iconoCaracteristicas mb-4"/>
                   <h5 className='fw-bold'>Nuestra misión</h5>
-                  <p className='parrafoCaracteristicas'>Crear un vela natural que no solo ilumine sino que perfume incluso sin encenderla y con mayor durabilidad.
-                  Por eso desarrollamos nuestra propia fórmula y experimentamos con distintas composiciones químicas hasta lograr la correcta.
-                  Todos los días se suman nuevas ideas a nuestro mundo iluminado y esperamos seguir mejorando y creando nuevos Blends incluso para los gustos más exigentes!
-                  </p>
+                  <p className='parrafoNosotros mb-0' style={{marginLeft:"45px", marginRight:"45px"}}>Crear un vela natural de mayor durabilidad que no sólo ilumine sino que perfume incluso sin encenderla. Por eso desarrollamos nuestra propia fórmula, experimentamos con distintas composiciones químicas hasta lograr la correcta.
+                  Todos los días se suman nuevas ideas a nuestro mundo iluminado, y esperamos seguir mejorando y creando nuevos Blends incluso para los gustos más exigentes.
+                  </p>                  
                 </div>              
-                <div className="textCaracteristicas text-center">  
+                <div className="textNosotros text-center">  
                   <img alt="" src='./img/luz-icon.png' className="iconoCaracteristicas mb-4"/>                  
                   <h5 className='fw-bold'>Nuestra visión</h5>
-                  <p className='parrafoCaracteristicas'>GALAS BAIRES  a raíz de sus constantes esfuerzos por crecer, incorporando nuevos aromas, nuevos modelos, packaging exclusivos y diferentes, capacitación constante y materias primas de calidad, se convirtió en poco tiempo en una pasión y un emprendimiento sustentable que espera seguir creciendo día a día para que muchos más conozcan nuestras fragancias de autoría creadas con aceites de perfumería fina.</p>  
+                  <p className='parrafoNosotros' style={{marginLeft:"45px", marginRight:"45px"}}>GALAS BAIRES, a raíz de sus constantes esfuerzos por crecer, incorporando nuevos aromas, nuevos modelos, packaging exclusivos y diferentes, capacitación constante y materias primas de calidad, se convirtió en poco tiempo en una pasión y un emprendimiento sustentable que espera seguir creciendo día a día para que muchos más conozcan nuestras fragancias de autoría creadas con aceites de perfumería fina.</p>  
+                  <p></p>
                 </div>
-                <div className="textCaracteristicas text-center">     
+                <div className="textNosotros text-center">     
                   <img alt="" src='./img/diamante-icon.png' className="iconoCaracteristicas mb-4"/>                   
                   <h5 className='fw-bold'>Nuestros valores</h5>
-                  <p className='parrafoCaracteristicas'>Realizamos un seguimiento personalizado de satisfacción y supervisión. Nuestro compromiso es seguir creciendo, creando y desarrollando en Galas con los mismos valores de siempre, para producir velas y aromas de autoria de calidad, que decoren con onda y buenas vibras!</p>  
+                  <p className='parrafoNosotros'>Realizamos un seguimiento personalizado de satisfacción y supervisión. Nuestro compromiso es seguir creciendo, creando y desarrollando en Galas con los mismos valores de siempre, para producir velas y aromas de autoria de calidad, que decoren con onda y buenas vibras!</p>  
                 </div>  
               </div>            
           </Col>  
@@ -72,10 +72,10 @@ function Nosotros() {
         </Row>   
         <Row className='contenedorMayorista'>
           <Col xsm={1} sm={1} md={6} lg={6}>
-            <div className="containerMayorista p-3 mb-5 text-start">
-              <h2 className="titleStyle fw-bold mb-3">Sobre nuestras fragancias</h2>
-              <p className='parrafoMayorista mb-0'>En Galas Baires tenemos una gran variedad de fragancias y aromas para tu hogar. Nuestros aromas son realizados con aceites de perfumería fina, logrando combinaciones exquisitas que cautivan incluso a los gustos más exigentes.</p>
-              <p className='parrafoMayorista mb-0'>Puede ser complicado encontrar «esa» fragancia entre tantas opciones. Te invitamos a hacer un cuestionario corto para  <span className='fw-bold'>descubrir tu fragancia ideal.</span>
+            <div className="containerMayorista p-3 mb-5 text-end">
+              <h2 className="titleStyle fw-bold mb-3 me-5" style={{fontSize:"40px", paddingLeft:"100px", color:"#2D2D2D"}}>Sobre nuestras fragancias</h2>
+              <p className='parrafoMayorista mb-0' style={{paddingLeft:"100px"}}>En Galas Baires tenemos una gran variedad de fragancias y aromas para tu hogar. Nuestros aromas son realizados con aceites de <span className='fw-bold'>perfumería fina</span>, logrando combinaciones exquisitas que cautivan incluso a los gustos más exigentes.</p>
+              <p className='parrafoMayorista mb-0' style={{paddingLeft:"100px"}}>Puede ser complicado encontrar «esa» fragancia entre tantas opciones. Te invitamos a hacer un cuestionario corto para  <span className='fw-bold'><a href='/Test' style={{textDecoration:"none", color:"#804B37"}}>descubrir tu fragancia ideal.</a></span>
               </p>              
             </div>                
           </Col >
@@ -93,9 +93,9 @@ function Nosotros() {
           </Col>
           <Col xsm={1} sm={1} md={6} lg={6}>
             <div className="containerNosotros p-3 mb-5">                               
-                <h2 className="titleStyle fw-bold mb-3">Sobre nuestros materiales</h2>
-                <p className='mb-0'>En la elaboración de nuestros productos, seleccionamos cuidadosamente cada insumo de primera calidad. No solo te ofrecemos una experiencia única de luz y aroma, sino que también estamos comprometidos con el medio ambiente y el bienestar de todos los seres vivos.</p>                
-                <p className='mb-4'>Disfrutá de la magia que transporta cada producto.
+                <h2 className="titleStyle fw-bold mb-3" style={{fontSize:"40px", paddingRight:"100px", color:"#2D2D2D"}}>Sobre nuestros materiales</h2>
+                <p className='mb-0' style={{paddingRight:"100px"}}>En la elaboración de nuestros productos, seleccionamos cuidadosamente cada insumo de <span className='fw-bold'>primera calidad</span>. No solo te ofrecemos una experiencia única de luz y aroma, sino que también estamos <span className='fw-bold'>comprometidos con el medio ambiente</span> y el bienestar de todos los seres vivos.</p>                
+                <p className='mb-4' style={{paddingRight:"100px"}}>Disfrutá de la magia que transporta cada producto.
                 </p>
             </div>               
           </Col>
@@ -105,7 +105,7 @@ function Nosotros() {
               <div className="testContainer text-center p-4 container-fluid">                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Aromatizá tus ambientes con Galas Baires</h3>
                 <p className="textFragancias pb-3 ps-5 pe-5">Contactanos y solicitá el catálogo actualizado para no perderte de ninguna novedad u oferta</p>
-                <Link to='/Test'>
+                <Link to='/contacto'>
                   <Button variant="light" className="button-style">Solicitar el catálogo</Button>                
                 </Link>
               </div>             
@@ -114,50 +114,50 @@ function Nosotros() {
         <Row>
           <Col sm={12}>
             <div className='encabezadoNosotros mb-5'>
-              <h1>¿Qué opinan nuestros clientes?</h1>                           
+              <h1 style={{marginLeft:"400px", marginRight:"400px", fontWeight:"bold"}}>¿Qué opinan nuestros clientes?</h1>                           
             </div>
             <div>
               <Carousel>
                 <Carousel.Item interval={6000}>
                   <div className='text-center mb-5'>
-                    <img alt="" src='./img/target-icon.png' />
-                    <h5 className='fw-bold'>Usuario</h5>
-                    <p>Gracias por tan hermoso y delicado trabajo. Super recomendable gente!!!</p>
+                    <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
+                    <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
+                    <p style={{marginLeft:"450px", marginRight:"450px"}}>Gracias por tan hermoso y delicado trabajo. Super recomendable gente!!!</p>
                   </div>                                   
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='text-center mb-5'>
-                    <img alt="" src='./img/target-icon.png' />
-                    <h5 className='fw-bold'>Usuario</h5>
-                    <p>Una maravilla!!! No sé cómo definir o caracterizar las fragancias. Súper fantásticas!!</p>
+                    <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
+                    <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
+                    <p style={{marginLeft:"450px", marginRight:"450px"}}>Una maravilla!!! No sé cómo definir o caracterizar las fragancias. Súper fantásticas!!</p>
                   </div>                 
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='text-center mb-5'>
-                    <img alt="" src='./img/target-icon.png' />
-                    <h5 className='fw-bold'>Usuario</h5>
-                    <p>No dan más de lindas!! Y aromas que no había sentido nunca!! Son geniales!</p>
+                    <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
+                    <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
+                    <p style={{marginLeft:"450px", marginRight:"450px"}}>No dan más de lindas!! Y aromas que no había sentido nunca!! Son geniales!</p>
                   </div>                  
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='text-center mb-5'>
-                    <img alt="" src='./img/target-icon.png' />
-                    <h5 className='fw-bold'>Usuario</h5>
-                    <p>Hoy encendí una vela y tiene un aroma riquísimo. Llegó hasta el piso de arriba!! Muy suave!!</p>
+                    <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
+                    <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
+                    <p style={{marginLeft:"450px", marginRight:"450px"}}>Hoy encendí una vela y tiene un aroma riquísimo. Llegó hasta el piso de arriba!! Muy suave!!</p>
                   </div>                  
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='text-center mb-5'>
-                    <img alt="" src='./img/target-icon.png' />
-                    <h5 className='fw-bold'>Usuario</h5>
-                    <p>Hice un pedido de 6 cónicas y 5 velas negras. Exquisito todo, me ha quedado el aroma impregnado. Súper todo.</p>
+                    <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
+                    <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
+                    <p style={{marginLeft:"450px", marginRight:"450px"}}>Hice un pedido de 6 cónicas y 5 velas negras. Exquisito todo, me ha quedado el aroma impregnado. Súper todo.</p>
                   </div>                  
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='text-center mb-5'>
-                    <img alt="" src='./img/target-icon.png' />
-                    <h5 className='fw-bold'>Usuario</h5>
-                    <p>Estoy enamorada de cada una de las Galas. El aroma es perfecto y la cera se ve bellísima!</p>
+                    <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
+                    <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
+                    <p style={{marginLeft:"450px", marginRight:"450px"}}>Estoy enamorada de cada una de las Galas. El aroma es perfecto y la cera se ve bellísima!</p>
                   </div>                  
                 </Carousel.Item>
               </Carousel>

@@ -47,7 +47,7 @@ function NavBar() {
                 <Nav.Link>
                   <Link
                     className="text-decoration-none text-black"
-                    to="/formMinorista"
+                    to="/contacto"
                   >
                     Contacto
                   </Link>{" "}

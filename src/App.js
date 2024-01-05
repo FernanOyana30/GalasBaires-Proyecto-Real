@@ -14,7 +14,7 @@ import Footer from './components/Footer/Footer';
 import Test from './components/Test/test';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {CartContextProvider} from './context/cartContext';
-
+import PantallaAgradecimiento from './pages/Forms/PantallaAgradecimiento'
 
 function App() {
   return (
@@ -46,14 +46,14 @@ function App() {
               path='/formMayorista' element={<FormMayorista/>}
               />
             <Route 
-              path='/formMinorista' element={<FormMinorista/>}
+              path='/contacto' element={<FormMinorista/>}
               />   
             <Route 
               path='/Test' element={<Test/>}
               /> 
-            {/* <Route 
-              path='/checkout/:id' element={<h3>Gracias por tu compra</h3>}
-              />          */}
+            <Route 
+              path='/checkout/:id' element={<PantallaAgradecimiento/>}
+              />          
           </Routes>      
           <Footer/>
         </BrowserRouter>      

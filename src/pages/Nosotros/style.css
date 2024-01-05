@@ -6,6 +6,17 @@
     text-align: center;
 }
 
+.parrafoNosotros{
+    margin-right: 25px;
+    margin-left: 25px
+}
+
+.textNosotros{
+    color: #2D2D2D;
+    
+    font-size: 17px;          
+}
+
 .carruselStyle{
     width: 75%;
 }

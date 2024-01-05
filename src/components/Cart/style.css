@@ -1,0 +1,13 @@
+/*HOJA DE ESTILOS*/
+
+/*CONTACTO*/
+.contenedorFormulario{
+    margin-top: 100px;
+}
+
+.botonForm{       
+    border-radius: 19px;  
+    font-weight: bold; 
+    width: 140px;
+    height: 41px;
+}

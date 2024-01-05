@@ -1,0 +1,40 @@
+/*HOJA DE ESTILOS*/
+
+/*CONTACTO*/
+.contenedorContacto{
+    margin-top: 100px;    
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    align-content: start;
+}
+
+/*PANTALLA GRACIAS*/
+.contenedorGracias{
+    margin-top: 110px;
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;  
+    margin-bottom: 90px;      
+}
+
+.button-style{
+    background-color: #FFFFFF;
+    color: #804B37;
+    padding: "4px 10px";
+    border-radius: 15px;   
+    border-color: #804B37;
+    font-weight: bold;    
+}
+
+.button-style:hover{
+    background-color: #804B37;
+    color: #FFFFFF;
+    padding: "4px 10px";
+    border-radius: 15px;   
+    border-color: #804B37;
+    font-weight: bold; 
+}

@@ -84,7 +84,7 @@ function ItemDetailContainer(initial, onAddToForm) {
                     <img className='me-3' alt="" src="../img/icon _Hanging Weight.svg" style={{width: "18px", height: "18px"}}/>
                     <p>{producto.cantidad}</p>
                   </span>    
-                  <Link to='/formMinorista'>
+                  <Link to='/contacto'>
                     <Button variant="light" className="button-style">Más información</Button>                    
                   </Link>          
                 </Card.Body>

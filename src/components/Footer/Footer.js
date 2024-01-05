@@ -34,7 +34,7 @@ function Footer() {
               <Link to="/productos" className="text-dark text-decoration-none">Hornitos</Link>
               <Link to="/productos" className="text-dark text-decoration-none">Refill</Link>
               <Link to="/productos" className="text-dark text-decoration-none">Fragancias</Link>
-              <Link to="/productos" className="text-dark text-decoration-none">Descubrí tu fragancia</Link>
+              <Link to="/Test" className="text-dark text-decoration-none">Descubrí tu fragancia</Link>
               </div>
               <div className="d-flex flex-column">
               <Link to="/Nosotros" className="text-dark text-decoration-none"><h5>Nosotros</h5></Link>
@@ -44,10 +44,10 @@ function Footer() {
               <Link to="/Nosotros" className="text-dark text-decoration-none">Nuestros materiales</Link>
               </div>
               <div className="d-flex flex-column">
-              <Link to="/formMinorista" className="text-dark text-decoration-none"><h5>Contacto</h5></Link>
-              <Link to="/formMinorista" className="text-dark text-decoration-none">Formulario de contacto</Link>
-              <Link to="/formMinorista" className="text-dark text-decoration-none">Redes sociales</Link>
-              <Link to="/formMinorista" className="text-dark text-decoration-none">Whatsapp</Link>
+              <Link to="/contacto" className="text-dark text-decoration-none"><h5>Contacto</h5></Link>
+              <Link to="/contacto" className="text-dark text-decoration-none">Formulario de contacto</Link>
+              <Link to="/contacto" className="text-dark text-decoration-none">Redes sociales</Link>
+              <Link to="/contacto" className="text-dark text-decoration-none">Whatsapp</Link>
               </div>
               <div className="d-flex flex-column">
               <Link to="/FAQ" className="text-dark text-decoration-none"><h5>Preguntas frecuentes</h5></Link>
