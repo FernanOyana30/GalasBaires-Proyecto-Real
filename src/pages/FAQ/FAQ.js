@@ -37,7 +37,7 @@ function FAQ() {
               </div>
               <div className='contenedorIcono'>
                 <img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ'/>
-                <p>11 12345678</p>
+                <p>1157173773</p>
               </div>              
             </div>
           </Col>          

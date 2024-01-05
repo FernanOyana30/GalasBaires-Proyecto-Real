@@ -37,7 +37,7 @@ function FormMinorista() {
                 <p className='mb-0' style={{textAlign:"initial"}}><img alt='' src='./img/icon_mail_.png'  className='iconoFAQ me-3' />galasbaires@gmail.com</p>
                 <p className='mb-0' style={{textAlign:"initial"}}><img alt='' src='./img/IconoFacebook.png' className='iconoFAQ me-3' />Galas Baires</p>
                 <p className='mb-0' style={{textAlign:"initial"}}><img alt='' src='./img/ig.png' className='iconoFAQ me-3' />@galasbaires</p>
-                <p className='mb-0' style={{textAlign:"initial"}}><img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ me-3' />11 1234-5678</p>
+                <p className='mb-0' style={{textAlign:"initial"}}><img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ me-3' />1157173773</p>
               </div>
             </div>
           </Col>
