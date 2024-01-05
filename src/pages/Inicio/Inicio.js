@@ -65,7 +65,7 @@ function Inicio (){
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
                 <p className="textFragancias pb-3 ps-5 pe-5">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
                 <Link to='/Test'>
-                  <Button variant="light" className="button-style">Hacer cuestionario</Button>                
+                  <Button variant="light" className="button-style" onClick={scrollTo}>Hacer cuestionario</Button>                
                 </Link>
               </div>                             
             </Col>            
@@ -98,7 +98,9 @@ function Inicio (){
                 </p>
                 <p className='parrafoMayorista mb-4'>Sabemos que todo cambia, por eso nosotros buscamos que los cambios sean positivos <span>siempre</span>. Porque si enciendes una luz en el camino de alguien, también iluminarás tu camino.
                 </p>
-                <Button variant="light" className="button-style" onClick={scrollTo}>¡Quiero saber más!</Button>                                   
+                <Link to="/mayoristas">
+                  <Button variant="light" className="button-style" onClick={scrollTo}>¡Quiero saber más!</Button> 
+                </Link>                                  
               </div>              
             </Col >
             <Col xsm={1} sm={1} md={6} lg={6}>

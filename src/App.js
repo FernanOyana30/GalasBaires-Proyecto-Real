@@ -43,7 +43,7 @@ function App() {
               path='/FAQ' element={<FAQ/>}
               />          
             <Route
-              path='/formMayorista' element={<FormMayorista/>}
+              path='/mayoristas' element={<FormMayorista/>}
               />
             <Route 
               path='/contacto' element={<FormMinorista/>}
