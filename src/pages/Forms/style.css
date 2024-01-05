@@ -38,3 +38,9 @@
     border-color: #804B37;
     font-weight: bold; 
 }
+
+/*MAYORISTAS*/
+.encabezadoMayorista{
+    margin-top: 100px;    
+    text-align: center;
+}
