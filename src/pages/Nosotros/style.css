@@ -1,6 +1,11 @@
 /*HOJA DE ESTILOS*/
 
 /*NOSOTROS*/
+.img-fragancias{
+    width: 90%;
+    padding-bottom: 60px;
+}
+
 .encabezadoNosotros{
     margin-top: 100px;
     text-align: center;
@@ -52,8 +57,7 @@
 }
 
 .textNosotros{
-    color: #2D2D2D;
-    
+    color: #2D2D2D;    
     font-size: 17px;          
 }
 
@@ -72,6 +76,12 @@
 
 .img-nuestra-historia{
     width: 100%;
+}
+
+.img-materiales{
+    margin-left: 30px;
+    width: 90%;
+    padding-bottom: 60px;
 }
 
 .titleMateriales{
@@ -169,7 +179,7 @@
        width: 490px;        
     }
 
-    .img-mayorista{
+    .img-fragancas{
         width: 181%;   
         margin-left: -8px;     
     }
@@ -199,7 +209,7 @@
         text-align: end;                 
     }
 
-    .img-nosotros{        
+    .img-materiales{        
         width: 266%;        
     } 
 
@@ -340,7 +350,7 @@
        width: 560px;        
     }
 
-    .img-mayorista{
+    .img-fragancas{
         width: 170%;   
         margin-left: -8px;     
     }
@@ -370,7 +380,7 @@
         text-align: end;                 
     }
 
-    .img-nosotros{        
+    .materiales{        
         width: 234%;        
     } 
 
@@ -462,13 +472,7 @@
         justify-content: center;
         flex-direction: column;        
         align-items: center;                
-    }
-
-    .containerNosotros{       
-        width: 450px;           
-        margin-left: 30px; 
-        margin-top: -50px;           
-    }
+    }    
 
     /*Características*/
     .contenedorIconosNosotros{                
@@ -513,7 +517,7 @@
        width: 560px;        
     }
 
-    .img-mayorista{
+    .img-fragancas{
         width: 170%;   
         margin-left: -8px;     
     }
@@ -543,7 +547,7 @@
         text-align: end;                 
     }
 
-    .img-nosotros{        
+    .materiales{        
         width: 228%;        
     } 
 
@@ -686,7 +690,7 @@
        width: 560px;        
     }
 
-    .img-mayorista{
+    .img-fragancas{
         width: 210%;   
         margin-left: -8px;     
     }
@@ -716,7 +720,7 @@
         text-align: end;                 
     }
 
-    .img-nosotros{        
+    .materiales{        
         width: 228%;        
     } 
 

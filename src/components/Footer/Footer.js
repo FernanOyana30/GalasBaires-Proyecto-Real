@@ -28,9 +28,15 @@ function Footer() {
                 <img alt='' src='./img/isologo.png' className='d-inline-block align-center' width="170"/>                
               </div>
               <div className="d-flex gap-3" style={{backgroundColor:"#ded5c2", marginRight:"15px"}}>
-                <PiFacebookLogoBold fontSize={30}/>
-                <IoLogoInstagram fontSize={30}/>
-                <IoMailOutline fontSize={30}/>
+                <Link to="https://www.facebook.com/Galasbaires" className="text-dark text-decoration-none" target="_blank">
+                  <PiFacebookLogoBold fontSize={30}/>
+                </Link>
+                <Link className="text-dark text-decoration-none" target="_blank" to="https://www.instagram.com/galasbaires?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                  <IoLogoInstagram fontSize={30}/>
+                </Link>
+                <Link to='mailto:galasbaires@gmail.com' className="text-dark text-decoration-none">
+                  <IoMailOutline fontSize={30}/>
+                </Link>
               </div>
             </div>
             <div style={{backgroundColor:"#ded5c2"}} className="contenedorSecciones pb-5">

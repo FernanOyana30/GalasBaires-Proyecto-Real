@@ -25,24 +25,32 @@ function FormMayorista() {
         <Col xsm={1} sm={1} md={12} lg={12}>
           <div className='contenedorContacto '>
             <div className='contenedorIconoMail'>
-              <img alt='' src='./img/icon_mail_.png' className='iconoFAQ'/>
+              <Link className="text-dark text-decoration-none" to='mailto:galasbaires@gmail.com'>
+                <img alt='' src='./img/icon_mail_.png' className='iconoFAQ'/>
               <p>galasbaires@gmail.com</p>
+              </Link>              
             </div>
             <div className='contenedorIconoFacebook'>
-              <img alt='' src='./img/IconoFacebook.png' className='iconoFAQ'/>
-              <p>galasbaires</p>
+              <Link className="text-dark text-decoration-none" to='https://www.facebook.com/Galasbaires' target="_blank">
+                <img alt='' src='./img/IconoFacebook.png' className='iconoFAQ'/>
+                <p>galasbaires</p>
+              </Link>              
             </div>
             <div className='contenedorIcono'>
-              <img alt='' src='./img/ig.png' className='iconoFAQ'/>
-              <p>@galasbaires</p>
+              <Link className="text-dark text-decoration-none" to='https://www.instagram.com/galasbaires?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target="_blank">
+                <img alt='' src='./img/ig.png' className='iconoFAQ'/>
+                <p>@galasbaires</p>
+              </Link>              
             </div>
             <div className='contenedorIcono'>
               <img alt='' src='./img/Vector.png' className='iconoFAQ'/>
               <p>San Miguel, Buenos Aires</p>
             </div>
             <div className='contenedorIcono'>
-              <img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ'/>
-              <p>1157173773</p>
+              <Link className="text-dark text-decoration-none" to='' target="_blank">
+                <img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ'/>
+                <p>1157173773</p>
+              </Link>              
             </div>              
           </div>
         </Col>          

@@ -79,14 +79,14 @@ function Nosotros() {
           </Col >
           <Col xsm={1} sm={1} md={6} lg={6}>
             <div> 
-                <img alt='' className='img-mayorista' src="./img/img-inicio-3.jpg" rounded />
+                <img alt='' className='img-fragancias' src="./img/img-inicio-3.jpg" rounded />
             </div>
           </Col>
         </Row>
         <Row className='p-5 contenedorMateriales'>
           <Col xsm={1} sm={1} md={6} lg={6}>                  
             <div>                                 
-              <img className='img-nosotros' src="./img/img-inicio-2.jpg" alt=""/>                               
+              <img className='img-materiales' src="./img/img-inicio-2.jpg" alt=""/>                               
             </div>                                
           </Col>
           <Col xsm={1} sm={1} md={6} lg={6}>
@@ -119,7 +119,7 @@ function Nosotros() {
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
-                    <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
+                    <h5 className='fw-bold mb-3' style={{color:"#804B37"}}>Noelia</h5>
                     <p className='textoTestimonio'>Gracias por tan hermoso y delicado trabajo. Super recomendable gente!!!</p>
                   </div>                                   
                 </Carousel.Item>
