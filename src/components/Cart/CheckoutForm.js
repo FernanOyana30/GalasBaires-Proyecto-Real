@@ -39,7 +39,7 @@ export default function CheckoutForm(props) {
   }
 
   return (
-    <div className='contenedorFormulario'>
+    <div >
       <Form >
         <Row >
           <Col >

@@ -5,8 +5,19 @@
     max-width: 100%;
 }
 
+.contenedorSecciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
 /*Media Queries Mobile*/
-@media (max-width: 425px)  {        
+@media (min-width: 320px) and (max-width: 374px)  {        
+    .footer-container {
+        background-color: #ded5c2;
+        width: 528px;
+    }    
+
     .style-footer{
         display: flex;
         flex-direction: column;
@@ -14,12 +25,104 @@
         align-items: center;  
     } 
 
+    .footer-contenedor{        
+        width: 528px;
+    }
+
+    .contenedorSecciones{
+        width: 528px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        align-items: center;
+        text-align: center;        
+    }
+
     .footerIcons{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        
+        justify-content: space-around;        
+    }
+
+    .ocultarSecciones{
+        display: none;
     }
 }
+
+@media (min-width: 375px) and (max-width: 424px){
+    .footer-container {
+        background-color: #ded5c2;
+        width: 600px;
+    }    
+
+    .style-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    } 
+
+    .footer-contenedor{        
+        width: 600px;
+    }
+
+    .contenedorSecciones{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        align-items: center;
+        text-align: center;        
+    }
+
+    .footerIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;        
+    }
+
+    .ocultarSecciones{
+        display: none;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+    .footer-container {
+        background-color: #ded5c2;
+        width: 700px;
+    }    
+
+    .style-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    } 
+
+    .footer-contenedor{        
+        width: 700px;
+    }
+
+    .contenedorSecciones{
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        align-items: center;
+        text-align: center;        
+    }
+
+    .footerIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;        
+    }
+
+    .ocultarSecciones{
+        display: none;
+    }
+}
+
+
 
 

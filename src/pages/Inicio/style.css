@@ -120,8 +120,7 @@
     }          
 
     /*Características*/
-    .contenedorCaracteristicas{ 
-        width: 100%;       
+    .contenedorCaracteristicas{                
         display: flex;
         flex-direction: column;
         justify-content: center;         

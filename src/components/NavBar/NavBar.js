@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './Style.css'
 
 function NavBar() {
   function scrollTo(){
@@ -13,13 +14,10 @@ function NavBar() {
   return (
     <Container>
       <Row>
-        <Col>        
+        <Col xsm={2} sm={2} md={12} lg={12}>        
           <Navbar fixed="top" expand="lg" className="bg-light">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse
-              id="basic-navbar-nav"
-              className="justify-content-center"
-            >
+            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
               <Nav className="text-center align-items-center gap-4">
                 <Nav.Link>
                   <Link className="text-decoration-none text-black" to="/" onClick={scrollTo}>
@@ -27,11 +25,7 @@ function NavBar() {
                   </Link>{" "}
                 </Nav.Link>
                 <Nav.Link>
-                  <Link
-                    className="text-decoration-none text-black"
-                    to="/productos"
-                    onClick={scrollTo}
-                  >
+                  <Link to="/productos" className="text-decoration-none text-black" onClick={scrollTo}>
                     Productos
                   </Link>{" "}
                 </Nav.Link>
@@ -50,23 +44,16 @@ function NavBar() {
                   </Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <Link
-                    className="text-decoration-none text-black"
-                    to="/contacto" 
-                    onClick={scrollTo}
-                  >
+                  <Link to="/contacto" className="text-decoration-none text-black" onClick={scrollTo}>
                     Contacto
                   </Link>{" "}
                 </Nav.Link>
                 <Nav.Link>
-                  <Link
-                    className="text-decoration-none text-black"
-                    to="/mayoristas"
-                    onClick={scrollTo}
-                  >
+                  <Link to="/mayoristas" className="text-decoration-none text-black" onClick={scrollTo}>
                     Mayoristas
                   </Link>{" "}
                 </Nav.Link>
+                
                 <div className=" d-flex justify-content-center align-items-center gap-2">
                   <svg
                     cursor="pointer"
@@ -90,7 +77,7 @@ function NavBar() {
                   >
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
                   </svg>
-                </div>
+                </div>                
               </Nav>
             </Navbar.Collapse>
           </Navbar>

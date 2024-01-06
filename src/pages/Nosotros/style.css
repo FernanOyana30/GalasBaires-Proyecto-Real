@@ -6,9 +6,49 @@
     text-align: center;
 }
 
+.containerNuestraHistoria{       
+    width: 400px;           
+    margin-left: 50px; 
+    margin-top: 0px;           
+}
+
+.containerNuestrasFragancias{
+    color: #2D2D2D;
+    padding-right: 10px;    
+    font-size: 17px;
+    margin-left: 100px;
+}
+
+.titleFragancias{
+    color: #2D2D2D;
+    font-size: 40px;  
+    padding-left: 100px;  
+    margin-right: 50px;
+}
+
+.parrafoNuestraHistoria{
+    margin-right: 0px;
+}
+
+.encabezadoTestimonios{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.tituloTestimonios{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.parrafoEncabezado{
+    margin-left: 300px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
 .parrafoNosotros{
-    margin-right: 25px;
-    margin-left: 25px
+    margin-right: 45px;
+    margin-left: 45px
 }
 
 .textNosotros{
@@ -19,4 +59,858 @@
 
 .carruselStyle{
     width: 75%;
+}
+
+.parrafoNuestrasFragancias{
+    margin-right: 50px;
+    padding-left: 100px;
+}
+
+.parrafoMateriales{
+    padding-right: 100px;
+}
+
+.img-nuestra-historia{
+    width: 100%;
+}
+
+.titleMateriales{
+    color: #2D2D2D;
+    font-size: 40px; 
+    padding-right: 100px;
+}
+
+.containerMateriales{
+    margin-right: 80px;
+}
+
+.carruselStyle{
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.textoTestimonio{
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.contenedorIconosNosotros{                
+    display: flex;
+    flex-direction: row;
+    justify-content: center;         
+    margin-top: -50px;
+}
+
+/*------------------------------------*/
+
+/*Media Queries Mobile*/
+@media (min-width: 320px) and (max-width: 374px) {
+    .parrafoEncabezado{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        
+        width: 500px;
+    }
+    .encabezadoNosotros{        
+        width: 520px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+        align-items: center;
+    }
+
+    .containerNosotros{       
+        width: 450px;           
+        margin-left: 30px; 
+        margin-top: -50px;           
+    }
+
+    /*Características*/
+    .contenedorIconosNosotros{                
+        display: flex;
+        flex-direction: column;
+        justify-content: center;         
+        margin-top: -80px;        
+        width: 500px;
+    }
+
+    .textNosotros{
+        margin-bottom: 12px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center;     
+    }
+
+    .iconoNosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .parrafoNosotros{
+        margin-left: 50px;  
+        margin-right: 50px;
+    }
+
+    .testContainer{
+        width: 530px;
+        background-color: #DED5C2;
+        margin-left: 0px;
+    }
+
+    .textFragancias{  
+       text-align: center;       
+       margin-left: 0px;
+       width: 490px;        
+    }
+
+    .img-mayorista{
+        width: 181%;   
+        margin-left: -8px;     
+    }
+
+    .parrafoMayorista{
+        margin-right: 0px;               
+        width: 500px;       
+    }
+
+    .containerMayorista{
+        color: #2D2D2D;            
+        font-size: 17px;
+        margin-left: 0px;
+        margin-top: -50px;                       
+    }
+
+    .parrafoNuestrasFragancias{        
+        padding-left: 0px;
+        width: 500px;
+        text-align: left;
+    }
+
+    .containerNosotros{       
+        width: 500px;           
+        margin-left: 0px; 
+        margin-top: 10px;  
+        text-align: end;                 
+    }
+
+    .img-nosotros{        
+        width: 266%;        
+    } 
+
+    .img-nuestra-historia{
+        width: 175%;
+    }
+
+    .parrafoMateriales{
+        padding-right: 0px;
+    }
+
+    .containerMateriales{
+        margin-right: 0px;
+        width: 450px;
+        text-align: end;
+    }
+
+    .titleMateriales{
+        color: #2D2D2D;
+        font-size: 40px; 
+        padding-right: 0px;
+    }
+
+    .encabezadoTestimonios{
+        margin-top: 100px;
+        text-align: center;        
+        width: 520px;
+    }
+
+    .tituloTestimonios{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .carruselStyle{
+        margin-left: 35px;
+        margin-top: 0px;
+        width: 150%;
+    }
+
+    .contenedorTestimonio{        
+        margin-left: 5px;
+    }
+
+    .textoTestimonio{
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;        
+    }
+
+    .containerNuestraHistoria{              
+        width: 500px;           
+        margin-left: 10px; 
+        margin-top: 0px;           
+    }
+
+    .parrafoNuestraHistoria{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .titleFragancias{
+        color: #2D2D2D;
+        font-size: 40px;  
+        padding-left: 0px;  
+        text-align: left;
+    }
+
+    .containerNuestrasFragancias{
+        color: #2D2D2D;
+        padding-right: 0px;    
+        font-size: 17px;
+        margin-left: 0px;        
+        width: 500px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .parrafoEncabezado{
+        margin-left: 60px;
+        margin-right: 50px;
+        margin-bottom: 50px;        
+        width: 500px;
+    }
+    .encabezadoNosotros{        
+        width: 592px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+        align-items: center;        
+    }
+
+    .containerNosotros{       
+        width: 450px;           
+        margin-left: 30px; 
+        margin-top: -50px;           
+    }
+
+    /*Características*/
+    .contenedorIconosNosotros{                
+        display: flex;
+        flex-direction: column;
+        justify-content: center;         
+        margin-top: -80px;        
+        width: 500px;
+    }
+
+    .textNosotros{
+        margin-bottom: 12px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center;     
+    }
+
+    .iconoNosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .parrafoNosotros{
+        margin-left: 50px;  
+        margin-right: 50px;
+    }
+
+    .testContainer{
+        width: 599px;
+        background-color: #DED5C2;
+        margin-left: 0px;
+    }
+
+    .textFragancias{  
+       text-align: center;       
+       margin-left: 0px;
+       width: 560px;        
+    }
+
+    .img-mayorista{
+        width: 170%;   
+        margin-left: -8px;     
+    }
+
+    .parrafoMayorista{
+        margin-right: 0px;               
+        width: 500px;       
+    }
+
+    .containerMayorista{
+        color: #2D2D2D;            
+        font-size: 17px;
+        margin-left: 0px;
+        margin-top: -50px;                       
+    }
+
+    .parrafoNuestrasFragancias{        
+        padding-left: 0px;
+        width: 500px;
+        text-align: left;
+    }
+
+    .containerNosotros{       
+        width: 500px;           
+        margin-left: 0px; 
+        margin-top: 10px;  
+        text-align: end;                 
+    }
+
+    .img-nosotros{        
+        width: 234%;        
+    } 
+
+    .img-nuestra-historia{
+        width: 169%;
+    }
+
+    .parrafoMateriales{
+        padding-right: 0px;
+    }
+
+    .containerMateriales{
+        margin-right: 0px;
+        width: 540px;
+        text-align: end;        
+    }
+
+    .titleMateriales{
+        color: #2D2D2D;
+        font-size: 40px; 
+        padding-right: 0px;
+    }
+
+    .encabezadoTestimonios{
+        margin-top: 100px;
+        text-align: center;        
+        width: 590px;        
+    }
+
+    .tituloTestimonios{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .carruselStyle{
+        margin-left: 35px;
+        margin-top: 0px;
+        width: 150%;
+    }
+
+    .contenedorTestimonio{        
+        margin-left: 5px;
+    }
+
+    .textoTestimonio{
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;        
+    }
+
+    .containerNuestraHistoria{              
+        width: 500px;           
+        margin-left: 10px; 
+        margin-top: 0px;           
+    }
+
+    .parrafoNuestraHistoria{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .titleFragancias{
+        color: #2D2D2D;
+        font-size: 40px;  
+        padding-left: 0px;  
+        text-align: left;
+    }
+
+    .containerNuestrasFragancias{
+        color: #2D2D2D;
+        padding-right: 0px;    
+        font-size: 17px;
+        margin-left: 0px;        
+        width: 500px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .parrafoEncabezado{
+        margin-left: 60px;
+        margin-right: 50px;
+        margin-bottom: 50px;        
+        width: 500px;        
+    }
+    .encabezadoNosotros{        
+        width: 678px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+        align-items: center;                
+    }
+
+    .containerNosotros{       
+        width: 450px;           
+        margin-left: 30px; 
+        margin-top: -50px;           
+    }
+
+    /*Características*/
+    .contenedorIconosNosotros{                
+        display: flex;
+        flex-direction: column;
+        justify-content: center;         
+        margin-top: -10px;       
+        margin-left: 8px; 
+        width: 670px;        
+    }
+
+    .textNosotros{
+        margin-bottom: 12px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center;     
+    }
+
+    .iconoNosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin-left: 0px;       
+    }
+
+    .parrafoNosotros{
+        margin-left: 0px;  
+        margin-right: 0px;
+    }
+
+    .testContainer{
+        width: 700px;
+        background-color: #DED5C2;
+        margin-left: 0px;
+    }
+
+    .textFragancias{  
+       text-align: center;       
+       margin-left: 50px;
+       width: 560px;        
+    }
+
+    .img-mayorista{
+        width: 170%;   
+        margin-left: -8px;     
+    }
+
+    .parrafoMayorista{
+        margin-right: 0px;               
+        width: 500px;       
+    }
+
+    .containerMayorista{
+        color: #2D2D2D;            
+        font-size: 17px;
+        margin-left: 0px;
+        margin-top: -50px;                       
+    }
+
+    .parrafoNuestrasFragancias{        
+        padding-left: 0px;
+        width: 650px;
+        text-align: left;
+    }
+
+    .containerNosotros{       
+        width: 500px;           
+        margin-left: 0px; 
+        margin-top: 10px;  
+        text-align: end;                 
+    }
+
+    .img-nosotros{        
+        width: 228%;        
+    } 
+
+    .img-nuestra-historia{
+        width: 169%;
+    }
+
+    .parrafoMateriales{
+        padding-right: 0px;
+    }
+
+    .containerMateriales{
+        margin-right: 0px;
+        width: 630px;
+        text-align: end;        
+    }
+
+    .titleMateriales{
+        color: #2D2D2D;
+        font-size: 40px; 
+        padding-right: 0px;
+    }
+
+    .encabezadoTestimonios{
+        margin-top: 100px;
+        text-align: center;        
+        width: 690px;                
+    }
+
+    .tituloTestimonios{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .carruselStyle{
+        margin-left: 35px;
+        margin-top: 0px;
+        width: 150%;
+    }
+
+    .contenedorTestimonio{        
+        margin-left: 5px;
+    }
+
+    .textoTestimonio{
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;        
+    }
+
+    .containerNuestraHistoria{                      
+        width: 640px;           
+        margin-left: 10px; 
+        margin-top: 0px;           
+    }
+
+    .parrafoNuestraHistoria{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .titleFragancias{
+        color: #2D2D2D;
+        font-size: 40px;  
+        padding-left: 0px;  
+        text-align: left;
+    }
+
+    .containerNuestrasFragancias{
+        color: #2D2D2D;
+        padding-right: 0px;    
+        font-size: 17px;
+        margin-left: 0px;        
+        width: 500px;
+    }
+}
+
+/*Media Queries Tablet*/
+@media (min-width: 768px) and (max-width: 1023px)  {
+    .parrafoEncabezado{
+        margin-left: 60px;
+        margin-right: 50px;
+        margin-bottom: 50px;        
+        width: 500px;        
+    }
+    .encabezadoNosotros{        
+        width: 760px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+        align-items: center;                
+    }
+
+    .containerNosotros{       
+        width: 450px;           
+        margin-left: 30px; 
+        margin-top: -50px;           
+    }
+
+    /*Características*/
+    .contenedorIconosNosotros{                
+        display: flex;
+        flex-direction: column;
+        justify-content: center;         
+        margin-top: -10px;       
+        margin-left: 38px; 
+        width: 670px;        
+    }
+
+    .textNosotros{
+        margin-bottom: 12px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center;     
+    }
+
+    .iconoNosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin-left: 0px;       
+    }
+
+    .parrafoNosotros{
+        margin-left: 0px;  
+        margin-right: 0px;
+    }
+
+    .testContainer{
+        width: 700px;
+        align-items: center;
+    }
+
+    .textFragancias{  
+       text-align: center;       
+       margin-left: 50px;
+       width: 560px;        
+    }
+
+    .img-mayorista{
+        width: 210%;   
+        margin-left: -8px;     
+    }
+
+    .parrafoMayorista{
+        margin-right: 0px;               
+        width: 500px;       
+    }
+
+    .containerMayorista{
+        color: #2D2D2D;            
+        font-size: 17px;
+        margin-left: 0px;
+        margin-top: -50px;                       
+    }
+
+    .parrafoNuestrasFragancias{        
+        padding-left: 0px;
+        width: 650px;
+        text-align: left;
+    }
+
+    .containerNosotros{       
+        width: 500px;           
+        margin-left: 0px; 
+        margin-top: 10px;  
+        text-align: end;                 
+    }
+
+    .img-nosotros{        
+        width: 228%;        
+    } 
+
+    .img-nuestra-historia{
+        width: 100%;
+    }
+
+    .parrafoMateriales{
+        padding-right: 0px;        
+    }
+
+    .containerMateriales{
+        margin-right: 0px;
+        width: 680px;
+        text-align:left;        
+    }
+
+    .titleMateriales{
+        color: #2D2D2D;
+        font-size: 40px; 
+        padding-right: 0px;
+    }
+
+    .encabezadoTestimonios{
+        margin-top: 100px;
+        text-align: center;        
+        width: 750px;                
+    }
+
+    .tituloTestimonios{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .carruselStyle{
+        margin-left: 100px;
+        margin-top: 0px;
+        width: 160%;
+    }
+
+    .contenedorTestimonio{        
+        margin-left: 5px;
+    }
+
+    .textoTestimonio{
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;        
+    }
+
+    .containerNuestraHistoria{                      
+        width: 640px;           
+        margin-left: 10px; 
+        margin-top: 0px;           
+    }
+
+    .parrafoNuestraHistoria{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .titleFragancias{
+        color: #2D2D2D;
+        font-size: 40px;  
+        padding-left: 0px;  
+        text-align: left;
+    }
+
+    .containerNuestrasFragancias{
+        color: #2D2D2D;
+        padding-right: 0px;    
+        font-size: 17px;
+        margin-left: 0px;        
+        width: 720px;        
+    }
+
+    .contenedorMayorista{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contenedorMateriales{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Media Queries Desktop*/
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .encabezadoNosotros{
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    .containerNuestraHistoria{       
+        width: 500px;           
+        margin-left: 0px; 
+        margin-top: 0px;           
+    }
+    
+    .containerNuestrasFragancias{
+        color: #2D2D2D;
+        padding-right: 0px;    
+        font-size: 17px;
+        margin-left: 0px;                
+    }
+    
+    .titleFragancias{
+        color: #2D2D2D;
+        font-size: 40px;          
+    }
+    
+    .parrafoNuestraHistoria{
+        margin-right: 0px;
+    }
+    
+    .encabezadoTestimonios{
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    .tituloTestimonios{
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+    
+    .parrafoEncabezado{
+        margin-left: 250px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .parrafoNosotros{
+        margin-right: 45px;
+        margin-left: 45px
+    }
+    
+    .textNosotros{
+        color: #2D2D2D;
+        
+        font-size: 17px;          
+    }
+    
+    .carruselStyle{
+        width: 75%;
+    }
+    
+    .parrafoNuestrasFragancias{
+        margin-right: 5px;
+        padding-left: 5px;
+    }
+    
+    .parrafoMateriales{
+        padding-right: 40px;
+    }
+    
+    .img-nuestra-historia{
+        width: 98%;
+    }
+    
+    .titleMateriales{
+        color: #2D2D2D;
+        font-size: 40px; 
+        padding-right: 100px;
+    }
+    
+    .containerMateriales{
+        margin-right: 0px;        
+    }
+    
+    .carruselStyle{
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 100%;
+    }
+    
+    .textoTestimonio{
+        margin-left: 280px;
+        margin-right: 280px;
+    }
+    
+    .contenedorIconosNosotros{                
+        display: flex;
+        flex-direction: row;
+        justify-content: center;         
+        margin-top: -50px;
+    }
+
+    .contenedorTestimonio{        
+        margin-left: 0px;
+    }
+
+    .tituloTestimonios{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }

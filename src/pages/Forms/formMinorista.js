@@ -28,21 +28,23 @@ function FormMinorista() {
     <>
       <Container>
         <Row>
-          <Col sm={6}>
+          <Col xsm={1} sm={1} md={3} lg={6}>
             <div className='contenedorContacto'>
               <div>
-                <h1 style={{textAlign:"initial", marginBottom:"20px", color:"#804B37", fontWeight:"bold"}}>¿Tenés alguna pregunta?</h1>
-                <p style={{marginBottom:"30px"}}>Si tenés alguna duda, querés más información acerca de algún producto o te gustaría solicitar el catálogo minorista, completá el formulario o contactanos por nuestras redes sociales o mail.
+                <h1 className="tituloEncabezado">¿Tenés alguna pregunta?</h1>
+                <p>Si tenés alguna duda, querés más información acerca de algún producto o te gustaría solicitar el catálogo minorista, completá el formulario o contactanos por nuestras redes sociales o mail.
                 </p>
-                <p className='mb-0' style={{textAlign:"initial"}}><img alt='' src='./img/icon_mail_.png'  className='iconoFAQ me-3' />galasbaires@gmail.com</p>
-                <p className='mb-0' style={{textAlign:"initial"}}><img alt='' src='./img/IconoFacebook.png' className='iconoFAQ me-3' />Galas Baires</p>
-                <p className='mb-0' style={{textAlign:"initial"}}><img alt='' src='./img/ig.png' className='iconoFAQ me-3' />@galasbaires</p>
-                <p className='mb-0' style={{textAlign:"initial"}}><img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ me-3' />1157173773</p>
+                <p className='iconosContacto mb-0'><img alt='' src='./img/icon_mail_.png'  className='iconoFAQ me-3' />galasbaires@gmail.com</p>
+                <p className='iconosContacto mb-0'><img alt='' src='./img/IconoFacebook.png' className='iconoFAQ me-3' />Galas Baires</p>
+                <p className='iconosContacto mb-0'><img alt='' src='./img/ig.png' className='iconoFAQ me-3' />@galasbaires</p>
+                <p className='iconosContacto mb-0'><img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ me-3' />1157173773</p>
               </div>
             </div>
           </Col>
-          <Col sm={6} className='mb-5'>
-            <CheckoutForm onSubmit={handleCheckout}/>            
+          <Col xsm={1} sm={1} md={3} lg={6} className='mb-5'>
+            <div className='contenedorFormulario'>
+              <CheckoutForm onSubmit={handleCheckout}/>            
+            </div>
           </Col>
         </Row>        
       </Container>

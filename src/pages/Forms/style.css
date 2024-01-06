@@ -2,12 +2,28 @@
 
 /*CONTACTO*/
 .contenedorContacto{
-    margin-top: 100px;    
+    margin-top: 100px;           
     display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: start;
     align-content: start;
+}
+
+.tituloEncabezado{
+    text-align: left;
+    margin-bottom: 20px;
+    color: #804B37;
+    font-weight: bold;
+}
+
+.parrafoEncabezado{
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contenedorFormulario{
+    margin-top: 100px;
 }
 
 /*PANTALLA GRACIAS*/
@@ -19,6 +35,12 @@
     justify-content: center;
     align-content: center;  
     margin-bottom: 90px;      
+}
+
+.tituloGracias{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 40px;
 }
 
 .button-style{
@@ -41,6 +63,353 @@
 
 /*MAYORISTAS*/
 .encabezadoMayorista{
-    margin-top: 100px;    
+    margin-top: 80px;    
     text-align: center;
+}
+
+.encabezadoImportante{
+    margin-top: 0px;    
+    text-align: center;
+}
+
+.iconosContacto{
+    text-align: left;
+}
+
+.parrafoEncabezadoMayorista{
+    margin-left: 370px;
+    margin-right: 370px;
+}
+
+.parrafoEncabezadoImportante{
+    margin-left: 370px;
+    margin-right: 370px;
+}
+
+.titleContactoMayorista{
+    color: #804B37;
+    font-weight: bold;
+    margin: 40px;
+    font-size: 50px;
+}
+
+.carruselStyle{
+    width: 50%; 
+    margin-right: 50px;       
+}
+
+/*------------------------------------*/
+
+/*Media Queries Mobile*/
+@media (min-width: 320px) and (max-width: 374px){
+    .contenedorContacto{
+        margin-top: 40px;
+        margin-bottom: 0px;    
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        align-content: start;        
+        text-align: left;
+        margin-left: 6px;
+    }
+
+    .tituloEncabezado{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #804B37;
+        font-weight: bold;
+    }  
+
+    .contenedorFormulario{
+        margin-top: 0px;
+        margin-left: 40px;
+        width: 400px;
+    }
+
+    /**/
+    .contenedorGracias{
+        margin-top: 110px;
+        text-align: center;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;  
+        margin-bottom: 90px;             
+        width: 518px; 
+        padding: 40px;
+    }
+
+    /*MAYORISTAS*/
+    .encabezadoMayorista{
+        margin-top: 80px;    
+        text-align: center;        
+        width: 490px;        
+    }
+
+    .encabezadoImportante{
+        margin-top: 0px;    
+        text-align: center;
+        width: 500px;
+        padding: 20px;
+    }
+
+    .iconosContacto{
+        text-align: left;
+    }
+
+    .parrafoEncabezadoMayorista{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .parrafoEncabezadoImportante{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .titleContactoMayorista{
+        color: #804B37;
+        font-weight: bold;
+        margin: 40px;
+        font-size: 50px;
+    }
+
+    .carruselStyle{
+        width: 25%; 
+        margin-left: 500px;       
+    }
+
+    .carruselStyle{         
+        transform: translateX(30px);             
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+    .contenedorContacto{
+        margin-top: 100px;    
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        align-content: start;        
+        text-align: start;  
+        margin-left: 45px;           
+    }
+
+    .tituloEncabezado{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #804B37;
+        font-weight: bold;
+    }    
+
+    .contenedorFormulario{
+        margin-top: 0px;
+        margin-left: 50px;
+        width: 490px;
+    }    
+
+    /**/
+    .contenedorGracias{
+        margin-top: 110px;
+        text-align: center;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;  
+        margin-bottom: 90px;             
+        width: 582px; 
+        padding: 40px;
+    }
+
+    /*MAYORISTAS*/
+    .encabezadoMayorista{
+        margin-top: 80px;    
+        text-align: center;        
+        width: 560px; 
+    }
+
+    .encabezadoImportante{
+        margin-top: 0px;    
+        text-align: center;
+        width: 600px;
+        padding: 20px;
+    }
+
+    .iconosContacto{
+        text-align: left;
+    }
+
+    .parrafoEncabezadoMayorista{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .parrafoEncabezadoImportante{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .titleContactoMayorista{
+        color: #804B37;
+        font-weight: bold;
+        margin: 40px;
+        font-size: 50px;
+    }
+
+    .carruselStyle{         
+        transform: translateX(30px);             
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+    .contenedorContacto{
+        margin-top: 100px;    
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        align-content: start;        
+        text-align: left;
+        margin-left: 100px; 
+    }
+
+    .tituloEncabezado{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #804B37;
+        font-weight: bold;
+    } 
+
+    .contenedorFormulario{
+        margin-top: 0px;
+        margin-left: 100px;
+        width: 500px;
+    }
+
+    /**/
+    .contenedorGracias{
+        margin-top: 110px;
+        text-align: center;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;  
+        margin-bottom: 90px;            
+        width: 680px; 
+        padding: 40px;
+    }
+
+    /*MAYORISTAS*/
+    .encabezadoMayorista{
+        margin-top: 80px;    
+        text-align: center;        
+        width: 660px;
+    }
+
+    .encabezadoImportante{
+        margin-top: 0px;    
+        text-align: center;
+        background-color: red;
+        width: 690px;
+        padding: 20px;
+    }
+
+    .iconosContacto{
+        text-align: left;
+    }
+
+    .parrafoEncabezadoMayorista{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .parrafoEncabezadoImportante{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .titleContactoMayorista{
+        color: #804B37;
+        font-weight: bold;
+        margin: 40px;
+        font-size: 50px;
+    }
+
+    .carruselStyle{         
+        transform: translateX(30px);             
+    }
+}
+/*Media Queries Tablet*/
+@media (min-width: 768px) and (max-width: 1023px){
+    .contenedorContacto{
+        margin-top: 100px;    
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        align-content: start;        
+        text-align: left;
+        padding-right: 1200px; 
+    }
+
+    /*MAYORISTAS*/
+    .encabezadoMayorista{
+        margin-top: 0px;    
+        text-align: center;        
+    }
+
+    .encabezadoImportante{
+        margin-top: 0px;    
+        text-align: center;
+    }
+
+    .iconosContacto{
+        text-align: left;
+    }
+
+    .parrafoEncabezadoMayorista{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .parrafoEncabezadoImportante{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .titleContactoMayorista{
+        color: #804B37;
+        font-weight: bold;
+        margin: 40px;
+        font-size: 50px;
+    }
+
+    .carruselStyle{
+        width: 25%;  
+        transform: translateX(-40px);             
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    /*MAYORISTAS*/
+    .encabezadoMayorista{
+        margin-top: 80px;    
+        text-align: center;        
+    }
+
+    .iconosContacto{
+        text-align: left;
+    }
+
+    .parrafoEncabezadoMayorista{
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+
+    .encabezadoImportante{
+        margin-top: 0px;    
+        text-align: center;
+    }
 }
