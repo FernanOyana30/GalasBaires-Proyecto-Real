@@ -43,7 +43,7 @@ function FAQ() {
                 <p>San Miguel, Buenos Aires</p>
               </div>
               <div className='contenedorIcono'>
-                <Link to='https://wa.me/541157173773'>
+                <Link to='https://wa.me/541157173773' className="text-dark text-decoration-none">
                   <img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ'/>
                   <p>1157173773</p>
                 </Link>
