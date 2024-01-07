@@ -27,7 +27,7 @@ function FormMayorista() {
             <div className='contenedorIconoMail'>
               <Link className="text-dark text-decoration-none" to='mailto:galasbaires@gmail.com'>
                 <img alt='' src='./img/icon_mail_.png' className='iconoFAQ'/>
-              <p>galasbaires@gmail.com</p>
+                <p>galasbaires@gmail.com</p>
               </Link>              
             </div>
             <div className='contenedorIconoFacebook'>
@@ -47,7 +47,7 @@ function FormMayorista() {
               <p>San Miguel, Buenos Aires</p>
             </div>
             <div className='contenedorIcono'>
-              <Link className="text-dark text-decoration-none" to='' target="_blank">
+              <Link className="text-dark text-decoration-none" to='https://wa.me/541157173773' target="_blank">
                 <img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ'/>
                 <p>1157173773</p>
               </Link>              

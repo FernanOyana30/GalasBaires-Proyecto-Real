@@ -22,24 +22,20 @@ function FAQ() {
             <div className='contenedorContacto '>
               <div className='contenedorIconoMail'>
                 <Link className="text-dark text-decoration-none" to='mailto:galasbaires@gmail.com'>
-                <img alt='' src='./img/icon_mail_.png' className='iconoFAQ'/>
-                <p>galasbaires@gmail.com</p>
-                  
+                  <img alt='' src='./img/icon_mail_.png' className='iconoFAQ'/>
+                  <p>galasbaires@gmail.com</p>                  
                 </Link>
-
               </div>
               <div className='contenedorIconoFacebook'>
                 <Link className="text-dark text-decoration-none" to='https://www.facebook.com/Galasbaires'>
-                <img alt='' src='./img/IconoFacebook.png' className='iconoFAQ'/>
-                <p>galasbaires</p>
-                  
+                  <img alt='' src='./img/IconoFacebook.png' className='iconoFAQ'/>
+                  <p>galasbaires</p>                  
                 </Link>
               </div>
               <div className='contenedorIcono'>
                 <Link className="text-dark text-decoration-none" target="_blank" to="https://www.instagram.com/galasbaires?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                <img alt='' src='./img/ig.png' className='iconoFAQ'/>
-                <p>@galasbaires</p>
-                  
+                  <img alt='' src='./img/ig.png' className='iconoFAQ'/>
+                  <p>@galasbaires</p>                  
                 </Link>
               </div>
               <div className='contenedorIcono'>
@@ -47,8 +43,10 @@ function FAQ() {
                 <p>San Miguel, Buenos Aires</p>
               </div>
               <div className='contenedorIcono'>
-                <img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ'/>
-                <p>1157173773</p>
+                <Link to='https://wa.me/541157173773'>
+                  <img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ'/>
+                  <p>1157173773</p>
+                </Link>
               </div>              
             </div>
           </Col>          

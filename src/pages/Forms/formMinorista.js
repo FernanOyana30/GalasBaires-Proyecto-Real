@@ -44,7 +44,7 @@ function FormMinorista() {
                 <Link  target="_blank" to='https://www.instagram.com/galasbaires?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' className="text-dark text-decoration-none">
                   <p className='iconosContacto mb-0'><img alt='' src='./img/ig.png' className='iconoFAQ me-3' />@galasbaires</p>
                 </Link> 
-                <Link  target="_blank" to='' className="text-dark text-decoration-none">
+                <Link  target="_blank" to='https://wa.me/541157173773' className="text-dark text-decoration-none">
                   <p className='iconosContacto mb-0'><img alt='' src='./img/llamada-telefonica.png' className='iconoFAQ me-3' />1157173773</p>
                 </Link> 
               </div>
