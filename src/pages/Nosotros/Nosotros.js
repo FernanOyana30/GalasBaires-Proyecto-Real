@@ -62,9 +62,9 @@ function Nosotros() {
         </Row> 
         <Row>
           <Col xsm={1} sm={1} md={12} lg={12} style={{backgroundColor: "#DED5C2"}} className='mb-5'>
-            <div className="testContainer text-center p-4 container-fluid">                    
+            <div className="bannerNosotros text-center p-4 container-fluid">                    
               <h3 className="fw-bold" style={{color:"#804B37"}}>Amigable con el medio ambiente</h3>
-              <p className="textFragancias pb-3 ps-5 pe-5">En cada una de nuestras velas utilizamos Cera de Soja. Sumamente reconocida como una gran alternativa ecológica por su naturaleza sostenible y abundante, sin contribuir a la deforestación ni al agotamiento de recursos naturales.</p>
+              <p className="textBanner pb-3 ps-5 pe-5">En cada una de nuestras velas utilizamos Cera de Soja. Sumamente reconocida como una gran alternativa ecológica por su naturaleza sostenible y abundante, sin contribuir a la deforestación ni al agotamiento de recursos naturales.</p>
             </div>             
           </Col>  
         </Row>   
@@ -100,7 +100,7 @@ function Nosotros() {
         </Row>             
         <Row>
           <Col xsm={1} sm={1} md={12} lg={12} style={{backgroundColor: "#DED5C2"}}>
-              <div className="testContainer text-center p-4 container-fluid">                    
+              <div className="catalogoContainer text-center p-4 container-fluid">                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Aromatizá tus ambientes con Galas Baires</h3>
                 <p className="textFragancias pb-3 ps-5 pe-5">Contactanos y solicitá el catálogo actualizado para no perderte de ninguna novedad u oferta</p>
                 <Link to='/contacto'>
@@ -115,7 +115,7 @@ function Nosotros() {
               <h1 className='tituloTestimonios fw-bold'>¿Qué opinan nuestros clientes?</h1>                           
             </div>
             <div>
-              <Carousel className='carruselStyle'>
+              <Carousel className='carruselNosotros'>
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />

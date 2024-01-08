@@ -61,7 +61,7 @@
     font-size: 17px;          
 }
 
-.carruselStyle{
+.carruselNosotros{
     width: 75%;
 }
 
@@ -94,7 +94,7 @@
     margin-right: 80px;
 }
 
-.carruselStyle{
+.carruselNosotros{
     margin-left: 0px;
     margin-top: 0px;
     width: 100%;
@@ -132,7 +132,7 @@
         align-items: center;
     }
 
-    .containerNosotros{       
+    .containerMateriales{               
         width: 450px;           
         margin-left: 30px; 
         margin-top: -50px;           
@@ -167,13 +167,13 @@
         margin-right: 50px;
     }
 
-    .testContainer{
+    .catalogoContainer{
         width: 530px;
         background-color: #DED5C2;
         margin-left: 0px;
     }
 
-    .textFragancias{  
+    .textBanner{  
        text-align: center;       
        margin-left: 0px;
        width: 490px;        
@@ -184,12 +184,12 @@
         margin-left: -8px;     
     }
 
-    .parrafoMayorista{
+    .parrafoMateriales{
         margin-right: 0px;               
         width: 500px;       
     }
 
-    .containerMayorista{
+    .containerNuestrasFragancias{
         color: #2D2D2D;            
         font-size: 17px;
         margin-left: 0px;
@@ -202,7 +202,7 @@
         text-align: left;
     }
 
-    .containerNosotros{       
+    .containerMateriales{       
         width: 500px;           
         margin-left: 0px; 
         margin-top: 10px;  
@@ -244,7 +244,7 @@
         margin-right: 100px;
     }
 
-    .carruselStyle{
+    .carruselNosotros{
         margin-left: 35px;
         margin-top: 0px;
         width: 150%;
@@ -285,9 +285,21 @@
         margin-left: 0px;        
         width: 500px;
     }
+
+    .catalogoContainer{
+        width: 395px;
+        background-color: #DED5C2;
+        margin-left: 0px;
+     }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
+    .catalogoContainer{
+        width: 395px;
+        background-color: #DED5C2;
+        margin-left: 0px;
+     }
+
     .parrafoEncabezado{
         margin-left: 60px;
         margin-right: 50px;
@@ -303,7 +315,7 @@
         align-items: center;        
     }
 
-    .containerNosotros{       
+    .containerMateriales{       
         width: 450px;           
         margin-left: 30px; 
         margin-top: -50px;           
@@ -338,13 +350,13 @@
         margin-right: 50px;
     }
 
-    .testContainer{
+    .catalogoContainer{
         width: 599px;
         background-color: #DED5C2;
         margin-left: 0px;
     }
 
-    .textFragancias{  
+    .textBanner{  
        text-align: center;       
        margin-left: 0px;
        width: 560px;        
@@ -355,12 +367,13 @@
         margin-left: -8px;     
     }
 
-    .parrafoMayorista{
+    .parrafoMateriales{
         margin-right: 0px;               
-        width: 500px;       
+        width: 500px;    
+        background-color: red;   
     }
 
-    .containerMayorista{
+    .containerNuestrasFragancias{
         color: #2D2D2D;            
         font-size: 17px;
         margin-left: 0px;
@@ -373,7 +386,7 @@
         text-align: left;
     }
 
-    .containerNosotros{       
+    .containerMateriales{       
         width: 500px;           
         margin-left: 0px; 
         margin-top: 10px;  
@@ -415,7 +428,7 @@
         margin-right: 100px;
     }
 
-    .carruselStyle{
+    .carruselNosotros{
         margin-left: 35px;
         margin-top: 0px;
         width: 150%;
@@ -459,6 +472,12 @@
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
+    .bannerNosotros {
+        width: 395px;
+        background-color: #DED5C2;
+        margin-left: 0px;
+     }
+
     .parrafoEncabezado{
         margin-left: 60px;
         margin-right: 50px;
@@ -505,13 +524,13 @@
         margin-right: 0px;
     }
 
-    .testContainer{
+    .bannerNosotros {
         width: 700px;
         background-color: #DED5C2;
         margin-left: 0px;
     }
 
-    .textFragancias{  
+    .textBanner{  
        text-align: center;       
        margin-left: 50px;
        width: 560px;        
@@ -522,12 +541,12 @@
         margin-left: -8px;     
     }
 
-    .parrafoMayorista{
+    .parrafoMateriales{
         margin-right: 0px;               
         width: 500px;       
     }
 
-    .containerMayorista{
+    .containerNuestrasFragancias{
         color: #2D2D2D;            
         font-size: 17px;
         margin-left: 0px;
@@ -540,7 +559,7 @@
         text-align: left;
     }
 
-    .containerNosotros{       
+    .containerMateriales{       
         width: 500px;           
         margin-left: 0px; 
         margin-top: 10px;  
@@ -582,7 +601,7 @@
         margin-right: 0px;
     }
 
-    .carruselStyle{
+    .carruselNosotros{
         margin-left: 35px;
         margin-top: 0px;
         width: 150%;
@@ -642,7 +661,7 @@
         align-items: center;                
     }
 
-    .containerNosotros{       
+    .containerMateriales{       
         width: 450px;           
         margin-left: 30px; 
         margin-top: -50px;           
@@ -679,12 +698,12 @@
         margin-right: 0px;
     }
 
-    .testContainer{
+    .bannerNosotros {
         width: 700px;
         align-items: center;
     }
 
-    .textFragancias{  
+    .textBanner{  
        text-align: center;       
        margin-left: 50px;
        width: 560px;        
@@ -695,12 +714,13 @@
         margin-left: -8px;     
     }
 
-    .parrafoMayorista{
+    .parrafoMateriales{
         margin-right: 0px;               
-        width: 500px;       
+        width: 500px; 
+        background-color: red;      
     }
 
-    .containerMayorista{
+    .containerNuestrasFragancias{
         color: #2D2D2D;            
         font-size: 17px;
         margin-left: 0px;
@@ -713,7 +733,7 @@
         text-align: left;
     }
 
-    .containerNosotros{       
+    .containerMateriales{       
         width: 500px;           
         margin-left: 0px; 
         margin-top: 10px;  
@@ -755,7 +775,7 @@
         margin-right: 0px;
     }
 
-    .carruselStyle{
+    .carruselNosotros{
         margin-left: 100px;
         margin-top: 0px;
         width: 160%;
@@ -864,7 +884,7 @@
         font-size: 17px;          
     }
     
-    .carruselStyle{
+    .carruselNosotros{
         width: 75%;
     }
     
@@ -891,7 +911,7 @@
         margin-right: 0px;        
     }
     
-    .carruselStyle{
+    .carruselNosotros{
         margin-left: 0px;
         margin-top: 0px;
         width: 100%;

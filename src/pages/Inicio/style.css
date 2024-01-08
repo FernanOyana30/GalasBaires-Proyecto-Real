@@ -90,7 +90,7 @@
     padding-bottom: 60px;
 }
 
-.carruselStyle{
+.estiloCarrusel{
     width: 75%;
 }
 
@@ -180,12 +180,12 @@
         color: #2D2D2D;            
         font-size: 17px;
         margin-left: 0px;
-        margin-top: -50px;                       
+        margin-top: -50px;   
     }
 
-    .parrafoMayorista{
+    .parrafoMayorista{        
         margin-right: 0px;               
-        width: 360px;       
+        width: 360px;  
     }
 
     .img-mayorista{
@@ -205,9 +205,9 @@
         margin-left: -54px;
     }    
 
-    .carruselStyle{
-        margin-left: 0px;
+    .estiloCarrusel{        
         margin-top: -60px;
+        margin-left: 0px;
         width: 150%;
     }
 }
@@ -321,8 +321,8 @@
         margin-left: -54px;
     }    
 
-    .carruselStyle{
-        margin-left: 5px;
+    .estiloCarrusel{
+        margin-left: 0px;
         margin-top: -60px;
         width: 150%;
     }
@@ -423,9 +423,10 @@
         margin-left: -60px;
     }    
 
-    .carruselStyle{
-        margin-left: 45px;
+    .estiloCarrusel{
+        margin-left: 0px;
         margin-top: -60px;
+        width: 150%;
     }
 }
 
@@ -495,6 +496,11 @@
         margin-left: -30px;
         width: 350px;
     }        
+
+    .estiloCarrusel{
+        width: 150%;
+        margin-left: 0px;
+    }
 }
 
 /*Media Queries Desktop*/

@@ -110,9 +110,9 @@ function Inicio (){
             </Col>
           </Row>     
           <Row className='p-5'>
-            <Col xsm={1} sm={1} md={3} lg={3}></Col>
+            <Col xsm={1} sm={1} md={2} lg={3}></Col>
             <Col xsm={1} sm={1} md={6} lg={6}>
-              <Carousel className='carruselStyle'>
+              <Carousel className='estiloCarrusel'>
                 <Carousel.Item interval={1000}>
                   <img
                     className="d-block w-100"
@@ -136,7 +136,7 @@ function Inicio (){
                 </Carousel.Item>
               </Carousel>
             </Col> 
-            <Col xsm={1} sm={1} md={3} lg={3}></Col>
+            <Col xsm={1} sm={1} md={2} lg={3}></Col>
           </Row>               
         </Container>  
       </>
