@@ -15,7 +15,7 @@
 @media (min-width: 320px) and (max-width: 374px)  {        
     .footer-container {
         background-color: #ded5c2;
-        width: 413px;
+        width: 320px;
     }    
 
     .style-footer{
@@ -26,11 +26,11 @@
     } 
 
     .footer-contenedor{        
-        width: 413px;
+        width: 320px;
     }
 
     .contenedorSecciones{
-        width: 413px;
+        width: 320px;
         display: flex;
         flex-direction: column;
         justify-content: center;        

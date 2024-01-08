@@ -192,8 +192,8 @@
     }
 
     .img-mayorista{
-        width: 112%;   
-        margin-left: -8px;     
+        width: 100%;   
+        margin-left: 0px;     
     }
 
     /*Nosotros*/
@@ -204,14 +204,14 @@
     }
 
     .img-nosotros{        
-        width: 160%;
-        margin-left: -54px;
+        width: 140%;
+        margin-left: -50px;
     }    
 
     .estiloCarrusel{        
         margin-top: -60px;
         margin-left: 0px;
-        width: 150%;
+        width: 120%;
     }
 }
 
