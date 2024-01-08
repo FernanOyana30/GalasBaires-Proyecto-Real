@@ -164,7 +164,7 @@
      }
 
      .testContainer{
-        width: 395px;
+        width: 300px;
         background-color: #DED5C2;
         margin-left: 0px;
      }
@@ -180,28 +180,29 @@
         color: #2D2D2D;            
         font-size: 17px;
         margin-left: 0px;
-        margin-top: -50px;   
+        margin-top: -50px;  
+        width: 300px; 
     }
 
     .parrafoMayorista{        
         margin-right: 0px;               
-        width: 360px;  
+        width: 300px;  
     }
 
     .img-mayorista{
-        width: 135%;   
+        width: 112%;   
         margin-left: -8px;     
     }
 
     /*Nosotros*/
     .containerNosotros{       
-        width: 400px;           
+        width: 300px;           
         margin-left: -50px; 
         margin-top: -50px;           
     }
 
     .img-nosotros{        
-        width: 198%;
+        width: 160%;
         margin-left: -54px;
     }    
 
