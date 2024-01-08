@@ -98,10 +98,7 @@
 /*------------------------------------*/
 
 /*Media Queries Mobile*/
-@media (min-width: 320px) and (max-width: 374px) {
-    body{
-        margin: 0;
-    }
+@media (min-width: 320px) and (max-width: 374px) {  
 
     .textContainer{        
         font-size: 17px;                         
@@ -170,7 +167,7 @@
      }
 
      .testContainer{
-        width: 100%;
+        width: 250px;
         background-color: #DED5C2;
         margin-left: 0px;
      }
