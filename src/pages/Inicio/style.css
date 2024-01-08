@@ -99,6 +99,9 @@
 
 /*Media Queries Mobile*/
 @media (min-width: 320px) and (max-width: 374px) {
+    body{
+        margin: 0;
+    }
 
     .textContainer{        
         font-size: 17px;                         
@@ -162,8 +165,8 @@
     /*Descubrí tu fragancia*/
     .textFragancias{  
         text-align: center;       
-        margin-left: 20px;
-        width: 300px;        
+        margin-left: 0px;
+        width: 300px;             
      }
 
      .testContainer{
