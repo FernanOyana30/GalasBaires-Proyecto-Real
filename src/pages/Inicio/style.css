@@ -98,12 +98,14 @@
 
 /*Media Queries Mobile*/
 @media (min-width: 320px) and (max-width: 374px) {
+
     .textContainer{        
         font-size: 17px;                         
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;  
+        background-color: red;
     }        
     
     .textContainer2{        
