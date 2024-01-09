@@ -112,15 +112,22 @@
     margin-top: -50px;
 }
 
+.textBanner{
+    margin-left: 400px;    
+    margin-right: 400px;
+    text-align: center;  
+}
+
 /*------------------------------------*/
 
 /*Media Queries Mobile*/
 @media (min-width: 320px) and (max-width: 374px) {
     .parrafoEncabezado{
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
         margin-bottom: 50px;        
         width: 320px;
+        text-align: center;
     }
     .encabezadoNosotros{        
         width: 320px;
@@ -162,8 +169,8 @@
     }
 
     .parrafoNosotros{
-        margin-left: 50px;  
-        margin-right: 50px;
+        margin-left: 40px;  
+        margin-right: 40px;
     }
 
     .catalogoContainer{
@@ -175,7 +182,7 @@
     .textBanner{  
        text-align: center;       
        margin-left: 0px;
-       width: 320px;        
+       width: 320px;  
     }
 
     .img-fragancas{
@@ -206,11 +213,14 @@
         width: 320px;           
         margin-left: -50px; 
         margin-top: 10px;  
-        text-align: end;                 
+        text-align: end;          
     }
 
     .img-materiales{        
-        width: 100%;        
+        width: 130%;   
+        margin-top: -45px;             
+        margin-left: -40px;
+        margin-bottom: -40px;
     } 
 
     .img-nuestra-historia{
@@ -235,30 +245,31 @@
     }
 
     .encabezadoTestimonios{
-        margin-top: 100px;
+        margin-top: 40px;
         text-align: center;        
         width: 320px;
     }
 
     .tituloTestimonios{
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .carruselNosotros{
-        margin-left: 35px;
+        margin-left: 10px;
+        margin-right: 0px;
         margin-top: 0px;
         width: 100%;
     }
 
     .contenedorTestimonio{        
-        margin-left: 5px;
+        margin-left: 0px;
     }
 
     .textoTestimonio{
         text-align: center;
         margin-left: 0px;
-        margin-right: 0px;        
+        margin-right: 30px;        
     }
 
     .containerNuestraHistoria{              
@@ -291,6 +302,7 @@
         width: 320px;
         background-color: #DED5C2;
         margin-left: 0px;
+        margin-top: -60px;
      }
 }
 

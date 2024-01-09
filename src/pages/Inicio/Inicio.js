@@ -18,7 +18,7 @@ function Inicio (){
         <Container className='containerStyle'>
           <Row>
             <Col xsm={1} sm={1} md={6} lg={6}>
-              <div className="textContainer w-100 ps-5 pt-4 pb-4 mt-5">
+              <div className="textContainer w-100 pt-4 pb-4 mt-5">
                 <div className='textContainer2'>                
                   <h1 className="titleStyle fw-bold pt-3 pb-3">Creá ambientes llenos de aroma y calidez.</h1>                
                   <p className="mb-0">Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>
@@ -63,7 +63,7 @@ function Inicio (){
             <Col xsm={1} sm={1} md={12} lg={12} style={{backgroundColor: "#DED5C2"}}>
               <div className="testContainer text-center p-4 container-fluid">                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
-                <p className="textFragancias pb-3 ps-5 pe-5">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
+                <p className="textFragancias pb-3 pe-5">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
                 <Link to='/Test'>
                   <Button variant="light" className="button-style" onClick={scrollTo}>Hacer cuestionario</Button>                
                 </Link>

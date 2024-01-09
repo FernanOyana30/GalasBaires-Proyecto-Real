@@ -64,7 +64,7 @@ function Nosotros() {
           <Col xsm={1} sm={1} md={12} lg={12} style={{backgroundColor: "#DED5C2"}} className='mb-5'>
             <div className="bannerNosotros text-center p-4 container-fluid">                    
               <h3 className="fw-bold" style={{color:"#804B37"}}>Amigable con el medio ambiente</h3>
-              <p className="textBanner pb-3 ps-5 pe-5">En cada una de nuestras velas utilizamos Cera de Soja. Sumamente reconocida como una gran alternativa ecológica por su naturaleza sostenible y abundante, sin contribuir a la deforestación ni al agotamiento de recursos naturales.</p>
+              <p className="textBanner pb-3 ">En cada una de nuestras velas utilizamos Cera de Soja. Sumamente reconocida como una gran alternativa ecológica por su naturaleza sostenible y abundante, sin contribuir a la deforestación ni al agotamiento de recursos naturales.</p>
             </div>             
           </Col>  
         </Row>   
@@ -120,35 +120,35 @@ function Nosotros() {
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}}>Noelia</h5>
-                    <p className='textoTestimonio'>Gracias por tan hermoso y delicado trabajo. Super recomendable gente!!!</p>
+                    <p className=''>Gracias por tan hermoso y delicado trabajo. Super recomendable gente!!!</p>
                   </div>                                   
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
-                    <p className='textoTestimonio'>Una maravilla!!! No sé cómo definir o caracterizar las fragancias. Súper fantásticas!!</p>
+                    <p className=''>Una maravilla!!! No sé cómo definir o caracterizar las fragancias. Súper fantásticas!!</p>
                   </div>                 
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
-                    <p className='textoTestimonio'>No dan más de lindas!! Y aromas que no había sentido nunca!! Son geniales!</p>
+                    <p className=''>No dan más de lindas!! Y aromas que no había sentido nunca!! Son geniales!</p>
                   </div>                  
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
-                    <p className='textoTestimonio'>Hoy encendí una vela y tiene un aroma riquísimo. Llegó hasta el piso de arriba!! Muy suave!!</p>
+                    <p className=''>Hoy encendí una vela y tiene un aroma riquísimo. Llegó hasta el piso de arriba!! Muy suave!!</p>
                   </div>                  
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Usuario</h5>
-                    <p className='textoTestimonio'>Hice un pedido de 6 cónicas y 5 velas negras. Exquisito todo, me ha quedado el aroma impregnado. Súper todo.</p>
+                    <p className=''>Hice un pedido de 6 cónicas y 5 velas negras. Exquisito todo, me ha quedado el aroma impregnado. Súper todo.</p>
                   </div>                  
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>

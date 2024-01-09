@@ -109,8 +109,13 @@
         border-color: #804B37;
         padding: 30px;    
         margin-bottom: 45px;
+        margin-left: 5px;
         width: 280px;
         
+    }
+
+    .imagen-modal{    
+        margin-left: 105px;        
     }
 }
 

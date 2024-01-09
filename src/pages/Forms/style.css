@@ -174,13 +174,11 @@
         text-align: center;
         width: 320px;
         padding: 20px;
-    }
-
-    
+    }   
 
     .parrafoEncabezadoMayorista{
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 0px;
+        margin-right: 0px;
         background-color: green;
     }
 
