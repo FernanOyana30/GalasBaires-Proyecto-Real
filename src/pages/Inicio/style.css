@@ -177,7 +177,7 @@
      }
 
      .testContainer{
-        width: 320px;
+        width: auto;
         background-color: #DED5C2;
         margin-left: 0px;
      }
