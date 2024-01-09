@@ -119,12 +119,11 @@
     .parrafoEncabezado{
         margin-left: 50px;
         margin-right: 50px;
-        margin-bottom: 50px;
-        
-        width: 500px;
+        margin-bottom: 50px;        
+        width: 320px;
     }
     .encabezadoNosotros{        
-        width: 520px;
+        width: 320px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -133,8 +132,8 @@
     }
 
     .containerMateriales{               
-        width: 450px;           
-        margin-left: 30px; 
+        width: 320px;           
+        margin-left: 0px; 
         margin-top: -50px;           
     }
 
@@ -144,7 +143,7 @@
         flex-direction: column;
         justify-content: center;         
         margin-top: -80px;        
-        width: 500px;
+        width: 320px;
     }
 
     .textNosotros{
@@ -168,7 +167,7 @@
     }
 
     .catalogoContainer{
-        width: 530px;
+        width: 320px;
         background-color: #DED5C2;
         margin-left: 0px;
     }
@@ -176,17 +175,17 @@
     .textBanner{  
        text-align: center;       
        margin-left: 0px;
-       width: 490px;        
+       width: 320px;        
     }
 
     .img-fragancas{
-        width: 181%;   
+        width: 100%;   
         margin-left: -8px;     
     }
 
     .parrafoMateriales{
         margin-right: 0px;               
-        width: 500px;       
+        width: 320px;       
     }
 
     .containerNuestrasFragancias{
@@ -198,32 +197,34 @@
 
     .parrafoNuestrasFragancias{        
         padding-left: 0px;
-        width: 500px;
+        width: 320px;
         text-align: left;
     }
 
-    .containerMateriales{       
-        width: 500px;           
-        margin-left: 0px; 
+    .containerMateriales{ 
+        background-color: red;      
+        width: 320px;           
+        margin-left: -50px; 
         margin-top: 10px;  
         text-align: end;                 
     }
 
     .img-materiales{        
-        width: 266%;        
+        width: 100%;        
     } 
 
     .img-nuestra-historia{
-        width: 175%;
+        width: 100%;
     }
 
     .parrafoMateriales{
         padding-right: 0px;
+        width: 300px;
     }
 
     .containerMateriales{
         margin-right: 0px;
-        width: 450px;
+        width: 320px;
         text-align: end;
     }
 
@@ -236,7 +237,7 @@
     .encabezadoTestimonios{
         margin-top: 100px;
         text-align: center;        
-        width: 520px;
+        width: 320px;
     }
 
     .tituloTestimonios{
@@ -247,7 +248,7 @@
     .carruselNosotros{
         margin-left: 35px;
         margin-top: 0px;
-        width: 150%;
+        width: 100%;
     }
 
     .contenedorTestimonio{        
@@ -261,7 +262,7 @@
     }
 
     .containerNuestraHistoria{              
-        width: 500px;           
+        width: 320px;           
         margin-left: 10px; 
         margin-top: 0px;           
     }
@@ -283,11 +284,11 @@
         padding-right: 0px;    
         font-size: 17px;
         margin-left: 0px;        
-        width: 500px;
+        width: 320px;
     }
 
     .catalogoContainer{
-        width: 395px;
+        width: 320px;
         background-color: #DED5C2;
         margin-left: 0px;
      }

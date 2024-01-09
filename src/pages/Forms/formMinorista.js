@@ -30,7 +30,7 @@ function FormMinorista() {
       <Container>
         <Row>
           <Col xsm={1} sm={1} md={3} lg={6}>
-            <div className='contenedorContacto'>
+            <div className='contenedorContactoMinorista'>
               <div>
                 <h1 className="tituloEncabezado">¿Tenés alguna pregunta?</h1>
                 <p>Si tenés alguna duda, querés más información acerca de algún producto o te gustaría solicitar el catálogo minorista, completá el formulario o contactanos por nuestras redes sociales o mail.

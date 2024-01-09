@@ -102,16 +102,32 @@
 
 /*Media Queries Mobile*/
 @media (min-width: 320px) and (max-width: 374px){
-    .contenedorContacto{
-        margin-top: 40px;
-        margin-bottom: 0px;    
+    .contenedorContactoMinorista{
+        margin-top: 70px;
+        margin-bottom: 20px;    
         display: flex;
         flex-direction: row;
         align-items: start;
         justify-content: start;
         align-content: start;        
         text-align: left;
-        margin-left: 6px;
+        margin-left: 0px;
+        width: 320px;
+        background-color: red;
+    }
+
+    .contenedorContactoMayorista{
+        margin-top: 40px;
+        margin-bottom: 0px;    
+        display: flex;
+        flex-direction: row;       
+        justify-content: center;        
+        align-content: center;
+        align-items: center;
+        text-align: center;  
+        flex-wrap: wrap; 
+        margin-left: 0px;             
+        background-color: green; 
     }
 
     .tituloEncabezado{
@@ -124,7 +140,7 @@
     .contenedorFormulario{
         margin-top: 0px;
         margin-left: 40px;
-        width: 400px;
+        width: 250px;
     }
 
     /**/
@@ -136,7 +152,7 @@
         justify-content: center;
         align-content: center;  
         margin-bottom: 90px;             
-        width: 518px; 
+        width: 320px; 
         padding: 40px;
     }
 
@@ -144,26 +160,32 @@
     .encabezadoMayorista{
         margin-top: 80px;    
         text-align: center;        
-        width: 490px;        
-    }
-
-    .encabezadoImportante{
-        margin-top: 0px;    
-        text-align: center;
-        width: 500px;
-        padding: 20px;
+        width: 300px;        
+        background-color: red;
     }
 
     .iconosContacto{
         text-align: left;
     }
+    /**/
+
+    .encabezadoImportante{
+        margin-top: 0px;    
+        text-align: center;
+        width: 320px;
+        padding: 20px;
+    }
+
+    
 
     .parrafoEncabezadoMayorista{
         margin-left: 70px;
         margin-right: 70px;
+        background-color: green;
     }
 
     .parrafoEncabezadoImportante{
+        background-color: green;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -175,14 +197,11 @@
         font-size: 50px;
     }
 
-    .carruselStyle{
-        width: 25%; 
-        margin-left: 500px;       
-    }
-
-    .carruselStyle{         
-        transform: translateX(30px);             
-    }
+    .carruselMayorista{
+        width: 100%; 
+        margin-left: 0px;  
+        
+    }    
 }
 
 @media (min-width: 375px) and (max-width: 424px){

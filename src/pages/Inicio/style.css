@@ -98,12 +98,7 @@
 /*------------------------------------*/
 
 /*Media Queries Mobile*/
-@media (min-width: 320px) and (max-width: 374px) {  
-
-    *{
-        margin: 0;
-        padding: 0;
-    }
+@media (min-width: 320px) and (max-width: 374px) {      
 
     .textContainer{        
         font-size: 17px;                         
@@ -115,7 +110,7 @@
     }        
     
     .textContainer2{        
-        margin-left: -25px;
+        margin-left: -45px;
         width: 300px;
         background-color: red;  
     }
@@ -135,7 +130,7 @@
         flex-direction: column;
         justify-content: center;         
         margin-top: -80px;   
-        margin-left: -13px;     
+        margin-left: -33px;     
         width: 300px;
         background-color: red;  
     }
@@ -171,7 +166,7 @@
     /*Descubrí tu fragancia*/
     .textFragancias{  
         text-align: center;       
-        margin-left: 0px;
+        margin-left: -20px;
         width: 300px;  
         background-color: red;           
      }

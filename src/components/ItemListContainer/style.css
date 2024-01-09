@@ -53,26 +53,33 @@
 /**/
 @media (min-width: 320px) and (max-width: 374px){
     .estiloPaginacion{
-        transform: translateX(-70px);
+        transform: translateX(-95px);
     }     
     .container-encabezado{        
-        width: 353px;
+        width: 320px;
     }
 
     .encabezadoCatalogo{
         margin-left: 6px;
     }
 
-    .testContainer{
-        width: 369px;
+    .testBanner{
+        width: 320px;
     }
+
+    .textoBannerFragancias{  
+        text-align: center;       
+        margin-left: -20px;
+        width: 300px;  
+        background-color: red;           
+     }
 
     .filaProductos{            
         display: flex;    
         flex-direction: column;
         align-content: center;
-        padding-left: 55px;
-        margin-left: -40px;        
+        padding-left: 30px;
+        margin-left: -50px;        
     }
 
     .nombreProducto{

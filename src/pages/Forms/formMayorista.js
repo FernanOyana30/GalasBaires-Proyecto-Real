@@ -23,7 +23,7 @@ function FormMayorista() {
       </Row>      
       <Row>
         <Col xsm={1} sm={1} md={12} lg={12}>
-          <div className='contenedorContacto '>
+          <div className='contenedorContactoMayorista'>
             <div className='contenedorIconoMail'>
               <Link className="text-dark text-decoration-none" to='mailto:galasbaires@gmail.com'>
                 <img alt='' src='./img/icon_mail_.png' className='iconoFAQ'/>
@@ -66,7 +66,7 @@ function FormMayorista() {
       <Row className='p-5'>
         <Col xsm={1} sm={1} md={1} lg={3}></Col>
         <Col xsm={1} sm={1} md={5} lg={6}>
-          <Carousel className='carruselStyle'>
+          <Carousel className='carruselMayorista'>
             <Carousel.Item interval={1000}>
               <img
                 className="d-block w-100"

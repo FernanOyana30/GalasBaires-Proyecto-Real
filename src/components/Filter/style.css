@@ -12,7 +12,7 @@
 @media (min-width: 320px) and (max-width: 374px){
     .titleFilter{
         text-align: center;
-        margin-left: 40px;
+        margin-left: 0px;
         padding-bottom: 12px;
     }    
     .filterStyle{        
@@ -23,7 +23,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;    
-        margin-left: -20px;   
+        margin-left: -50px;   
         padding-right: 10px;
     }
 }
