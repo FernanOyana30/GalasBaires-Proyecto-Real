@@ -18,9 +18,9 @@ function Inicio (){
         <Container className='containerStyle'>
           <Row>
             <Col xsm={1} sm={1} md={6} lg={6}>
-              <div className="textContainer w-100 pt-4 pb-4 mt-5">
-                <div className='textContainer2'>                
-                  <h1 className="titleStyle fw-bold pt-3 pb-3">Creá ambientes llenos de aroma y calidez.</h1>                
+              <div className="textContainer w-100 pt-4 pb-4 mt-5 container-fluid">
+                <div className='textContainer2 container-fluid'>                
+                  <h1 className="titleInicio fw-bold pt-3 pb-3">Creá ambientes llenos de aroma y calidez.</h1>                
                   <p className="mb-0">Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>
                   <p>Descubrí nuestra amplia variedad de fragancias y productos para transformar tus espacios.</p>
                   <Link to="/productos"><Button variant="light" onClick={scrollTo} className="button-style">Ver catálogo</Button></Link>

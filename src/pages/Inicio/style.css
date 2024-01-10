@@ -107,23 +107,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;  
-        
+        text-align: center; 
         width: 320px;
         margin-bottom: 40px;
     }        
     
     .textContainer2{        
-        margin-left: -45px;
-        width: 290px;
-         
+        margin-left: -40px;
+        width: 290px;         
         margin-bottom: 20px;
     }
 
     .titleStyle{                    
         font-size: 32px;
         width: 300px;        
-    }    
+    }  
+    
+    .titleInicio{                    
+        font-size: 32px;
+        width: 250px;  
+        text-align: center;      
+    } 
 
     .img-container{
         display: none;        
@@ -136,8 +140,7 @@
         justify-content: center;         
         margin-top: -80px;   
         margin-left: -33px;     
-        width: 300px;
-        
+        width: 300px;        
     }
 
     .textCaracteristicas{
@@ -172,23 +175,21 @@
     .textFragancias{  
         text-align: center;       
         margin-left: -26px;
-        width: 300px;  
-                
+        width: 300px;                  
      }
 
      .testContainer{
         width: auto;
         background-color: #DED5C2;
         margin-left: 0px;
-     }
-     
+     }     
 
     /*Mayoristas*/
     .contenedorMayorista{
         display: flex;
-        flex-direction: column-reverse; 
-              
+        flex-direction: column-reverse;               
         margin-bottom: 20px;  
+        margin-top: -60px;  
     }
 
     .containerMayorista{
@@ -196,8 +197,7 @@
         font-size: 17px;
         margin-left: 0px;
         margin-top: -50px;  
-        width: 300px; 
-        
+        width: 300px;         
     }
 
     .parrafoMayorista{        
@@ -214,8 +214,7 @@
     .containerNosotros{       
         width: 300px;           
         margin-left: -50px; 
-        margin-top: -50px;          
-          
+        margin-top: -50px;           
     }
 
     .img-nosotros{        
