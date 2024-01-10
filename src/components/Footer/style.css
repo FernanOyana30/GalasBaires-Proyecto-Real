@@ -15,7 +15,7 @@
 @media (min-width: 320px) and (max-width: 374px)  {        
     .footer-container {
         background-color: #ded5c2;
-        width: 320px;
+        
     }    
 
     .style-footer{
@@ -23,14 +23,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;  
-    } 
+        
+    }    
 
-    .footer-contenedor{        
-        width: 320px;
-    }
-
-    .contenedorSecciones{
-        width: 320px;
+    .contenedorSecciones{        
         display: flex;
         flex-direction: column;
         justify-content: center;        
@@ -38,11 +34,7 @@
         text-align: center;        
     }
 
-    .footerIcons{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;        
-    }
+    
 
     .ocultarSecciones{
         display: none;

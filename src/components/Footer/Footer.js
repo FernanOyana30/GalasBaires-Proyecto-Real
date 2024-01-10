@@ -18,15 +18,15 @@ function Footer() {
 
     return (
         <>            
-          <Container className="footer-container" style={{backgroundColor:"#ded5c2"}}>
+          <Container className="footer-container container-fluid" style={{backgroundColor:"#ded5c2"}}>
             <Row style={{backgroundColor:"#ded5c2"}}>
               <Col xsm={1} sm={1} md={12} lg={12} style={{backgroundColor:"#ded5c2"}}>              
-                <div style={{backgroundColor:"#ded5c2"}} className="footer-contenedor d-flex justify-content-between align-items-center py-5">
+                <div className="d-flex justify-content-between align-items-center py-5 container-fluid" style={{backgroundColor:"#ded5c2"}}>
                   <div style={{backgroundColor:"#ded5c2"}}></div>
                   <div style={{backgroundColor:"#ded5c2"}}>
                     <img alt='' src='./img/isologo.png' className='d-inline-block align-center' width="170"/>                
                   </div>
-                  <div className="d-flex gap-3" style={{backgroundColor:"#ded5c2", marginRight:"15px"}}>
+                  <div className="d-flex gap-3 " style={{backgroundColor:"#ded5c2"}}>
                     <Link to="https://www.facebook.com/Galasbaires" className="text-dark text-decoration-none" target="_blank">
                       <PiFacebookLogoBold fontSize={30}/>
                     </Link>
@@ -38,7 +38,7 @@ function Footer() {
                     </Link>
                   </div>
                 </div>
-                <div style={{backgroundColor:"#ded5c2"}} className="contenedorSecciones pb-5">
+                <div className="contenedorSecciones pb-5 container-fluid" style={{backgroundColor:"#ded5c2"}}>
                   <div className="d-flex flex-column flex-start">
                     <Link to="/productos" className="mb-2 text-dark text-decoration-none" onClick={scrollTo}><h5>Productos</h5></Link>
                     <Link to="/category/Velas" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Velas Aromaticas</Link>
