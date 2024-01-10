@@ -50,6 +50,11 @@
     font-size: 60px;    
 }
 
+.titleInicio{                    
+    color: #804B37;
+    font-size: 60px; 
+} 
+
 .text-caracteristicas{
     color: #2D2D2D;
     padding-right: 60px;    
@@ -62,9 +67,9 @@
 }
 
 .textFragancias{    
-    margin-left: 360px;    
-    margin-right: 360px;   
-    padding-left: 50px;    
+    margin-left: 460px;    
+    margin-right: 460px;   
+       
 }
 
 .parrafoMayorista{
@@ -124,9 +129,9 @@
     }  
     
     .titleInicio{                    
-        font-size: 32px;
-        width: 250px;  
-        text-align: center;      
+        font-size: 40px;         
+        text-align: center;   
+        color: #804B37;       
     } 
 
     .img-container{
@@ -242,7 +247,7 @@
         width: 400px;        
     }
 
-    .titleStyle{                    
+    .titleInicio{                    
         font-size: 32px;
         width: 400px;        
     }    
