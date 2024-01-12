@@ -3,7 +3,7 @@
 .contenedorTest{
     font-family: 'montserrat';     
     width: 700px;     
-    margin-left: 200px;  
+    margin-left: 280px;  
     text-align: center;
     color: #804B37
 }
@@ -90,7 +90,7 @@
     .contenedorTest{
         font-family: 'montserrat';     
         width: 300px;             
-        margin-left: 10px;  
+        margin-left: 5px;  
         text-align: center;
         color: #804B37
     } 

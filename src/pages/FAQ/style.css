@@ -15,7 +15,8 @@
 }
 
 .parrafoEncabezado{
-    width: 50%;
+    width: 500px;
+    text-align: center;
 }
 
 .iconoFAQ{
@@ -97,6 +98,10 @@
         margin-bottom: 10px;
     }
 
+    .parrafoEncabezado{
+        width: 100%;
+    }
+
     .contenedorContacto{
         display: flex;
         flex-direction: row;       
@@ -114,6 +119,7 @@
         font-size: 15px;
         text-align: center;
         padding-top: 0px; 
+        margin-bottom: -40px;
     }
 
     .contenedorIconoFacebook{
@@ -127,8 +133,8 @@
     }
 
     .acordeonStyle{    
-        margin-left: 15px;
-        width: 280px;
+        margin-left: 10px;
+        width: 300px;
     }
 
     .acordeonItem{

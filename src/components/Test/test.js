@@ -101,9 +101,11 @@ function Test() {
           <Container>
             <Row>
               <Col xsm={1} sm={1} lg={6} style={{marginTop:"100px"}}>
-                <div className='contenedorTest'>
-                  <h1 style={{ marginBottom: "20px", fontWeight: "bold" }}>Descubrí tu fragancia</h1>
-                  <p className='estiloParrafo'>Respondiendo sólo 4 preguntas simples pero muy personales, podrás descubrir el aroma perfecto para tus ambientes</p>
+                <div className='contenedorTest container-fluid'>
+                  <div>
+                    <h1 style={{ marginBottom: "20px", fontWeight: "bold" }}>Descubrí tu fragancia</h1>
+                    <p className='estiloParrafo'>Respondiendo sólo 4 preguntas simples pero muy personales, podrás descubrir el aroma perfecto para tus ambientes</p>                    
+                  </div>  
                   <div className='contenedorPregunta'>                
                     <h5 style={{ marginBottom: "10px" }}>{Preguntas[preguntaActual].titulo}</h5>
                     <p style={{ marginBottom: "35px" }}>Elegí una opción</p>

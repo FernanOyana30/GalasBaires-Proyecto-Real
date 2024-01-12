@@ -14,8 +14,10 @@ function Nosotros() {
         <Row>
           <Col xsm={1} sm={1} md={6} lg={12}>
             <div className='encabezadoNosotros'>
-              <h3 className='titleStyle' style={{fontWeight:"bold", margin:"40px", fontSize:"50px"}}>Sobre Galas Baires</h3>
-              <p className='parrafoEncabezado'>"No hay nadie tan fuerte como una persona, cuyo corazón está siempre lleno de gratitud" - Daisaku Ikeda."</p>              
+              <div>
+                <h3 className='titleStyle' style={{fontWeight:"bold", fontSize:"50px"}}>Sobre Galas Baires</h3>
+                <p>"No hay nadie tan fuerte como una persona, cuyo corazón está siempre lleno de gratitud" - Daisaku Ikeda."</p>              
+              </div>
             </div>
           </Col>          
         </Row>

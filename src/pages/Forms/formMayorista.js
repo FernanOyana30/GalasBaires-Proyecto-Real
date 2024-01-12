@@ -10,7 +10,7 @@ function FormMayorista() {
     <Container>
       <Row>
         <Col xsm={1} sm={1} md={12} lg={12}>
-          <div className='encabezadoMayorista'>
+          <div className='encabezadoMayorista container-fluid'>
             <h3 className='titleContactoMayorista'>Exclusivo mayoristas</h3>
             <h5 className='fw-bold'>¿Querés vender nuestros productos?</h5>
             <p className='parrafoEncabezadoMayorista'>Solicitá nuestro catálogo exclusivo para mayoristas completando el formulario con tus datos o contactanos por nuestras redes sociales. Nos comunicaremos a la brevedad.

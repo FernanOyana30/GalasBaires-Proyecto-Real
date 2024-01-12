@@ -70,8 +70,7 @@
     .textoBannerFragancias{  
         text-align: center;       
         margin-left: -10px;
-        width: 300px;  
-        background-color: red;           
+        width: 300px;                     
      }
 
     .filaProductos{            
@@ -93,7 +92,7 @@
     }
 
     .estiloPaginacion{
-        margin-left: 62px;
+        margin-left: 70px;
     }
 }
 

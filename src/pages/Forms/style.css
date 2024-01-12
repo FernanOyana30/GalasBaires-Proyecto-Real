@@ -98,6 +98,20 @@
     margin-right: 50px;       
 }
 
+.contenedorContactoMayorista{
+    margin-top: 40px;
+    margin-bottom: 50px;    
+    display: flex;
+    flex-direction: row;       
+    justify-content: center;        
+    align-content: center;
+    align-items: center;
+    text-align: center;  
+    
+    margin-left: 0px;             
+    background-color: green; 
+}
+
 /*------------------------------------*/
 
 /*Media Queries Mobile*/
@@ -111,9 +125,8 @@
         justify-content: start;
         align-content: start;        
         text-align: left;
-        margin-left: 0px;
-        width: 320px;
-        background-color: red;
+        padding-left: 20px;
+        width: 320px;        
     }
 
     .contenedorContactoMayorista{
@@ -128,6 +141,10 @@
         flex-wrap: wrap; 
         margin-left: 0px;             
         background-color: green; 
+    }
+
+    .contenedorIconoMail{
+        margin-bottom: -40px;
     }
 
     .tituloEncabezado{
@@ -162,6 +179,10 @@
         text-align: center;        
         width: 300px;        
         background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
     }
 
     .iconosContacto{
@@ -170,28 +191,30 @@
     /**/
 
     .encabezadoImportante{
-        margin-top: 0px;    
+        margin-top: 30px;    
         text-align: center;
         width: 320px;
-        padding: 20px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
     }   
+
+    .parrafoEncabezadoImportante{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 
     .parrafoEncabezadoMayorista{
         margin-left: 0px;
         margin-right: 0px;
         background-color: green;
-    }
-
-    .parrafoEncabezadoImportante{
-        background-color: green;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+    }    
 
     .titleContactoMayorista{
         color: #804B37;
-        font-weight: bold;
-        margin: 40px;
+        font-weight: bold;        
         font-size: 50px;
     }
 
