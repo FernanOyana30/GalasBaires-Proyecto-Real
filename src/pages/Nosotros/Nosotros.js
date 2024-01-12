@@ -44,7 +44,7 @@ function Nosotros() {
                 <div className="textNosotros text-center" >    
                   <img alt="" src='./img/target-icon.png' className="iconoNosotros mb-4"/>
                   <h5 className='fw-bold'>Nuestra misión</h5>
-                  <p className='parrafoNosotros mb-0' >Crear un vela natural de mayor durabilidad que no sólo ilumine sino que perfume incluso sin encenderla. Por eso desarrollamos nuestra propia fórmula, experimentamos con distintas composiciones químicas hasta lograr la correcta.
+                  <p className='parrafoNosotros ' >Crear un vela natural de mayor durabilidad que no sólo ilumine sino que perfume incluso sin encenderla. Por eso desarrollamos nuestra propia fórmula, experimentamos con distintas composiciones químicas hasta lograr la correcta.
                   Todos los días se suman nuevas ideas a nuestro mundo iluminado, y esperamos seguir mejorando y creando nuevos Blends incluso para los gustos más exigentes.
                   </p>                  
                 </div>              
@@ -104,7 +104,7 @@ function Nosotros() {
           <Col xsm={1} sm={1} md={12} lg={12} style={{backgroundColor: "#DED5C2"}}>
               <div className="catalogoContainer text-center p-4 container-fluid">                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Aromatizá tus ambientes con Galas Baires</h3>
-                <p className="textFragancias pb-3 ps-5 pe-5">Contactanos y solicitá el catálogo actualizado para no perderte de ninguna novedad u oferta</p>
+                <p className="textCatalogo pb-3">Contactanos y solicitá el catálogo actualizado para no perderte de ninguna novedad u oferta</p>
                 <Link to='/contacto'>
                   <Button variant="light" className="button-style">Solicitar el catálogo</Button>                
                 </Link>
