@@ -34,8 +34,7 @@
     padding-left: 60px;
     padding-right: 40px;
     margin-bottom: 60px;  
-    margin-top: 0px;  
-    background-color: red;
+    margin-top: 0px;      
 }
 
 .contenedorIcono{    
@@ -146,9 +145,13 @@
 
 @media (min-width: 375px) and (max-width: 424px){
     .contenedorEncabezado{  
-        width: 500px;
+        width: auto;
         margin-left: 0px;
         margin-bottom: 10px;
+    }
+
+    .parrafoEncabezado{
+        width: auto;
     }
 
     .contenedorContacto{
@@ -158,7 +161,7 @@
         align-content: start;
         align-items: start;
         text-align: center;        
-        width: 500px;                    
+        width: auto;                    
         flex-wrap: wrap;   
     }
 
@@ -181,32 +184,38 @@
     }
 
     .acordeonStyle{    
-        margin-left: 140px;
+        margin-left: 10px;
+        width: 95%;
     }
 
     .acordeonItem{
-        width: 400px;    
-        margin-top: 10px;
+        width: 95%;    
+        margin-top: 0px;
         border-color: #804B37;    
     }
 }
 
 @media (min-width: 425px) and (max-width: 767px){
     .contenedorEncabezado{  
-        width: 500px;
+        width: auto;
         margin-left: 0px;
         margin-bottom: 10px;
     }
 
-    .contenedorContacto{
+    .parrafoEncabezado{
+        width: auto;
+    }
+
+    .contenedorContacto{           
         display: flex;
-        flex-direction: row;       
-        justify-content: start;        
-        align-content: start;
-        align-items: start;
-        text-align: center;        
-        width: 500px;                    
-        flex-wrap: wrap;   
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center; 
+        justify-items: center;       
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 0px; 
     }
 
     .contenedorIconoMail{        
@@ -228,11 +237,11 @@
     }
 
     .acordeonStyle{    
-        margin-left: 90px;
+        margin-left: 0px;
     }
 
     .acordeonItem{
-        width: 400px;    
+        width: 100%;    
         margin-top: 10px;
         border-color: #804B37;    
     }

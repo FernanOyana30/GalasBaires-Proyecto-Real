@@ -101,19 +101,20 @@
         transform: translateX(-70px);
     }     
     .container-encabezado{        
-        width: 470px;
+       
+        background-color: red;
     }
     .encabezadoCatalogo{
-        margin-left: 16px;
+        margin-left: 0px;
     }
 
     .filaProductos{            
         display: flex;    
         flex-direction: column;
         align-content: center;
-        padding-left: 55px;
-        margin-left: 20px;   
-        width: 400px;     
+        padding-left: 0px;
+        margin-left: 0px;   
+             
     }
 
     .nombreProducto{

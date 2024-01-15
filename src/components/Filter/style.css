@@ -31,18 +31,18 @@
 @media (min-width: 375px) and (max-width: 424px){
     .titleFilter{
         text-align: center;
-        margin-left: 80px;
+        margin-left: 0px;
         padding-bottom: 12px;
     }    
     .filterStyle{        
-        width: 320px;
+        width: auto;
         height: 50px;
         line-height: 6px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;    
-        margin-left: 35px;   
+        margin-left: -20px;   
         padding-right: 10px;
     }
 }

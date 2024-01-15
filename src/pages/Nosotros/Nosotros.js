@@ -14,8 +14,8 @@ function Nosotros() {
         <Row>
           <Col xsm={1} sm={1} md={6} lg={12}>
             <div className='encabezadoNosotros'>
-              <div>
-                <h3 className='titleStyle' style={{fontWeight:"bold", fontSize:"50px"}}>Sobre Galas Baires</h3>
+              <div className='encabezadoNosotros2'>
+                <h3 className='titleStyle ' style={{fontWeight:"bold", fontSize:"50px"}}>Sobre Galas Baires</h3>
                 <p>"No hay nadie tan fuerte como una persona, cuyo corazón está siempre lleno de gratitud" - Daisaku Ikeda."</p>              
               </div>
             </div>
@@ -92,10 +92,10 @@ function Nosotros() {
             </div>                                
           </Col>
           <Col xsm={1} sm={1} md={6} lg={6}>
-            <div className="containerMateriales p-3 mb-5">                               
+            <div className="containerMateriales mb-5">                               
                 <h2 className="titleMateriales fw-bold mb-3">Sobre nuestros materiales</h2>
                 <p className='mb-0 parrafoMateriales'>En la elaboración de nuestros productos, seleccionamos cuidadosamente cada insumo de <span className='fw-bold'>primera calidad</span>. No solo te ofrecemos una experiencia única de luz y aroma, sino que también estamos <span className='fw-bold'>comprometidos con el medio ambiente</span> y el bienestar de todos los seres vivos.</p>                
-                <p className='mb-4 parrafoMateriales'>Disfrutá de la magia que transporta cada producto.
+                <p className='mb-0 parrafoMateriales'>Disfrutá de la magia que transporta cada producto.
                 </p>
             </div>               
           </Col>

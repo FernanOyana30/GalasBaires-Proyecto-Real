@@ -106,10 +106,9 @@
     justify-content: center;        
     align-content: center;
     align-items: center;
-    text-align: center;  
-    
+    text-align: center;      
     margin-left: 0px;             
-    background-color: green; 
+     
 }
 
 /*------------------------------------*/
@@ -130,17 +129,14 @@
     }
 
     .contenedorContactoMayorista{
-        margin-top: 40px;
-        margin-bottom: 0px;    
+        margin-top: 30px;    
         display: flex;
-        flex-direction: row;       
-        justify-content: center;        
-        align-content: center;
+        flex-direction: row;
         align-items: center;
-        text-align: center;  
-        flex-wrap: wrap; 
-        margin-left: 0px;             
-        background-color: green; 
+        justify-content: center;
+        align-content: center;        
+        flex-wrap: wrap;        
+        margin-left: 0px; 
     }
 
     .contenedorIconoMail{
@@ -156,8 +152,8 @@
 
     .contenedorFormulario{
         margin-top: 0px;
-        margin-left: 40px;
-        width: 250px;
+        margin-left: 10px;
+        width: auto;
     }
 
     /**/
@@ -169,7 +165,7 @@
         justify-content: center;
         align-content: center;  
         margin-bottom: 90px;             
-        width: 320px; 
+        width: 100%; 
         padding: 40px;
     }
 
@@ -177,8 +173,7 @@
     .encabezadoMayorista{
         margin-top: 80px;    
         text-align: center;        
-        width: 300px;        
-        background-color: red;
+        width: 300px;                
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -208,8 +203,7 @@
 
     .parrafoEncabezadoMayorista{
         margin-left: 0px;
-        margin-right: 0px;
-        background-color: green;
+        margin-right: 0px;        
     }    
 
     .titleContactoMayorista{
@@ -226,7 +220,7 @@
 }
 
 @media (min-width: 375px) and (max-width: 424px){
-    .contenedorContacto{
+    .contenedorContactoMinorista{
         margin-top: 100px;    
         display: flex;
         flex-direction: row;
@@ -234,7 +228,19 @@
         justify-content: start;
         align-content: start;        
         text-align: start;  
-        margin-left: 45px;           
+        margin-left: 20px;           
+    }
+
+    .contenedorContactoMayorista{
+        margin-top: 30px;    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;        
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 0px; 
     }
 
     .tituloEncabezado{
@@ -245,9 +251,9 @@
     }    
 
     .contenedorFormulario{
-        margin-top: 0px;
-        margin-left: 50px;
-        width: 490px;
+        margin-top: 20px;
+        margin-left: 10px;
+        width: auto;
     }    
 
     /**/
@@ -259,7 +265,7 @@
         justify-content: center;
         align-content: center;  
         margin-bottom: 90px;             
-        width: 582px; 
+        width: 100%; 
         padding: 40px;
     }
 
@@ -267,13 +273,14 @@
     .encabezadoMayorista{
         margin-top: 80px;    
         text-align: center;        
-        width: 560px; 
+        width: auto; 
     }
 
     .encabezadoImportante{
         margin-top: 0px;    
+        margin-bottom: 0px;
         text-align: center;
-        width: 600px;
+        width: auto;
         padding: 20px;
     }
 
@@ -281,9 +288,13 @@
         text-align: left;
     }
 
+    .contenedorIconoMail{
+        margin-bottom: -20px;
+    }
+
     .parrafoEncabezadoMayorista{
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .parrafoEncabezadoImportante{
@@ -304,15 +315,27 @@
 }
 
 @media (min-width: 425px) and (max-width: 767px){
-    .contenedorContacto{
+    .contenedorContactoMinorista{
         margin-top: 100px;    
         display: flex;
         flex-direction: row;
         align-items: start;
         justify-content: start;
         align-content: start;        
+        text-align: start;  
+        margin-left: 20px;           
+    }
+
+    .contenedorContactoMayorista{
+        margin-top: 30px;    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;        
+        flex-wrap: wrap;
         text-align: left;
-        margin-left: 100px; 
+        margin-left: 0px; 
     }
 
     .tituloEncabezado{
@@ -324,8 +347,8 @@
 
     .contenedorFormulario{
         margin-top: 0px;
-        margin-left: 100px;
-        width: 500px;
+        margin-left: 10px;
+        width: auto;
     }
 
     /**/
@@ -337,7 +360,7 @@
         justify-content: center;
         align-content: center;  
         margin-bottom: 90px;            
-        width: 680px; 
+        width: 100%; 
         padding: 40px;
     }
 
@@ -345,14 +368,14 @@
     .encabezadoMayorista{
         margin-top: 80px;    
         text-align: center;        
-        width: 660px;
+        width: 100%;
     }
 
     .encabezadoImportante{
         margin-top: 0px;    
         text-align: center;
         background-color: red;
-        width: 690px;
+        width: 100%;
         padding: 20px;
     }
 
@@ -361,8 +384,8 @@
     }
 
     .parrafoEncabezadoMayorista{
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .parrafoEncabezadoImportante{

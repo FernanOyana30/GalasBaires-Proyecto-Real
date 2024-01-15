@@ -89,7 +89,7 @@
 @media (min-width: 320px) and (max-width: 374px){
     .contenedorTest{
         font-family: 'montserrat';     
-        width: 300px;             
+        width: 100%;             
         margin-left: 5px;  
         text-align: center;
         color: #804B37
@@ -109,8 +109,8 @@
         border-color: #804B37;
         padding: 30px;    
         margin-bottom: 45px;
-        margin-left: 5px;
-        width: 280px;
+        margin-left: 0px;
+        width: 100%;
         
     }
 
@@ -122,8 +122,8 @@
 @media (min-width: 375px) and (max-width: 424px){
     .contenedorTest{
         font-family: 'montserrat';     
-        width: 340px;     
-        margin-left: 10px;  
+        width: auto;     
+        margin-left: 0px;  
         text-align: center;
         color: #804B37
     } 
@@ -142,16 +142,15 @@
         border-color: #804B37;
         padding: 30px;    
         margin-bottom: 45px;
-        width: 330px;
-
+        width: 100%;
     }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {      
     .contenedorTest{
         font-family: 'montserrat';     
-        width: 350px;     
-        margin-left: 30px;  
+        width: 100%;     
+        margin-left: 0px;  
         text-align: center;
         color: #804B37
     } 
@@ -169,8 +168,8 @@
         border-radius: 30px;   
         border-color: #804B37;
         padding: 30px;    
-        margin-bottom: 45px;
-        width: 350px;
+        margin-bottom: 45px;        
+        width: auto;
         
     }
     
