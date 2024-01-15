@@ -373,8 +373,7 @@
 
     .encabezadoImportante{
         margin-top: 0px;    
-        text-align: center;
-        background-color: red;
+        text-align: center;        
         width: 100%;
         padding: 20px;
     }
@@ -406,6 +405,25 @@
 }
 /*Media Queries Tablet*/
 @media (min-width: 768px) and (max-width: 1023px){
+    .contenedorContactoMinorista{
+        margin-top: 70px;
+        margin-bottom: 20px;    
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        align-content: start;        
+        text-align: left;
+        padding-left: 20px;
+        width: 100%;                
+    } 
+
+    .contenedorFormulario{
+        margin-top: 100px;
+        margin-left: 10px;
+        width: 100%;
+    }
+
     .contenedorContacto{
         margin-top: 100px;    
         display: flex;
@@ -449,9 +467,9 @@
         font-size: 50px;
     }
 
-    .carruselStyle{
-        width: 25%;  
-        transform: translateX(-40px);             
+    .carruselMayorista{
+        width: 200%;  
+                   
     }
 }
 
@@ -475,4 +493,22 @@
         margin-top: 0px;    
         text-align: center;
     }
+
+    .parrafoEncabezadoImportante{
+        margin-left: 170px;
+        margin-right: 170px;
+    }
+
+    .contenedorContactoMinorista{
+        margin-top: 80px;
+        margin-bottom: 20px;    
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        align-content: start;        
+        text-align: left;
+        padding-left: 20px;
+        width: 100%;                
+    } 
 }

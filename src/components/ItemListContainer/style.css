@@ -100,10 +100,7 @@
     .estiloPaginacion{
         transform: translateX(-70px);
     }     
-    .container-encabezado{        
-       
-        background-color: red;
-    }
+    
     .encabezadoCatalogo{
         margin-left: 0px;
     }

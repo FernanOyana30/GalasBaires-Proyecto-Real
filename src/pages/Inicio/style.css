@@ -68,8 +68,7 @@
 
 .textFragancias{    
     margin-left: 460px;    
-    margin-right: 460px;   
-       
+    margin-right: 460px;  
 }
 
 .parrafoMayorista{
@@ -317,8 +316,7 @@
         font-size: 17px;
         margin-left: 0px;
         margin-top: -50px; 
-        width: 100%;  
-        background-color: red;                    
+        width: 100%;                    
     }
 
     .parrafoMayorista{
@@ -461,23 +459,39 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;   
-        width: 200px;                     
-    }         
+        width: auto;                     
+    }        
+    
+    .textContainer2{
+        width: 100%;
+    }
     
     .img-container{
-        width: 350px;        
+        margin-top: 80px;
+        width: 100%;        
     }
 
     .titleStyle{                    
         font-size: 32px;
-        width: 300px;        
+        width: auto;        
     }    
+
+    .titleInicio{                    
+        color: #804B37;
+        font-size: 30px; 
+    } 
 
     /*Características*/      
     .contenedorCaracteristicas{        
         width: 720px;
         margin-left: -20px;
     }     
+
+    .contenedorMayorista{
+        display: flex;
+        flex-direction: column;        
+        justify-content: left;
+    }
     
     .textCaracteristicas{        
         width: 240px;
@@ -498,7 +512,12 @@
     .containerMayorista{
         color: #2D2D2D;            
         font-size: 17px;
-        margin-left: 0px;                               
+        margin-left: 0px;
+    }
+
+    .contenedorMayorista{
+        display: flex;
+        flex-direction: row;        
     }
 
     .parrafoMayorista{
@@ -506,23 +525,28 @@
     }
 
     .img-mayorista{         
-        margin-left: 0px;  
-        width: 350px;   
+          
+        width: 100%;   
     }
 
     /*Nosotros*/
     .containerNosotros{ 
-        width: 350px;
+        width: 100%;
+    }
+
+    .parrafoNosotrosInicio{
+        width: 300px;        
     }
 
     .img-nosotros{  
+        margin-top: 12px;
         margin-left: -30px;
-        width: 350px;
+        width: 110%;
     }        
 
     .estiloCarrusel{
-        width: 150%;
-        margin-left: 0px;
+        width: 100%;
+        margin-left: 200px;        
     }
 }
 
@@ -558,5 +582,14 @@
     .containerMayorista{        
        margin-left: 0px;
     }   
+
+    .img-style{
+        margin-top: 80px;
+    }
+
+    .estiloCarrusel{
+        width: 60%;
+        margin-left: 230px;        
+    }
 }
 

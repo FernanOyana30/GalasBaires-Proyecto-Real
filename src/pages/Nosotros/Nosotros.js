@@ -11,7 +11,7 @@ function Nosotros() {
   return (
     <>    
       <Container className='containerStyle'>
-        <Row>
+        <Row className='encabezadoNosotros2'>
           <Col xsm={1} sm={1} md={6} lg={12}>
             <div className='encabezadoNosotros'>
               <div className='encabezadoNosotros2'>

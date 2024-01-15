@@ -70,7 +70,7 @@ function Inicio (){
               </div>                             
             </Col>            
           </Row>
-          <Row className='p-5'>
+          <Row className='p-5 '>
             <Col xsm={1} sm={1} md={6} lg={6}>                  
               <div>                                 
                 <img className='img-nosotros' src="./img/img-inicio-2.jpg" alt=""/>                               
@@ -79,10 +79,10 @@ function Inicio (){
             <Col xsm={1} sm={1} md={6} lg={6}>
               <div className="containerNosotros p-3 mb-5">                               
                   <h2 className="titleStyle fw-bold mb-3">Sobre nosotros</h2>
-                  <p className='mb-0'>Galas nace a mediados de 2019 como terapia para afrontar la pérdida de mi hija ese mismo año.</p>
-                  <p className='mb-0'>En mi vida necesitaba luz para atravesar este momento tan difícil por lo que las velas fueron ese motor. <span className='fw-bold'>Llevar luz a los demás, ¿y por qué no también aromas?</span> 
+                  <p className='parrafoNosotrosInicio mb-0'>Galas nace a mediados de 2019 como terapia para afrontar la pérdida de mi hija ese mismo año.</p>
+                  <p className='parrafoNosotrosInicio mb-0'>En mi vida necesitaba luz para atravesar este momento tan difícil por lo que las velas fueron ese motor. <span className='fw-bold'>Llevar luz a los demás, ¿y por qué no también aromas?</span> 
                   </p>
-                  <p className='mb-4'>Comenzamos investigando mucho, a prueba y error claro, a leer muchísimo sobre composiciones químicas y origen de aquellos productos naturales que nos permitan producir el menor daño posible a nuestro planeta y seres vivos. Fue así que creamos la marca, el stock y muchas ideas.
+                  <p className='parrafoNosotrosInicio mb-4'>Comenzamos investigando mucho, a prueba y error claro, a leer muchísimo sobre composiciones químicas y origen de aquellos productos naturales que nos permitan producir el menor daño posible a nuestro planeta y seres vivos. Fue así que creamos la marca, el stock y muchas ideas.
                   </p>
                   <Link to="/Nosotros"><Button variant="light" className="button-style" onClick={scrollTo}>Conocenos</Button></Link>                                    
                 
@@ -90,7 +90,7 @@ function Inicio (){
             </Col>
           </Row>
           <Row className='contenedorMayorista'>
-            <Col xsm={1} sm={1} md={6} lg={6}>
+            <Col xsm={1} sm={1} md={6} lg={6} >
               <div className="containerMayorista p-3 mb-5 text-start">
                 <h2 className="titleStyle fw-bold mb-3">¿Sos mayorista?</h2>
                 <p className='parrafoMayorista mb-0'  >Desde Galas Baires queremos motivar a quienes tienen pasión por los aromas y el arte deco. Aquellas personas con alma emprendedora. </p>
@@ -109,8 +109,7 @@ function Inicio (){
               </div>
             </Col>
           </Row>     
-          <Row className='p-5'>
-            
+          <Row className='p-5'>            
             <Col xsm={1} sm={1} md={6} lg={12}>
               <Carousel className='estiloCarrusel'>
                 <Carousel.Item interval={1000}>

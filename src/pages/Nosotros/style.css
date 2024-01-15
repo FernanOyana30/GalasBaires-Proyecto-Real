@@ -683,20 +683,28 @@
 
 /*Media Queries Tablet*/
 @media (min-width: 768px) and (max-width: 1023px)  {
-    .parrafoEncabezado{
-        margin-left: 60px;
-        margin-right: 50px;
-        margin-bottom: 50px;        
-        width: 500px;        
-    }
+    
     .encabezadoNosotros{        
-        width: 760px;
-        text-align: center;
+        width: 100%;        
         display: flex;
-        justify-content: center;
         flex-direction: column;        
-        align-items: center;                
+        justify-content: center;
+        justify-items: center;
+        align-items: center;   
+        align-content: center;   
+        text-align: center;                  
     }
+
+    .encabezadoNosotros2{        
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+    
 
     .containerMateriales{       
         width: 450px;           
@@ -711,7 +719,7 @@
         justify-content: center;         
         margin-top: -10px;       
         margin-left: 38px; 
-        width: 670px;        
+        width: 670px;                
     }
 
     .textNosotros{
@@ -747,14 +755,13 @@
     }
 
     .img-fragancas{
-        width: 210%;   
-        margin-left: -8px;     
+        width: 700px;   
+        margin-left: 10px;     
     }
 
     .parrafoMateriales{
         margin-right: 0px;               
-        width: 500px; 
-        background-color: red;      
+        width: 500px;               
     }
 
     .containerNuestrasFragancias{
@@ -765,9 +772,9 @@
     }
 
     .parrafoNuestrasFragancias{        
-        padding-left: 0px;
-        width: 650px;
-        text-align: left;
+        padding-left: 30px;
+        width: 100%;
+        text-align: right;
     }
 
     .containerMateriales{       
@@ -775,18 +782,15 @@
         margin-left: 0px; 
         margin-top: 10px;  
         text-align: end;                 
-    }
-
-    .materiales{        
-        width: 228%;        
-    } 
+    }     
 
     .img-nuestra-historia{
-        width: 100%;
+        width: 95%;
+        margin-left: 15px;
     }
 
-    .parrafoMateriales{
-        padding-right: 0px;        
+    .parrafoMateriales{       
+        width: 60%;       
     }
 
     .containerMateriales{
@@ -798,7 +802,7 @@
     .titleMateriales{
         color: #2D2D2D;
         font-size: 40px; 
-        padding-right: 0px;
+        margin-right: 100px;
     }
 
     .encabezadoTestimonios{
@@ -831,38 +835,55 @@
     .containerNuestraHistoria{                      
         width: 640px;           
         margin-left: 10px; 
-        margin-top: 0px;           
-    }
-
-    .parrafoNuestraHistoria{
+        margin-top: 0px; 
         margin-right: 0px;
-        margin-bottom: 10px;
-    }
+        margin-bottom: 10px;          
+    }    
 
     .titleFragancias{
         color: #2D2D2D;
         font-size: 40px;  
         padding-left: 0px;  
-        text-align: left;
+        text-align: right;
+        width: 100%;
     }
 
     .containerNuestrasFragancias{
         color: #2D2D2D;
         padding-right: 0px;    
         font-size: 17px;
-        margin-left: 0px;        
-        width: 720px;        
+        margin-left: 0px;  
+        margin-top: 0px;      
+        width: 100%;               
     }
 
     .contenedorMayorista{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;        
     }
 
     .contenedorMateriales{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;        
     }
+
+    .catalogoContainer{
+        width: 100%;        
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+     }    
+
+     .textCatalogo{  
+        text-align: center;  
+        width: 70%;                  
+     }
 }
 
 /*Media Queries Desktop*/
@@ -873,7 +894,7 @@
     }
     
     .containerNuestraHistoria{       
-        width: 500px;           
+        width: auto;           
         margin-left: 0px; 
         margin-top: 0px;           
     }
@@ -916,8 +937,7 @@
     }
     
     .textNosotros{
-        color: #2D2D2D;
-        
+        color: #2D2D2D;        
         font-size: 17px;          
     }
     
@@ -974,4 +994,20 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    .img-materiales{
+        margin-left: 0px;        
+        padding-bottom: 0px;
+    }
+
+    .textBanner{
+        margin-left: 260px;    
+        margin-right: 260px;
+        text-align: center;  
+    }
+
+    .textCatalogo{  
+        margin-left: 260px;    
+        margin-right: 260px;                           
+     }
 }

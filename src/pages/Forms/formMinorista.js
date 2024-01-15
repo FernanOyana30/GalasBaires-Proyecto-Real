@@ -29,7 +29,7 @@ function FormMinorista() {
     <>
       <Container>
         <Row>
-          <Col xsm={1} sm={1} md={3} lg={6}>
+          <Col xsm={1} sm={1} md={6} lg={6}>
             <div className='contenedorContactoMinorista'>
               <div>
                 <h1 className="tituloEncabezado">¿Tenés alguna pregunta?</h1>
@@ -50,7 +50,7 @@ function FormMinorista() {
               </div>
             </div>
           </Col>
-          <Col xsm={1} sm={1} md={3} lg={6} className='mb-5'>
+          <Col xsm={1} sm={1} md={6} lg={6} className='mb-5'>
             <div className='contenedorFormulario'>
               <CheckoutForm onSubmit={handleCheckout}/>            
             </div>
