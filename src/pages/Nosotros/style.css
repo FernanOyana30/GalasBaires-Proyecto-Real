@@ -1011,3 +1011,9 @@
         margin-right: 260px;                           
      }
 }
+
+@media (min-width: 1440px){
+    .img-nuestra-historia{
+        margin-left: 30px;
+    }
+}

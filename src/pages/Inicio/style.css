@@ -593,3 +593,14 @@
     }
 }
 
+@media (min-width: 1440px){
+    .img-container{
+        margin-top: 80px;
+    }
+
+    .estiloCarrusel{
+        margin-left: 350px;
+        width: 50%;
+    }
+
+}

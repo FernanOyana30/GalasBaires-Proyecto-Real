@@ -512,3 +512,14 @@
         width: 100%;                
     } 
 }
+
+@media (min-width: 1440px){
+    .contenedorContactoMinorista{
+        margin-top: 100px;
+    }
+
+    .contenedorFormulario{
+        margin-top: 100px;
+        width: 80%;
+    }
+}
