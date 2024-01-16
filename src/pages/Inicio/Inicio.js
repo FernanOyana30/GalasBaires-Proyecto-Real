@@ -70,14 +70,14 @@ function Inicio (){
               </div>                             
             </Col>            
           </Row>
-          <Row className='p-5 '>
+          <Row >
             <Col xsm={1} sm={1} md={6} lg={6}>                  
               <div>                                 
                 <img className='img-nosotros' src="./img/img-inicio-2.jpg" alt=""/>                               
               </div>                                
             </Col>
             <Col xsm={1} sm={1} md={6} lg={6}>
-              <div className="containerNosotros p-3 mb-5">                               
+              <div className="containerNosotros mb-5">                               
                   <h2 className="titleStyle fw-bold mb-3">Sobre nosotros</h2>
                   <p className='parrafoNosotrosInicio mb-0'>Galas nace a mediados de 2019 como terapia para afrontar la pérdida de mi hija ese mismo año.</p>
                   <p className='parrafoNosotrosInicio mb-0'>En mi vida necesitaba luz para atravesar este momento tan difícil por lo que las velas fueron ese motor. <span className='fw-bold'>Llevar luz a los demás, ¿y por qué no también aromas?</span> 
@@ -85,7 +85,6 @@ function Inicio (){
                   <p className='parrafoNosotrosInicio mb-4'>Comenzamos investigando mucho, a prueba y error claro, a leer muchísimo sobre composiciones químicas y origen de aquellos productos naturales que nos permitan producir el menor daño posible a nuestro planeta y seres vivos. Fue así que creamos la marca, el stock y muchas ideas.
                   </p>
                   <Link to="/Nosotros"><Button variant="light" className="button-style" onClick={scrollTo}>Conocenos</Button></Link>                                    
-                
               </div>              
             </Col>
           </Row>

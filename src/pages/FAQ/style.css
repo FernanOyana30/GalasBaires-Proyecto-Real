@@ -92,7 +92,7 @@
 /*Media Queries Mobile*/
 @media (min-width: 320px) and (max-width: 374px){
     .contenedorEncabezado{  
-        width: 320px;
+        width: 100%;
         margin-left: 0px;
         margin-bottom: 10px;
     }
@@ -103,13 +103,12 @@
 
     .contenedorContacto{
         display: flex;
-        flex-direction: row;       
+        flex-direction: column;       
         justify-content: start;        
         align-content: start;
         align-items: start;
         text-align: center;        
-        width: 320px;                    
-        flex-wrap: wrap;   
+        width: 100%;  
     }
 
     .contenedorIconoMail{        
@@ -132,13 +131,13 @@
     }
 
     .acordeonStyle{    
-        margin-left: 10px;
-        width: 300px;
+        margin-left: 0px;
+        width: 100%;
     }
 
     .acordeonItem{
-        width: 280px;    
-        margin-top: 10px;
+        width: 100%;    
+        margin-top: 0px;
         border-color: #804B37;    
     }
 }

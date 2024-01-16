@@ -85,7 +85,7 @@ function Nosotros() {
             </div>
           </Col>
         </Row>
-        <Row className='p-5 contenedorMateriales'>
+        <Row className='contenedorMateriales'>
           <Col xsm={1} sm={1} md={6} lg={6}>                  
             <div>                                 
               <img className='img-materiales' src="./img/img-inicio-2.jpg" alt=""/>                               

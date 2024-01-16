@@ -16,9 +16,9 @@
         padding-bottom: 12px;
     }    
     .filterStyle{        
-        width: 300px;
+        width: auto;
         height: 50px;
-        line-height: 6px;
+        line-height: 8px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

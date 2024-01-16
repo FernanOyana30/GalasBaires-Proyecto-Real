@@ -130,24 +130,27 @@
         margin-left: 40px;
         margin-right: 40px;
         margin-bottom: 50px;        
-        width: 320px;
+        width: 100%;
         text-align: center;
     }
+
     .encabezadoNosotros{               
-        width: 320px;
+        width: 100%;
         text-align: center;
         display: flex;
         justify-content: center;
         flex-direction: column;        
         align-items: center;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .containerMateriales{               
-        width: 320px;           
+        width: 100%;           
         margin-left: 0px; 
-        margin-top: -50px;           
+        margin-top: 10px;  
+        text-align: end;        
+        margin-right: 0px;        
     }
 
     /*Características*/
@@ -156,7 +159,7 @@
         flex-direction: column;
         justify-content: center;         
         margin-top: -80px;        
-        width: 320px;
+        width: 100%;
     }
 
     .textNosotros{
@@ -180,25 +183,25 @@
     }
 
     .catalogoContainer{
-        width: 320px;
+        width: 100%;
         background-color: #DED5C2;
         margin-left: 0px;
     }
 
     .textBanner{  
        text-align: center;       
-       margin-left: -27px;
-       width: 320px;  
+       margin-left: 0px;
+       width: 100%;  
     }
 
-    .img-fragancas{
+    .img-fragancias{
         width: 100%;   
         margin-left: 5px;     
     }
 
     .parrafoMateriales{
         margin-right: 0px;               
-        width: 320px;       
+        width: 100%;       
     }
 
     .containerNuestrasFragancias{
@@ -210,21 +213,14 @@
 
     .parrafoNuestrasFragancias{        
         padding-left: 0px;
-        width: 320px;
+        width: 100%;
         text-align: left;
     }
 
-    .containerMateriales{            
-        width: 320px;           
-        margin-left: -50px; 
-        margin-top: 10px;  
-        text-align: end;          
-    }
-
     .img-materiales{        
-        width: 130%;   
-        margin-top: -45px;             
-        margin-left: -40px;
+        width: 100%;   
+        margin-top: -45px;  
+        margin-left: 0px;
         margin-bottom: -40px;
     } 
 
@@ -234,12 +230,12 @@
 
     .parrafoMateriales{
         padding-right: 0px;
-        width: 300px;
+        width: 100%;
     }
 
     .containerMateriales{
-        margin-right: 0px;
-        width: 320px;
+        
+        width: 100%;
         text-align: end;
     }
 
@@ -252,7 +248,7 @@
     .encabezadoTestimonios{
         margin-top: 40px;
         text-align: center;        
-        width: 320px;
+        width: 100%;
     }
 
     .tituloTestimonios{
@@ -282,7 +278,7 @@
     }
 
     .containerNuestraHistoria{              
-        width: 320px;           
+        width: 100%;           
         margin-left: 10px; 
         margin-top: 0px;           
     }
@@ -305,11 +301,11 @@
         padding-right: 0px;    
         font-size: 17px;
         margin-left: 0px;        
-        width: 320px;
+        width: 100%;
     }
 
     .catalogoContainer{
-        width: 320px;
+        width: 100%;
         background-color: #DED5C2;
         margin-left: 0px;
         margin-top: 0px;
@@ -326,7 +322,7 @@
         text-align: center;       
         margin-left: -10px;
         margin-right: 20px;
-        width: 300px;                  
+        width: 100%;                  
      }
      
 }
@@ -358,13 +354,14 @@
         justify-content: center;
         flex-direction: column;        
         align-items: center;        
-    }
+    }    
 
-    .containerMateriales{       
-                   
-        margin-left: 30px; 
-        margin-top: -50px;           
-    }
+    .img-materiales{        
+        width: 100%;   
+        margin-top: 0px;  
+        margin-left: 0px;
+        margin-bottom: -40px;
+    } 
 
     /*Características*/
     .contenedorIconosNosotros{                
@@ -397,6 +394,7 @@
     .catalogoContainer{
         background-color: #DED5C2;
         margin-left: 0px;
+        width: auto;
     }
 
     .textBanner{  
@@ -405,14 +403,13 @@
        width: 320px;        
     }
 
-    .img-fragancas{
-        width: 170%;   
-        margin-left: -8px;     
+    .img-fragancias{
+        width: 100%;   
+        margin-left: 0px;     
     }
 
     .parrafoMateriales{
-        margin-right: 0px;  
-         
+        margin-right: 0px; 
     }
 
     .containerNuestrasFragancias{
@@ -425,11 +422,12 @@
     .parrafoNuestrasFragancias{        
         padding-left: 0px;        
         text-align: left;
+        width: 100%;
     }
 
     .containerMateriales{  
-        margin-left: -45px; 
-        margin-top: 10px;  
+        margin-left: 10px; 
+        margin-top: 0px;  
         text-align: left;                 
     }    
 
@@ -439,7 +437,7 @@
 
     .parrafoMateriales{
         padding-right: 0px;
-        width: 370px;
+        width: 100%;
     }    
 
     .titleMateriales{
@@ -499,6 +497,13 @@
         padding-right: 0px;    
         font-size: 17px;
         margin-left: 0px;
+    }
+
+    .contenedorMateriales{
+        display: flex;
+        flex-direction: row;
+        width: 100%;   
+        background-color: red;     
     }
 }
 
@@ -577,9 +582,15 @@
        width: 100%;        
     }
 
-    .img-fragancas{
-        width: 170%;   
-        margin-left: -8px;     
+    .img-fragancias{
+        width: 100%;   
+        margin-left: 0px;     
+    }
+
+    .img-materiales{
+        margin-left: 0px;
+        width: 100%;
+        padding-bottom: 10px;
     }
 
     .parrafoMateriales{
@@ -754,8 +765,8 @@
        width: 560px;        
     }
 
-    .img-fragancas{
-        width: 700px;   
+    .img-fragancias{
+        width: 100%;   
         margin-left: 10px;     
     }
 
@@ -997,7 +1008,7 @@
 
     .img-materiales{
         margin-left: 0px;        
-        padding-bottom: 0px;
+        padding-bottom: 50px;
     }
 
     .textBanner{

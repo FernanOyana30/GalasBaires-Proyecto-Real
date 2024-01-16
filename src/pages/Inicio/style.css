@@ -112,19 +112,19 @@
         flex-direction: column;
         justify-content: center;
         text-align: center; 
-        width: 320px;
+        width: 100%;
         margin-bottom: 40px;
     }        
     
     .textContainer2{        
         margin-left: -40px;
-        width: 290px;         
+        width: auto;         
         margin-bottom: 20px;
     }
 
     .titleStyle{                    
         font-size: 32px;
-        width: 300px;        
+        width: 100%;        
     }  
     
     .titleInicio{                    
@@ -144,7 +144,7 @@
         justify-content: center;         
         margin-top: -80px;   
         margin-left: -33px;     
-        width: 300px;        
+        width: auto;        
     }
 
     .textCaracteristicas{
@@ -179,7 +179,7 @@
     .textFragancias{  
         text-align: center;       
         margin-left: -18px;
-        width: 320px;                  
+        width: 100%;                  
      }
 
      .testContainer{
@@ -201,12 +201,12 @@
         font-size: 17px;
         margin-left: 0px;
         margin-top: -50px;  
-        width: 300px;         
+        width: 100%;         
     }
 
     .parrafoMayorista{        
         margin-right: 0px;               
-        width: 300px;  
+        width: 100%;  
     }
 
     .img-mayorista{
@@ -216,15 +216,21 @@
 
     /*Nosotros*/
     .containerNosotros{       
-        width: 300px;           
-        margin-left: -50px; 
+        width: auto;   
+        background-color: pink;        
+        margin-right: 0px; 
         margin-top: -50px;           
     }
 
     .img-nosotros{        
-        width: 140%;
-        margin-left: -50px;
-    }    
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }  
+    
+    .parrafoNosotrosInicio{
+        width: auto;        
+    }
 
     .estiloCarrusel{        
         margin-top: -60px;
@@ -331,18 +337,23 @@
 
     /*Nosotros*/
     .containerNosotros{       
-        width: 366px;           
-        margin-left: -50px; 
+        width: 100%;           
+        margin-left: 0px; 
         margin-top: -50px;           
     }
 
     .img-nosotros{        
-        width: 140%;
-        margin-left: -54px;
-    }    
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }   
+    
+    .parrafoNosotrosInicio{
+        width: auto;        
+    }
 
     .estiloCarrusel{
-        margin-left: 0px;
+        margin-left: 20px;
         margin-top: -60px;
         width: 100%;
     }
@@ -360,7 +371,7 @@
 
     .titleStyle{                    
         font-size: 32px;
-        width: 300px;        
+        width: 100%;        
     }    
 
     .img-container{
@@ -434,18 +445,23 @@
 
     /*Nosotros*/
     .containerNosotros{       
-        width: 400px;           
-        margin-left: -50px; 
+        width: 100%;           
+        margin-left: 0px; 
         margin-top: -50px;           
     }
 
     .img-nosotros{        
-        width: 139%;
-        margin-left: -60px;
-    }    
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }   
+    
+    .parrafoNosotrosInicio{
+        width: auto;        
+    }
 
     .estiloCarrusel{
-        margin-left: 0px;
+        margin-left: 20px;
         margin-top: -60px;
         width: 100%;
     }

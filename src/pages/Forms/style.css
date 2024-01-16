@@ -125,7 +125,7 @@
         align-content: start;        
         text-align: left;
         padding-left: 20px;
-        width: 320px;        
+        width: 100%;        
     }
 
     .contenedorContactoMayorista{
@@ -173,7 +173,7 @@
     .encabezadoMayorista{
         margin-top: 80px;    
         text-align: center;        
-        width: 300px;                
+        width: 100%;                
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -188,7 +188,7 @@
     .encabezadoImportante{
         margin-top: 30px;    
         text-align: center;
-        width: 320px;
+        width: 100%;
         
         display: flex;
         flex-direction: column;
@@ -346,7 +346,7 @@
     } 
 
     .contenedorFormulario{
-        margin-top: 0px;
+        margin-top: 20px;
         margin-left: 10px;
         width: auto;
     }
