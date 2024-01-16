@@ -258,7 +258,15 @@
         padding-left: 0px;
         padding-right: 0px;
         margin-bottom: 60px;    
-        width: 73vb;
+        width: 100%;
+    }
+
+    .tituloEncabezado{
+        margin-bottom: 30px;
+        margin-top: 50px;
+        color: #804B37;
+        font-weight: bold;
+        font-size: 50px;
     }
 
     .contenedorIcono{  

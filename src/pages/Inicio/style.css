@@ -86,7 +86,7 @@
 }
 
 .img-nosotros{
-    margin-left: 30px;
+    margin-left: 30px;    
     width: 90%;
     padding-bottom: 60px;
 }
@@ -547,6 +547,7 @@
     /*Nosotros*/
     .containerNosotros{ 
         width: 100%;
+        
     }
 
     .parrafoNosotrosInicio{
@@ -554,7 +555,7 @@
     }
 
     .img-nosotros{  
-        margin-top: 12px;
+        margin-top: 0px;
         margin-left: -30px;
         width: 110%;
     }        
@@ -616,6 +617,5 @@
     .estiloCarrusel{
         margin-left: 350px;
         width: 50%;
-    }
-
+    } 
 }
