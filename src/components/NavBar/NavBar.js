@@ -35,8 +35,9 @@ function NavBar() {
                   </Link>
                 </Nav.Link>
                 <Navbar.Brand className="h1 align-items-center">
-                  <img alt='' src='./img/isologo.png' className='d-inline-block align-center' width="170"
-                />
+                  <Link to="/" className="text-dark text-decoration-none">
+                    <img alt='' src='./img/isologo.png' className='d-inline-block align-center' width="170"/>                    
+                  </Link>
                 </Navbar.Brand>
                 <Nav.Link>
                   <Link className="text-decoration-none text-black" to="/Nosotros" onClick={scrollTo}>

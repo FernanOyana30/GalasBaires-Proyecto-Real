@@ -24,7 +24,9 @@ function Footer() {
                 <div className="d-flex justify-content-between align-items-center py-5 container-fluid" style={{backgroundColor:"#ded5c2"}}>
                   <div style={{backgroundColor:"#ded5c2"}}></div>
                   <div style={{backgroundColor:"#ded5c2"}}>
-                    <img alt='' src='./img/isologo.png' className='d-inline-block align-center' width="170"/>                
+                    <Link to="/" className="text-dark text-decoration-none" onClick={scrollTo}>
+                      <img alt='' src='./img/isologo.png' className='d-inline-block align-center' width="170"/>
+                    </Link>
                   </div>
                   <div className="d-flex gap-3 " style={{backgroundColor:"#ded5c2"}}>
                     <Link to="https://www.facebook.com/Galasbaires" className="text-dark text-decoration-none" target="_blank">
