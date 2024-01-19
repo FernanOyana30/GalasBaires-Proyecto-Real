@@ -111,15 +111,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-content: center;
+        align-items: center;
         text-align: center; 
         width: 100%;
         margin-bottom: 40px;
     }        
     
     .textContainer2{        
-        margin-left: -40px;
+        margin-left: 0px;
         width: auto;         
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .titleStyle{                    
@@ -129,7 +132,7 @@
     
     .titleInicio{                    
         font-size: 40px;         
-        text-align: center;   
+        text-align: center;
         color: #804B37;       
     } 
 
@@ -143,7 +146,7 @@
         flex-direction: column;
         justify-content: center;         
         margin-top: -80px;   
-        margin-left: -33px;     
+        margin-left: 0px;     
         width: auto;        
     }
 
@@ -163,8 +166,8 @@
     }
 
     .parrafoCaracteristicas{
-        margin-left: 50px;  
-        margin-right: 50px;
+        margin-left: 40px;  
+        margin-right: 40px;
     }
 
     /*Productos destacados*/
@@ -178,7 +181,7 @@
     /*Descubrí tu fragancia*/
     .textFragancias{  
         text-align: center;       
-        margin-left: -18px;
+        margin-left: 0px;
         width: 100%;                  
      }
 
@@ -194,7 +197,7 @@
         flex-direction: column-reverse;               
         margin-bottom: 20px;  
         margin-top: -60px;  
-    }
+    }    
 
     .containerMayorista{
         color: #2D2D2D;            
@@ -228,7 +231,7 @@
     }  
     
     .parrafoNosotrosInicio{
-        width: auto;        
+        width: 100%;        
     }
 
     .estiloCarrusel{        
@@ -251,7 +254,7 @@
     }
 
     .titleInicio{                    
-        font-size: 32px;
+        font-size: 40px;
         text-align: center;       
     }    
 
@@ -368,7 +371,7 @@
         width: auto;       
     }            
 
-    .titleStyle{                    
+    .titleInicio{                    
         font-size: 32px;
         width: 100%;        
     }    
@@ -478,12 +481,24 @@
     }        
     
     .textContainer2{
-        width: 100%;
+        width: 130%;
+        text-align: left;
+        font-size: 17px;   
+        margin-left: -30px;     
     }
     
     .img-container{
         margin-top: 80px;
         width: 100%;        
+    }
+
+    .img-style{
+        width: 100%;
+    }
+
+    .parrafoEncabezadoInicio{
+        width: 112%;
+        
     }
 
     .titleStyle{                    
@@ -493,7 +508,8 @@
 
     .titleInicio{                    
         color: #804B37;
-        font-size: 30px; 
+        font-size: 35px; 
+        text-align: left;
     } 
 
     /*Características*/      
@@ -521,7 +537,7 @@
     .textFragancias{        
        margin-left: 0px;
        width: 100%;
-    }    
+    }     
 
     /*Mayoristas*/
     .containerMayorista{
@@ -571,6 +587,17 @@
     .titleStyle{
         font-size: 60px;
     }  
+
+    .textContainer2{        
+        width: 120%;
+        padding-right: 10px;  
+        padding-left: 10px;
+    }
+
+    .titleInicio{
+        width: 100%;
+        font-size: 45px;        
+    }
     
     /*Características*/
     .contenedorCaracteristicas{               

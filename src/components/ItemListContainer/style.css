@@ -28,6 +28,23 @@
     justify-content: left;
 }
 
+.container-encabezado{
+    width: auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloEncabezadoCatalogo{
+    color: #804B37;       
+    font-size: 60px;
+}
+
+.parrafoEncabezadoCatalogo{
+    width: 50%;    
+}
+
 /*pagination*/
 .paginationStyle{
     margin-left: 2px;
@@ -64,8 +81,16 @@
         width: 100%;
     }
 
-    .encabezadoCatalogo{
-        margin-left: 6px;
+    .tituloEncabezadoCatalogo{
+        color:#2D2D2D;
+        font-size: 32px;
+        margin-left: 0px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .parrafoEncabezadoCatalogo{
+        width: 90%;    
     }
 
     .testBanner{
@@ -106,8 +131,16 @@
         transform: translateX(-70px);
     }     
     
-    .encabezadoCatalogo{
+    .tituloEncabezadoCatalogo{
+        color:#2D2D2D;
+        font-size: 32px;
         margin-left: 0px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .parrafoEncabezadoCatalogo{
+        width: 80%;    
     }
 
     .filaProductos{            
@@ -145,8 +178,16 @@
     .estiloPaginacion{
         transform: translateX(-70px);
     }     
-    .encabezadoCatalogo{
-        margin-left: 6px;
+    .tituloEncabezadoCatalogo{
+        color:#2D2D2D;
+        font-size: 32px;
+        
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .parrafoEncabezadoCatalogo{
+        width: 80%;    
     }
 
     .filaProductos{            
@@ -192,9 +233,12 @@
         justify-content: center;
     }
 
-    .encabezadoCatalogo{        
-        width: 700px;
-        margin-left: 22px;
+    .tituloEncabezadoCatalogo{        
+        width: 100%;         
+    }
+
+    .parrafoEncabezadoCatalogo{
+        width: 70%;    
     }
 
     .filaProductos{        
@@ -219,6 +263,11 @@
     .textoBannerFragancias{    
         margin-left: 250px;
         margin-right: 250px;
+    }
+
+    .tituloEncabezadoCatalogo{
+        color: #804B37;       
+        font-size: 60px;
     }
 }
 

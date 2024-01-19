@@ -20,9 +20,9 @@ function Inicio (){
             <Col xsm={1} sm={1} md={6} lg={6}>
               <div className="textContainer w-100 pt-4 pb-4 mt-5 container-fluid">
                 <div className='textContainer2 container-fluid'>                
-                  <h1 className="titleInicio fw-bold pt-3 pb-3">Creá ambientes llenos de aroma y calidez.</h1>                
-                  <p className="mb-0">Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>
-                  <p>Descubrí nuestra amplia variedad de fragancias y productos para transformar tus espacios.</p>
+                  <h1 className="titleInicio fw-bold pt-3 pb-3">Creá ambientes llenos de aroma y calidez</h1>                
+                  <p className="parrafoEncabezadoInicio mb-0">Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>
+                  <p className="parrafoEncabezadoInicio">Descubrí nuestra amplia variedad de fragancias y productos para transformar tus espacios.</p>
                   <Link to="/productos"><Button variant="light" onClick={scrollTo} className="button-style">Ver catálogo</Button></Link>
                 </div>
               </div>
@@ -130,7 +130,21 @@ function Inicio (){
                     className="d-block w-100"
                     src="./img/img-carrusel-3.jpg"
                     alt="Third slide"
-                  />                  
+                  />    
+                  </Carousel.Item>
+                  <Carousel.Item interval={1000}>
+                  <img 
+                    className="d-block w-100"
+                    src="./img/img-carrusel-4.jpg"
+                    alt="Third slide"
+                  />  
+                  </Carousel.Item>
+                  <Carousel.Item interval={1000}>
+                  <img 
+                    className="d-block w-100"
+                    src="./img/img-carrusel-5.jpg"
+                    alt="Third slide"
+                  />                
                 </Carousel.Item>
               </Carousel>
             </Col> 

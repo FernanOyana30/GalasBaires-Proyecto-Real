@@ -88,7 +88,8 @@ export default function ItemListContainer (){
           <Row >            
             <Col xsm={1} sm={1} md={12} lg={12}>              
               <div className="container-encabezado text-center pb-5 pt-5 mt-5"> 
-                <h1 className="encabezadoCatalogo fw-bold" style={{color:"#2D2D2D"}}>Nuestro catálogo</h1>
+                <h1 className="tituloEncabezadoCatalogo fw-bold">Nuestros productos</h1>
+                <p className='parrafoEncabezadoCatalogo'>Hechos a mano, pasarán a ser parte de tu vida, tu hogar o tus momentos. Dale estilo a tus espacios y aromatizá con las fragancias más ricas, únicas y duraderas.</p>
               </div>              
             </Col>
           </Row>

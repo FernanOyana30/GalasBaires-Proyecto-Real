@@ -88,6 +88,20 @@ function FormMayorista() {
                 alt="Third slide"
               />                  
             </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="./img/img-carrusel-4.jpg"
+                alt="Third slide"
+              />                  
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="./img/img-carrusel-5.jpg"
+                alt="Third slide"
+              />                  
+            </Carousel.Item>
           </Carousel>
         </Col> 
         <Col xsm={1} sm={1} md={1} lg={3}></Col>
