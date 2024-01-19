@@ -11,13 +11,11 @@ function Nosotros() {
   return (
     <>    
       <Container className='containerStyle'>
-        <Row className='encabezadoNosotros2'>
-          <Col xsm={1} sm={1} md={6} lg={12}>
-            <div className='encabezadoNosotros'>
-              <div className='encabezadoNosotros2'>
-                <h3 className='titleEncabezadoNosotros' >Sobre Galas Baires</h3>
-                <p>"No hay nadie tan fuerte como una persona, cuyo corazón está siempre lleno de gratitud" - Daisaku Ikeda."</p>              
-              </div>
+        <Row>
+          <Col xsm={1} sm={1} md={12} lg={12}>
+            <div className='encabezadoNosotros'>              
+              <h3 className='titleEncabezadoNosotros' >Sobre Galas Baires</h3>
+              <p>"No hay nadie tan fuerte como una persona, cuyo corazón está siempre lleno de gratitud" - Daisaku Ikeda."</p>              
             </div>
           </Col>          
         </Row>

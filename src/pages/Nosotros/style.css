@@ -16,11 +16,6 @@
     margin-bottom: 50px;
 }
 
-.encabezadoNosotros2{
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
 .containerNuestraHistoria{       
     width: 400px;           
     margin-left: 50px; 
@@ -152,8 +147,8 @@
         justify-content: center;
         flex-direction: column;        
         align-items: center;
-        padding-left: 10px;
-        padding-right: 10px;
+        
+        background-color: pink;
     }
 
     .containerMateriales{               
@@ -356,21 +351,18 @@
         margin-left: -10px;
         margin-right: 20px;
         width: 300px;                  
-     }
-
-    .parrafoEncabezado{
-        margin-left: 60px;
-        margin-right: 50px;
-        margin-bottom: 50px;  
-    }
+     }    
 
     .encabezadoNosotros{        
-        width: 375px;
-        text-align: center;
+        width: 100%;        
         display: flex;
-        justify-content: center;
         flex-direction: column;        
-        align-items: center;        
+        justify-content: center;
+        justify-items: center;
+        align-items: center;   
+        align-content: center;   
+        text-align: center;    
+                
     }    
 
     .img-materiales{        
@@ -731,18 +723,9 @@
         justify-items: center;
         align-items: center;   
         align-content: center;   
-        text-align: center;                  
-    }
-
-    .encabezadoNosotros2{        
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
-        align-items: center;        
-    }    
+        text-align: center;    
+        padding: 25px;              
+    }       
 
     .containerMateriales{ 
         width: 100%;           
@@ -824,15 +807,13 @@
     }
 
     .parrafoMateriales{       
-        width: 100%;   
-        background-color: pink;    
+        width: 100%;           
         padding-right: 12px;
     }    
 
     .titleMateriales{
         color: #2D2D2D;
-        font-size: 40px;      
-        background-color: pink;   
+        font-size: 40px;  
         padding-right: 0px;
     }
 
