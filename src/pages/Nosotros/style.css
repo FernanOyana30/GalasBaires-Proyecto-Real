@@ -65,12 +65,11 @@
 }
 
 .parrafoNuestrasFragancias{
-    margin-right: 50px;
-    padding-left: 100px;
+    padding-right: 50px;    
 }
 
 .parrafoMateriales{
-    padding-right: 100px;
+    padding-right: 80px;
 }
 
 .img-nuestra-historia{
@@ -635,7 +634,8 @@
     }
 
     .parrafoMateriales{
-        padding-right: 0px;
+        padding-right: 10px;
+        padding-left: 24px;
         width: auto;
     }
 
@@ -647,7 +647,7 @@
     .titleMateriales{
         color: #2D2D2D;
         font-size: 40px; 
-        padding-right: 0px;
+        padding-right: 10px;
     }
 
     .encabezadoTestimonios{
@@ -961,11 +961,11 @@
     
     .parrafoNuestrasFragancias{
         margin-right: 5px;
-        padding-left: 5px;
+        padding-left: 19px;
     }
     
     .parrafoMateriales{
-        padding-right: 40px;
+        padding-right: 80px;
     }
     
     .img-nuestra-historia{

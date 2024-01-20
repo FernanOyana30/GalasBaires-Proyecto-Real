@@ -16,9 +16,8 @@
 
 .containerMayorista{
     color: #2D2D2D;
-    padding-right: 60px;    
     font-size: 17px;
-    margin-left: 130px;
+    margin-left: 140px;
 }
 
 .containerNosotros{
@@ -53,6 +52,7 @@
 .titleInicio{                    
     color: #804B37;
     font-size: 60px; 
+    padding-right: 100px;    
 } 
 
 .text-caracteristicas{
@@ -131,7 +131,8 @@
     }  
     
     .titleInicio{                    
-        font-size: 40px;         
+        font-size: 40px;     
+        padding-right: 0px;    
         text-align: center;
         color: #804B37;       
     } 
@@ -255,7 +256,8 @@
 
     .titleInicio{                    
         font-size: 40px;
-        text-align: center;       
+        text-align: center;     
+        padding-right: 0px;  
     }    
 
     .img-container{
@@ -373,7 +375,8 @@
 
     .titleInicio{                    
         font-size: 32px;
-        width: 100%;        
+        width: 100%;    
+        padding-right: 0px;    
     }    
 
     .img-container{
@@ -497,7 +500,7 @@
     }
 
     .parrafoEncabezadoInicio{
-        width: 112%;
+        width: 100%;
         
     }
 
@@ -510,6 +513,7 @@
         color: #804B37;
         font-size: 35px; 
         text-align: left;
+        padding-right: 20px;
     } 
 
     /*Características*/      
@@ -589,9 +593,8 @@
     }  
 
     .textContainer2{        
-        width: 120%;
-        padding-right: 10px;  
-        padding-left: 10px;
+        width: 100%;        
+        padding-right: 0px;         
     }
 
     .titleInicio{
@@ -623,7 +626,7 @@
     }
     /*Mayoristas*/
     .containerMayorista{        
-       margin-left: 0px;
+       margin-left: 24px;
     }   
 
     .img-style{
@@ -644,5 +647,5 @@
     .estiloCarrusel{
         margin-left: 350px;
         width: 50%;
-    } 
+    }     
 }

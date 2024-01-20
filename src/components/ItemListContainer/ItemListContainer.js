@@ -98,9 +98,9 @@ export default function ItemListContainer (){
               <div className="testBanner text-center p-4 container-fluid" >                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
                 <p className="textoBannerFragancias pb-3 ">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
-                <Link to='/Test'>
+                <a href='/Test'>
                   <Button variant="light" className="button-style">Hacer cuestionario</Button>                
-                </Link>
+                </a>
               </div>                             
             </Col>                     
           </Row>        

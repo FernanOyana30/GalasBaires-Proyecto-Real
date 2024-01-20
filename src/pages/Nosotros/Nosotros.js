@@ -103,9 +103,9 @@ function Nosotros() {
               <div className="catalogoContainer text-center p-4 container-fluid">                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Aromatizá tus ambientes con Galas Baires</h3>
                 <p className="textCatalogo pb-3">Contactanos y solicitá el catálogo actualizado para no perderte de ninguna novedad u oferta</p>
-                <Link to='/contacto'>
+                <a href='/contacto'>
                   <Button variant="light" className="button-style">Solicitar el catálogo</Button>                
-                </Link>
+                </a>
               </div>             
           </Col>          
         </Row>

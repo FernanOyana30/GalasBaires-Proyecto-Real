@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 
 function Inicio (){    
@@ -23,7 +23,7 @@ function Inicio (){
                   <h1 className="titleInicio fw-bold pt-3 pb-3">Creá ambientes llenos de aroma y calidez</h1>                
                   <p className="parrafoEncabezadoInicio mb-0">Nuestras velas aromáticas son el complemento perfecto para crear ambientes irresistibles.</p>
                   <p className="parrafoEncabezadoInicio">Descubrí nuestra amplia variedad de fragancias y productos para transformar tus espacios.</p>
-                  <Link to="/productos"><Button variant="light" onClick={scrollTo} className="button-style">Ver catálogo</Button></Link>
+                  <a href="/productos"><Button variant="light" className="button-style">Ver catálogo</Button></a>
                 </div>
               </div>
             </Col>
@@ -64,9 +64,9 @@ function Inicio (){
               <div className="testContainer text-center p-4 container-fluid">                    
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
                 <p className="textFragancias pb-3 ">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
-                <Link to='/Test'>
-                  <Button variant="light" className="button-style" onClick={scrollTo}>Hacer cuestionario</Button>                
-                </Link>
+                <a href='/Test'>
+                  <Button variant="light" className="button-style">Hacer cuestionario</Button>                
+                </a>
               </div>                             
             </Col>            
           </Row>
@@ -84,22 +84,22 @@ function Inicio (){
                   </p>
                   <p className='parrafoNosotrosInicio mb-4'>Comenzamos investigando mucho, a prueba y error claro, a leer muchísimo sobre composiciones químicas y origen de aquellos productos naturales que nos permitan producir el menor daño posible a nuestro planeta y seres vivos. Fue así que creamos la marca, el stock y muchas ideas.
                   </p>
-                  <Link to="/Nosotros"><Button variant="light" className="button-style" onClick={scrollTo}>Conocenos</Button></Link>                                    
+                  <a href="/Nosotros"><Button variant="light" className="button-style">Conocenos</Button></a>                                    
               </div>              
             </Col>
           </Row>
           <Row className='contenedorMayorista'>
             <Col xsm={1} sm={1} md={6} lg={6} >
-              <div className="containerMayorista p-3 mb-5 text-start">
+              <div className="containerMayorista mb-5 text-start">
                 <h2 className="titleStyle fw-bold mb-3">¿Sos mayorista?</h2>
                 <p className='parrafoMayorista mb-0'  >Desde Galas Baires queremos motivar a quienes tienen pasión por los aromas y el arte deco. Aquellas personas con alma emprendedora. </p>
                 <p className='parrafoMayorista mb-0' ><span className='fw-bold'>Ahora vas a poder vender nuestros productos sin inversión previa.</span>  ¿Cómo? Contactate con nosotros y te contaremos esta propuesta distinta para que puedas emprender e incrementar tus ganancias.
                 </p>
                 <p className='parrafoMayorista mb-4'>Sabemos que todo cambia, por eso nosotros buscamos que los cambios sean positivos <span>siempre</span>. Porque si enciendes una luz en el camino de alguien, también iluminarás tu camino.
                 </p>
-                <Link to="/mayoristas">
-                  <Button variant="light" className="button-style" onClick={scrollTo}>¡Quiero saber más!</Button> 
-                </Link>                                  
+                <a href="/mayoristas">
+                  <Button variant="light" className="button-style">¡Quiero saber más!</Button> 
+                </a>                                  
               </div>              
             </Col >
             <Col xsm={1} sm={1} md={6} lg={6}>

@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -30,19 +29,19 @@ function NavBar() {
                 <Nav.Link href='/productos' className="text-decoration-none text-black" >
                   Productos                 
                 </Nav.Link>
-                <Nav.Link href="/FAQ" onClick={scrollTo} className="text-decoration-none text-black">                  
+                <Nav.Link href="/FAQ" className="text-decoration-none text-black">                  
                   Preguntas frecuentes                  
                 </Nav.Link>
                 <Navbar.Brand className="h1 align-items-center brandCentral text-dark text-decoration-none" href="/">
                   <img alt='' src='./img/isologo.png' className='d-inline-block align-center' width="170"/>                    
                 </Navbar.Brand>
-                <Nav.Link href='/Nosotros' className="text-decoration-none text-black" onClick={scrollTo}>
+                <Nav.Link href='/Nosotros' className="text-decoration-none text-black">
                   Nosotros
                 </Nav.Link>
-                <Nav.Link href='/contacto' className="text-decoration-none text-black" onClick={scrollTo}>                  
+                <Nav.Link href='/contacto' className="text-decoration-none text-black">                  
                   Contacto                  
                 </Nav.Link>
-                <Nav.Link href='/mayoristas' className="text-decoration-none text-black" onClick={scrollTo}>
+                <Nav.Link href='/mayoristas' className="text-decoration-none text-black">
                   Mayoristas                  
                 </Nav.Link>                           
                 <div className=" d-flex justify-content-center align-items-center gap-2">
