@@ -14,16 +14,14 @@
 /*Media Queries Mobile*/
 @media (min-width: 320px) and (max-width: 374px)  {        
     .footer-container {
-        background-color: #ded5c2;
-        
+        background-color: #ded5c2;        
     }    
 
     .style-footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;  
-        
+        align-items: center;          
     }    
 
     .contenedorSecciones{        
@@ -41,8 +39,7 @@
 
 @media (min-width: 375px) and (max-width: 424px){
     .footer-container {
-        background-color: #ded5c2;
-        
+        background-color: #ded5c2;        
     }    
 
     .style-footer{
@@ -52,10 +49,7 @@
         align-items: center;  
     } 
 
-    
-
-    .contenedorSecciones{
-        
+    .contenedorSecciones{        
         display: flex;
         flex-direction: column;
         justify-content: center;        
@@ -84,10 +78,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;  
-    } 
-
+    }
     
-
     .contenedorSecciones{
         background-color: #ded5c2;   
         display: flex;

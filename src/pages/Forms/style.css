@@ -156,7 +156,7 @@
         width: auto;
     }
 
-    /**/
+    /*PANTALLA GRACIAS*/
     .contenedorGracias{
         margin-top: 110px;
         text-align: center;    
@@ -180,11 +180,22 @@
         align-items: center;
     }
 
+    .titleContactoMayorista{
+        color: #804B37;
+        font-weight: bold;        
+        font-size: 50px;
+    }
+
+    .parrafoEncabezadoMayorista{
+        margin-left: 0px;
+        margin-right: 0px;        
+    } 
+
     .iconosContacto{
         text-align: left;
     }
-    /**/
 
+    /*IMPORTANTE*/
     .encabezadoImportante{
         margin-top: 30px;    
         text-align: center;
@@ -199,18 +210,7 @@
     .parrafoEncabezadoImportante{
         margin-left: 8px;
         margin-right: 8px;
-    }
-
-    .parrafoEncabezadoMayorista{
-        margin-left: 0px;
-        margin-right: 0px;        
-    }    
-
-    .titleContactoMayorista{
-        color: #804B37;
-        font-weight: bold;        
-        font-size: 50px;
-    }
+    } 
 
     .carruselMayorista{
         width: 100%; 
@@ -229,19 +229,7 @@
         align-content: start;        
         text-align: start;  
         margin-left: 20px;           
-    }
-
-    .contenedorContactoMayorista{
-        margin-top: 30px;    
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        align-content: center;        
-        flex-wrap: wrap;
-        text-align: left;
-        margin-left: 0px; 
-    }
+    }    
 
     .tituloEncabezado{
         text-align: center;
@@ -256,7 +244,7 @@
         width: auto;
     }    
 
-    /**/
+    /*PANTALLA AGRADECIMIENTO*/
     .contenedorGracias{
         margin-top: 110px;
         text-align: center;    
@@ -270,12 +258,32 @@
     }
 
     /*MAYORISTAS*/
+    .contenedorContactoMayorista{
+        margin-top: 30px;    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;        
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 0px; 
+    }
+
+    .titleContactoMayorista{
+        color: #804B37;
+        font-weight: bold;
+        margin: 40px;
+        font-size: 50px;
+    }
+
     .encabezadoMayorista{
         margin-top: 80px;    
         text-align: center;        
         width: auto; 
     }
 
+    /*IMPORTANTE*/
     .encabezadoImportante{
         margin-top: 0px;    
         margin-bottom: 0px;
@@ -284,6 +292,7 @@
         padding: 20px;
     }
 
+    /*ICONOS*/
     .iconosContacto{
         text-align: left;
     }
@@ -300,14 +309,7 @@
     .parrafoEncabezadoImportante{
         margin-left: 0px;
         margin-right: 0px;
-    }
-
-    .titleContactoMayorista{
-        color: #804B37;
-        font-weight: bold;
-        margin: 40px;
-        font-size: 50px;
-    }
+    }    
 
     .carruselStyle{         
         transform: translateX(30px);             
@@ -324,19 +326,7 @@
         align-content: start;        
         text-align: start;  
         margin-left: 20px;           
-    }
-
-    .contenedorContactoMayorista{
-        margin-top: 30px;    
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        align-content: center;        
-        flex-wrap: wrap;
-        text-align: left;
-        margin-left: 0px; 
-    }
+    }    
 
     .tituloEncabezado{
         text-align: center;
@@ -351,7 +341,7 @@
         width: auto;
     }
 
-    /**/
+    /*PANTALLA AGRADECIMIENTO*/
     .contenedorGracias{
         margin-top: 110px;
         text-align: center;    
@@ -365,12 +355,25 @@
     }
 
     /*MAYORISTAS*/
+    .contenedorContactoMayorista{
+        margin-top: 30px;    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;        
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 0px; 
+    }
+
     .encabezadoMayorista{
         margin-top: 80px;    
         text-align: center;        
         width: 100%;
     }
 
+    /*IMPORTANTE*/
     .encabezadoImportante{
         margin-top: 0px;    
         text-align: center;        
@@ -378,6 +381,7 @@
         padding: 20px;
     }
 
+    /*ICONOS*/
     .iconosContacto{
         text-align: left;
     }
@@ -442,10 +446,12 @@
         text-align: center;        
     }
 
-    .encabezadoImportante{
-        margin-top: 0px;    
-        text-align: center;
-    }
+    .titleContactoMayorista{
+        color: #804B37;
+        font-weight: bold;
+        margin: 40px;
+        font-size: 50px;
+    }    
 
     .iconosContacto{
         text-align: left;
@@ -456,17 +462,16 @@
         margin-right: 70px;
     }
 
+    /*IMPORTANTE*/
+    .encabezadoImportante{
+        margin-top: 0px;    
+        text-align: center;
+    }
+
     .parrafoEncabezadoImportante{
         margin-left: 70px;
         margin-right: 70px;
-    }
-
-    .titleContactoMayorista{
-        color: #804B37;
-        font-weight: bold;
-        margin: 40px;
-        font-size: 50px;
-    }
+    }    
 
     .carruselMayorista{
         width: 200%;  
@@ -475,31 +480,6 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px){
-    /*MAYORISTAS*/
-    .encabezadoMayorista{
-        margin-top: 80px;    
-        text-align: center;        
-    }
-
-    .iconosContacto{
-        text-align: left;
-    }
-
-    .parrafoEncabezadoMayorista{
-        margin-left: 125px;
-        margin-right: 125px;
-    }
-
-    .encabezadoImportante{
-        margin-top: 0px;    
-        text-align: center;
-    }
-
-    .parrafoEncabezadoImportante{
-        margin-left: 170px;
-        margin-right: 170px;
-    }
-
     .parrafoEncabezadoMinorista{        
         padding-right: 100px;
     }
@@ -516,6 +496,34 @@
         padding-left: 20px;
         width: 100%;                
     } 
+
+    /*MAYORISTAS*/
+    .encabezadoMayorista{
+        margin-top: 80px;    
+        text-align: center;        
+    }
+
+
+    .parrafoEncabezadoMayorista{
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+
+    /*ICONOS*/
+    .iconosContacto{
+        text-align: left;
+    }
+
+    /*IMPORTANTE*/
+    .encabezadoImportante{
+        margin-top: 0px;    
+        text-align: center;
+    }
+
+    .parrafoEncabezadoImportante{
+        margin-left: 170px;
+        margin-right: 170px;
+    }    
 }
 
 @media (min-width: 1440px){

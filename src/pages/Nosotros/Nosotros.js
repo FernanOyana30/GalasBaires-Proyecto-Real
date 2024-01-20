@@ -14,7 +14,7 @@ function Nosotros() {
         <Row>
           <Col xsm={1} sm={1} md={12} lg={12}>
             <div className='encabezadoNosotros'>              
-              <h3 className='titleEncabezadoNosotros' >Sobre Galas Baires</h3>
+              <h3 className='titleEncabezadoNosotros'>Sobre Galas Baires</h3>
               <p>"No hay nadie tan fuerte como una persona, cuyo corazón está siempre lleno de gratitud" - Daisaku Ikeda."</p>              
             </div>
           </Col>          
@@ -120,35 +120,35 @@ function Nosotros() {
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}}>Noelia</h5>
-                    <p className=''>Gracias por tan hermoso y delicado trabajo. Super recomendable gente!!!</p>
+                    <p className='textoTestimonio'>Gracias por tan hermoso y delicado trabajo. Super recomendable gente!!!</p>
                   </div>                                   
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Vero</h5>
-                    <p className=''>Una maravilla!!! No sé cómo definir o caracterizar las fragancias. Súper fantásticas!!</p>
+                    <p className='textoTestimonio'>Una maravilla!!! No sé cómo definir o caracterizar las fragancias. Súper fantásticas!!</p>
                   </div>                 
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Cande</h5>
-                    <p className=''>No dan más de lindas!! Y aromas que no había sentido nunca!! Son geniales!</p>
+                    <p className='textoTestimonio'>No dan más de lindas!! Y aromas que no había sentido nunca!! Son geniales!</p>
                   </div>                  
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Lorena</h5>
-                    <p className=''>Hoy encendí una vela y tiene un aroma riquísimo. Llegó hasta el piso de arriba!! Muy suave!!</p>
+                    <p className='textoTestimonio'>Hoy encendí una vela y tiene un aroma riquísimo. Llegó hasta el piso de arriba!! Muy suave!!</p>
                   </div>                  
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>
                   <div className='contenedorTestimonio text-center mb-5'>
                     <img alt="" src='./img/person-circle.svg' width="80px" color="#804B37" className='mb-3' />
                     <h5 className='fw-bold mb-3' style={{color:"#804B37"}} >Paula</h5>
-                    <p className=''>Hice un pedido de 6 cónicas y 5 velas negras. Exquisito todo, me ha quedado el aroma impregnado. Súper todo.</p>
+                    <p className='textoTestimonio'>Hice un pedido de 6 cónicas y 5 velas negras. Exquisito todo, me ha quedado el aroma impregnado. Súper todo.</p>
                   </div>                  
                 </Carousel.Item>
                 <Carousel.Item interval={6000}>

@@ -1,11 +1,7 @@
 /*HOJA DE ESTILOS*/
 
 /*NOSOTROS*/
-.img-fragancias{
-    width: 90%;
-    padding-bottom: 60px;
-}
-
+/*Encabezado*/
 .encabezadoNosotros{
     margin-top: 100px;
     text-align: center;
@@ -16,12 +12,53 @@
     margin-bottom: 50px;
 }
 
+.titleEncabezadoNosotros{
+    font-size: 60px;
+    color: #804B37;
+    font-weight: bold;
+ }
+
+/*Nuestra historia*/
+.img-nuestra-historia{
+    width: 100%;
+}
+
 .containerNuestraHistoria{       
     width: 400px;           
     margin-left: 50px; 
     margin-top: 0px;           
 }
 
+.parrafoNuestraHistoria{
+    margin-right: 0px;
+}
+
+/*Misión, visión, valores*/
+.contenedorIconosNosotros{                
+    display: flex;
+    flex-direction: row;
+    justify-content: center;         
+    margin-top: -50px;
+}
+
+.textNosotros{
+    color: #2D2D2D;    
+    font-size: 17px;          
+}
+
+.parrafoNosotros{
+    margin-right: 45px;
+    margin-left: 45px
+}
+
+/*Banner*/
+.textBanner{
+    margin-left: 400px;    
+    margin-right: 400px;
+    text-align: center;  
+}
+
+/*Nuestras fragancias*/
 .containerNuestrasFragancias{
     color: #2D2D2D;
     padding-right: 10px;    
@@ -36,44 +73,22 @@
     margin-right: 50px;
 }
 
-.parrafoNuestraHistoria{
-    margin-right: 0px;
-}
-
-.encabezadoTestimonios{
-    margin-top: 100px;
-    text-align: center;
-}
-
-.tituloTestimonios{
-    margin-left: 400px;
-    margin-right: 400px;
-}
-
-.parrafoNosotros{
-    margin-right: 45px;
-    margin-left: 45px
-}
-
-.textNosotros{
-    color: #2D2D2D;    
-    font-size: 17px;          
-}
-
-.carruselNosotros{
-    width: 75%;
-}
-
 .parrafoNuestrasFragancias{
     padding-right: 50px;    
 }
 
-.parrafoMateriales{
-    padding-right: 80px;
+.img-fragancias{
+    width: 90%;
+    padding-bottom: 60px;
 }
 
-.img-nuestra-historia{
-    width: 100%;
+/*Nuestros materiales*/
+.containerMateriales{
+    margin-right: 80px;
+}
+
+.parrafoMateriales{
+    padding-right: 80px;
 }
 
 .img-materiales{
@@ -88,14 +103,25 @@
     padding-right: 100px;
 }
 
-.containerMateriales{
-    margin-right: 80px;
+/*Banner catálogo*/
+.textCatalogo{  
+    margin-left: 460px;    
+    margin-right: 460px;                   
 }
 
+/*Carrusel testimonios*/
 .carruselNosotros{
-    margin-left: 0px;
-    margin-top: 0px;
     width: 100%;
+}
+
+.encabezadoTestimonios{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.tituloTestimonios{
+    margin-left: 400px;
+    margin-right: 400px;
 }
 
 .textoTestimonio{
@@ -103,42 +129,11 @@
     margin-right: 450px;
 }
 
-.contenedorIconosNosotros{                
-    display: flex;
-    flex-direction: row;
-    justify-content: center;         
-    margin-top: -50px;
-}
-
-.textBanner{
-    margin-left: 400px;    
-    margin-right: 400px;
-    text-align: center;  
-}
-
-.textCatalogo{  
-    margin-left: 460px;    
-    margin-right: 460px;                   
- }
-
- .titleEncabezadoNosotros{
-    font-size: 60px;
-    color: #804B37;
-    font-weight: bold;
- }
-
 /*------------------------------------*/
 
 /*Media Queries Mobile*/
 @media (min-width: 320px) and (max-width: 374px) {
-    .parrafoEncabezado{
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 50px;        
-        width: 100%;
-        text-align: center;
-    }
-
+    /*Encabezado*/
     .encabezadoNosotros{               
         width: 100%;
         text-align: center;
@@ -148,15 +143,37 @@
         align-items: center;
     }
 
-    .containerMateriales{               
-        width: 100%;           
-        margin-left: 0px; 
-        margin-top: 10px;  
-        text-align: end;        
-        margin-right: 0px;        
+    .titleEncabezadoNosotros{
+        font-size: 32px;
+        color: #2D2D2D;
+        font-weight: bold;
+     }
+
+    .parrafoEncabezado{
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 50px;        
+        width: 100%;
+        text-align: center;
     }
 
-    /*Características*/
+    .img-nuestra-historia{
+        width: 100%;
+    }
+
+    /*Nuestra historia*/
+    .containerNuestraHistoria{              
+        width: 100%;           
+        margin-left: 10px; 
+        margin-top: 0px;           
+    }
+
+    .parrafoNuestraHistoria{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    
+    /*Misión, visión, valores*/
     .contenedorIconosNosotros{                
         display: flex;
         flex-direction: column;
@@ -184,29 +201,15 @@
         margin-left: 40px;  
         margin-right: 40px;
     }
-
-    .catalogoContainer{
-        width: 100%;
-        background-color: #DED5C2;
-        margin-left: 0px;
-    }
-
+    
+    /*Banner*/
     .textBanner{  
-       text-align: center;       
-       margin-left: 0px;
-       width: 100%;  
-    }
-
-    .img-fragancias{
-        width: 100%;   
-        margin-left: 5px;     
-    }
-
-    .parrafoMateriales{
-        margin-right: 0px;               
-        width: 100%;       
-    }
-
+        text-align: center;       
+        margin-left: 0px;
+        width: 100%;  
+     }
+    
+    /*Nuestras fragancias*/
     .containerNuestrasFragancias{
         color: #2D2D2D;            
         font-size: 17px;
@@ -220,34 +223,47 @@
         text-align: left;
     }
 
-    .img-materiales{        
+    .img-fragancias{
         width: 100%;   
-        margin-top: -45px;  
-        margin-left: 0px;
-        margin-bottom: -40px;
+        margin-left: 5px;     
+    }
+    
+    /*Nuestros materiales*/
+    .containerMateriales{               
+        width: 100%;           
+        margin-left: 0px; 
+        margin-top: 10px;  
+        text-align: end;        
+        margin-right: 0px;        
     } 
-
-    .img-nuestra-historia{
-        width: 100%;
-    }
-
-    .parrafoMateriales{
-        padding-right: 0px;
-        width: 100%;
-    }
-
-    .containerMateriales{
-        
-        width: 100%;
-        text-align: end;
-    }
-
+    
     .titleMateriales{
         color: #2D2D2D;
         font-size: 40px; 
         padding-right: 0px;
     }
 
+    .parrafoMateriales{
+        margin-right: 0px;  
+        padding-right: 0px;             
+        width: 100%;       
+    }    
+
+    .img-materiales{        
+        width: 100%;   
+        margin-top: -45px;  
+        margin-left: 0px;
+        margin-bottom: -40px;
+    }     
+
+    /*Banner*/
+    .catalogoContainer{
+        width: 100%;
+        background-color: #DED5C2;
+        margin-left: 0px;
+    }
+    
+    /*Carrusel testimonios*/
     .encabezadoTestimonios{
         margin-top: 40px;
         text-align: center;        
@@ -280,16 +296,9 @@
         margin-right: 30px;        
     }
 
-    .containerNuestraHistoria{              
-        width: 100%;           
-        margin-left: 10px; 
-        margin-top: 0px;           
-    }
+    
 
-    .parrafoNuestraHistoria{
-        margin-right: 0px;
-        margin-bottom: 10px;
-    }
+    
 
     .titleFragancias{
         color: #2D2D2D;
@@ -328,28 +337,12 @@
         width: 100%;                  
      }
 
-     .titleEncabezadoNosotros{
-        font-size: 32px;
-        color: #2D2D2D;
-        font-weight: bold;
-     }
+     
      
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
-    .catalogoContainer{
-        width: 395px;
-        background-color: #DED5C2;
-        margin-left: 0px;
-     }
-
-     .textCatalogo{  
-        text-align: center;       
-        margin-left: -10px;
-        margin-right: 20px;
-        width: 300px;                  
-     }    
-
+    /*Encabezado*/
     .encabezadoNosotros{        
         width: 100%;        
         display: flex;
@@ -358,18 +351,31 @@
         justify-items: center;
         align-items: center;   
         align-content: center;   
-        text-align: center;    
-                
-    }    
+        text-align: center; 
+    }  
 
-    .img-materiales{        
-        width: 100%;   
-        margin-top: 0px;  
-        margin-left: 0px;
-        margin-bottom: -40px;
-    } 
+    .titleEncabezadoNosotros{
+        font-size: 32px;
+        color: #2D2D2D;
+        font-weight: bold;
+    }
 
-    /*Características*/
+    /*Nuestra historia*/
+    .containerNuestraHistoria{ 
+        margin-left: 10px; 
+        margin-top: 0px;           
+    }
+
+    .parrafoNuestraHistoria{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .img-nuestra-historia{
+        width: 109%;
+    }
+
+    /*Misión, visión, valores*/
     .contenedorIconosNosotros{                
         display: flex;
         flex-direction: column;
@@ -397,6 +403,7 @@
         margin-right: 50px;
     }
 
+    /*Banner*/
     .catalogoContainer{
         background-color: #DED5C2;
         margin-left: 0px;
@@ -404,25 +411,33 @@
     }
 
     .textBanner{  
-       text-align: center;       
-       margin-left: 0px;
-       width: 320px;        
-    }
+        text-align: center;       
+        margin-left: 0px;
+        width: 320px;        
+     }
 
-    .img-fragancias{
-        width: 100%;   
-        margin-left: 0px;     
-    }
+    .textCatalogo{  
+        text-align: center;       
+        margin-left: -10px;
+        margin-right: 20px;
+        width: 300px;                  
+    } 
 
-    .parrafoMateriales{
-        margin-right: 0px; 
-    }
-
+    /*Nuestras fragancias*/
     .containerNuestrasFragancias{
         color: #2D2D2D;            
         font-size: 17px;
         margin-left: 0px;
-        margin-top: -50px;                       
+        margin-top: -50px;   
+        padding-right: 0px;                     
+    }
+
+    .titleFragancias{
+        color: #2D2D2D;
+        font-size: 40px;  
+        padding-left: 0px;  
+        text-align: left;
+        width: 370px;
     }
 
     .parrafoNuestrasFragancias{        
@@ -431,20 +446,23 @@
         width: 100%;
     }
 
+    .img-fragancias{
+        width: 100%;   
+        margin-left: 0px;     
+    }
+
+    /*Nuestros materiales*/
     .containerMateriales{  
         margin-left: 10px; 
         margin-top: 0px;  
         text-align: left;                 
-    }    
+    } 
 
-    .img-nuestra-historia{
-        width: 109%;
+    .contenedorMateriales{
+        display: flex;
+        flex-direction: row;
+        width: 100%;               
     }
-
-    .parrafoMateriales{
-        padding-right: 0px;
-        width: 100%;
-    }    
 
     .titleMateriales{
         color: #2D2D2D;
@@ -452,6 +470,23 @@
         padding-right: 0px;
         width: 370px;
     }
+
+    .parrafoMateriales{         
+        padding-right: 0px;
+        width: 100%;
+    }    
+
+    .img-materiales{        
+        width: 100%;   
+        margin-top: 0px;  
+        margin-left: 0px;
+        margin-bottom: -40px;
+    } 
+
+    /*Carrusel testimonios*/ 
+    .contenedorTestimonio{        
+        margin-left: 5px;
+    }    
 
     .encabezadoTestimonios{
         margin-top: 50px;
@@ -467,20 +502,42 @@
         margin-left: 0px;
         margin-top: 0px;
         width: 100%;
-    }
-
-    .contenedorTestimonio{        
-        margin-left: 5px;
-    }
+    }    
 
     .textoTestimonio{
         text-align: center;
         margin-left: 0px;
         margin-right: 0px;        
+    } 
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    /*Encabezado*/
+    .encabezadoNosotros{        
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+        align-items: center;                
+    } 
+
+    .titleEncabezadoNosotros{
+        font-size: 32px;
+        color: #2D2D2D;
+        font-weight: bold;
+     }
+
+    .parrafoEncabezado{
+        margin-left: 60px;
+        margin-right: 50px;
+        margin-bottom: 50px;        
+        width: auto;        
     }
 
-    .containerNuestraHistoria{              
-                  
+    /*Nuestra historia*/
+    .containerNuestraHistoria{                      
+        width: 100%;           
         margin-left: 10px; 
         margin-top: 0px;           
     }
@@ -490,66 +547,11 @@
         margin-bottom: 10px;
     }
 
-    .titleFragancias{
-        color: #2D2D2D;
-        font-size: 40px;  
-        padding-left: 0px;  
-        text-align: left;
-        width: 370px;
-    }
-
-    .containerNuestrasFragancias{
-        color: #2D2D2D;
-        padding-right: 0px;    
-        font-size: 17px;
-        margin-left: 0px;
-    }
-
-    .contenedorMateriales{
-        display: flex;
-        flex-direction: row;
-        width: 100%;               
-    }
-
-    .titleEncabezadoNosotros{
-        font-size: 32px;
-        color: #2D2D2D;
-        font-weight: bold;
-     }
-}
-
-@media (min-width: 425px) and (max-width: 767px) {
-    .bannerNosotros {        
-        background-color: #DED5C2;
-        margin-left: 0px;
-        width: auto;
-     }
-
-    .parrafoEncabezado{
-        margin-left: 60px;
-        margin-right: 50px;
-        margin-bottom: 50px;        
-        width: auto;        
-    }
-    .encabezadoNosotros{        
+    .img-nuestra-historia{
         width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;        
-        align-items: center;                
-    }   
-    
-    .encabezadoNosotros2{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
     }
 
-    /*Características*/
+    /*Misión, visión, valores*/
     .contenedorIconosNosotros{                
         display: flex;
         flex-direction: column;
@@ -565,14 +567,7 @@
         flex-direction: column;
         justify-content: center;   
         align-items: center;     
-    }
-
-    .textCatalogo{  
-        text-align: center;       
-        margin-left: 0px;
-        margin-right: 0px;
-        width: auto;                  
-     }
+    }   
 
     .iconoNosotros{
         display: flex;
@@ -587,33 +582,41 @@
         margin-right: 0px;
     }    
 
-    .textBanner{  
+    /*Banner*/
+    .bannerNosotros {        
+        background-color: #DED5C2;
+        margin-left: 0px;
+        width: auto;
+    }
+
+    .textCatalogo{  
        text-align: center;       
        margin-left: 0px;
-       width: 100%;        
+       margin-right: 0px;
+       width: auto;                  
     }
 
-    .img-fragancias{
-        width: 100%;   
-        margin-left: 0px;     
-    }
-
-    .img-materiales{
+    .textBanner{  
+        text-align: center;       
         margin-left: 0px;
-        width: 100%;
-        padding-bottom: 10px;
+        width: 100%;        
     }
 
-    .parrafoMateriales{
-        margin-right: 0px;               
-        width: 100%;       
-    }
-
+    /*Nuestras fragancias*/
     .containerNuestrasFragancias{
         color: #2D2D2D;            
         font-size: 17px;
         margin-left: 0px;
-        margin-top: -50px;                       
+        margin-top: -50px;    
+        padding-right: 0px; 
+        width: 100%;                   
+    }    
+
+    .titleFragancias{
+        color: #2D2D2D;
+        font-size: 40px;  
+        padding-left: 0px;  
+        text-align: left;
     }
 
     .parrafoNuestrasFragancias{        
@@ -622,27 +625,18 @@
         text-align: left;
     }
 
+    .img-fragancias{
+        width: 100%;   
+        margin-left: 0px;     
+    }
+
+    /*Nuestros materiales*/
     .containerMateriales{       
-        width: auto;           
+        width: 100%;           
         margin-left: 0px; 
         margin-top: 10px;  
         text-align: end;                 
-    }    
-
-    .img-nuestra-historia{
-        width: 100%;
-    }
-
-    .parrafoMateriales{
-        padding-right: 10px;
-        padding-left: 24px;
-        width: auto;
-    }
-
-    .containerMateriales{  
-        width: 100%;
-        text-align: end;        
-    }
+    }     
 
     .titleMateriales{
         color: #2D2D2D;
@@ -650,6 +644,19 @@
         padding-right: 10px;
     }
 
+    .parrafoMateriales{
+        padding-right: 10px;
+        padding-left: 24px;              
+        width: 100%;       
+    }    
+
+    .img-materiales{
+        margin-left: 0px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    /*Carrusel testimonios*/ 
     .encabezadoTestimonios{
         margin-top: 100px;
         text-align: center;        
@@ -676,43 +683,11 @@
         margin-left: 0px;
         margin-right: 0px;        
     }
-
-    .containerNuestraHistoria{                      
-        width: 100%;           
-        margin-left: 10px; 
-        margin-top: 0px;           
-    }
-
-    .parrafoNuestraHistoria{
-        margin-right: 0px;
-        margin-bottom: 10px;
-    }
-
-    .titleFragancias{
-        color: #2D2D2D;
-        font-size: 40px;  
-        padding-left: 0px;  
-        text-align: left;
-    }
-
-    .containerNuestrasFragancias{
-        color: #2D2D2D;
-        padding-right: 0px;    
-        font-size: 17px;
-        margin-left: 0px;        
-        width: 100%;
-    }
-
-    .titleEncabezadoNosotros{
-        font-size: 32px;
-        color: #2D2D2D;
-        font-weight: bold;
-     }
 }
 
 /*Media Queries Tablet*/
 @media (min-width: 768px) and (max-width: 1023px)  {
-    
+    /*Encabezado*/
     .encabezadoNosotros{        
         width: 100%;        
         display: flex;
@@ -723,16 +698,30 @@
         align-content: center;   
         text-align: center;    
         padding: 25px;              
-    }       
+    }  
 
-    .containerMateriales{ 
-        width: 100%;           
-        margin-left: 0px; 
-        margin-top: 10px;          
-        text-align: left; 
+    .titleEncabezadoNosotros{
+        width: 600px;
+        font-size: 60px;
+        color: #804B37;
+        font-weight: bold;        
+     }
+
+    /*Nuestra historia*/
+    .containerNuestraHistoria{                      
+        width: 640px;           
+        margin-left: 10px; 
+        margin-top: 0px; 
+        margin-right: 0px;
+        margin-bottom: 10px;          
+    } 
+    
+    .img-nuestra-historia{
+        width: 98%;
+        margin-left: 0px;
     }
 
-    /*Características*/
+    /*Misión, visión, valores*/
     .contenedorIconosNosotros{                
         display: flex;
         flex-direction: column;
@@ -763,6 +752,7 @@
         margin-right: 0px;
     }
 
+    /*Banner*/
     .bannerNosotros {
         width: 700px;
         align-items: center;
@@ -774,14 +764,27 @@
        width: 560px;        
     }
 
-    .img-fragancias{
-        width: 100%;   
-        margin-left: 10px;     
-    }
+    .catalogoContainer{
+        width: 100%;        
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+     }    
 
-    .parrafoMateriales{
-        margin-right: 0px;               
-        width: 500px;               
+     .textCatalogo{  
+        text-align: center;  
+        width: 70%;                  
+     }
+
+    /*Nuestras fragancias*/
+    .contenedorMayorista{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;        
     }
 
     .containerNuestrasFragancias{
@@ -793,21 +796,40 @@
         width: 100%;                     
     }
 
+    .titleFragancias{
+        color: #2D2D2D;
+        font-size: 40px;  
+        padding-left: 0px;  
+        text-align: right;
+        width: 100%;
+    } 
+
     .parrafoNuestrasFragancias{        
         padding-left: 10px;
+        padding-right: 0px;
         width: 100%;
         text-align: right;
-    }       
+        
+    } 
 
-    .img-nuestra-historia{
-        width: 98%;
-        margin-left: 0px;
+    .img-fragancias{
+        width: 100%;   
+        margin-left: 10px;     
     }
 
-    .parrafoMateriales{       
+    /*Nuestros materiales*/
+    .containerMateriales{ 
         width: 100%;           
-        padding-right: 12px;
-    }    
+        margin-left: 0px; 
+        margin-top: 10px;          
+        text-align: left; 
+    }
+
+    .contenedorMateriales{
+        display: flex;
+        flex-direction: row;
+        width: auto;        
+    }
 
     .titleMateriales{
         color: #2D2D2D;
@@ -815,6 +837,13 @@
         padding-right: 0px;
     }
 
+    .parrafoMateriales{
+        margin-right: 0px;  
+        padding-right: 12px;             
+        width: 100%;               
+    }      
+
+    /*Carrusel testimonios*/
     .encabezadoTestimonios{
         margin-top: 100px;
         text-align: center;        
@@ -840,62 +869,12 @@
         text-align: center;
         margin-left: 0px;
         margin-right: 0px;        
-    }
-
-    .containerNuestraHistoria{                      
-        width: 640px;           
-        margin-left: 10px; 
-        margin-top: 0px; 
-        margin-right: 0px;
-        margin-bottom: 10px;          
-    }    
-
-    .titleFragancias{
-        color: #2D2D2D;
-        font-size: 40px;  
-        padding-left: 0px;  
-        text-align: right;
-        width: 100%;
-    }    
-
-    .contenedorMayorista{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;        
-    }
-
-    .contenedorMateriales{
-        display: flex;
-        flex-direction: row;
-        width: auto;        
-    }
-
-    .catalogoContainer{
-        width: 100%;        
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        justify-content: center;
-        align-items: center;
-     }    
-
-     .textCatalogo{  
-        text-align: center;  
-        width: 70%;                  
-     }
-
-     .titleEncabezadoNosotros{
-        width: 600px;
-        font-size: 60px;
-        color: #804B37;
-        font-weight: bold;        
-     }
+    }  
 }
 
 /*Media Queries Desktop*/
 @media (min-width: 1024px) and (max-width: 1439px) {
+    /*Encabezado*/
     .encabezadoNosotros{
         margin-top: 100px;
         text-align: center;
@@ -906,81 +885,95 @@
         align-items: center;
         align-content: center;
     }
-    
+
+    /*Nuestra historia*/
     .containerNuestraHistoria{       
         width: auto;           
         margin-left: 0px; 
         margin-top: 0px;           
+    }   
+
+    .parrafoNuestraHistoria{
+        margin-right: 0px;
+    }
+
+    .img-nuestra-historia{
+        width: 98%;
     }
     
+    /*Misión, visión, valores*/
+    .contenedorIconosNosotros{                
+        display: flex;
+        flex-direction: row;
+        justify-content: center;         
+        margin-top: -50px;
+    }
+
+    .textNosotros{
+        color: #2D2D2D;        
+        font-size: 17px;          
+    }
+
+    .parrafoNosotros{
+        margin-right: 45px;
+        margin-left: 45px
+    }   
+    
+    /*Banner*/
+    .textBanner{
+        margin-left: 260px;    
+        margin-right: 260px;
+        text-align: center;  
+    }
+
+    .textCatalogo{  
+        margin-left: 260px;    
+        margin-right: 260px;                           
+    }
+    
+    /*Nuestras fragancias*/
     .containerNuestrasFragancias{
         color: #2D2D2D;
         padding-right: 0px;    
         font-size: 17px;
         margin-left: 0px;                
     }
-    
+
     .titleFragancias{
         color: #2D2D2D;
         font-size: 40px;          
     }
-    
-    .parrafoNuestraHistoria{
-        margin-right: 0px;
-    }
-    
-    .encabezadoTestimonios{
-        margin-top: 100px;
-        text-align: center;
-    }
-    
-    .tituloTestimonios{
-        margin-left: 400px;
-        margin-right: 400px;
-    }
-    
-    .parrafoEncabezado{
-        margin-left: 250px;
-        margin-right: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .parrafoNosotros{
-        margin-right: 45px;
-        margin-left: 45px
-    }
-    
-    .textNosotros{
-        color: #2D2D2D;        
-        font-size: 17px;          
-    }
-    
-    .carruselNosotros{
-        width: 75%;
-    }
-    
+
     .parrafoNuestrasFragancias{
         margin-right: 5px;
         padding-left: 19px;
     }
     
-    .parrafoMateriales{
-        padding-right: 80px;
+    /*Nuestros materiales*/
+    .containerMateriales{
+        margin-right: 0px;        
     }
-    
-    .img-nuestra-historia{
-        width: 98%;
-    }
-    
+
     .titleMateriales{
         color: #2D2D2D;
         font-size: 40px; 
         padding-right: 100px;
     }
     
-    .containerMateriales{
-        margin-right: 0px;        
+    .parrafoMateriales{
+        padding-right: 80px;
     }
+
+    .img-materiales{
+        margin-left: 0px;        
+        padding-bottom: 50px;
+    }
+    
+    /*Carrusel testimonios*/
+    .encabezadoTestimonios{
+        margin-top: 100px;
+        text-align: center;
+    }   
     
     .carruselNosotros{
         margin-left: 0px;
@@ -991,14 +984,7 @@
     .textoTestimonio{
         margin-left: 280px;
         margin-right: 280px;
-    }
-    
-    .contenedorIconosNosotros{                
-        display: flex;
-        flex-direction: row;
-        justify-content: center;         
-        margin-top: -50px;
-    }
+    } 
 
     .contenedorTestimonio{        
         margin-left: 0px;
@@ -1007,35 +993,7 @@
     .tituloTestimonios{
         margin-left: 0px;
         margin-right: 0px;
-    }
-
-    .img-materiales{
-        margin-left: 0px;        
-        padding-bottom: 50px;
-    }
-
-    .textBanner{
-        margin-left: 260px;    
-        margin-right: 260px;
-        text-align: center;  
-    }
-
-    .textCatalogo{  
-        margin-left: 260px;    
-        margin-right: 260px;                           
-     }
-
-     .encabezadoNosotros2{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        padding-left: 80px;
-        padding-right: 80px;
-     }
+    } 
 }
 
 @media (min-width: 1440px){

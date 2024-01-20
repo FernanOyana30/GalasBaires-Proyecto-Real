@@ -76,7 +76,8 @@
 @media (min-width: 320px) and (max-width: 374px){
     .estiloPaginacion{
         transform: translateX(-95px);
-    }     
+    }  
+       
     .container-encabezado{        
         width: 100%;
     }
@@ -148,8 +149,7 @@
         flex-direction: column;
         align-content: center;
         padding-left: 0px;
-        margin-left: 0px;   
-             
+        margin-left: 0px;
     }
 
     .nombreProducto{
@@ -177,7 +177,8 @@
 @media (min-width: 425px) and (max-width: 767px)   {  
     .estiloPaginacion{
         transform: translateX(-70px);
-    }     
+    }  
+
     .tituloEncabezadoCatalogo{
         color:#2D2D2D;
         font-size: 32px;

@@ -15,9 +15,9 @@ function FormMayorista() {
             <h5 className='fw-bold'>¿Querés vender nuestros productos?</h5>
             <p className='parrafoEncabezadoMayorista'>Solicitá nuestro catálogo exclusivo para mayoristas completando el formulario con tus datos o contactanos por nuestras redes sociales. Nos comunicaremos a la brevedad.
             </p>
-            <Link to=''>
+            <a href='/contacto'>
               <Button className='button-style'>Solicitar catálogo mayorista</Button>
-            </Link>
+            </a>
           </div>          
         </Col>        
       </Row>      
