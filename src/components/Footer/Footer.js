@@ -8,10 +8,6 @@ import { IoLogoInstagram, IoMailOutline } from "react-icons/io5";
 import { PiFacebookLogoBold } from "react-icons/pi";
 
 function Footer() {
-  function scrollTo(){
-    window.scrollTo(0, 0)
-  }  
-
   function scrollToTestimonios(){
     window.scrollTo(0, 2800)
   }  
@@ -24,54 +20,54 @@ function Footer() {
                 <div className="d-flex justify-content-between align-items-center py-5 container-fluid" style={{backgroundColor:"#ded5c2"}}>
                   <div style={{backgroundColor:"#ded5c2"}}></div>
                   <div style={{backgroundColor:"#ded5c2"}}>
-                    <Link to="/" className="text-dark text-decoration-none" onClick={scrollTo}>
+                    <a href="/" className="text-dark text-decoration-none">
                       <img alt='' src='./img/isologo.png' className='d-inline-block align-center' width="170"/>
-                    </Link>
+                    </a>
                   </div>
                   <div className="d-flex gap-3 " style={{backgroundColor:"#ded5c2"}}>
-                    <Link to="https://www.facebook.com/Galasbaires" className="text-dark text-decoration-none" target="_blank">
+                    <a href="https://www.facebook.com/Galasbaires" className="text-dark text-decoration-none" target="_blank">
                       <PiFacebookLogoBold fontSize={30}/>
-                    </Link>
-                    <Link className="text-dark text-decoration-none" target="_blank" to="https://www.instagram.com/galasbaires?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    </a>
+                    <a className="text-dark text-decoration-none" target="_blank" href="https://www.instagram.com/galasbaires?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                       <IoLogoInstagram fontSize={30}/>
-                    </Link>
-                    <Link to='mailto:galasbaires@gmail.com' className="text-dark text-decoration-none">
+                    </a>
+                    <a href='mailto:galasbaires@gmail.com' className="text-dark text-decoration-none">
                       <IoMailOutline fontSize={30}/>
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <div className="contenedorSecciones pb-5 container-fluid" style={{backgroundColor:"#ded5c2"}}>
                   <div className="d-flex flex-column flex-start">
-                    <Link to="/productos" className="mb-2 text-dark text-decoration-none" onClick={scrollTo}><h5>Productos</h5></Link>
-                    <Link to="/category/Velas" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Velas Aromaticas</Link>
-                    <Link to="/category/Difusores" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Difusores</Link>
-                    <Link to="/category/Perfuminas" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Perfuminas</Link>                
-                    <Link to="/category/Refill" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Refill</Link>                
-                    <Link to="/category/Hornitos" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Hornitos</Link>
-                    <Link to="/Test" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Descubrí tu fragancia</Link>
+                    <a href="/productos" className="mb-2 text-dark text-decoration-none"><h5>Productos</h5></a>
+                    <a href="/category/Velas" className="ocultarSecciones text-dark text-decoration-none">Velas Aromaticas</a>
+                    <a href="/category/Difusores" className="ocultarSecciones text-dark text-decoration-none">Difusores</a>
+                    <a href="/category/Perfuminas" className="ocultarSecciones text-dark text-decoration-none">Perfuminas</a>                
+                    <a href="/category/Refill" className="ocultarSecciones text-dark text-decoration-none">Refill</a>                
+                    <a href="/category/Hornitos" className="ocultarSecciones text-dark text-decoration-none">Hornitos</a>
+                    <a href="/Test" className="ocultarSecciones text-dark text-decoration-none">Descubrí tu fragancia</a>
                   </div>
                   <div className="d-flex flex-column">
-                    <Link to="/Nosotros" className="mb-2 text-dark text-decoration-none" onClick={scrollTo}><h5>Nosotros</h5></Link>
-                    <Link to="/Nosotros" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Sobre Galas Baires</Link>
-                    <Link to="/Nosotros" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollToTestimonios}>Testimonios</Link>
-                    <Link to="/Nosotros" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Sobre las fragancias</Link>
-                    <Link to="/Nosotros" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Nuestros materiales</Link>
+                    <a href="/Nosotros" className="mb-2 text-dark text-decoration-none"><h5>Nosotros</h5></a>
+                    <a href="/Nosotros" className="ocultarSecciones text-dark text-decoration-none">Sobre Galas Baires</a>
+                    <a href="/Nosotros" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollToTestimonios}>Testimonios</a>
+                    <a href="/Nosotros" className="ocultarSecciones text-dark text-decoration-none">Sobre las fragancias</a>
+                    <a href="/Nosotros" className="ocultarSecciones text-dark text-decoration-none">Nuestros materiales</a>
                   </div>
                   <div className="d-flex flex-column">
-                    <Link to="/contacto" className="mb-2 text-dark text-decoration-none" onClick={scrollTo}><h5>Contacto</h5></Link>
-                    <Link to="/contacto" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Formulario de contacto</Link>
-                    <Link to="/contacto" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Redes sociales</Link>
-                    <Link to="/contacto" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Whatsapp</Link>
+                    <a href="/contacto" className="mb-2 text-dark text-decoration-none"><h5>Contacto</h5></a>
+                    <a href="/contacto" className="ocultarSecciones text-dark text-decoration-none">Formulario de contacto</a>
+                    <a href="/contacto" className="ocultarSecciones text-dark text-decoration-none">Redes sociales</a>
+                    <a href="/contacto" className="ocultarSecciones text-dark text-decoration-none">Whatsapp</a>
                   </div>
                   <div className="d-flex flex-column">
-                    <Link to="/FAQ" className="mb-2 text-dark text-decoration-none" onClick={scrollTo}><h5>Preguntas frecuentes</h5></Link>
-                    <Link to="/FAQ" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Políticas de envío</Link>
-                    <Link to="/FAQ" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Políticas de entrega</Link>
-                    <Link to="/FAQ" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Recomendaciones</Link>
+                    <a href="/FAQ" className="mb-2 text-dark text-decoration-none"><h5>Preguntas frecuentes</h5></a>
+                    <a href="/FAQ" className="ocultarSecciones text-dark text-decoration-none">Políticas de envío</a>
+                    <a href="/FAQ" className="ocultarSecciones text-dark text-decoration-none">Políticas de entrega</a>
+                    <a href="/FAQ" className="ocultarSecciones text-dark text-decoration-none">Recomendaciones</a>
                   </div>
                   <div className="d-flex flex-column">
-                    <Link to="/mayoristas" className="text-dark text-decoration-none" onClick={scrollTo}><h5>Mayoristas</h5></Link>
-                    <Link to="/mayoristas" className="ocultarSecciones text-dark text-decoration-none" onClick={scrollTo}>Formulario para mayoristas</Link>
+                    <a href="/mayoristas" className="text-dark text-decoration-none"><h5>Mayoristas</h5></a>
+                    <a href="/mayoristas" className="ocultarSecciones text-dark text-decoration-none">Formulario para mayoristas</a>
                   </div>
                 </div>
             </Col>
