@@ -1,3 +1,26 @@
+# Galas Baires
+
+Proyecto para sitio web sobre velas aromáticas de soja 100% ecológicas, difusores, perfuminas y souvenirs entre otros productos.  
+
+## Equipo de trabajo
+
+Diseño UX/UI a cargo de: Belén Stella, Mariela Córdoba.
+Desarrollo y programación web: Fernando Oyanarte, Tomás Hiroshi Adauto Tomioka.
+--------------------------------------------
+
+## Sobre el sitio web:
+
+Sitio web orientado a la venta mayorista y minorista de velas de soja y otros productos aromáticos relacionados. El usuario podrá ver el catálogo de productos disponibles, ver el detalle de cada uno y consultar por el mismo a través de un formulario en el cual deberá ingresar sus datos personales y mail de contacto. 
+En la sección NOSOTROS se incluye información sobre el emprendimiento y su historia, su misión/visión/valores, los materiales y fragancias utilizadas para la elaboración de los productos, y un apartado de testimonios. 
+En la sección de PREGUNTAS FRECUENTES el usuario podrá consultar las políticas de envío, puntos de retiro, información sobre el seguimiento del producto, etcétera. 
+Si el usuario no sabe qué fragancias adquirir, podrá realizar un breve cuestionario interactivo para averiguarlo. Respondiendo cuatro preguntas sencillas descubrirá el aroma perfecto para sus ambientes.  
+
+## Deploy del proyecto:
+
+https://galas-baires-proyecto-real.vercel.app/ 
+
+--------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

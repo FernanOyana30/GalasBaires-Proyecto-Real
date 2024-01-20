@@ -75,7 +75,7 @@ function FAQ() {
               <Accordion.Item eventKey="2" className='acordeonItem'>
                 <Accordion.Header>Si no sé qué comprar, ¿qué se recomienda?</Accordion.Header>
                 <Accordion.Body>
-                  Escribirnos o realizar el test de posibles elecciones según tus gustos y preferencias. 
+                  Escribirnos o realizar el <span><a href='/Test' style={{color:"#2D2D2D", fontWeight:"bold"}}>test</a></span> de posibles elecciones según tus gustos y preferencias. 
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3" className='acordeonItem'>
