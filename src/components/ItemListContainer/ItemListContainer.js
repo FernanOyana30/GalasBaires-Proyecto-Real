@@ -80,7 +80,7 @@ export default function ItemListContainer (){
   const [currentPage, setCurrentPage] = useState(1)
 
   const lastIndex =  currentPage * productsPerPage 
-  const firstIndex = lastIndex - productsPerPage
+  const firstIndex = lastIndex - productsPerPage  
 
     return (
       <>
@@ -99,7 +99,7 @@ export default function ItemListContainer (){
                 <h3 className="fw-bold" style={{color:"#804B37"}}>Descubrí tu fragancia</h3>
                 <p className="textoBannerFragancias pb-3 ">¿No sabés qué fragancia elegir? Hacé este simple cuestionario para enterarte de los mejores productos para vos</p>
                 <a href='/Test'>
-                  <Button variant="light" className="button-style">Hacer cuestionario</Button>                
+                  <Button variant="light" className="button-style">Hacer cuestionario</Button>              
                 </a>
               </div>                             
             </Col>                     

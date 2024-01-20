@@ -500,6 +500,10 @@
         margin-right: 170px;
     }
 
+    .parrafoEncabezadoMinorista{        
+        padding-right: 100px;
+    }
+
     .contenedorContactoMinorista{
         margin-top: 80px;
         margin-bottom: 20px;    
@@ -522,5 +526,9 @@
     .contenedorFormulario{
         margin-top: 100px;
         width: 80%;
+    }
+
+    .parrafoEncabezadoMinorista{        
+        padding-right: 80px;
     }
 }

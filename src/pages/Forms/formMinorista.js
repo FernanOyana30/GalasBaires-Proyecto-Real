@@ -33,7 +33,7 @@ function FormMinorista() {
             <div className='contenedorContactoMinorista'>
               <div>
                 <h1 className="tituloEncabezado">¿Tenés alguna pregunta?</h1>
-                <p>Si tenés alguna duda, querés más información acerca de algún producto o te gustaría solicitar el catálogo minorista, completá el formulario o contactanos por nuestras redes sociales o mail.
+                <p className='parrafoEncabezadoMinorista'>Si tenés alguna duda, querés más información acerca de algún producto o te gustaría solicitar el catálogo minorista, completá el formulario o contactanos por nuestras redes sociales o mail.
                 </p>
                 <Link  target="_blank" to='mailto:galasbaires@gmail.com' className="text-dark text-decoration-none">
                   <p className='iconosContacto mb-0'><img alt='' src='./img/icon_mail_.png'  className='iconoFAQ me-3' />galasbaires@gmail.com</p>
