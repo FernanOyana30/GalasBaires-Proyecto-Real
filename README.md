@@ -6,7 +6,7 @@ Proyecto para sitio web sobre velas aromáticas de soja 100% ecológicas, difuso
 
 Diseño UX/UI a cargo de: Belén Stella, Mariela Córdoba.
 Desarrollo y programación web: Fernando Oyanarte, Tomás Hiroshi Adauto Tomioka.
---------------------------------------------
+
 
 ## Sobre el sitio web:
 
